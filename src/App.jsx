@@ -26,12 +26,6 @@ function useSchoolsData() {
 }
 import { LanguageProvider, useLanguage, regionFeatures } from './LanguageContext';
 
-// 計算國家列表
-const countries = useMemo(() => {
-  if (!schoolsData) return [];
-  return [...new Set(schoolsData.schools.map(s => s.country))].sort();
-}, [schoolsData]);
-
 function AppContent() {
   const { lang, setLang, t } = useLanguage();
   
@@ -42,6 +36,12 @@ function AppContent() {
   
   // 加載學校數據
   const { data: schoolsData, loading, error } = useSchoolsData();
+
+  // 計算國家列表
+  const countries = useMemo(() => {
+    if (!schoolsData) return [];
+    return [...new Set(schoolsData.schools.map(s => s.country))].sort();
+  }, [schoolsData]);
   const [compareList, setCompareList] = useState(() => {
     const saved = localStorage.getItem('exchangeCompare');
     return saved ? JSON.parse(saved) : [];
