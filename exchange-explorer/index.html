@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CityUHK Exchange Explorer Interactive Preview</title>
+<style>
+:root{
+  --bg:#f6f4ef; --card:#ffffff; --muted:#6f6a63; --text:#211d18; --line:#ddd6cc;
+  --brand:#0d6b73; --brand2:#114d53; --soft:#e6f2f2; --accent:#f3c86b; --danger:#c25b4b;
+  --shadow:0 12px 28px rgba(0,0,0,.07); --radius:22px;
+}
+*{box-sizing:border-box} body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--text)}
+.container{max-width:1440px;margin:0 auto;padding:24px}
+.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;gap:12px;flex-wrap:wrap}
+.brand{display:flex;gap:12px;align-items:center;font-weight:800}.brand-badge{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--brand),#23a7af);box-shadow:var(--shadow)}
+.nav{display:flex;gap:10px;flex-wrap:wrap}.nav span,.btn,.chip{border:1px solid var(--line);background:var(--card);padding:10px 14px;border-radius:999px;font-size:14px}
+.hero{background:linear-gradient(135deg,#0d6b73,#17444a 60%,#20353b);color:white;border-radius:32px;padding:36px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,.08)}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:end}.hero h1{font-size:56px;line-height:1.02;margin:0 0 10px}.hero p{margin:0 0 18px;color:rgba(255,255,255,.86);max-width:70ch}
+.search{display:flex;gap:12px;background:white;border-radius:18px;padding:10px;max-width:860px}.search input{flex:1;border:none;outline:none;font-size:16px;padding:12px 14px;border-radius:12px}.search button{border:none;background:var(--brand);color:white;padding:12px 18px;border-radius:12px;font-weight:700;cursor:pointer}
+.hero-side{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.stat{background:rgba(255,255,255,.1);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:16px}.stat .label{font-size:12px;color:rgba(255,255,255,.72)}.stat .value{font-size:22px;font-weight:800;margin-top:6px}
+.layout{display:grid;grid-template-columns:290px 1fr;gap:22px;margin-top:22px}.sidebar,.panel{background:var(--card);border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow)}.sidebar{padding:20px;align-self:start;position:sticky;top:16px}
+.sidebar h3,.section-title{margin:0 0 14px}.field{margin-bottom:12px}.field label{display:block;color:var(--muted);font-size:13px;margin-bottom:6px}.field select,.field input{width:100%;padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:#faf9f6}
+.quick{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:18px}.quick-card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:var(--shadow)}.quick-card h4{margin:0 0 6px}.mini{font-size:13px;color:var(--muted)}
+.main .panel{padding:18px;margin-bottom:18px}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:14px}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.uni{border:1px solid var(--line);border-radius:24px;padding:18px;background:linear-gradient(180deg,#fff,#fbfbf9)}.uni h4{margin:0 0 6px;font-size:23px}.meta{color:var(--muted);font-size:14px;margin-bottom:12px}.row{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0}
+.chip{padding:8px 12px;background:#faf8f4}.badge{padding:7px 10px;border-radius:999px;font-weight:700;font-size:12px;display:inline-block}.badge.grant{background:#daf5e8;color:#175d37}.badge.warn{background:#fff1d6;color:#8b5a00}.badge.mid{background:#e8f4ff;color:#1f567f}
+.actions{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}.btn{display:inline-block;cursor:pointer}.btn.primary{background:var(--brand);color:#fff;border-color:var(--brand)}.btn.small{padding:8px 12px;font-size:13px}
+.compare{overflow:auto}.compare table{width:100%;border-collapse:collapse;min-width:900px}.compare th,.compare td{padding:12px;border-bottom:1px solid var(--line);text-align:left}.compare th{background:#faf9f6}
+.footer-note{font-size:13px;color:var(--muted);margin-top:10px}.previewbar{margin-top:18px;padding:14px 18px;border-radius:20px;background:var(--soft);border:1px solid #cfe5e6;color:var(--brand2)}
+.count{font-weight:700;color:var(--brand)}
+.drawer{position:fixed;right:20px;bottom:20px;width:min(420px,calc(100vw - 40px));background:var(--card);border:1px solid var(--line);border-radius:24px;box-shadow:0 18px 38px rgba(0,0,0,.18);padding:16px;z-index:20}
+.drawer h4{margin:0 0 8px}.drawer-list{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}.drawer-item{background:#f3f0ea;border:1px solid var(--line);padding:8px 10px;border-radius:999px;font-size:13px}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;align-items:center;justify-content:center;padding:20px;z-index:30}.modal.show{display:flex}.modal-card{width:min(840px,100%);max-height:90vh;overflow:auto;background:var(--card);border-radius:28px;padding:24px;border:1px solid var(--line);box-shadow:0 20px 50px rgba(0,0,0,.2)}
+.modal-card h3{margin-top:0}.close{float:right;cursor:pointer;border:1px solid var(--line);border-radius:999px;padding:8px 12px;background:#fff}
+.hidden{display:none}
+
+.detail-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:12px}
+.detail-box{border:1px solid var(--line);border-radius:18px;padding:14px;background:#faf9f6}
+.detail-box h5{margin:0 0 8px;font-size:15px}
+.detail-box ul{margin:0;padding-left:18px}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.tag{background:#eef5f5;border:1px solid #d7e7e7;padding:7px 10px;border-radius:999px;font-size:12px;color:var(--brand2)}
+@media (max-width:800px){.detail-grid{grid-template-columns:1fr}}
+
+@media (max-width:1100px){.hero-grid,.layout,.cards,.quick{grid-template-columns:1fr}.sidebar{position:static}.hero h1{font-size:42px}.drawer{left:20px;right:20px;width:auto}}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="topbar">
+    <div class="brand"><div class="brand-badge"></div><div><div>CityUHK Exchange Explorer</div><div class="mini">Interactive preview / 互動預覽版</div></div></div>
+    <div class="nav"><span>Home</span><span>Explore</span><span>Compare</span><span>Budget</span><span>FAQ</span></div>
+  </div>
+
+  <section class="hero">
+    <div class="hero-grid">
+      <div>
+        <div class="mini" style="color:rgba(255,255,255,.75);margin-bottom:8px">2026–27 Main Round Application</div>
+        <h1>Find your best<br>exchange match.</h1>
+        <p>Browse universities by region, compare CGPA and language requirements, and shortlist destinations with a cleaner interface than the original list.</p>
+        <div class="search">
+          <input id="q" placeholder="Search university, country, IELTS, TOEFL, CEFR, Chinese..." />
+          <button onclick="applyFilters()">Search</button>
+        </div>
+        <div class="previewbar">Source structure includes quota, CGPA requirement, language requirements, semester period, Explorer Grant, and remarks. Last update shown in the source: 16 January 2026.</div>
+      </div>
+      <div class="hero-side">
+        <div class="stat"><div class="label">Dataset</div><div class="value">2026–27</div></div>
+        <div class="stat"><div class="label">Last update</div><div class="value">16 Jan 2026</div></div>
+        <div class="stat"><div class="label">Grant note</div><div class="value">HK$10,000</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <h3>Filters / 篩選</h3>
+      <div class="field"><label>Region</label><select id="region"><option value="">All regions</option><option>Asia</option><option>Europe</option><option>North America</option><option>Oceania</option><option>Latin America</option></select></div>
+      <div class="field"><label>Country</label><select id="country"><option value="">All</option><option>Singapore</option><option>Canada</option><option>Germany</option><option>Japan</option></select></div>
+      <div class="field"><label>Max CGPA requirement</label><select id="cgpa"><option value="">Any</option><option>2.7</option><option>3.0</option><option>3.23</option><option>3.3</option></select></div>
+      <div class="field"><label>Language requirement</label><select id="language"><option value="">Any</option><option>IELTS</option><option>TOEFL</option><option>CEFR</option><option>Chinese</option></select></div>
+      <div class="field"><label>Semester</label><select id="semester"><option value="">Any</option><option>Sem A</option><option>Sem B</option></select></div>
+      <div class="field"><label>Explorer Grant</label><select id="grant"><option value="">Any</option><option>Yes</option><option>No</option></select></div>
+      <div class="field"><label>Budget level</label><select id="budget"><option value="">Any</option><option>Low</option><option>Medium</option><option>High</option></select></div>
+      <div class="actions"><span class="btn primary" onclick="applyFilters()">Apply</span><span class="btn" onclick="resetFilters()">Reset</span></div>
+      <div class="footer-note">Explorer Grant note in the source says designated programmes receive HK$10,000.</div>
+    </aside>
+
+    <main class="main">
+      <div class="quick">
+        <div class="quick-card"><h4>Asia</h4><div class="mini">Singapore, Japan, Korea, Mainland, Taiwan</div></div>
+        <div class="quick-card"><h4>Europe</h4><div class="mini">UK, Germany, Netherlands, Switzerland</div></div>
+        <div class="quick-card"><h4>North America</h4><div class="mini">USA, Canada</div></div>
+        <div class="quick-card"><h4>Oceania</h4><div class="mini">Australia, New Zealand</div></div>
+        <div class="quick-card"><h4>Results</h4><div class="mini"><span class="count" id="count">0</span> universities shown</div></div>
+      </div>
+
+      <section class="panel">
+        <div class="toolbar">
+          <div><h3 class="section-title">Featured universities</h3><div class="mini">Filterable card browsing</div></div>
+          <div class="row"><span class="chip">Card view</span><span class="chip">Interactive</span><span class="chip">Shortlist enabled</span></div>
+        </div>
+        <div class="cards" id="cards"></div>
+      </section>
+
+      <section class="panel compare">
+        <div class="toolbar"><h3 class="section-title">Compare table preview</h3><div class="mini">Updates with shortlisted universities</div></div>
+        <table id="compareTable">
+          <thead><tr><th>Field</th><th colspan="4">Choose up to 4 universities</th></tr></thead>
+          <tbody><tr><td colspan="5" class="mini">Add universities to compare from the cards above.</td></tr></tbody>
+        </table>
+      </section>
+
+      <section class="panel">
+        <div class="toolbar"><h3 class="section-title">Important notes</h3></div>
+        <div class="mini">The source says host institution information prevails if there is any discrepancy, semester timing may not match CityUHK exactly, and the available fact sheet may not be the exact one for the applying semester.</div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<div class="drawer" id="drawer">
+  <h4>Shortlist Compare</h4>
+  <div class="drawer-list" id="drawerList"><span class="mini">No universities added yet.</span></div>
+  <div class="actions"><span class="btn primary small" onclick="renderCompare()">Update compare</span><span class="btn small" onclick="clearCompare()">Clear</span></div>
+</div>
+
+<div class="modal" id="modal">
+  <div class="modal-card">
+    <span class="close" onclick="closeModal()">Close</span>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script>
+const universities = [
+  {id:"austral",name:"University of Austral",country:"Argentina",city:"Buenos Aires / Pilar",region:"Latin America",regionHighlights:["Latin American cultural immersion","Generally lower living cost than major Anglophone destinations","Spanish is highly useful in daily life"],schoolHighlights:["Private university with strong business and law profile","Smaller class environment","Pilar campus outside central Buenos Aires"],dailyLanguage:"Spanish dominant; English more limited outside specific academic contexts",teachingLanguage:"Mostly Spanish, selected English support may exist",localConsiderations:["Spanish ability matters for social life and errands","Commuting pattern depends on campus location","Good value if budget matters"],housing:"Likely private rental or shared housing; students should check commuting and neighborhood safety",supportServices:"Smaller campus feel may suit students who want more personal attention",transport:"Need to consider city-campus distance and local transit",safety:"Students should pay attention to neighborhood choice and commuting habits in Greater Buenos Aires",climate:"Mild to warm seasons compared with Hong Kong winter expectations",quota:"To be updated",cgpa:2.7,ielts:"6.0",toefl:"72",language:"IELTS 6.0 / TOEFL 72",semester:"A (Aug–Nov) / B (Mar–Jun)",grant:"Yes",budget:"Low",budgetValue:4800,ranking:461,badge:"Explorer Grant",badgeClass:"grant",website:"https://www.austral.edu.ar",languages:["Spanish primary","English limited"],remarks:"Pilar campus north-west of Buenos Aires. Explorer Grant available.",features:["Strong Latin American context","Business and law orientation","Smaller-scale learning environment"],selection:{academicFit:"Business, Law, Economics",culturalExperience:"Latin American culture immersion",budgetLevel:"Low",supportServices:"Smaller campus environment"}},
+  {id:"adelaide",name:"Adelaide University",country:"Australia",city:"Adelaide",region:"Oceania",regionHighlights:["English-speaking study environment","Generally more relaxed pace than Sydney/Melbourne","Good base for students who want Australia without the highest living costs"],schoolHighlights:["Research-intensive university environment","Strong engineering and health sciences profile","Early nomination noted in source"],dailyLanguage:"English is used in both study and daily life",teachingLanguage:"English",localConsiderations:["Compare city affordability against bigger Australian cities","Check whether you prefer quieter city life over Sydney/Melbourne pace","Plan early because nomination timing matters"],housing:"Usually student accommodation or shared rentals; compare distance to campus and lease timing",supportServices:"Large research university support and international student services",transport:"Mid-size city, generally easier to navigate than larger metros",safety:"Often perceived as more manageable than larger big-city settings",climate:"Warm dry summers and milder winters",quota:"4 (1 CB, 1 SEE, 2 any)",cgpa:3.0,ielts:"6.5",toefl:"79",language:"IELTS 6.5 / TOEFL 79",semester:"A (Jul–Nov) / B (Feb–Jun)",grant:"No",budget:"Medium",budgetValue:10500,ranking:82,badge:"Early nomination",badgeClass:"warn",website:"https://www.adelaide.edu.au",languages:["English"],remarks:"Research-intensive Australian university; early nomination noted in source.",features:["Engineering and health sciences strength","More affordable major Australian city"],selection:{academicFit:"Engineering, Health Sciences",culturalExperience:"Relaxed Australian lifestyle",budgetLevel:"Moderate",supportServices:"Large research university support"}},
+  {id:"curtin",name:"Curtin University",country:"Australia",city:"Perth",region:"Oceania",regionHighlights:["Western Australia has a more isolated geography from east-coast Australia","Outdoor lifestyle and sunny climate appeal to some students","English-speaking daily environment"],schoolHighlights:["Industry links in resources and engineering","Large Perth-based university","Some health programmes closed to exchange"],dailyLanguage:"English",teachingLanguage:"English",localConsiderations:["Perth can feel far from other Australian cities","Good for students who like space, sun, and outdoors","Important to check excluded subject areas carefully"],housing:"Shared apartments and student housing are common options; compare commuting time",supportServices:"Large-campus international support likely available",transport:"City transport is workable, but lifestyle is more spread out than compact cities",safety:"Students often value the calmer city environment",climate:"Sunny and warm Mediterranean-style climate",quota:"4 (2 SS, 2 CRSO)",cgpa:2.95,ielts:"6.0",toefl:"68",language:"IELTS 6.0 / TOEFL 68",semester:"A (Jul–Nov) / B (Feb–Jun)",grant:"No",budget:"Medium",budgetValue:10000,ranking:174,badge:"Course limits",badgeClass:"mid",website:"https://www.curtin.edu.au",languages:["English"],remarks:"Medicine, OT, Physio, Speech, Nursing and Pharmacy are not open.",features:["Perth lifestyle and modern campus","Industry links in resources and engineering"],selection:{academicFit:"Social Sciences, Engineering",culturalExperience:"Western Australia lifestyle",budgetLevel:"Moderate",supportServices:"Industry-oriented university"}},
+  {id:"griffith",name:"Griffith University",country:"Australia",city:"Brisbane / Gold Coast",region:"Oceania",regionHighlights:["Subtropical climate and outdoor lifestyle","Good for students interested in a beach-oriented exchange experience","English-speaking daily environment"],schoolHighlights:["Multiple campuses","Known for criminology, music, and film","Gold Coast appeal for lifestyle-focused students"],dailyLanguage:"English",teachingLanguage:"English",localConsiderations:["Think about which campus matters because location changes the exchange feel","Beach lifestyle may be a plus if you want a more relaxed exchange","Check subject restrictions before ranking it highly"],housing:"Housing experience depends heavily on campus location; beachside choices can be attractive but vary in cost",supportServices:"Multi-campus environment may offer broader options but more planning is needed",transport:"Transport and commuting vary by campus",safety:"Students should compare urban vs beach-campus lifestyles",climate:"Warm subtropical weather",quota:"3",cgpa:2.9,ielts:"6.0",toefl:"71",language:"IELTS 6.0 / TOEFL 71",semester:"A (Jul–Nov) / B (Feb–Jun)",grant:"No",budget:"Medium",budgetValue:9800,ranking:255,badge:"Course restrictions",badgeClass:"mid",website:"https://www.griffith.edu.au",languages:["English"],remarks:"Check course restrictions on host side.",features:["Multiple campuses including Gold Coast","Known for criminology, music, and film"],selection:{academicFit:"Criminology, Music, Film",culturalExperience:"Beach lifestyle",budgetLevel:"Moderate",supportServices:"Multi-campus flexibility"}},
+  {id:"macquarie",name:"Macquarie University",country:"Australia",city:"Sydney",region:"Oceania",regionHighlights:["Sydney gives access to a major global city, strong transport, and broad social options","High living cost is a major practical factor","English is used everywhere in university and daily life"],schoolHighlights:["Macquarie Park tech-hub location","Strong linguistics and psychology reputation","Urban campus with good transport links"],dailyLanguage:"English",teachingLanguage:"English",localConsiderations:["Sydney cost is one of the first things locals would consider","Good option if you want city life and industry proximity","Highly useful for students who value urban convenience"],housing:"Student housing and shared rentals exist, but Sydney rent pressure is a serious factor",supportServices:"Urban campus and transport links make daily student life convenient",transport:"Well-connected by urban rail and public transport",safety:"Students usually weigh convenience, neighborhood, and rent together",climate:"Mild climate with warm summers",quota:"2",cgpa:3.2,ielts:"6.5",toefl:"83",language:"IELTS 6.5 / TOEFL 83",semester:"A (Jul–Nov) / B (Feb–Jun)",grant:"Yes",budget:"High",budgetValue:12500,ranking:133,badge:"Competitive",badgeClass:"warn",website:"https://www.mq.edu.au",languages:["English"],remarks:"Source shows Explorer Grant: Yes. Sydney living costs are high.",features:["Macquarie Park tech hub","Strong linguistics and psychology"],selection:{academicFit:"Linguistics, Psychology, Business",culturalExperience:"Sydney tech hub access",budgetLevel:"High",supportServices:"Urban campus with transport links"}},
+  {id:"monash",name:"Monash University",country:"Australia",city:"Melbourne",region:"Oceania",regionHighlights:["Melbourne is often chosen for culture, food, and student-city feel","Big-city living cost remains high","English-speaking academic and daily environment"],schoolHighlights:["Large university with multiple campuses","Strong engineering and IT profile","Large student community and broad subject ecosystem"],dailyLanguage:"English",teachingLanguage:"English",localConsiderations:["Students who prefer a major city with culture may like Melbourne","Large-school feel can be a pro or con depending on preference","Compare campus location before deciding"],housing:"Mix of student housing and private/shared rentals; costs vary by campus area",supportServices:"Large university typically offers many societies and student services",transport:"Good public transport but commute depends on campus",safety:"Students often compare lifestyle and rent by area",climate:"Four-season feel and more changeable weather",quota:"8",cgpa:3.23,ielts:"6.5",toefl:"79",language:"IELTS 6.5 / TOEFL 79",semester:"A (Jul–Nov) / B (Feb–Jun)",grant:"No",budget:"High",budgetValue:11500,ranking:37,badge:"Top ranked",badgeClass:"warn",website:"https://www.monash.edu",languages:["English"],remarks:"Large research university with multiple campuses.",features:["Strong engineering and IT programs","Large student community"],selection:{academicFit:"Engineering, IT, Business",culturalExperience:"Melbourne cultural life",budgetLevel:"High",supportServices:"Large-campus services"}},
+  {id:"qut",name:"Queensland University of Technology",country:"Australia",city:"Brisbane",region:"Oceania",regionHighlights:["Brisbane is often seen as warm, livable, and less intense than Sydney/Melbourne","English-speaking environment","Moderate cost relative to major east-coast cities"],schoolHighlights:["Real-world and industry-oriented image","Urban campus setting","Good fit for students wanting practical orientation"],dailyLanguage:"English",teachingLanguage:"English",localConsiderations:["Best for students who value a practical, urban, less expensive city option","Good compromise between city life and budget","Need to note the very small quota from source"],housing:"Student housing and private/shared flats are likely common options near city areas",supportServices:"Practice-oriented campus culture may appeal to career-focused students",transport:"Brisbane urban transport is manageable for student life",safety:"Students often value the more relaxed pace",climate:"Warm subtropical climate",quota:"1",cgpa:2.7,ielts:"6.5",toefl:"79",language:"IELTS 6.5 / TOEFL 79",semester:"A (Jul–Nov) / B (Feb–Jun)",grant:"No",budget:"Medium",budgetValue:9500,ranking:213,badge:"Real-world focus",badgeClass:"mid",website:"https://www.qut.edu.au",languages:["English"],remarks:"Source quota is 1; some courses restricted by host.",features:["Industry-focused university","Brisbane CBD urban campus"],selection:{academicFit:"Business, Creative industries, Law",culturalExperience:"Urban Brisbane lifestyle",budgetLevel:"Moderate",supportServices:"Practice-oriented support"}},
+  {id:"unsw",name:"University of New South Wales",country:"Australia",city:"Sydney",region:"Oceania",regionHighlights:["Sydney offers global-city prestige, transport, beaches, and strong job exposure","High cost is a major trade-off","English is used in class and daily life"],schoolHighlights:["Very strong engineering and technology reputation","Competitive and high-demand feel","Extra language requirement for Business/Law in source"],dailyLanguage:"English",teachingLanguage:"English",localConsiderations:["Students who want prestige and city opportunities may prioritize UNSW","Those with tighter budgets may rank it lower","Need to check faculty-specific language thresholds"],housing:"Sydney housing is costly; proximity vs affordability is a key trade-off",supportServices:"Large, international, research-heavy environment",transport:"Urban transport and airport connectivity are major advantages",safety:"Neighborhood and rent trade-offs matter in student choices",climate:"Warm coastal climate",quota:"2",cgpa:3.23,ielts:"6.5",toefl:"90",language:"IELTS 6.5 / TOEFL 90",semester:"A (Jul–Nov) / B (Feb–Jun)",grant:"No",budget:"High",budgetValue:13000,ranking:19,badge:"Top ranked",badgeClass:"warn",website:"https://www.unsw.edu.au",languages:["English"],remarks:"Business and Law require IELTS 7.0 / TOEFL 94 in source.",features:["Strong engineering and technology profile","Sydney beachside setting"],selection:{academicFit:"Engineering, Technology",culturalExperience:"Sydney lifestyle",budgetLevel:"High",supportServices:"Large university ecosystem"}},
+  {id:"newcastle",name:"University of Newcastle",country:"Australia",city:"Newcastle",region:"Oceania",regionHighlights:["Regional-coastal lifestyle can be more relaxed and cheaper than big cities","English-speaking study and daily environment","Good for students who want Australia without the largest-city price"],schoolHighlights:["Problem-based learning reputation","Coastal city setting","Less pressured city feel than Sydney"],dailyLanguage:"English",teachingLanguage:"English",localConsiderations:["Locals may value the lower cost and quieter pace","Good if you want beachside life without full Sydney prices","Check subject restrictions before locking in"],housing:"Private/shared housing may be more affordable than Sydney",supportServices:"Regional setting may feel more manageable for some students",transport:"Smaller-city lifestyle with access to Sydney region",safety:"Students often view it as more relaxed than major capitals",climate:"Mild coastal weather",quota:"3",cgpa:2.8,ielts:"6.0",toefl:"70",language:"IELTS 6.0 / TOEFL 70",semester:"A (Jul–Nov) / B (Feb–Jun)",grant:"No",budget:"Medium",budgetValue:8500,ranking:179,badge:"Affordable city",badgeClass:"mid",website:"https://www.newcastle.edu.au",languages:["English"],remarks:"Course restrictions noted in source.",features:["Coastal city about 2 hours from Sydney","More affordable than major capitals"],selection:{academicFit:"Engineering, Built Environment",culturalExperience:"Coastal lifestyle",budgetLevel:"Moderate-Low",supportServices:"More relaxed campus environment"}},
+  {id:"uq",name:"University of Queensland",country:"Australia",city:"Brisbane",region:"Oceania",regionHighlights:["Brisbane offers warm climate and a more relaxed urban feel","English-speaking environment","Often considered a more manageable cost than Sydney"],schoolHighlights:["Strong research and science profile","Respected large-campus feel","Some programmes need higher language scores"],dailyLanguage:"English",teachingLanguage:"English",localConsiderations:["Students often choose UQ for strong academics plus a livable city","Good fit if you want research reputation without Sydney costs","Need to note faculty-specific language differences"],housing:"Private/shared rentals and student living are typical; commute varies by location",supportServices:"Large research university and broad academic services",transport:"River-city transport and suburban commuting patterns matter",safety:"Students balance lifestyle and cost by neighborhood",climate:"Warm subtropical climate",quota:"To be updated",cgpa:3.0,ielts:"6.5",toefl:"87",language:"IELTS 6.5 / TOEFL 87",semester:"A (Jul–Nov) / B (Feb–Jun)",grant:"No",budget:"Medium",budgetValue:10000,ranking:40,badge:"Strong research",badgeClass:"mid",website:"https://www.uq.edu.au",languages:["English"],remarks:"Vet Science and Law need higher language scores in source.",features:["Strong biological sciences and research","Brisbane river campus"],selection:{academicFit:"Biological sciences, research",culturalExperience:"Subtropical Brisbane",budgetLevel:"Moderate",supportServices:"Research-intensive support"}},
+  {id:"utas",name:"University of Tasmania",country:"Australia",city:"Hobart",region:"Oceania",regionHighlights:["Tasmania feels very different from mainland Australian capitals","Lower cost and strong nature access attract some students","English-speaking but with a smaller-city pace"],schoolHighlights:["Marine and Antarctic studies strength","Smaller-scale setting","Affordable compared with bigger cities"],dailyLanguage:"English",teachingLanguage:"English",localConsiderations:["Best for students who want nature, lower budget, and a calmer place","Less suitable if you want a major-city social scene","Great niche fit for environmental interests"],housing:"Student life may be easier to budget, but choice can be narrower than in bigger cities",supportServices:"Smaller environment can feel more personal",transport:"Compact-city life but fewer big-city options",safety:"Often perceived as calmer and less crowded",climate:"Cooler climate than most Australian choices",quota:"2",cgpa:2.7,ielts:"6.0",toefl:"72",language:"IELTS 6.0 / TOEFL 72",semester:"A (Jul–Nov) / B (Feb–Jun)",grant:"No",budget:"Low",budgetValue:7500,ranking:293,badge:"Low budget",badgeClass:"grant",website:"https://www.utas.edu.au",languages:["English"],remarks:"Law requires higher language score in source.",features:["Island-state experience","Marine and Antarctic studies strength"],selection:{academicFit:"Marine studies, environment",culturalExperience:"Island and wilderness setting",budgetLevel:"Low",supportServices:"Smaller class environment"}},
+  {id:"uow",name:"University of Wollongong",country:"Australia",city:"Wollongong",region:"Oceania",regionHighlights:["Regional coastal lifestyle with access to Sydney","English-speaking environment","Can offer a better cost-lifestyle balance than central Sydney"],schoolHighlights:["Known for engineering and IT","Beachside setting","Regional-city atmosphere"],dailyLanguage:"English",teachingLanguage:"English",localConsiderations:["Attractive for students who want coastal life and lower cost than Sydney","Good balance of affordability and access","Need to note early nomination in source"],housing:"Shared rentals and student housing may be more affordable than central Sydney",supportServices:"Regional-city environment may feel less overwhelming",transport:"Useful access to Sydney while keeping a regional base",safety:"Lifestyle and commute matter more than big-city crowding",climate:"Mild coastal weather",quota:"2",cgpa:2.91,ielts:"6.0",toefl:"79",language:"IELTS 6.0 / TOEFL 79",semester:"A (Jul–Nov) / B (Feb–Jun)",grant:"No",budget:"Medium",budgetValue:9000,ranking:167,badge:"Coastal city",badgeClass:"mid",website:"https://www.uow.edu.au",languages:["English"],remarks:"Early nomination noted in source.",features:["Coastal campus south of Sydney","Known for engineering and IT"],selection:{academicFit:"Engineering, IT, Business",culturalExperience:"Beachside lifestyle",budgetLevel:"Moderate",supportServices:"Regional-city setting"}},
+  {id:"nus",name:"National University of Singapore",country:"Singapore",city:"Singapore",region:"Asia",regionHighlights:["Highly international Asian city","Very efficient transport and English-friendly environment","High cost but strong convenience and safety"],schoolHighlights:["Top regional reputation","Strong broad subject offering","Department restrictions noted in source"],dailyLanguage:"English is common in study and daily life, with multilingual local context around you",teachingLanguage:"English",localConsiderations:["Locals often care about transport convenience, internship ecosystem, and prestige","Great for students who want easy adaptation from Hong Kong","Cost remains a key trade-off"],housing:"On-campus and student accommodation options matter a lot because private rent can be expensive",supportServices:"Strong international and student-support infrastructure likely available",transport:"Excellent public transport and airport connectivity",safety:"Students often value the city's convenience and perceived safety",climate:"Hot and humid year-round",quota:"22",cgpa:3.0,ielts:"",toefl:"",language:"",semester:"A (Aug–Dec) / B (Jan–May)",grant:"No",budget:"High",budgetValue:12000,ranking:8,badge:"High demand",badgeClass:"warn",website:"https://nus.edu.sg",languages:["English","Mandarin","Malay","Tamil"],remarks:"Economics modules restricted; NUS Business School and NUS Law not available for this scheme.",features:["Leading Asian university","Strong regional reputation"],selection:{academicFit:"Engineering, science, broad disciplines",culturalExperience:"Global Asian city",budgetLevel:"High",supportServices:"Strong international support"}},
+  {id:"sutd",name:"Singapore University of Technology and Design",country:"Singapore",city:"Singapore",region:"Asia",regionHighlights:["Modern, English-friendly Asian city","High convenience and strong infrastructure","High cost but easy adaptation for many Hong Kong students"],schoolHighlights:["Specialist design-and-technology focus","Smaller institution feel than NUS/NTU","Explorer Grant available in source"],dailyLanguage:"English widely used; multilingual local environment",teachingLanguage:"English",localConsiderations:["Good for students who want a smaller, focused tech/design environment","Convenience is high but cost is still a factor","Strong option if interdisciplinary design matters"],housing:"Students should compare housing guarantee and commuting convenience in Singapore",supportServices:"Smaller specialist environment may offer a more focused community",transport:"Excellent urban transport",safety:"Convenience and low friction in daily life are major pluses",climate:"Hot and humid year-round",quota:"15",cgpa:2.7,ielts:"",toefl:"",language:"",semester:"A (Sep–Dec) / B (Jan–May)",grant:"Yes",budget:"High",budgetValue:11500,ranking:440,badge:"Explorer Grant",badgeClass:"grant",website:"https://www.sutd.edu.sg",languages:["English"],remarks:"Only selected subject groups are open to exchange students.",features:["Design and technology focus","Smaller specialist university"],selection:{academicFit:"Design, technology, interdisciplinary studies",culturalExperience:"Modern Singapore campus life",budgetLevel:"High",supportServices:"Smaller-community support"}},
+  {id:"utoronto",name:"University of Toronto",country:"Canada",city:"Toronto",region:"North America",regionHighlights:["Large North American city with multicultural environment","English-dominant environment with strong global-city feel","High living cost but broad opportunities"],schoolHighlights:["Three-campus system","Very large research university","Strong subject breadth but campus choice matters"],dailyLanguage:"English dominant; multicultural city environment means many languages are heard, but English is enough for daily life",teachingLanguage:"English",localConsiderations:["Locals often compare rent, commute, and campus location very carefully","Great for students who want broad city life and academic scale","Winter and housing costs matter more than many Asian destinations"],housing:"Housing planning is important because large-city rental pressure can be significant",supportServices:"Large university ecosystem and many student communities",transport:"Big-city transport is useful but commute can vary greatly by campus",safety:"Students often weigh neighborhood, rent, and commute together",climate:"Cold winter compared with Hong Kong",quota:"10",cgpa:null,ielts:"6.5",toefl:"89",language:"IELTS 6.5 / TOEFL 89",semester:"A (Sep–Dec) / B (Jan–Apr)",grant:"No",budget:"High",budgetValue:13000,ranking:25,badge:"Multi-campus",badgeClass:"mid",website:"https://www.utoronto.ca",languages:["English"],remarks:"Three campuses; campus preference needed in Study Plan.",features:["Large research university","Three-campus option"],selection:{academicFit:"Wide academic choice",culturalExperience:"Big-city Canadian life",budgetLevel:"High",supportServices:"Large support network"}},
+  {id:"tum",name:"Technical University of Munich",country:"Germany",city:"Munich",region:"Europe",regionHighlights:["European base with easy regional travel potential","English may be enough academically in some settings, but German helps a lot in daily life","Cost in Munich is not low despite Germany's overall reputation"],schoolHighlights:["Strong engineering and technology reputation","Good fit for technical students","Semester timing difference is important"],dailyLanguage:"German is highly useful in daily life even if some study can be done in English",teachingLanguage:"English and German depending on programme",localConsiderations:["Locals would care a lot about rent and transport because Munich is expensive","Great for technical students who also want Europe exposure","German ability improves the exchange experience significantly"],housing:"Housing search can be a major issue; students should check dorm access and private-market difficulty",supportServices:"Strong technical-university environment",transport:"Excellent city and regional transport, strong for European travel",safety:"Students often value urban safety and transport efficiency",climate:"Distinct seasons and colder winter than Hong Kong",quota:"12",cgpa:null,ielts:"5.0",toefl:"65",language:"IELTS 5.0 / TOEFL 65",semester:"A (Oct–Mar) / B (Apr–Sep)",grant:"No",budget:"Medium",budgetValue:9500,ranking:28,badge:"Flexible language",badgeClass:"mid",website:"https://www.tum.de",languages:["English","German"],remarks:"Lower English threshold than many peers; semester timing overlaps with CityUHK.",features:["Strong engineering and tech reputation","Munich industry ecosystem"],selection:{academicFit:"Engineering, technology",culturalExperience:"German urban experience",budgetLevel:"Medium",supportServices:"International technical university"}},
+  {id:"waseda",name:"Waseda University",country:"Japan",city:"Tokyo",region:"Asia",regionHighlights:["Tokyo offers dense city life, huge convenience, and deep cultural exposure","Japanese helps a lot in daily life even when some academic options are in English","High-cost city but rich social and cultural opportunities"],schoolHighlights:["Famous private university in Tokyo","Strong international visibility","Programme-specific entry conditions"],dailyLanguage:"Japanese is very useful in everyday life, even if some programmes support English",teachingLanguage:"Japanese and some English depending on programme",localConsiderations:["Locals would think about commute time, train access, and cost of living","Best for students who want full Tokyo student life","Language comfort level matters more than in Singapore"],housing:"Students should think carefully about commuting distance, rent, and whether dorm or private housing is realistic",supportServices:"Large private-university environment with broad student life",transport:"Tokyo transport is excellent but daily commuting can be intense",safety:"Students often appreciate convenience and public order",climate:"Four seasons with hot summers and cool winters",quota:"4",cgpa:3.25,ielts:"Check programme",toefl:"Check programme",language:"Check related programme",semester:"A (Oct–Feb) / B (Apr–Aug)",grant:"No",budget:"High",budgetValue:12000,ranking:181,badge:"Programme rules",badgeClass:"warn",website:"https://www.waseda.jp",languages:["Japanese","English (some programmes)"],remarks:"Requirements depend on the related programme.",features:["Well-known private university in Tokyo","Wide international visibility"],selection:{academicFit:"Social sciences, media, business",culturalExperience:"Tokyo student life",budgetLevel:"High",supportServices:"Large private-university resources"}},
+  {id:"fudan",name:"Fudan University",country:"Chinese Mainland",city:"Shanghai",region:"Asia",regionHighlights:["Shanghai combines mainland Chinese culture with highly international city traits","Putonghua/Chinese ability improves daily life significantly","Cost can be lower than many Western destinations but city living still varies by district"],schoolHighlights:["Top mainland university reputation","Strong academic environment","Permit and eligibility restrictions matter"],dailyLanguage:"Putonghua/Chinese is highly useful in daily life; some English use exists in major-city contexts",teachingLanguage:"Mostly Chinese with some English-taught options depending on programme",localConsiderations:["Locals would weigh prestige, city convenience, and Chinese-language comfort","Good for students who want Shanghai exposure and mainland experience","Permit rules and final-year restrictions are important"],housing:"Students should check dorm availability, permit requirements, and practical campus-life details",supportServices:"Large comprehensive university with strong academic environment",transport:"Excellent big-city transport and intercity links",safety:"Students usually care about district convenience and commute",climate:"Four seasons with hot summer and cool winter",quota:"6",cgpa:3.25,ielts:"",toefl:"",language:"",semester:"A (Aug–Jan) / B (Feb–Jul)",grant:"No",budget:"Low",budgetValue:6500,ranking:39,badge:"Competitive",badgeClass:"warn",website:"https://www.fudan.edu.cn",languages:["Chinese","English (selected courses)"],remarks:"Mainland Travel Permit required; Semester B of final year not accepted.",features:["Top mainland university in Shanghai","Strong academic reputation"],selection:{academicFit:"Broad top-tier academics",culturalExperience:"Shanghai city experience",budgetLevel:"Low",supportServices:"Major comprehensive university"}}
+];
+
+let compareIds = [];
+
+function cardHTML(u){
+  return `<article class="uni">
+    <span class="badge ${u.badgeClass}">${u.badge}</span>
+    <h4>${u.name}</h4>
+    <div class="meta">${u.city} &middot; ${u.country} &middot; ${u.region}</div>
+    <div class="row">
+      <span class="chip">Quota: ${u.quota}</span>
+      <span class="chip">CGPA: ${u.cgpa||'—'}</span>
+      <span class="chip">Grant: ${u.grant}</span>
+    </div>
+    <div class="row">
+      <span class="chip">IELTS: ${u.ielts||'—'}</span>
+      <span class="chip">TOEFL: ${u.toefl||'—'}</span>
+      <span class="chip">Semester: ${u.semester}</span>
+    </div>
+    <div class="row">
+      <span class="chip">Ranking: ${u.ranking}</span>
+      <span class="chip">Budget: HK$${u.budgetValue.toLocaleString()}</span>
+      <span class="chip">Level: ${u.budget}</span>
+    </div>
+    <div class="mini">${u.remarks}</div>
+    <div class="actions">
+      <span class="btn primary small" onclick="openModal('${u.id}')">View details</span>
+      <span class="btn small" onclick="toggleCompare('${u.id}')">${compareIds.includes(u.id)?'Remove':'Add to compare'}</span>
+    </div>
+  </article>`;
+}
+
+function renderCards(rows){
+  const cards = document.getElementById('cards');
+  cards.innerHTML = rows.map(cardHTML).join('');
+  document.getElementById('count').textContent = rows.length;
+}
+
+function applyFilters(){
+  const q = document.getElementById('q').value.trim().toLowerCase();
+  const region = document.getElementById('region').value;
+  const country = document.getElementById('country').value;
+  const cgpa = document.getElementById('cgpa').value;
+  const language = document.getElementById('language').value;
+  const semester = document.getElementById('semester').value;
+  const grant = document.getElementById('grant').value;
+  const budget = document.getElementById('budget').value;
+
+  const rows = universities.filter(u=>{
+    const matchQ = !q || [u.name,u.city,u.country,u.region,u.language,u.remarks,u.dailyLanguage,u.teachingLanguage,u.housing,u.transport,u.safety,u.climate,...u.features,...u.regionHighlights,...u.schoolHighlights,...u.localConsiderations].join(' ').toLowerCase().includes(q);
+    const matchRegion = !region || u.region===region;
+    const matchCountry = !country || u.country===country;
+    const matchCgpa = !cgpa || (u.cgpa && parseFloat(u.cgpa)<=parseFloat(cgpa));
+    const matchLang = !language || u.language.includes(language);
+    const matchSemester = !semester || u.semester.includes(semester);
+    const matchGrant = !grant || u.grant===grant;
+    const matchBudget = !budget || u.budget===budget;
+    return matchQ&&matchRegion&&matchCountry&&matchCgpa&&matchLang&&matchSemester&&matchGrant&&matchBudget;
+  });
+  renderCards(rows);
+}
+
+function resetFilters(){
+  ['q','region','country','cgpa','language','semester','grant','budget'].forEach(id=>document.getElementById(id).value='');
+  renderCards(universities);
+}
+
+function toggleCompare(id){
+  if(compareIds.includes(id)) compareIds=compareIds.filter(x=>x!==id);
+  else if(compareIds.length<4) compareIds.push(id);
+  renderDrawer();
+  applyFilters();
+}
+
+function renderDrawer(){
+  const list = document.getElementById('drawerList');
+  if(compareIds.length===0){list.innerHTML='<span class="mini">No universities added yet.</span>';return;}
+  list.innerHTML = compareIds.map(id=>{
+    const u=universities.find(x=>x.id===id);
+    return `<span class="drawer-item">${u.name} <span onclick="toggleCompare('${id}')" style="cursor:pointer;color:#c25b4b">✕</span></span>`;
+  }).join('');
+}
+
+function renderCompare(){
+  const sel = compareIds.map(id=>universities.find(u=>u.id===id)).filter(Boolean);
+  const tbody = document.querySelector('#compareTable tbody');
+  if(!sel.length){tbody.innerHTML='<tr><td colspan="5" class="mini">Add universities to compare from the cards above.</td></tr>';return;}
+  const fields=[
+    ['Name',u=>u.name],['Region',u=>u.region],['Country',u=>u.country],
+    ['Quota',u=>u.quota],['CGPA',u=>u.cgpa||'—'],['IELTS',u=>u.ielts||'—'],
+    ['TOEFL',u=>u.toefl||'—'],['Semester',u=>u.semester],
+    ['Explorer Grant',u=>u.grant],['Budget Level',u=>u.budget],
+    ['Est. Cost (HK$)',u=>u.budgetValue.toLocaleString()],
+    ['Ranking',u=>u.ranking],['Website',u=>`<a href="${u.website}" target="_blank">Link</a>`]
+  ];
+  const head=`<tr><th>Field</th>${sel.map(u=>`<th>${u.name}</th>`).join('')}</tr>`;
+  document.querySelector('#compareTable thead').innerHTML=head;
+  tbody.innerHTML=fields.map(([label,fn])=>`<tr><td><strong>${label}</strong></td>${sel.map(u=>`<td>${fn(u)}</td>`).join('')}</tr>`).join('');
+}
+
+function clearCompare(){
+  compareIds=[];
+  renderDrawer();
+  renderCompare();
+  applyFilters();
+}
+
+function openModal(id){
+  const u=universities.find(x=>x.id===id);
+  if(!u)return;
+  document.getElementById('modalBody').innerHTML=`
+    <h3>${u.name} <span class="badge ${u.badgeClass}">${u.badge}</span></h3>
+    <div class="meta">${u.city} &middot; ${u.country} &middot; ${u.region} &middot; Ranking: ${u.ranking}</div>
+    <div class="tags">${u.features.map(f=>`<span class="tag">${f}</span>`).join('')}</div>
+    <div class="detail-grid">
+      <div class="detail-box"><h5>📍 Region highlights</h5><ul>${u.regionHighlights.map(x=>`<li>${x}</li>`).join('')}</ul></div>
+      <div class="detail-box"><h5>🏫 School highlights</h5><ul>${u.schoolHighlights.map(x=>`<li>${x}</li>`).join('')}</ul></div>
+      <div class="detail-box"><h5>🗣️ Language</h5><p><strong>Daily:</strong> ${u.dailyLanguage}</p><p><strong>Teaching:</strong> ${u.teachingLanguage}</p><p><strong>Requirement:</strong> ${u.language||'Not specified'}</p></div>
+      <div class="detail-box"><h5>💡 Local considerations</h5><ul>${u.localConsiderations.map(x=>`<li>${x}</li>`).join('')}</ul></div>
+      <div class="detail-box"><h5>🏠 Housing</h5><p>${u.housing}</p></div>
+      <div class="detail-box"><h5>🚌 Transport & Safety</h5><p><strong>Transport:</strong> ${u.transport}</p><p><strong>Safety:</strong> ${u.safety}</p></div>
+      <div class="detail-box"><h5>☁️ Climate</h5><p>${u.climate}</p></div>
+      <div class="detail-box"><h5>📋 Requirements</h5>
+        <p><strong>Quota:</strong> ${u.quota}</p>
+        <p><strong>CGPA:</strong> ${u.cgpa||'Not specified'}</p>
+        <p><strong>IELTS:</strong> ${u.ielts||'—'} / <strong>TOEFL:</strong> ${u.toefl||'—'}</p>
+        <p><strong>Semester:</strong> ${u.semester}</p>
+        <p><strong>Explorer Grant:</strong> ${u.grant}</p>
+        <p><strong>Est. Budget:</strong> HK$${u.budgetValue.toLocaleString()} (${u.budget})</p>
+      </div>
+    </div>
+    <p class="mini" style="margin-top:14px"><strong>Remarks:</strong> ${u.remarks}</p>
+    <p><a href="${u.website}" target="_blank" class="btn primary small">Visit website</a></p>
+  `;
+  document.getElementById('modal').classList.add('show');
+}
+
+function closeModal(){
+  document.getElementById('modal').classList.remove('show');
+}
+
+document.getElementById('modal').addEventListener('click',function(e){
+  if(e.target===this) closeModal();
+});
+
+// Init
+renderCards(universities);
+renderDrawer();
+</script>
+</body>
+</html>
