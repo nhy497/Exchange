@@ -1,0 +1,2852 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "lastUpdated": "2026-01-16",
+    "source": "CityU GEO I-level Quota PDF",
+    "selectionCriteria": [
+      "academicFit",
+      "languageRequirements",
+      "budgetConstraints",
+      "locationPreferences",
+      "semesterCompatibility",
+      "careerGoals",
+      "culturalExperience",
+      "supportServices"
+    ],
+    "budgetNote": "Monthly living expenses in HKD, varies by city",
+    "languageNote": "Primary language and English availability"
+  },
+  "schools": [
+    {
+      "id": 1,
+      "country": "Argentina",
+      "name": "University of Austral",
+      "quota": "To be updated",
+      "cgpa": 2.7,
+      "ielts": "6.0",
+      "toefl": "72",
+      "semester": "A: Aug-Nov, B: Mar-Jun",
+      "explorerGrant": true,
+      "notes": "",
+      "ranking": 461,
+      "budget": 4800,
+      "website": "https://www.austral.edu.ar",
+      "city": "Buenos Aires",
+      "languages": [
+        "Spanish (primary)",
+        "English (limited)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Argentina",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Argentina culture",
+        "budgetLevel": "HK$4,800/month",
+        "language": "Spanish (primary), English (limited)"
+      }
+    },
+    {
+      "id": 2,
+      "country": "Australia",
+      "name": "Adelaide University",
+      "quota": "4 (1 CB + 1 SEE + 2 any)",
+      "cgpa": 3.0,
+      "ielts": "6.5",
+      "toefl": "79",
+      "semester": "A: Jul-Nov, B: Feb-Jun",
+      "explorerGrant": false,
+      "notes": "Early nomination deadline",
+      "ranking": 82,
+      "budget": 9000,
+      "website": "https://www.adelaide.edu.au",
+      "city": "N/A",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in Australia",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "Early nomination deadline",
+        "culturalExperience": "Experience Australia culture",
+        "budgetLevel": "HK$9,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 3,
+      "country": "Australia",
+      "name": "Curtin University",
+      "quota": "4 (2 SS + 2 CRSO)",
+      "cgpa": 2.95,
+      "ielts": "6.0",
+      "toefl": "68",
+      "semester": "A: Jul-Nov, B: Feb-Jun",
+      "explorerGrant": false,
+      "notes": "Med, OT, Physio, Speech, Nursing, Pharmacy not open",
+      "ranking": 174,
+      "budget": 9000,
+      "website": "https://www.curtin.edu.au",
+      "city": "N/A",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in Australia",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "Med, OT, Physio, Speech, Nursing, Pharmacy not open",
+        "culturalExperience": "Experience Australia culture",
+        "budgetLevel": "HK$9,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 4,
+      "country": "Australia",
+      "name": "Griffith University",
+      "quota": "3",
+      "cgpa": 2.9,
+      "ielts": "6.0",
+      "toefl": "71",
+      "semester": "A: Jul-Nov, B: Feb-Jun",
+      "explorerGrant": false,
+      "notes": "Check course restrictions",
+      "ranking": 255,
+      "budget": 9000,
+      "website": "https://www.griffith.edu.au",
+      "city": "N/A",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in Australia",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "Check course restrictions",
+        "culturalExperience": "Experience Australia culture",
+        "budgetLevel": "HK$9,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 5,
+      "country": "Australia",
+      "name": "Macquarie University",
+      "quota": "2 (1 per sem)",
+      "cgpa": 2.7,
+      "ielts": "6.5",
+      "toefl": "83",
+      "semester": "A: Jul-Nov, B: Feb-Jun",
+      "explorerGrant": false,
+      "notes": "Quota for Sem A: 4, Sem B: 4",
+      "ranking": 133,
+      "budget": 9000,
+      "website": "https://www.mq.edu.au",
+      "city": "N/A",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in Australia",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "Quota for Sem A: 4, Sem B: 4",
+        "culturalExperience": "Experience Australia culture",
+        "budgetLevel": "HK$9,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 6,
+      "country": "Australia",
+      "name": "Monash University",
+      "quota": "2 (1 CB, 1 CENG/CSCI/SEE)",
+      "cgpa": 3.0,
+      "ielts": "6.5",
+      "toefl": "79",
+      "semester": "A: Jul-Nov, B: Feb-Jun",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 37,
+      "budget": 9000,
+      "website": "https://www.monash.edu",
+      "city": "N/A",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in Australia",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Australia culture",
+        "budgetLevel": "HK$9,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 7,
+      "country": "Australia",
+      "name": "Queensland University of Technology",
+      "quota": "4 (2 CB + 2 any)",
+      "cgpa": 2.8,
+      "ielts": "6.5",
+      "toefl": "79",
+      "semester": "A: Jul-Nov, B: Feb-Jun",
+      "explorerGrant": false,
+      "notes": "Design, Nursing, Education, Clinical Psych not open",
+      "ranking": 213,
+      "budget": 9000,
+      "website": "https://www.qut.edu.au",
+      "city": "N/A",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in Australia",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "Design, Nursing, Education, Clinical Psych not open",
+        "culturalExperience": "Experience Australia culture",
+        "budgetLevel": "HK$9,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 8,
+      "country": "Australia",
+      "name": "University of Melbourne",
+      "quota": "2",
+      "cgpa": 3.23,
+      "ielts": "6.5",
+      "toefl": "79",
+      "semester": "A: Jul-Nov, B: Feb-Jun",
+      "explorerGrant": false,
+      "notes": "No Law, Medicine, Dentistry",
+      "ranking": 13,
+      "budget": 9000,
+      "website": "https://www.unimelb.edu.au",
+      "city": "N/A",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in Australia",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "No Law, Medicine, Dentistry",
+        "culturalExperience": "Experience Australia culture",
+        "budgetLevel": "HK$9,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 9,
+      "country": "Australia",
+      "name": "University of New South Wales",
+      "quota": "2 (1 per sem)",
+      "cgpa": 3.23,
+      "ielts": "6.5",
+      "toefl": "90",
+      "semester": "A: Jul-Nov, B: Feb-Jun",
+      "explorerGrant": false,
+      "notes": "Business/Law need IELTS 7.0",
+      "ranking": 19,
+      "budget": 9000,
+      "website": "https://www.unsw.edu.au",
+      "city": "N/A",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in Australia",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "Business/Law need IELTS 7.0",
+        "culturalExperience": "Experience Australia culture",
+        "budgetLevel": "HK$9,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 10,
+      "country": "Australia",
+      "name": "University of Newcastle",
+      "quota": "3",
+      "cgpa": 2.8,
+      "ielts": "6.0",
+      "toefl": "70",
+      "semester": "A: Jul-Nov, B: Feb-Jun",
+      "explorerGrant": false,
+      "notes": "Check course restrictions",
+      "ranking": 179,
+      "budget": 9000,
+      "website": "https://www.newcastle.edu.au",
+      "city": "N/A",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in Australia",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "Check course restrictions",
+        "culturalExperience": "Experience Australia culture",
+        "budgetLevel": "HK$9,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 11,
+      "country": "Australia",
+      "name": "University of Queensland",
+      "quota": "To be updated",
+      "cgpa": 3.0,
+      "ielts": "6.5",
+      "toefl": "87",
+      "semester": "A: Jul-Nov, B: Feb-Jun",
+      "explorerGrant": false,
+      "notes": "Vet Science & Law need IELTS 7.0",
+      "ranking": 40,
+      "budget": 9000,
+      "website": "https://www.uq.edu.au",
+      "city": "N/A",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in Australia",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "Vet Science & Law need IELTS 7.0",
+        "culturalExperience": "Experience Australia culture",
+        "budgetLevel": "HK$9,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 12,
+      "country": "Australia",
+      "name": "University of Sydney",
+      "quota": "2",
+      "cgpa": 3.23,
+      "ielts": "6.5",
+      "toefl": "85",
+      "semester": "A: Jul-Nov, B: Feb-Jun",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 18,
+      "budget": 9000,
+      "website": "https://www.sydney.edu.au",
+      "city": "N/A",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in Australia",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Australia culture",
+        "budgetLevel": "HK$9,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 13,
+      "country": "Australia",
+      "name": "University of Tasmania",
+      "quota": "2",
+      "cgpa": 2.7,
+      "ielts": "6.0",
+      "toefl": "72",
+      "semester": "A: Jul-Nov, B: Feb-Jun",
+      "explorerGrant": false,
+      "notes": "Law needs IELTS 6.5",
+      "ranking": 293,
+      "budget": 9000,
+      "website": "https://www.utas.edu.au",
+      "city": "N/A",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in Australia",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "Law needs IELTS 6.5",
+        "culturalExperience": "Experience Australia culture",
+        "budgetLevel": "HK$9,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 14,
+      "country": "Australia",
+      "name": "University of Technology Sydney",
+      "quota": "4",
+      "cgpa": 2.8,
+      "ielts": "6.5",
+      "toefl": "80",
+      "semester": "A: Jul-Nov, B: Feb-Jun",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 88,
+      "budget": 9000,
+      "website": "https://www.uts.edu.au",
+      "city": "N/A",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in Australia",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Australia culture",
+        "budgetLevel": "HK$9,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 15,
+      "country": "Australia",
+      "name": "University of Wollongong",
+      "quota": "2",
+      "cgpa": 2.7,
+      "ielts": "6.0",
+      "toefl": "70",
+      "semester": "A: Jul-Nov, B: Feb-Jun",
+      "explorerGrant": false,
+      "notes": "Business quota: Sem A 1, Sem B 1",
+      "ranking": 167,
+      "budget": 9000,
+      "website": "https://www.uow.edu.au",
+      "city": "N/A",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in Australia",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "Business quota: Sem A 1, Sem B 1",
+        "culturalExperience": "Experience Australia culture",
+        "budgetLevel": "HK$9,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 16,
+      "country": "Austria",
+      "name": "Johannes Kepler University Linz",
+      "quota": "4",
+      "cgpa": 2.5,
+      "ielts": "6.0",
+      "toefl": "72",
+      "semester": "A: Oct-Jan, B: Mar-Jun",
+      "explorerGrant": true,
+      "notes": "CENG/CSCI only",
+      "ranking": 362,
+      "budget": 8500,
+      "website": "https://www.jku.at",
+      "city": "Linz",
+      "languages": [
+        "German (primary)",
+        "English (university)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Austria",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "CENG/CSCI only",
+        "culturalExperience": "Experience Austria culture",
+        "budgetLevel": "HK$8,500/month",
+        "language": "German (primary), English (university)"
+      }
+    },
+    {
+      "id": 17,
+      "country": "Austria",
+      "name": "University of Vienna",
+      "quota": "3",
+      "cgpa": 2.5,
+      "ielts": "6.5-7.0",
+      "toefl": "88-100",
+      "semester": "A: Oct-Jan, B: Mar-Jun",
+      "explorerGrant": true,
+      "notes": "CB/CLASS only",
+      "ranking": 130,
+      "budget": 9200,
+      "website": "https://www.univie.ac.at",
+      "city": "Vienna",
+      "languages": [
+        "German (primary)",
+        "English (university)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Austria",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "CB/CLASS only",
+        "culturalExperience": "Experience Austria culture",
+        "budgetLevel": "HK$9,200/month",
+        "language": "German (primary), English (university)"
+      }
+    },
+    {
+      "id": 18,
+      "country": "Belgium",
+      "name": "KU Leuven",
+      "quota": "4",
+      "cgpa": 2.8,
+      "ielts": "6.5",
+      "toefl": "90",
+      "semester": "A: Sep-Jan, B: Feb-Jun",
+      "explorerGrant": true,
+      "notes": "",
+      "ranking": 63,
+      "budget": 9500,
+      "website": "https://www.kuleuven.be",
+      "city": "Leuven",
+      "languages": [
+        "Dutch/French/German",
+        "English (high)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Belgium",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Belgium culture",
+        "budgetLevel": "HK$9,500/month",
+        "language": "Dutch/French/German, English (high)"
+      }
+    },
+    {
+      "id": 19,
+      "country": "Canada",
+      "name": "Simon Fraser University",
+      "quota": "2",
+      "cgpa": 3.0,
+      "ielts": "6.5",
+      "toefl": "88",
+      "semester": "A: Sep-Dec, B: Jan-Apr",
+      "explorerGrant": false,
+      "notes": "Business/Computing quota: Sem A 1, Sem B 1",
+      "ranking": 318,
+      "budget": 10000,
+      "website": "https://www.sfu.ca",
+      "city": "Burnaby",
+      "languages": [
+        "English (primary)",
+        "French (Quebec only)"
+      ],
+      "uniqueFeatures": [
+        "Mountain-top campus in Burnaby",
+        "Strong in computing and engineering",
+        "Innovative semester system"
+      ],
+      "selectionFactors": {
+        "academicFit": "Business/Computing quota: Sem A 1, Sem B 1",
+        "culturalExperience": "Experience Canada culture",
+        "budgetLevel": "HK$10,000/month",
+        "language": "English (primary), French (Quebec only)"
+      }
+    },
+    {
+      "id": 20,
+      "country": "Canada",
+      "name": "University of Toronto",
+      "quota": "10 (4 UTSG + 6 UTM/UTSC)",
+      "cgpa": 3.23,
+      "ielts": "7.0",
+      "toefl": "93",
+      "semester": "A: Sep-Dec, B: Jan-Apr",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 25,
+      "budget": 14000,
+      "website": "https://www.utoronto.ca",
+      "city": "Toronto",
+      "languages": [
+        "English (primary)",
+        "French (Quebec only)"
+      ],
+      "uniqueFeatures": [
+        "Canada's top-ranked university",
+        "Three campuses (St. George, Mississauga, Scarborough)",
+        "Strong research across all disciplines",
+        "Located in downtown Toronto"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Canada culture",
+        "budgetLevel": "HK$14,000/month",
+        "language": "English (primary), French (Quebec only)"
+      }
+    },
+    {
+      "id": 21,
+      "country": "Canada",
+      "name": "University of Waterloo",
+      "quota": "2",
+      "cgpa": 3.0,
+      "ielts": "6.5",
+      "toefl": "90",
+      "semester": "A: Sep-Dec, B: Jan-Apr",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 115,
+      "budget": 11000,
+      "website": "https://uwaterloo.ca",
+      "city": "Waterloo",
+      "languages": [
+        "English (primary)",
+        "French (Quebec only)"
+      ],
+      "uniqueFeatures": [
+        "World-famous co-op program",
+        "Canada's MIT for engineering",
+        "Strong industry connections",
+        "High graduate employment rate"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Canada culture",
+        "budgetLevel": "HK$11,000/month",
+        "language": "English (primary), French (Quebec only)"
+      }
+    },
+    {
+      "id": 22,
+      "country": "Chile",
+      "name": "Pontificia Universidad Catolica de Chile",
+      "quota": "2",
+      "cgpa": 2.8,
+      "ielts": "7.0",
+      "toefl": "100",
+      "semester": "A: Jul-Nov, B: Mar-Jul",
+      "explorerGrant": true,
+      "notes": "",
+      "ranking": 93,
+      "budget": 5500,
+      "website": "https://www.uc.cl",
+      "city": "Santiago",
+      "languages": [
+        "Spanish (primary)",
+        "English (limited)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Chile",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Chile culture",
+        "budgetLevel": "HK$5,500/month",
+        "language": "Spanish (primary), English (limited)"
+      }
+    },
+    {
+      "id": 23,
+      "country": "Chinese Mainland",
+      "name": "Peking University",
+      "quota": "10",
+      "cgpa": 2.8,
+      "ielts": "-",
+      "toefl": "-",
+      "semester": "A: Sep-Jan, B: Feb-Jul",
+      "explorerGrant": true,
+      "notes": "Need Mainland Travel Permit for HK/Macau Residents",
+      "ranking": 14,
+      "budget": 4500,
+      "website": "https://www.pku.edu.cn",
+      "city": "Beijing",
+      "languages": [
+        "Mandarin Chinese (primary)",
+        "English (academic)"
+      ],
+      "uniqueFeatures": [
+        "China's Harvard",
+        "Historic campus with Weiming Lake",
+        "Top humanities and social sciences in China",
+        "Requires Mainland Travel Permit"
+      ],
+      "selectionFactors": {
+        "academicFit": "Need Mainland Travel Permit for HK/Macau Residents",
+        "culturalExperience": "Experience Chinese Mainland culture",
+        "budgetLevel": "HK$4,500/month",
+        "language": "Mandarin Chinese (primary), English (academic)"
+      }
+    },
+    {
+      "id": 24,
+      "country": "Chinese Mainland",
+      "name": "Tsinghua University",
+      "quota": "5",
+      "cgpa": 2.8,
+      "ielts": "-",
+      "toefl": "-",
+      "semester": "A: Sep-Jan, B: Feb-Jul",
+      "explorerGrant": true,
+      "notes": "Need Mainland Travel Permit for HK/Macau Residents",
+      "ranking": 20,
+      "budget": 4500,
+      "website": "https://www.tsinghua.edu.cn",
+      "city": "Beijing",
+      "languages": [
+        "Mandarin Chinese (primary)",
+        "English (academic)"
+      ],
+      "uniqueFeatures": [
+        "China's MIT",
+        "Premier engineering and technology",
+        "Campus near Summer Palace",
+        "Requires Mainland Travel Permit"
+      ],
+      "selectionFactors": {
+        "academicFit": "Need Mainland Travel Permit for HK/Macau Residents",
+        "culturalExperience": "Experience Chinese Mainland culture",
+        "budgetLevel": "HK$4,500/month",
+        "language": "Mandarin Chinese (primary), English (academic)"
+      }
+    },
+    {
+      "id": 25,
+      "country": "Chinese Mainland",
+      "name": "Wuhan University",
+      "quota": "2",
+      "cgpa": 2.8,
+      "ielts": "-",
+      "toefl": "-",
+      "semester": "A: Sep-Jan, B: Feb-Jul",
+      "explorerGrant": true,
+      "notes": "Need Mainland Travel Permit for HK/Macau Residents",
+      "ranking": 194,
+      "budget": 3500,
+      "website": "https://www.whu.edu.cn",
+      "city": "Wuhan",
+      "languages": [
+        "Mandarin Chinese (primary)",
+        "English (academic)"
+      ],
+      "uniqueFeatures": [
+        "Beautiful cherry blossom campus",
+        "Top 10 in China",
+        "Strong remote sensing and surveying",
+        "Requires Mainland Travel Permit"
+      ],
+      "selectionFactors": {
+        "academicFit": "Need Mainland Travel Permit for HK/Macau Residents",
+        "culturalExperience": "Experience Chinese Mainland culture",
+        "budgetLevel": "HK$3,500/month",
+        "language": "Mandarin Chinese (primary), English (academic)"
+      }
+    },
+    {
+      "id": 26,
+      "country": "Chinese Mainland",
+      "name": "Xi'an Jiaotong University",
+      "quota": "2",
+      "cgpa": 2.8,
+      "ielts": "-",
+      "toefl": "-",
+      "semester": "A: Sep-Jan, B: Feb-Jun",
+      "explorerGrant": true,
+      "notes": "Need Mainland Travel Permit for HK/Macau Residents",
+      "ranking": null,
+      "budget": 3800,
+      "website": null,
+      "city": "Xi'an",
+      "languages": [
+        "Mandarin Chinese (primary)",
+        "English (academic)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Chinese Mainland",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "Need Mainland Travel Permit for HK/Macau Residents",
+        "culturalExperience": "Experience Chinese Mainland culture",
+        "budgetLevel": "HK$3,800/month",
+        "language": "Mandarin Chinese (primary), English (academic)"
+      }
+    },
+    {
+      "id": 27,
+      "country": "Denmark",
+      "name": "University of Copenhagen",
+      "quota": "4",
+      "cgpa": 0,
+      "ielts": "-",
+      "toefl": "-",
+      "semester": "A: Sep-Jan, B: Feb-Jun",
+      "explorerGrant": false,
+      "notes": "English proof required for specific subjects only",
+      "ranking": 100,
+      "budget": 11500,
+      "website": "https://www.ku.dk",
+      "city": "Copenhagen",
+      "languages": [
+        "Danish (primary)",
+        "English (very high)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Denmark",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "English proof required for specific subjects only",
+        "culturalExperience": "Experience Denmark culture",
+        "budgetLevel": "HK$11,500/month",
+        "language": "Danish (primary), English (very high)"
+      }
+    },
+    {
+      "id": 28,
+      "country": "Finland",
+      "name": "Tampere University",
+      "quota": "10 (3 CENG + 1 CSCI + 6 any)",
+      "cgpa": 0,
+      "ielts": "6.5",
+      "toefl": "92",
+      "semester": "A: Aug-Dec, B: Jan-May",
+      "explorerGrant": true,
+      "notes": "",
+      "ranking": 462,
+      "budget": 9000,
+      "website": "https://www.tuni.fi",
+      "city": "Tampere",
+      "languages": [
+        "Finnish/Swedish (primary)",
+        "English (very high)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Finland",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Finland culture",
+        "budgetLevel": "HK$9,000/month",
+        "language": "Finnish/Swedish (primary), English (very high)"
+      }
+    },
+    {
+      "id": 29,
+      "country": "Finland",
+      "name": "University of Turku",
+      "quota": "4 (non-CLASS)",
+      "cgpa": 0,
+      "ielts": "6.0",
+      "toefl": "72",
+      "semester": "A: Sep-Dec, B: Jan-May",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 375,
+      "budget": 8500,
+      "website": null,
+      "city": "Turku",
+      "languages": [
+        "Finnish/Swedish (primary)",
+        "English (very high)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Finland",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Finland culture",
+        "budgetLevel": "HK$8,500/month",
+        "language": "Finnish/Swedish (primary), English (very high)"
+      }
+    },
+    {
+      "id": 30,
+      "country": "France",
+      "name": "CentraleSupélec",
+      "quota": "3",
+      "cgpa": 2.7,
+      "ielts": "6.5",
+      "toefl": "90",
+      "semester": "Sep-Jun (full year)",
+      "explorerGrant": true,
+      "notes": "Engineering only. 1-year exchange.",
+      "ranking": 157,
+      "budget": 10500,
+      "website": "https://www.centralesupelec.fr",
+      "city": "Gif-sur-Yvette",
+      "languages": [
+        "French (primary)",
+        "English (variable)"
+      ],
+      "uniqueFeatures": [
+        "Top university in France",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "Engineering only. 1-year exchange.",
+        "culturalExperience": "Experience France culture",
+        "budgetLevel": "HK$10,500/month",
+        "language": "French (primary), English (variable)"
+      }
+    },
+    {
+      "id": 31,
+      "country": "France",
+      "name": "Sciences Po",
+      "quota": "2",
+      "cgpa": 3.0,
+      "ielts": "7.0",
+      "toefl": "100",
+      "semester": "A: Sep-Dec, B: Jan-May",
+      "explorerGrant": true,
+      "notes": "Sem B of final year not accepted",
+      "ranking": 59,
+      "budget": 11000,
+      "website": "https://www.sciencespo.fr",
+      "city": "Paris",
+      "languages": [
+        "French (primary)",
+        "English (variable)"
+      ],
+      "uniqueFeatures": [
+        "Top university in France",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "Sem B of final year not accepted",
+        "culturalExperience": "Experience France culture",
+        "budgetLevel": "HK$11,000/month",
+        "language": "French (primary), English (variable)"
+      }
+    },
+    {
+      "id": 32,
+      "country": "Germany",
+      "name": "Hamburg University of Applied Sciences",
+      "quota": "5",
+      "cgpa": 2.5,
+      "ielts": "6.5",
+      "toefl": "80",
+      "semester": "A: Sep-Jan, B: Mar-Jul",
+      "explorerGrant": true,
+      "notes": "Engineering only",
+      "ranking": null,
+      "budget": 9500,
+      "website": "https://www.haw-hamburg.de",
+      "city": "Hamburg",
+      "languages": [
+        "German (primary)",
+        "English (good at universities)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Germany",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "Engineering only",
+        "culturalExperience": "Experience Germany culture",
+        "budgetLevel": "HK$9,500/month",
+        "language": "German (primary), English (good at universities)"
+      }
+    },
+    {
+      "id": 33,
+      "country": "Germany",
+      "name": "RWTH Aachen University",
+      "quota": "4 (CENG)",
+      "cgpa": 2.5,
+      "ielts": "6.5",
+      "toefl": "90",
+      "semester": "A: Oct-Mar, B: Apr-Sep",
+      "explorerGrant": true,
+      "notes": "Engineering only",
+      "ranking": 99,
+      "budget": 9000,
+      "website": "https://www.rwth-aachen.de",
+      "city": "Aachen",
+      "languages": [
+        "German (primary)",
+        "English (good at universities)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Germany",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "Engineering only",
+        "culturalExperience": "Experience Germany culture",
+        "budgetLevel": "HK$9,000/month",
+        "language": "German (primary), English (good at universities)"
+      }
+    },
+    {
+      "id": 34,
+      "country": "Germany",
+      "name": "Technical University of Munich",
+      "quota": "5",
+      "cgpa": 2.5,
+      "ielts": "6.5",
+      "toefl": "88",
+      "semester": "A: Oct-Mar, B: Apr-Sep",
+      "explorerGrant": true,
+      "notes": "",
+      "ranking": 22,
+      "budget": 10500,
+      "website": "https://www.tum.de",
+      "city": "Munich",
+      "languages": [
+        "German (primary)",
+        "English (good at universities)"
+      ],
+      "uniqueFeatures": [
+        "Germany's excellence university",
+        "Strong industry links",
+        "Munich tech hub",
+        "TUM is TUM"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Germany culture",
+        "budgetLevel": "HK$10,500/month",
+        "language": "German (primary), English (good at universities)"
+      }
+    },
+    {
+      "id": 35,
+      "country": "Germany",
+      "name": "University of Mannheim",
+      "quota": "2",
+      "cgpa": 2.7,
+      "ielts": "6.5",
+      "toefl": "90",
+      "semester": "A: Sep-Dec, B: Feb-Jun",
+      "explorerGrant": true,
+      "notes": "CB/CLASS only. Business taught in English.",
+      "ranking": 454,
+      "budget": 8800,
+      "website": "https://www.uni-mannheim.de",
+      "city": "Mannheim",
+      "languages": [
+        "German (primary)",
+        "English (good at universities)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Germany",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "CB/CLASS only. Business taught in English.",
+        "culturalExperience": "Experience Germany culture",
+        "budgetLevel": "HK$8,800/month",
+        "language": "German (primary), English (good at universities)"
+      }
+    },
+    {
+      "id": 36,
+      "country": "Ireland",
+      "name": "Trinity College Dublin",
+      "quota": "2",
+      "cgpa": 2.8,
+      "ielts": "6.5",
+      "toefl": "90",
+      "semester": "A: Sep-Dec, B: Jan-May",
+      "explorerGrant": true,
+      "notes": "",
+      "ranking": 87,
+      "budget": 12000,
+      "website": "https://www.tcd.ie",
+      "city": "Dublin",
+      "languages": [
+        "English",
+        "Irish Gaelic (limited)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Ireland",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Ireland culture",
+        "budgetLevel": "HK$12,000/month",
+        "language": "English, Irish Gaelic (limited)"
+      }
+    },
+    {
+      "id": 37,
+      "country": "Ireland",
+      "name": "University College Dublin",
+      "quota": "4",
+      "cgpa": 2.7,
+      "ielts": "6.5",
+      "toefl": "90",
+      "semester": "A: Sep-Dec, B: Jan-May",
+      "explorerGrant": true,
+      "notes": "",
+      "ranking": 126,
+      "budget": 12000,
+      "website": "https://www.ucd.ie",
+      "city": "Dublin",
+      "languages": [
+        "English",
+        "Irish Gaelic (limited)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Ireland",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Ireland culture",
+        "budgetLevel": "HK$12,000/month",
+        "language": "English, Irish Gaelic (limited)"
+      }
+    },
+    {
+      "id": 38,
+      "country": "Italy",
+      "name": "Bocconi University",
+      "quota": "4",
+      "cgpa": 2.8,
+      "ielts": "6.0",
+      "toefl": "88",
+      "semester": "A: Sep-Dec, B: Jan-Jun",
+      "explorerGrant": true,
+      "notes": "Limited spots remaining",
+      "ranking": 328,
+      "budget": 9000,
+      "website": "https://www.unibocconi.eu",
+      "city": "Milan",
+      "languages": [
+        "Italian (primary)",
+        "English (limited)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Italy",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "Limited spots remaining",
+        "culturalExperience": "Experience Italy culture",
+        "budgetLevel": "HK$9,000/month",
+        "language": "Italian (primary), English (limited)"
+      }
+    },
+    {
+      "id": 39,
+      "country": "Japan",
+      "name": "Hitotsubashi University",
+      "quota": "2",
+      "cgpa": 2.8,
+      "ielts": "6.0",
+      "toefl": "80",
+      "semester": "A: Apr-Aug, B: Sep-Feb",
+      "explorerGrant": true,
+      "notes": "Courses in English limited",
+      "ranking": 447,
+      "budget": 12500,
+      "website": null,
+      "city": "Tokyo",
+      "languages": [
+        "Japanese (primary)",
+        "English (limited outside campus)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Japan",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "Courses in English limited",
+        "culturalExperience": "Experience Japan culture",
+        "budgetLevel": "HK$12,500/month",
+        "language": "Japanese (primary), English (limited outside campus)"
+      }
+    },
+    {
+      "id": 40,
+      "country": "Japan",
+      "name": "Kyoto University",
+      "quota": "2",
+      "cgpa": 2.8,
+      "ielts": "6.0",
+      "toefl": "80",
+      "semester": "A: Apr-Aug, B: Oct-Feb",
+      "explorerGrant": true,
+      "notes": "",
+      "ranking": 50,
+      "budget": 11000,
+      "website": "https://www.kyoto-u.ac.jp",
+      "city": "Kyoto",
+      "languages": [
+        "Japanese (primary)",
+        "English (limited outside campus)"
+      ],
+      "uniqueFeatures": [
+        "Japan's second-oldest university",
+        "Nobel laureates affiliation",
+        "Historic Kyoto setting",
+        "Research-intensive"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Japan culture",
+        "budgetLevel": "HK$11,000/month",
+        "language": "Japanese (primary), English (limited outside campus)"
+      }
+    },
+    {
+      "id": 41,
+      "country": "Japan",
+      "name": "Nagoya University",
+      "quota": "2",
+      "cgpa": 2.8,
+      "ielts": "6.0",
+      "toefl": "80",
+      "semester": "A: Apr-Sep, B: Oct-Mar",
+      "explorerGrant": true,
+      "notes": "Limited spots remaining",
+      "ranking": 152,
+      "budget": 10500,
+      "website": "https://www.nagoya-u.ac.jp",
+      "city": "Nagoya",
+      "languages": [
+        "Japanese (primary)",
+        "English (limited outside campus)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Japan",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "Limited spots remaining",
+        "culturalExperience": "Experience Japan culture",
+        "budgetLevel": "HK$10,500/month",
+        "language": "Japanese (primary), English (limited outside campus)"
+      }
+    },
+    {
+      "id": 42,
+      "country": "Japan",
+      "name": "Sophia University",
+      "quota": "2",
+      "cgpa": 2.5,
+      "ielts": "6.0",
+      "toefl": "80",
+      "semester": "A: Apr-Aug, B: Sep-Feb",
+      "explorerGrant": true,
+      "notes": "",
+      "ranking": 436,
+      "budget": 12500,
+      "website": "https://www.sophia.ac.jp",
+      "city": "Tokyo",
+      "languages": [
+        "Japanese (primary)",
+        "English (limited outside campus)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Japan",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Japan culture",
+        "budgetLevel": "HK$12,500/month",
+        "language": "Japanese (primary), English (limited outside campus)"
+      }
+    },
+    {
+      "id": 43,
+      "country": "Japan",
+      "name": "Tohoku University",
+      "quota": "2",
+      "cgpa": 2.8,
+      "ielts": "6.0",
+      "toefl": "79",
+      "semester": "A: Apr-Aug, B: Oct-Mar",
+      "explorerGrant": true,
+      "notes": "English track available",
+      "ranking": 107,
+      "budget": 9500,
+      "website": "https://www.tohoku.ac.jp",
+      "city": "Sendai",
+      "languages": [
+        "Japanese (primary)",
+        "English (limited outside campus)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Japan",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "English track available",
+        "culturalExperience": "Experience Japan culture",
+        "budgetLevel": "HK$9,500/month",
+        "language": "Japanese (primary), English (limited outside campus)"
+      }
+    },
+    {
+      "id": 44,
+      "country": "Japan",
+      "name": "Tokyo Institute of Technology",
+      "quota": "2",
+      "cgpa": 2.8,
+      "ielts": "6.0",
+      "toefl": "80",
+      "semester": "A: Apr-Aug, B: Sep-Feb",
+      "explorerGrant": true,
+      "notes": "",
+      "ranking": 84,
+      "budget": 12000,
+      "website": "https://www.titech.ac.jp",
+      "city": "Yokohama",
+      "languages": [
+        "Japanese (primary)",
+        "English (limited outside campus)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Japan",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Japan culture",
+        "budgetLevel": "HK$12,000/month",
+        "language": "Japanese (primary), English (limited outside campus)"
+      }
+    },
+    {
+      "id": 45,
+      "country": "Japan",
+      "name": "University of Tokyo",
+      "quota": "2",
+      "cgpa": 3.0,
+      "ielts": "6.5",
+      "toefl": "90",
+      "semester": "A: Apr-Aug, B: Oct-Mar",
+      "explorerGrant": true,
+      "notes": "",
+      "ranking": 32,
+      "budget": 12500,
+      "website": "https://www.u-tokyo.ac.jp",
+      "city": "Tokyo",
+      "languages": [
+        "Japanese (primary)",
+        "English (limited outside campus)"
+      ],
+      "uniqueFeatures": [
+        "Japan's top university",
+        "Most prestigious in Asia",
+        "Campus in heart of Tokyo",
+        "Hongo campus with historic gates"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Japan culture",
+        "budgetLevel": "HK$12,500/month",
+        "language": "Japanese (primary), English (limited outside campus)"
+      }
+    },
+    {
+      "id": 46,
+      "country": "Japan",
+      "name": "Waseda University",
+      "quota": "2",
+      "cgpa": 2.8,
+      "ielts": "6.5",
+      "toefl": "80",
+      "semester": "A: Apr-Aug, B: Sep-Feb",
+      "explorerGrant": true,
+      "notes": "",
+      "ranking": 188,
+      "budget": 12500,
+      "website": "https://www.waseda.jp",
+      "city": "Tokyo",
+      "languages": [
+        "Japanese (primary)",
+        "English (limited outside campus)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Japan",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Japan culture",
+        "budgetLevel": "HK$12,500/month",
+        "language": "Japanese (primary), English (limited outside campus)"
+      }
+    },
+    {
+      "id": 47,
+      "country": "Korea, Republic of",
+      "name": "KAIST",
+      "quota": "2",
+      "cgpa": 2.8,
+      "ielts": "6.5",
+      "toefl": "88",
+      "semester": "A: Sep-Dec, B: Mar-Jun",
+      "explorerGrant": true,
+      "notes": "Korean language recommended",
+      "ranking": 53,
+      "budget": 8500,
+      "website": "https://www.kaist.ac.kr",
+      "city": "Daejeon",
+      "languages": [
+        "Korean (primary)",
+        "English (growing)"
+      ],
+      "uniqueFeatures": [
+        "Korea's MIT",
+        "Science and technology focus",
+        "English-medium instruction",
+        "Daejeon research hub"
+      ],
+      "selectionFactors": {
+        "academicFit": "Korean language recommended",
+        "culturalExperience": "Experience Korea, Republic of culture",
+        "budgetLevel": "HK$8,500/month",
+        "language": "Korean (primary), English (growing)"
+      }
+    },
+    {
+      "id": 48,
+      "country": "Korea, Republic of",
+      "name": "Seoul National University",
+      "quota": "2",
+      "cgpa": 2.8,
+      "ielts": "6.5",
+      "toefl": "88",
+      "semester": "A: Sep-Dec, B: Mar-Jun",
+      "explorerGrant": true,
+      "notes": "",
+      "ranking": 31,
+      "budget": 10000,
+      "website": "https://en.snu.ac.kr",
+      "city": "Seoul",
+      "languages": [
+        "Korean (primary)",
+        "English (growing)"
+      ],
+      "uniqueFeatures": [
+        "Korea's #1 university",
+        "Located in Gwanak Mountain",
+        "Most selective in Korea",
+        "Comprehensive research university"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Korea, Republic of culture",
+        "budgetLevel": "HK$10,000/month",
+        "language": "Korean (primary), English (growing)"
+      }
+    },
+    {
+      "id": 49,
+      "country": "Korea, Republic of",
+      "name": "Yonsei University",
+      "quota": "8",
+      "cgpa": 2.8,
+      "ielts": "6.5",
+      "toefl": "88",
+      "semester": "A: Sep-Dec, B: Mar-Jun",
+      "explorerGrant": true,
+      "notes": "Limited spots remaining",
+      "ranking": 56,
+      "budget": 10000,
+      "website": "https://www.yonsei.ac.kr",
+      "city": "Seoul",
+      "languages": [
+        "Korean (primary)",
+        "English (growing)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Korea, Republic of",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "Limited spots remaining",
+        "culturalExperience": "Experience Korea, Republic of culture",
+        "budgetLevel": "HK$10,000/month",
+        "language": "Korean (primary), English (growing)"
+      }
+    },
+    {
+      "id": 50,
+      "country": "Netherlands",
+      "name": "Delft University of Technology",
+      "quota": "4",
+      "cgpa": 2.7,
+      "ielts": "6.5",
+      "toefl": "90",
+      "semester": "A: Sep-Jan, B: Feb-Jul",
+      "explorerGrant": true,
+      "notes": "CSCI/CENG only. GPA 3.0+ recommended.",
+      "ranking": 49,
+      "budget": 10500,
+      "website": "https://www.tudelft.nl",
+      "city": "Delft",
+      "languages": [
+        "Dutch (primary)",
+        "English (excellent)"
+      ],
+      "uniqueFeatures": [
+        "Netherlands' top engineering",
+        "Historic canal-side campus",
+        "Architecture powerhouse",
+        "Bike-friendly city"
+      ],
+      "selectionFactors": {
+        "academicFit": "CSCI/CENG only. GPA 3.0+ recommended.",
+        "culturalExperience": "Experience Netherlands culture",
+        "budgetLevel": "HK$10,500/month",
+        "language": "Dutch (primary), English (excellent)"
+      }
+    },
+    {
+      "id": 51,
+      "country": "Netherlands",
+      "name": "University of Amsterdam",
+      "quota": "4 (2 CB + 2 CLASS)",
+      "cgpa": 2.7,
+      "ielts": "6.5",
+      "toefl": "92",
+      "semester": "A: Sep-Jan, B: Feb-Jun",
+      "explorerGrant": true,
+      "notes": "Psychology quota: 1 per sem",
+      "ranking": 53,
+      "budget": 11500,
+      "website": "https://www.uva.nl",
+      "city": "Amsterdam",
+      "languages": [
+        "Dutch (primary)",
+        "English (excellent)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Netherlands",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "Psychology quota: 1 per sem",
+        "culturalExperience": "Experience Netherlands culture",
+        "budgetLevel": "HK$11,500/month",
+        "language": "Dutch (primary), English (excellent)"
+      }
+    },
+    {
+      "id": 52,
+      "country": "New Zealand",
+      "name": "University of Auckland",
+      "quota": "4",
+      "cgpa": 3.0,
+      "ielts": "6.5",
+      "toefl": "90",
+      "semester": "A: Jul-Nov, B: Feb-Jun",
+      "explorerGrant": false,
+      "notes": "Limited spots remaining",
+      "ranking": 65,
+      "budget": 13000,
+      "website": "https://www.auckland.ac.nz",
+      "city": "Auckland",
+      "languages": [
+        "English",
+        "Maori (limited)"
+      ],
+      "uniqueFeatures": [
+        "Top university in New Zealand",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "Limited spots remaining",
+        "culturalExperience": "Experience New Zealand culture",
+        "budgetLevel": "HK$13,000/month",
+        "language": "English, Maori (limited)"
+      }
+    },
+    {
+      "id": 53,
+      "country": "New Zealand",
+      "name": "Victoria University of Wellington",
+      "quota": "2",
+      "cgpa": 2.8,
+      "ielts": "6.5",
+      "toefl": "90",
+      "semester": "A: Jul-Nov, B: Feb-Jun",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 244,
+      "budget": 11000,
+      "website": "https://www.wgtn.ac.nz",
+      "city": "Wellington",
+      "languages": [
+        "English",
+        "Maori (limited)"
+      ],
+      "uniqueFeatures": [
+        "Top university in New Zealand",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience New Zealand culture",
+        "budgetLevel": "HK$11,000/month",
+        "language": "English, Maori (limited)"
+      }
+    },
+    {
+      "id": 54,
+      "country": "Norway",
+      "name": "University of Bergen",
+      "quota": "2",
+      "cgpa": 2.5,
+      "ielts": "6.5",
+      "toefl": "90",
+      "semester": "A: Aug-Dec, B: Jan-Jun",
+      "explorerGrant": true,
+      "notes": "",
+      "ranking": null,
+      "budget": 12500,
+      "website": null,
+      "city": "Bergen",
+      "languages": [
+        "Norwegian (primary)",
+        "English (very high)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Norway",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Norway culture",
+        "budgetLevel": "HK$12,500/month",
+        "language": "Norwegian (primary), English (very high)"
+      }
+    },
+    {
+      "id": 55,
+      "country": "Norway",
+      "name": "University of Oslo",
+      "quota": "2",
+      "cgpa": 2.5,
+      "ielts": "6.5",
+      "toefl": "90",
+      "semester": "A: Aug-Dec, B: Jan-Jun",
+      "explorerGrant": true,
+      "notes": "",
+      "ranking": 119,
+      "budget": 13000,
+      "website": "https://www.uio.no",
+      "city": "Oslo",
+      "languages": [
+        "Norwegian (primary)",
+        "English (very high)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Norway",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Norway culture",
+        "budgetLevel": "HK$13,000/month",
+        "language": "Norwegian (primary), English (very high)"
+      }
+    },
+    {
+      "id": 56,
+      "country": "Singapore",
+      "name": "National University of Singapore",
+      "quota": "3",
+      "cgpa": 3.23,
+      "ielts": "6.5",
+      "toefl": "92",
+      "semester": "A: Aug-Dec, B: Jan-May",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 8,
+      "budget": 14000,
+      "website": "https://www.nus.edu.sg",
+      "city": "Singapore",
+      "languages": [
+        "English (primary)",
+        "Mandarin/Malay/Tamil"
+      ],
+      "uniqueFeatures": [
+        "Asia's top university (QS 2025)",
+        "Global education hub",
+        "Tropical campus",
+        "Strong industry partnerships"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Singapore culture",
+        "budgetLevel": "HK$14,000/month",
+        "language": "English (primary), Mandarin/Malay/Tamil"
+      }
+    },
+    {
+      "id": 57,
+      "country": "Singapore",
+      "name": "Nanyang Technological University",
+      "quota": "2 (CENG/CSCI/CB)",
+      "cgpa": 3.0,
+      "ielts": "6.5",
+      "toefl": "92",
+      "semester": "A: Aug-Dec, B: Jan-May",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 15,
+      "budget": 14000,
+      "website": "https://www.ntu.edu.sg",
+      "city": "Singapore",
+      "languages": [
+        "English (primary)",
+        "Mandarin/Malay/Tamil"
+      ],
+      "uniqueFeatures": [
+        "Top university in Singapore",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Singapore culture",
+        "budgetLevel": "HK$14,000/month",
+        "language": "English (primary), Mandarin/Malay/Tamil"
+      }
+    },
+    {
+      "id": 58,
+      "country": "Spain",
+      "name": "University of Navarra",
+      "quota": "2",
+      "cgpa": 2.5,
+      "ielts": "6.5",
+      "toefl": "90",
+      "semester": "A: Sep-Dec, B: Jan-May",
+      "explorerGrant": true,
+      "notes": "CB only",
+      "ranking": 355,
+      "budget": 8500,
+      "website": "https://www.unav.edu",
+      "city": "Barcelona",
+      "languages": [
+        "Spanish/Catalan (primary)",
+        "English (limited)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Spain",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "CB only",
+        "culturalExperience": "Experience Spain culture",
+        "budgetLevel": "HK$8,500/month",
+        "language": "Spanish/Catalan (primary), English (limited)"
+      }
+    },
+    {
+      "id": 59,
+      "country": "Sweden",
+      "name": "KTH Royal Institute of Technology",
+      "quota": "4 (CENG/CSCI)",
+      "cgpa": 2.5,
+      "ielts": "6.5",
+      "toefl": "90",
+      "semester": "A: Aug-Jan, B: Jan-Jun",
+      "explorerGrant": true,
+      "notes": "Engineering only",
+      "ranking": 73,
+      "budget": 11000,
+      "website": "https://www.kth.se",
+      "city": "Stockholm",
+      "languages": [
+        "Swedish (primary)",
+        "English (excellent)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Sweden",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "Engineering only",
+        "culturalExperience": "Experience Sweden culture",
+        "budgetLevel": "HK$11,000/month",
+        "language": "Swedish (primary), English (excellent)"
+      }
+    },
+    {
+      "id": 60,
+      "country": "Sweden",
+      "name": "Lund University",
+      "quota": "5",
+      "cgpa": 2.5,
+      "ielts": "6.5",
+      "toefl": "90",
+      "semester": "A: Aug-Jan, B: Jan-Jun",
+      "explorerGrant": true,
+      "notes": "",
+      "ranking": 75,
+      "budget": 10000,
+      "website": "https://www.lunduniversity.lu.se",
+      "city": "Lund",
+      "languages": [
+        "Swedish (primary)",
+        "English (excellent)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Sweden",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Sweden culture",
+        "budgetLevel": "HK$10,000/month",
+        "language": "Swedish (primary), English (excellent)"
+      }
+    },
+    {
+      "id": 61,
+      "country": "Sweden",
+      "name": "Stockholm University",
+      "quota": "5",
+      "cgpa": 2.5,
+      "ielts": "6.5",
+      "toefl": "90",
+      "semester": "A: Sep-Jan, B: Jan-Jun",
+      "explorerGrant": true,
+      "notes": "",
+      "ranking": 118,
+      "budget": 11000,
+      "website": "https://www.su.se",
+      "city": "Stockholm",
+      "languages": [
+        "Swedish (primary)",
+        "English (excellent)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Sweden",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Sweden culture",
+        "budgetLevel": "HK$11,000/month",
+        "language": "Swedish (primary), English (excellent)"
+      }
+    },
+    {
+      "id": 62,
+      "country": "Switzerland",
+      "name": "University of St. Gallen",
+      "quota": "2",
+      "cgpa": 2.8,
+      "ielts": "7.0",
+      "toefl": "100",
+      "semester": "A: Sep-Dec, B: Feb-Jun",
+      "explorerGrant": true,
+      "notes": "CB only",
+      "ranking": 436,
+      "budget": 12500,
+      "website": "https://www.unisg.ch",
+      "city": "St. Gallen",
+      "languages": [
+        "German/French/Italian (region-dependent)",
+        "English (good)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Switzerland",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "CB only",
+        "culturalExperience": "Experience Switzerland culture",
+        "budgetLevel": "HK$12,500/month",
+        "language": "German/French/Italian (region-dependent), English (good)"
+      }
+    },
+    {
+      "id": 63,
+      "country": "Switzerland",
+      "name": "University of Zurich",
+      "quota": "2",
+      "cgpa": 2.8,
+      "ielts": "7.0",
+      "toefl": "100",
+      "semester": "A: Sep-Dec, B: Feb-Jun",
+      "explorerGrant": true,
+      "notes": "",
+      "ranking": 91,
+      "budget": 14000,
+      "website": "https://www.uzh.ch",
+      "city": "Zurich",
+      "languages": [
+        "German/French/Italian (region-dependent)",
+        "English (good)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Switzerland",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Switzerland culture",
+        "budgetLevel": "HK$14,000/month",
+        "language": "German/French/Italian (region-dependent), English (good)"
+      }
+    },
+    {
+      "id": 64,
+      "country": "Taiwan",
+      "name": "National Cheng Kung University",
+      "quota": "2",
+      "cgpa": 2.5,
+      "ielts": "6.0",
+      "toefl": "72",
+      "semester": "A: Sep-Jan, B: Feb-Jun",
+      "explorerGrant": true,
+      "notes": "",
+      "ranking": 215,
+      "budget": 6000,
+      "website": "https://www.ncku.edu.tw",
+      "city": "Tainan",
+      "languages": [
+        "Mandarin Chinese (primary)",
+        "English (academic)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Taiwan",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Taiwan culture",
+        "budgetLevel": "HK$6,000/month",
+        "language": "Mandarin Chinese (primary), English (academic)"
+      }
+    },
+    {
+      "id": 65,
+      "country": "Taiwan",
+      "name": "National Taiwan University",
+      "quota": "2",
+      "cgpa": 2.5,
+      "ielts": "6.0",
+      "toefl": "72",
+      "semester": "A: Sep-Jan, B: Feb-Jun",
+      "explorerGrant": true,
+      "notes": "",
+      "ranking": 68,
+      "budget": 7000,
+      "website": "https://www.ntu.edu.tw",
+      "city": "Taipei",
+      "languages": [
+        "Mandarin Chinese (primary)",
+        "English (academic)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Taiwan",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Taiwan culture",
+        "budgetLevel": "HK$7,000/month",
+        "language": "Mandarin Chinese (primary), English (academic)"
+      }
+    },
+    {
+      "id": 66,
+      "country": "Taiwan",
+      "name": "National Tsing Hua University",
+      "quota": "2",
+      "cgpa": 2.5,
+      "ielts": "6.0",
+      "toefl": "72",
+      "semester": "A: Sep-Jan, B: Feb-Jun",
+      "explorerGrant": true,
+      "notes": "",
+      "ranking": 210,
+      "budget": 6500,
+      "website": "https://www.nthu.edu.tw",
+      "city": "Hsinchu",
+      "languages": [
+        "Mandarin Chinese (primary)",
+        "English (academic)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Taiwan",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience Taiwan culture",
+        "budgetLevel": "HK$6,500/month",
+        "language": "Mandarin Chinese (primary), English (academic)"
+      }
+    },
+    {
+      "id": 67,
+      "country": "Thailand",
+      "name": "Chulalongkorn University",
+      "quota": "2",
+      "cgpa": 2.5,
+      "ielts": "6.0",
+      "toefl": "80",
+      "semester": "A: Aug-Dec, B: Jan-May",
+      "explorerGrant": true,
+      "notes": "Quota: Sem A 1, Sem B 1",
+      "ranking": 211,
+      "budget": 5000,
+      "website": "https://www.chula.ac.th",
+      "city": "Bangkok",
+      "languages": [
+        "Thai (primary)",
+        "English (limited outside tourist areas)"
+      ],
+      "uniqueFeatures": [
+        "Top university in Thailand",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "Quota: Sem A 1, Sem B 1",
+        "culturalExperience": "Experience Thailand culture",
+        "budgetLevel": "HK$5,000/month",
+        "language": "Thai (primary), English (limited outside tourist areas)"
+      }
+    },
+    {
+      "id": 68,
+      "country": "UK",
+      "name": "Imperial College London",
+      "quota": "2 (CENG/CSCI/CB)",
+      "cgpa": 3.0,
+      "ielts": "7.0",
+      "toefl": "100",
+      "semester": "A: Oct-Jan, B: Feb-Jun",
+      "explorerGrant": false,
+      "notes": "Medicine not open to exchange",
+      "ranking": 2,
+      "budget": 15000,
+      "website": "https://www.imperial.ac.uk",
+      "city": "London",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "World #2 (QS 2025)",
+        "STEM-focused only",
+        "South Kensington location",
+        "Elite research-intensive"
+      ],
+      "selectionFactors": {
+        "academicFit": "Medicine not open to exchange",
+        "culturalExperience": "Experience UK culture",
+        "budgetLevel": "HK$15,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 69,
+      "country": "UK",
+      "name": "University College London",
+      "quota": "2",
+      "cgpa": 3.0,
+      "ielts": "7.0",
+      "toefl": "100",
+      "semester": "A: Sep-Dec, B: Jan-Mar",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 9,
+      "budget": 15000,
+      "website": "https://www.ucl.ac.uk",
+      "city": "London",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "London's first university",
+        "Comprehensive research",
+        "Bloomsbury location",
+        "High international diversity"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience UK culture",
+        "budgetLevel": "HK$15,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 70,
+      "country": "UK",
+      "name": "University of Birmingham",
+      "quota": "3",
+      "cgpa": 2.8,
+      "ielts": "6.5",
+      "toefl": "88",
+      "semester": "A: Sep-Jan, B: Jan-Jun",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 80,
+      "budget": 10000,
+      "website": "https://www.birmingham.ac.uk",
+      "city": "Birmingham",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in UK",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience UK culture",
+        "budgetLevel": "HK$10,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 71,
+      "country": "UK",
+      "name": "University of Edinburgh",
+      "quota": "4",
+      "cgpa": 3.0,
+      "ielts": "6.5",
+      "toefl": "92",
+      "semester": "A: Sep-Dec, B: Jan-May",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 27,
+      "budget": 12000,
+      "website": "https://www.ed.ac.uk",
+      "city": "Edinburgh",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Scotland's top university",
+        "Historic Old Town campus",
+        "Strong AI and informatics",
+        "Famous Festival city"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience UK culture",
+        "budgetLevel": "HK$12,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 72,
+      "country": "UK",
+      "name": "University of Glasgow",
+      "quota": "4",
+      "cgpa": 2.8,
+      "ielts": "6.5",
+      "toefl": "90",
+      "semester": "A: Sep-Dec, B: Jan-May",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 78,
+      "budget": 10500,
+      "website": "https://www.gla.ac.uk",
+      "city": "Glasgow",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in UK",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience UK culture",
+        "budgetLevel": "HK$10,500/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 73,
+      "country": "UK",
+      "name": "University of Leeds",
+      "quota": "4",
+      "cgpa": 2.8,
+      "ielts": "6.5",
+      "toefl": "87",
+      "semester": "A: Sep-Jan, B: Feb-Jun",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 82,
+      "budget": 9500,
+      "website": "https://www.leeds.ac.uk",
+      "city": "Leeds",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in UK",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience UK culture",
+        "budgetLevel": "HK$9,500/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 74,
+      "country": "UK",
+      "name": "University of Manchester",
+      "quota": "4",
+      "cgpa": 2.8,
+      "ielts": "6.5",
+      "toefl": "90",
+      "semester": "A: Sep-Jan, B: Feb-Jun",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 34,
+      "budget": 11500,
+      "website": "https://www.manchester.ac.uk",
+      "city": "Manchester",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in UK",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience UK culture",
+        "budgetLevel": "HK$11,500/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 75,
+      "country": "UK",
+      "name": "University of Nottingham",
+      "quota": "4",
+      "cgpa": 2.8,
+      "ielts": "6.5",
+      "toefl": "87",
+      "semester": "A: Sep-Jan, B: Feb-Jun",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 108,
+      "budget": 9500,
+      "website": "https://www.nottingham.ac.uk",
+      "city": "Nottingham",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in UK",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience UK culture",
+        "budgetLevel": "HK$9,500/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 76,
+      "country": "UK",
+      "name": "University of Sheffield",
+      "quota": "3",
+      "cgpa": 2.8,
+      "ielts": "6.5",
+      "toefl": "88",
+      "semester": "A: Sep-Jan, B: Feb-Jun",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 105,
+      "budget": 9000,
+      "website": "https://www.sheffield.ac.uk",
+      "city": "Sheffield",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in UK",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience UK culture",
+        "budgetLevel": "HK$9,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 77,
+      "country": "UK",
+      "name": "University of Warwick",
+      "quota": "3 (CB/CLASS/VM)",
+      "cgpa": 3.0,
+      "ielts": "7.0",
+      "toefl": "100",
+      "semester": "A: Oct-Dec, B: Jan-Mar",
+      "explorerGrant": false,
+      "notes": "Waiver possible for 2+ years at CityU",
+      "ranking": 69,
+      "budget": 11000,
+      "website": "https://warwick.ac.uk",
+      "city": "Warwick",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in UK",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "Waiver possible for 2+ years at CityU",
+        "culturalExperience": "Experience UK culture",
+        "budgetLevel": "HK$11,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 78,
+      "country": "USA",
+      "name": "Boston University",
+      "quota": "2",
+      "cgpa": 3.0,
+      "ielts": "7.0",
+      "toefl": "90",
+      "semester": "A: Sep-Dec, B: Jan-May",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 108,
+      "budget": 13500,
+      "website": "https://www.bu.edu",
+      "city": "Boston",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in USA",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience USA culture",
+        "budgetLevel": "HK$13,500/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 79,
+      "country": "USA",
+      "name": "Georgia Institute of Technology",
+      "quota": "2",
+      "cgpa": 3.0,
+      "ielts": "6.5",
+      "toefl": "90",
+      "semester": "A: Aug-Dec, B: Jan-May",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 114,
+      "budget": 12000,
+      "website": "https://www.gatech.edu",
+      "city": "Atlanta",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in USA",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience USA culture",
+        "budgetLevel": "HK$12,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 80,
+      "country": "USA",
+      "name": "New York University",
+      "quota": "2",
+      "cgpa": 3.23,
+      "ielts": "7.5",
+      "toefl": "100",
+      "semester": "A: Sep-Dec, B: Jan-May",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 43,
+      "budget": 16000,
+      "website": "https://www.nyu.edu",
+      "city": "New York",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Manhattan campus",
+        "Global network university",
+        "Strong arts and business",
+        "Greenwich Village location"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience USA culture",
+        "budgetLevel": "HK$16,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 81,
+      "country": "USA",
+      "name": "Pennsylvania State University",
+      "quota": "2",
+      "cgpa": 3.0,
+      "ielts": "6.5",
+      "toefl": "80",
+      "semester": "A: Aug-Dec, B: Jan-May",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 89,
+      "budget": 10000,
+      "website": "https://www.psu.edu",
+      "city": "State College",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in USA",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience USA culture",
+        "budgetLevel": "HK$10,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 82,
+      "country": "USA",
+      "name": "Purdue University",
+      "quota": "2",
+      "cgpa": 3.0,
+      "ielts": "6.5",
+      "toefl": "80",
+      "semester": "A: Aug-Dec, B: Jan-May",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 89,
+      "budget": 9000,
+      "website": "https://www.purdue.edu",
+      "city": "West Lafayette",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in USA",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience USA culture",
+        "budgetLevel": "HK$9,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 83,
+      "country": "USA",
+      "name": "University of California, Berkeley",
+      "quota": "2",
+      "cgpa": 3.23,
+      "ielts": "6.5",
+      "toefl": "80",
+      "semester": "A: Aug-Dec, B: Jan-May",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 12,
+      "budget": 15500,
+      "website": "https://www.berkeley.edu",
+      "city": "Berkeley",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Public Ivy",
+        "Activism history",
+        "Top computer science",
+        "Silicon Valley proximity"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience USA culture",
+        "budgetLevel": "HK$15,500/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 84,
+      "country": "USA",
+      "name": "University of California, Davis",
+      "quota": "2",
+      "cgpa": 3.0,
+      "ielts": "7.0",
+      "toefl": "90",
+      "semester": "A: Sep-Dec, B: Jan-Mar",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": null,
+      "budget": 14000,
+      "website": "https://www.ucdavis.edu",
+      "city": "Davis",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in USA",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience USA culture",
+        "budgetLevel": "HK$14,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 85,
+      "country": "USA",
+      "name": "University of California, Los Angeles",
+      "quota": "2",
+      "cgpa": 3.23,
+      "ielts": "7.0",
+      "toefl": "100",
+      "semester": "A: Sep-Dec, B: Mar-Jun",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 42,
+      "budget": 15000,
+      "website": "https://www.ucla.edu",
+      "city": "Los Angeles",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top public university",
+        "Beautiful Westwood campus",
+        "Strong film and media",
+        "Los Angeles location"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience USA culture",
+        "budgetLevel": "HK$15,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 86,
+      "country": "USA",
+      "name": "University of Illinois Urbana-Champaign",
+      "quota": "2",
+      "cgpa": 3.0,
+      "ielts": "6.5",
+      "toefl": "80",
+      "semester": "A: Aug-Dec, B: Jan-May",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 64,
+      "budget": 9500,
+      "website": "https://illinois.edu",
+      "city": "Urbana-Champaign",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in USA",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience USA culture",
+        "budgetLevel": "HK$9,500/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 87,
+      "country": "USA",
+      "name": "University of Michigan",
+      "quota": "2",
+      "cgpa": 3.23,
+      "ielts": "7.0",
+      "toefl": "100",
+      "semester": "A: Sep-Dec, B: Jan-Apr",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 44,
+      "budget": 12000,
+      "website": "https://umich.edu",
+      "city": "Ann Arbor",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in USA",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience USA culture",
+        "budgetLevel": "HK$12,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 88,
+      "country": "USA",
+      "name": "University of North Carolina at Chapel Hill",
+      "quota": "2",
+      "cgpa": 3.0,
+      "ielts": "7.0",
+      "toefl": "100",
+      "semester": "A: Aug-Dec, B: Jan-May",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": null,
+      "budget": 10500,
+      "website": "https://www.unc.edu",
+      "city": "Chapel Hill",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in USA",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience USA culture",
+        "budgetLevel": "HK$10,500/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 89,
+      "country": "USA",
+      "name": "University of Texas at Austin",
+      "quota": "2",
+      "cgpa": 3.0,
+      "ielts": "6.5",
+      "toefl": "79",
+      "semester": "A: Aug-Dec, B: Jan-May",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 66,
+      "budget": 11000,
+      "website": "https://www.utexas.edu",
+      "city": "Austin",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in USA",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience USA culture",
+        "budgetLevel": "HK$11,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 90,
+      "country": "USA",
+      "name": "University of Virginia",
+      "quota": "2",
+      "cgpa": 3.0,
+      "ielts": "7.0",
+      "toefl": "90",
+      "semester": "A: Aug-Dec, B: Jan-May",
+      "explorerGrant": false,
+      "notes": "Semester B not recommended for final year",
+      "ranking": null,
+      "budget": 10000,
+      "website": "https://www.virginia.edu",
+      "city": "Charlottesville",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in USA",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "Semester B not recommended for final year",
+        "culturalExperience": "Experience USA culture",
+        "budgetLevel": "HK$10,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 91,
+      "country": "USA",
+      "name": "University of Washington",
+      "quota": "2",
+      "cgpa": 3.0,
+      "ielts": "6.5",
+      "toefl": "92",
+      "semester": "A: Sep-Dec, B: Jan-Mar",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 76,
+      "budget": 14000,
+      "website": "https://www.washington.edu",
+      "city": "Seattle",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in USA",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience USA culture",
+        "budgetLevel": "HK$14,000/month",
+        "language": "English"
+      }
+    },
+    {
+      "id": 92,
+      "country": "USA",
+      "name": "University of Wisconsin-Madison",
+      "quota": "2",
+      "cgpa": 3.0,
+      "ielts": "6.5",
+      "toefl": "80",
+      "semester": "A: Sep-Dec, B: Jan-May",
+      "explorerGrant": false,
+      "notes": "",
+      "ranking": 116,
+      "budget": 10500,
+      "website": "https://www.wisc.edu",
+      "city": "Madison",
+      "languages": [
+        "English"
+      ],
+      "uniqueFeatures": [
+        "Top university in USA",
+        "Exchange program available",
+        "Check website for more details"
+      ],
+      "selectionFactors": {
+        "academicFit": "",
+        "culturalExperience": "Experience USA culture",
+        "budgetLevel": "HK$10,500/month",
+        "language": "English"
+      }
+    }
+  ]
+}

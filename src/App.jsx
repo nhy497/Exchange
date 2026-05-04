@@ -1,9 +1,36 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { Heart, MapPin, Calendar, Award, GraduationCap, Globe, Filter, X, Star, BookOpen, DollarSign, ExternalLink, TrendingUp, Info, Languages, Building2, Lightbulb, CheckCircle2, AlertCircle, ChevronDown, ChevronUp, Plus, Minus, Scale } from 'lucide-react';
-import schoolsData from '../data/schools_complete.json';
+import { Heart, MapPin, Loader2, Calendar, Award, GraduationCap, Globe, Filter, X, Star, BookOpen, DollarSign, ExternalLink, TrendingUp, Info, Languages, Building2, Lightbulb, CheckCircle2, AlertCircle, ChevronDown, ChevronUp, Plus, Minus, Scale } from 'lucide-react';
+// 動態加載學校數據
+function useSchoolsData() {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    fetch('data/schools_complete.json')
+      .then(res => {
+        if (!res.ok) throw new Error('Failed to load');
+        return res.json();
+      })
+      .then(json => {
+        setData(json);
+        setLoading(false);
+      })
+      .catch(err => {
+        setError(err.message);
+        setLoading(false);
+      });
+  }, []);
+
+  return { data, loading, error };
+}
 import { LanguageProvider, useLanguage, regionFeatures } from './LanguageContext';
 
-const countries = [...new Set(schoolsData.schools.map(s => s.country))].sort();
+// 計算國家列表
+const countries = useMemo(() => {
+  if (!schoolsData) return [];
+  return [...new Set(schoolsData.schools.map(s => s.country))].sort();
+}, [schoolsData]);
 
 function AppContent() {
   const { lang, setLang, t } = useLanguage();
@@ -12,6 +39,9 @@ function AppContent() {
     const saved = localStorage.getItem('exchangeFavorites');
     return saved ? JSON.parse(saved) : [];
   });
+  
+  // 加載學校數據
+  const { data: schoolsData, loading, error } = useSchoolsData();
   const [compareList, setCompareList] = useState(() => {
     const saved = localStorage.getItem('exchangeCompare');
     return saved ? JSON.parse(saved) : [];
@@ -882,6 +912,26 @@ function AppContent() {
                 )}
               </button>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* 加載狀態 */}
+      {loading && (
+        <div className="fixed inset-0 bg-[var(--bg)] flex items-center justify-center z-50">
+          <div className="text-center">
+            <Loader2 className="w-12 h-12 text-[var(--brand)] animate-spin mx-auto mb-4" />
+            <p className="text-[var(--muted)]">正在載入數據...</p>
+          </div>
+        </div>
+      )}
+
+      {/* 錯誤狀態 */}
+      {error && !loading && (
+        <div className="fixed inset-0 bg-[var(--bg)] flex items-center justify-center z-50">
+          <div className="text-center max-w-md p-6">
+            <p className="text-[var(--danger)] mb-4">{error}</p>
+            <button onClick={() => window.location.reload()} className="btn-primary">重新載入</button>
           </div>
         </div>
       )}
