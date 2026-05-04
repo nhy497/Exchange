@@ -9,7 +9,7 @@ function useSchoolsData() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('data/schools_complete.json')
+    fetch(`${import.meta.env.BASE_URL}data/schools_complete.json`)
       .then(res => {
         if (!res.ok) throw new Error('Failed to load schools data');
         return res.json();
@@ -80,7 +80,7 @@ function AppContent() {
         return prev.filter(cid => cid !== id);
       }
       if (prev.length >= 4) {
-        alert(lang === 'zh' ? '?多只????學?? : 'You can compare up to 4 schools');
+        alert(lang === 'zh' ? '最多只能比較 4 間學校' : 'You can compare up to 4 schools');
         return prev;
       }
       return [...prev, id];
@@ -106,6 +106,7 @@ function AppContent() {
   };
 
   const filteredSchools = useMemo(() => {
+    if (!schoolsData) return [];
     return schoolsData.schools.filter(school => {
       if (showFavoritesOnly && !favorites.includes(school.id)) return false;
       if (selectedCountries.length > 0 && !selectedCountries.includes(school.country)) return false;
@@ -129,7 +130,8 @@ function AppContent() {
       if (budgetMode === 'max' && school.budget > budgetValue) return false;
       if (budgetMode === 'min' && school.budget < budgetValue) return false;
       
-      // ?索 - ???更多??      if (searchTerm) {
+      // Search term filter
+      if (searchTerm) {
         const term = searchTerm.toLowerCase();
         const searchable = [
           school.name,
@@ -185,12 +187,12 @@ function AppContent() {
             <div className="text-white/75 text-sm mb-2">2026-27 Main Round Application</div>
             <h1 className="text-4xl md:text-5xl font-bold flex items-center gap-3 mb-3">
               <Globe className="w-10 h-10 text-[var(--accent)]" />
-              {lang === 'zh' ? '尋找你??佳交?選?? : 'Find Your Best Exchange Match'}
+              {lang === 'zh' ? '尋找你的最佳交流選擇' : 'Find Your Best Exchange Match'}
             </h1>
             <p className="text-white/85 max-w-[70ch] text-lg">
               {lang === 'zh' 
-                ? `?覽??大學，??CGPA ??言要?，使?更清晰???找????你????。共 ${schoolsData.schools.length} ??作院?。` 
-                : `Browse universities by region, compare CGPA and language requirements, and find your perfect match from ${schoolsData.schools.length} partner institutions.`}
+                ? `瀏覽各地大學，比較 CGPA 和語言要求，更清晰地找到最適合你的選擇。共 ${schoolsData?.schools?.length ?? 0} 間合作院校。`
+                : `Browse universities by region, compare CGPA and language requirements, and find your perfect match from ${schoolsData?.schools?.length ?? 0} partner institutions.`}
             </p>
           </div>
           <div className="flex items-center gap-3">
@@ -257,7 +259,7 @@ function AppContent() {
         {/* ?覽?示 */}
         <div className="mt-4 p-4 rounded-[20px] bg-[var(--soft)]/30 border border-[var(--brand)]/20 text-[var(--accent)] text-sm">
           {lang === 'zh' 
-            ? '??來?：CityU GEO I-level Quota PDF (?新??2026???6????算根?具體?市估算??含住宿??飲、交???本?活費? 
+            ? '資料來源：CityU GEO I-level Quota PDF（更新於2026年1月16日）。預算估算根據具體城市，包含住宿、餐飲、交通等基本生活費'
             : 'Data source: CityU GEO I-level Quota PDF (updated Jan 16, 2026). Budget estimates are city-specific, covering accommodation, food, transport.'}
         </div>
       </header>
@@ -413,8 +415,8 @@ function AppContent() {
               </div>
               <p className="text-xs text-[var(--muted)] mt-2">
                 {budgetMode === 'max' 
-                  ? (lang === 'zh' ? '顯示?? ??HK$' : 'Show budget ??HK$') + budgetValue.toLocaleString() + (lang === 'zh' ? '/?? : '/month')
-                  : (lang === 'zh' ? '顯示?? ??HK$' : 'Show budget ??HK$') + budgetValue.toLocaleString() + (lang === 'zh' ? '/?? : '/month')}
+                  ? (lang === 'zh' ? '顯示預算最多 HK$' : 'Show budget ≤ HK$') + budgetValue.toLocaleString() + (lang === 'zh' ? '/月' : '/month')
+                  : (lang === 'zh' ? '顯示預算至少 HK$' : 'Show budget ≥ HK$') + budgetValue.toLocaleString() + (lang === 'zh' ? '/月' : '/month')}
               </p>
             </div>
 
@@ -440,7 +442,7 @@ function AppContent() {
             {/* 結?統? */}
             <div className="pt-4 border-t border-[var(--line)]">
               <p className="text-sm text-[var(--muted)]">
-                {t.results}: <span className="font-bold text-[var(--brand)] text-lg">{filteredSchools.length}</span> / {schoolsData.schools.length} {t.totalSchools}
+                {t.results}: <span className="font-bold text-[var(--brand)] text-lg">{filteredSchools.length}</span> / {schoolsData?.schools?.length ?? 0} {t.totalSchools}
               </p>
             </div>
           </aside>
@@ -546,7 +548,7 @@ function AppContent() {
                   <div className="flex flex-wrap gap-2 mb-4">
                     <span className="chip flex items-center gap-1">
                       <DollarSign className="w-3.5 h-3.5" />
-                      HK${(school.budget/1000).toFixed(0)}K{lang === 'zh' ? '/?? : '/mo'}
+                      HK${(school.budget/1000).toFixed(0)}K{lang === 'zh' ? '/月' : '/mo'}
                     </span>
                     <span className="chip flex items-center gap-1">
                       <Star className="w-3.5 h-3.5" />
@@ -576,7 +578,7 @@ function AppContent() {
                       <ul className="space-y-1">
                         {school.uniqueFeatures.slice(0, expandedSchool === school.id ? 5 : 2).map((feature, i) => (
                           <li key={i} className="text-sm text-[var(--text)] flex items-start gap-2">
-                            <span className="text-[var(--accent)] mt-1">??/span>
+                            <span className="text-[var(--accent)] mt-1">✦</span>
                             <span className="flex-1">{feature}</span>
                           </li>
                         ))}
@@ -599,7 +601,7 @@ function AppContent() {
                   {/* ??標?標籤 */}
                   {school.selectionFactors && (
                     <div className="mb-4 p-3 bg-[var(--soft)]/50 rounded-[12px]">
-                      <div className="text-xs text-[var(--muted)] mb-1">{lang === 'zh' ? '??你?如?? : 'Good fit if you:'}</div>
+                      <div className="text-xs text-[var(--muted)] mb-1">{lang === 'zh' ? '適合你如果：' : 'Good fit if you:'}</div>
                       <div className="text-sm text-[var(--text)]">{school.selectionFactors.academicFit}</div>
                     </div>
                   )}
@@ -639,7 +641,7 @@ function AppContent() {
                         </div>
                         <div>
                           <span className="text-[var(--muted)]">{t.budget}:</span>
-                          <p className="font-medium text-[var(--text)]">HK${school.budget.toLocaleString()}{lang === 'zh' ? '/?? : '/month'}</p>
+                          <p className="font-medium text-[var(--text)]">HK${school.budget.toLocaleString()}{lang === 'zh' ? '/月' : '/month'}</p>
                         </div>
                         {school.toefl !== '-' && (
                           <div>
@@ -693,7 +695,7 @@ function AppContent() {
           
           <div className="flex flex-wrap gap-2 mb-4">
             {compareList.map(id => {
-              const school = schoolsData.schools.find(s => s.id === id);
+              const school = schoolsData?.schools?.find(s => s.id === id);
               return (
                 <span key={id} className="inline-flex items-center gap-1.5 bg-[var(--bg)] border border-[var(--line)] px-3 py-1.5 rounded-full text-sm">
                   {school?.name}
@@ -719,7 +721,7 @@ function AppContent() {
                     <tr className="border-b border-[var(--line)]">
                       <th className="text-left py-2 text-[var(--muted)] font-medium">{lang === 'zh' ? '?目' : 'Item'}</th>
                       {compareList.map(id => {
-                        const school = schoolsData.schools.find(s => s.id === id);
+                        const school = schoolsData?.schools?.find(s => s.id === id);
                         return (
                           <th key={id} className="text-left py-2 px-3 font-semibold text-[var(--text)] min-w-[120px]">
                             {school?.name}
@@ -736,14 +738,14 @@ function AppContent() {
                       { label: lang === 'zh' ? 'CGPA' : 'CGPA', key: 'cgpa', format: (v) => v > 0 ? `??${v}` : '-' },
                       { label: lang === 'zh' ? 'IELTS' : 'IELTS', key: 'ielts' },
                       { label: lang === 'zh' ? '學?' : 'Semester', key: 'semester' },
-                      { label: lang === 'zh' ? '??/?? : 'Budget/mo', key: 'budget', format: (v) => `HK$${v?.toLocaleString()}` },
+                      { label: lang === 'zh' ? '預算/月' : 'Budget/mo', key: 'budget', format: (v) => `HK$${v?.toLocaleString()}` },
                       { label: 'QS ' + (lang === 'zh' ? '??' : 'Rank'), key: 'ranking', format: (v) => v ? `#${v}` : '-' },
-                      { label: lang === 'zh' ? '資助' : 'Grant', key: 'explorerGrant', format: (v) => v ? (lang === 'zh' ? '?? : 'Yes') : (lang === 'zh' ? '?? : 'No') },
+                      { label: lang === 'zh' ? '資助' : 'Grant', key: 'explorerGrant', format: (v) => v ? (lang === 'zh' ? '有' : 'Yes') : (lang === 'zh' ? '無' : 'No') },
                     ].map((row, idx) => (
                       <tr key={row.key} className="border-b border-[var(--line)]/50">
                         <td className="py-2 text-[var(--muted)]">{row.label}</td>
                         {compareList.map(id => {
-                          const school = schoolsData.schools.find(s => s.id === id);
+                          const school = schoolsData?.schools?.find(s => s.id === id);
                           const value = school?.[row.key];
                           return (
                             <td key={id} className="py-2 px-3 text-[var(--text)]">
@@ -791,7 +793,7 @@ function AppContent() {
               <span className="chip">CGPA: {selectedSchool.cgpa > 0 ? `??${selectedSchool.cgpa}` : '-'}</span>
               <span className="chip">IELTS: {selectedSchool.ielts}</span>
               <span className="chip">QS #{selectedSchool.ranking || '-'}</span>
-              <span className="chip">{lang === 'zh' ? '??' : 'Budget'}: HK${selectedSchool.budget?.toLocaleString()}{lang === 'zh' ? '/?? : '/mo'}</span>
+              <span className="chip">{lang === 'zh' ? '預算' : 'Budget'}: HK${selectedSchool.budget?.toLocaleString()}{lang === 'zh' ? '/月' : '/mo'}</span>
               {selectedSchool.explorerGrant && (
                 <span className="badge-grant text-xs">HK$10K Grant</span>
               )}
@@ -808,7 +810,7 @@ function AppContent() {
                 <ul className="space-y-2 text-sm">
                   <li className="flex justify-between">
                     <span className="text-[var(--muted)]">{lang === 'zh' ? '語?要?' : 'Language'}:</span>
-                    <span className="text-[var(--text)] font-medium">{selectedSchool.ielts !== '-' ? `IELTS ${selectedSchool.ielts}` : ''} {selectedSchool.toefl !== '-' ? `TOEFL ${selectedSchool.toefl}` : lang === 'zh' ? '?特定?? : 'No specific'}</span>
+                    <span className="text-[var(--text)] font-medium">{selectedSchool.ielts !== '-' ? `IELTS ${selectedSchool.ielts}` : ''} {selectedSchool.toefl !== '-' ? `TOEFL ${selectedSchool.toefl}` : lang === 'zh' ? '無特定要求' : 'No specific'}</span>
                   </li>
                   <li className="flex justify-between">
                     <span className="text-[var(--muted)]">{lang === 'zh' ? '學???' : 'Semester'}:</span>
@@ -848,7 +850,7 @@ function AppContent() {
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
                   {(selectedSchool.uniqueFeatures || []).map((feature, i) => (
                     <li key={i} className="text-sm text-[var(--text)] flex items-start gap-2">
-                      <span className="text-[var(--accent)] mt-1">??/span>
+                      <span className="text-[var(--accent)] mt-1">✦</span>
                       <span>{feature}</span>
                     </li>
                   ))}
