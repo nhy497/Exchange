@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { Heart, MapPin, Calendar, Award, GraduationCap, Globe, Filter, X, Star, BookOpen, DollarSign, ExternalLink, TrendingUp, Info, Languages, Building2, Lightbulb, CheckCircle2, AlertCircle, ChevronDown, ChevronUp } from 'lucide-react';
+import { Heart, MapPin, Calendar, Award, GraduationCap, Globe, Filter, X, Star, BookOpen, DollarSign, ExternalLink, TrendingUp, Info, Languages, Building2, Lightbulb, CheckCircle2, AlertCircle, ChevronDown, ChevronUp, Plus, Minus, Scale } from 'lucide-react';
 import schoolsData from '../data/schools_complete.json';
 import { LanguageProvider, useLanguage, regionFeatures } from './LanguageContext';
 
@@ -12,9 +12,15 @@ function AppContent() {
     const saved = localStorage.getItem('exchangeFavorites');
     return saved ? JSON.parse(saved) : [];
   });
+  const [compareList, setCompareList] = useState(() => {
+    const saved = localStorage.getItem('exchangeCompare');
+    return saved ? JSON.parse(saved) : [];
+  });
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
   const [expandedSchool, setExpandedSchool] = useState(null);
   const [showCriteriaGuide, setShowCriteriaGuide] = useState(false);
+  const [selectedSchool, setSelectedSchool] = useState(null);
+  const [showComparePanel, setShowComparePanel] = useState(false);
   
   // 篩選條件 - 支持雙向
   const [selectedCountries, setSelectedCountries] = useState([]);
@@ -31,6 +37,35 @@ function AppContent() {
   useEffect(() => {
     localStorage.setItem('exchangeFavorites', JSON.stringify(favorites));
   }, [favorites]);
+
+  useEffect(() => {
+    localStorage.setItem('exchangeCompare', JSON.stringify(compareList));
+  }, [compareList]);
+
+  const toggleCompare = (id) => {
+    setCompareList(prev => {
+      if (prev.includes(id)) {
+        return prev.filter(cid => cid !== id);
+      }
+      if (prev.length >= 4) {
+        alert(lang === 'zh' ? '最多只能比較4間學校' : 'You can compare up to 4 schools');
+        return prev;
+      }
+      return [...prev, id];
+    });
+  };
+
+  const clearCompare = () => {
+    setCompareList([]);
+  };
+
+  const openSchoolModal = (school) => {
+    setSelectedSchool(school);
+  };
+
+  const closeSchoolModal = () => {
+    setSelectedSchool(null);
+  };
 
   const toggleFavorite = (id) => {
     setFavorites(prev => 
@@ -62,14 +97,22 @@ function AppContent() {
       if (budgetMode === 'max' && school.budget > budgetValue) return false;
       if (budgetMode === 'min' && school.budget < budgetValue) return false;
       
-      // 搜索
+      // 搜索 - 擴展到更多字段
       if (searchTerm) {
         const term = searchTerm.toLowerCase();
-        const matchName = school.name.toLowerCase().includes(term);
-        const matchCountry = school.country.toLowerCase().includes(term);
-        const matchCity = school.city.toLowerCase().includes(term);
-        const matchNotes = school.notes.toLowerCase().includes(term);
-        if (!matchName && !matchCountry && !matchCity && !matchNotes) return false;
+        const searchable = [
+          school.name,
+          school.country,
+          school.city,
+          school.notes,
+          school.ielts,
+          school.toefl,
+          school.semester,
+          ...(school.languages || []),
+          ...(school.uniqueFeatures || []),
+          school.selectionFactors?.academicFit || ''
+        ].join(' ').toLowerCase();
+        if (!searchable.includes(term)) return false;
       }
       
       return true;
@@ -137,6 +180,19 @@ function AppContent() {
               <Heart className={`w-5 h-5 ${showFavoritesOnly ? 'fill-current' : ''}`} />
               {t.favorites} {favorites.length > 0 && `(${favorites.length})`}
             </button>
+            {compareList.length > 0 && (
+              <button
+                onClick={() => setShowComparePanel(!showComparePanel)}
+                className={`flex items-center gap-2 px-4 py-2 rounded-[12px] font-medium transition-all border ${
+                  showComparePanel 
+                    ? 'bg-[var(--accent)] text-[var(--text)] border-[var(--accent)]' 
+                    : 'bg-white/10 text-white border-white/20 hover:bg-white/20'
+                }`}
+              >
+                <Scale className="w-5 h-5" />
+                {lang === 'zh' ? '比較' : 'Compare'} ({compareList.length})
+              </button>
+            )}
           </div>
         </div>
 
@@ -524,25 +580,27 @@ function AppContent() {
                   )}
 
                   {/* 操作按鈕 */}
-                  <div className="flex gap-2">
-                    {school.website && (
-                      <a
-                        href={school.website}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn-primary text-sm flex items-center gap-1.5"
-                      >
-                        <ExternalLink className="w-4 h-4" />
-                        {t.website}
-                      </a>
-                    )}
+                  <div className="flex flex-wrap gap-2">
                     <button
-                      onClick={() => toggleSchoolExpand(school.id)}
-                      className="px-4 py-2 border border-[var(--line)] rounded-[12px] text-sm font-medium text-[var(--text)] hover:bg-[var(--bg)] transition-all"
+                      onClick={() => openSchoolModal(school)}
+                      className="btn-primary text-sm flex items-center gap-1.5"
                     >
-                      {expandedSchool === school.id 
-                        ? (lang === 'zh' ? '收起詳情' : 'Less details') 
-                        : (lang === 'zh' ? '查看更多' : 'More details')}
+                      <ExternalLink className="w-4 h-4" />
+                      {lang === 'zh' ? '查看詳情' : 'View Details'}
+                    </button>
+                    <button
+                      onClick={() => toggleCompare(school.id)}
+                      className={`px-4 py-2 rounded-[12px] text-sm font-medium flex items-center gap-1.5 transition-all ${
+                        compareList.includes(school.id)
+                          ? 'bg-[var(--danger)]/10 text-[var(--danger)] border border-[var(--danger)]'
+                          : 'bg-[var(--bg)] text-[var(--text)] border border-[var(--line)] hover:border-[var(--brand)]'
+                      }`}
+                    >
+                      {compareList.includes(school.id) ? (
+                        <><Minus className="w-4 h-4" /> {lang === 'zh' ? '移出比較' : 'Remove'}</>
+                      ) : (
+                        <><Plus className="w-4 h-4" /> {lang === 'zh' ? '加入比較' : 'Compare'}</>
+                      )}
                     </button>
                   </div>
 
@@ -581,6 +639,252 @@ function AppContent() {
           )}
         </main>
       </div>
+
+      {/* 比較抽屜 */}
+      {compareList.length > 0 && (
+        <div className="fixed bottom-6 right-6 w-[380px] max-w-[calc(100vw-48px)] bg-[var(--card)] border border-[var(--line)] rounded-[24px] shadow-[0_18px_38px_rgba(0,0,0,0.18)] p-5 z-20">
+          <div className="flex items-center justify-between mb-3">
+            <h4 className="font-bold text-[var(--text)] flex items-center gap-2">
+              <Scale className="w-5 h-5 text-[var(--brand)]" />
+              {lang === 'zh' ? '比較清單' : 'Compare'} ({compareList.length}/4)
+            </h4>
+            <div className="flex gap-2">
+              <button
+                onClick={() => setShowComparePanel(!showComparePanel)}
+                className="text-sm px-3 py-1.5 bg-[var(--brand)] text-white rounded-full hover:bg-[var(--brand2)] transition-all"
+              >
+                {showComparePanel 
+                  ? (lang === 'zh' ? '隱藏' : 'Hide') 
+                  : (lang === 'zh' ? '展開' : 'Expand')}
+              </button>
+              <button
+                onClick={clearCompare}
+                className="text-sm px-3 py-1.5 border border-[var(--line)] rounded-full hover:bg-[var(--bg)] transition-all"
+              >
+                {lang === 'zh' ? '清除' : 'Clear'}
+              </button>
+            </div>
+          </div>
+          
+          <div className="flex flex-wrap gap-2 mb-4">
+            {compareList.map(id => {
+              const school = schoolsData.schools.find(s => s.id === id);
+              return (
+                <span key={id} className="inline-flex items-center gap-1.5 bg-[var(--bg)] border border-[var(--line)] px-3 py-1.5 rounded-full text-sm">
+                  {school?.name}
+                  <button
+                    onClick={() => toggleCompare(id)}
+                    className="text-[var(--muted)] hover:text-[var(--danger)]"
+                  >
+                    <X className="w-4 h-4" />
+                  </button>
+                </span>
+              );
+            })}
+          </div>
+
+          {showComparePanel && compareList.length >= 2 && (
+            <div className="border-t border-[var(--line)] pt-4">
+              <h5 className="font-semibold text-sm mb-3 text-[var(--text)]">
+                {lang === 'zh' ? '比較表格' : 'Comparison Table'}
+              </h5>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-[var(--line)]">
+                      <th className="text-left py-2 text-[var(--muted)] font-medium">{lang === 'zh' ? '項目' : 'Item'}</th>
+                      {compareList.map(id => {
+                        const school = schoolsData.schools.find(s => s.id === id);
+                        return (
+                          <th key={id} className="text-left py-2 px-3 font-semibold text-[var(--text)] min-w-[120px]">
+                            {school?.name}
+                          </th>
+                        );
+                      })}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {[
+                      { label: lang === 'zh' ? '國家' : 'Country', key: 'country' },
+                      { label: lang === 'zh' ? '城市' : 'City', key: 'city' },
+                      { label: lang === 'zh' ? '配額' : 'Quota', key: 'quota' },
+                      { label: lang === 'zh' ? 'CGPA' : 'CGPA', key: 'cgpa', format: (v) => v > 0 ? `≥ ${v}` : '-' },
+                      { label: lang === 'zh' ? 'IELTS' : 'IELTS', key: 'ielts' },
+                      { label: lang === 'zh' ? '學期' : 'Semester', key: 'semester' },
+                      { label: lang === 'zh' ? '預算/月' : 'Budget/mo', key: 'budget', format: (v) => `HK$${v?.toLocaleString()}` },
+                      { label: 'QS ' + (lang === 'zh' ? '排名' : 'Rank'), key: 'ranking', format: (v) => v ? `#${v}` : '-' },
+                      { label: lang === 'zh' ? '資助' : 'Grant', key: 'explorerGrant', format: (v) => v ? (lang === 'zh' ? '有' : 'Yes') : (lang === 'zh' ? '無' : 'No') },
+                    ].map((row, idx) => (
+                      <tr key={row.key} className="border-b border-[var(--line)]/50">
+                        <td className="py-2 text-[var(--muted)]">{row.label}</td>
+                        {compareList.map(id => {
+                          const school = schoolsData.schools.find(s => s.id === id);
+                          const value = school?.[row.key];
+                          return (
+                            <td key={id} className="py-2 px-3 text-[var(--text)]">
+                              {row.format ? row.format(value) : value || '-'}
+                            </td>
+                          );
+                        })}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* 詳情彈窗 */}
+      {selectedSchool && (
+        <div 
+          className="fixed inset-0 bg-black/45 flex items-center justify-center p-4 md:p-8 z-30"
+          onClick={closeSchoolModal}
+        >
+          <div 
+            className="w-full max-w-[840px] max-h-[90vh] overflow-y-auto bg-[var(--card)] rounded-[28px] p-6 md:p-8 border border-[var(--line)] shadow-[0_20px_50px_rgba(0,0,0,0.2)]"
+            onClick={e => e.stopPropagation()}
+          >
+            {/* 彈窗頭部 */}
+            <div className="flex items-start justify-between mb-6">
+              <div>
+                <h2 className="text-2xl font-bold text-[var(--text)] mb-2">{selectedSchool.name}</h2>
+                <p className="text-[var(--muted)]">{selectedSchool.city} · {selectedSchool.country} · {selectedSchool.region}</p>
+              </div>
+              <button
+                onClick={closeSchoolModal}
+                className="p-2 border border-[var(--line)] rounded-full hover:bg-[var(--bg)] transition-all"
+              >
+                <X className="w-5 h-5 text-[var(--muted)]" />
+              </button>
+            </div>
+
+            {/* 快速信息行 */}
+            <div className="flex flex-wrap gap-2 mb-6">
+              <span className="chip">{lang === 'zh' ? '配額' : 'Quota'}: {selectedSchool.quota}</span>
+              <span className="chip">CGPA: {selectedSchool.cgpa > 0 ? `≥ ${selectedSchool.cgpa}` : '-'}</span>
+              <span className="chip">IELTS: {selectedSchool.ielts}</span>
+              <span className="chip">QS #{selectedSchool.ranking || '-'}</span>
+              <span className="chip">{lang === 'zh' ? '預算' : 'Budget'}: HK${selectedSchool.budget?.toLocaleString()}{lang === 'zh' ? '/月' : '/mo'}</span>
+              {selectedSchool.explorerGrant && (
+                <span className="badge-grant text-xs">HK$10K Grant</span>
+              )}
+            </div>
+
+            {/* 詳細信息網格 */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+              {/* 基本要求 */}
+              <div className="p-4 bg-[var(--bg)] rounded-[18px] border border-[var(--line)]">
+                <h5 className="font-semibold text-[var(--text)] mb-3 flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-[var(--brand)]" />
+                  {lang === 'zh' ? '基本要求' : 'Core Requirements'}
+                </h5>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex justify-between">
+                    <span className="text-[var(--muted)]">{lang === 'zh' ? '語言要求' : 'Language'}:</span>
+                    <span className="text-[var(--text)] font-medium">{selectedSchool.ielts !== '-' ? `IELTS ${selectedSchool.ielts}` : ''} {selectedSchool.toefl !== '-' ? `TOEFL ${selectedSchool.toefl}` : lang === 'zh' ? '無特定要求' : 'No specific'}</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span className="text-[var(--muted)]">{lang === 'zh' ? '學期時間' : 'Semester'}:</span>
+                    <span className="text-[var(--text)] font-medium">{selectedSchool.semester}</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span className="text-[var(--muted)]">{lang === 'zh' ? '校園語言' : 'Campus languages'}:</span>
+                    <span className="text-[var(--text)] font-medium">{(selectedSchool.languages || []).join(', ')}</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* 學術配對 */}
+              <div className="p-4 bg-[var(--bg)] rounded-[18px] border border-[var(--line)]">
+                <h5 className="font-semibold text-[var(--text)] mb-3 flex items-center gap-2">
+                  <GraduationCap className="w-4 h-4 text-[var(--brand)]" />
+                  {lang === 'zh' ? '學術配對' : 'Academic Fit'}
+                </h5>
+                <ul className="space-y-2 text-sm">
+                  <li>
+                    <span className="text-[var(--muted)]">{lang === 'zh' ? '適合專業: ' : 'Good for: '}</span>
+                    <span className="text-[var(--text)]">{selectedSchool.selectionFactors?.academicFit}</span>
+                  </li>
+                  <li>
+                    <span className="text-[var(--muted)]">{lang === 'zh' ? '支援服務: ' : 'Support: '}</span>
+                    <span className="text-[var(--text)]">{selectedSchool.selectionFactors?.supportServices}</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* 學校特色 */}
+              <div className="p-4 bg-[var(--bg)] rounded-[18px] border border-[var(--line)] md:col-span-2">
+                <h5 className="font-semibold text-[var(--text)] mb-3 flex items-center gap-2">
+                  <Star className="w-4 h-4 text-[var(--accent)]" />
+                  {lang === 'zh' ? '學校特色' : 'University Highlights'}
+                </h5>
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                  {(selectedSchool.uniqueFeatures || []).map((feature, i) => (
+                    <li key={i} className="text-sm text-[var(--text)] flex items-start gap-2">
+                      <span className="text-[var(--accent)] mt-1">•</span>
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* 文化體驗 */}
+              <div className="p-4 bg-[var(--bg)] rounded-[18px] border border-[var(--line)]">
+                <h5 className="font-semibold text-[var(--text)] mb-3 flex items-center gap-2">
+                  <Globe className="w-4 h-4 text-[var(--brand)]" />
+                  {lang === 'zh' ? '文化體驗' : 'Cultural Experience'}
+                </h5>
+                <p className="text-sm text-[var(--text)]">{selectedSchool.selectionFactors?.culturalExperience}</p>
+                <p className="text-sm text-[var(--muted)] mt-2">{lang === 'zh' ? '預算水平: ' : 'Budget level: '}{selectedSchool.selectionFactors?.budgetLevel}</p>
+              </div>
+
+              {/* 重要備註 */}
+              {selectedSchool.notes && (
+                <div className="p-4 bg-[var(--warning)]/10 rounded-[18px] border border-[var(--warning)]/20">
+                  <h5 className="font-semibold text-[var(--warning)] mb-2 flex items-center gap-2">
+                    <AlertCircle className="w-4 h-4" />
+                    {lang === 'zh' ? '重要備註' : 'Important Notes'}
+                  </h5>
+                  <p className="text-sm text-[var(--warning)]">{selectedSchool.notes}</p>
+                </div>
+              )}
+            </div>
+
+            {/* 底部操作 */}
+            <div className="flex gap-3 pt-4 border-t border-[var(--line)]">
+              {selectedSchool.website && (
+                <a
+                  href={selectedSchool.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary flex items-center gap-2"
+                >
+                  <ExternalLink className="w-4 h-4" />
+                  {lang === 'zh' ? '訪問官網' : 'Visit Website'}
+                </a>
+              )}
+              <button
+                onClick={() => {
+                  toggleCompare(selectedSchool.id);
+                }}
+                className={`px-5 py-2.5 rounded-[12px] font-medium flex items-center gap-2 transition-all ${
+                  compareList.includes(selectedSchool.id)
+                    ? 'bg-[var(--danger)]/10 text-[var(--danger)] border border-[var(--danger)]'
+                    : 'bg-[var(--bg)] text-[var(--text)] border border-[var(--line)] hover:border-[var(--brand)]'
+                }`}
+              >
+                {compareList.includes(selectedSchool.id) ? (
+                  <><Minus className="w-4 h-4" /> {lang === 'zh' ? '移出比較' : 'Remove from compare'}</>
+                ) : (
+                  <><Plus className="w-4 h-4" /> {lang === 'zh' ? '加入比較' : 'Add to compare'}</>
+                )}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Footer */}
       <footer className="mt-12 text-center text-[var(--muted)] text-sm pb-6">
