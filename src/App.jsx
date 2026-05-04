@@ -2,14 +2,14 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { Heart, MapPin, Calendar, Award, GraduationCap, Globe, Filter, X, Star, BookOpen, DollarSign, ExternalLink, TrendingUp, Info, Languages, Building2, Lightbulb, CheckCircle2, AlertCircle, ChevronDown, ChevronUp, Plus, Minus, Scale, Loader2 } from 'lucide-react';
 import { LanguageProvider, useLanguage, regionFeatures } from './LanguageContext';
 
-// ?ïÊ??†Ë?Â≠∏Ê†°?∏Ê?
+// ????Â≠∏Ê†°??
 function useSchoolsData() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('/Exchange/data/schools_complete.json')
+    fetch('data/schools_complete.json')
       .then(res => {
         if (!res.ok) throw new Error('Failed to load schools data');
         return res.json();
@@ -45,16 +45,16 @@ function AppContent() {
   const [selectedSchool, setSelectedSchool] = useState(null);
   const [showComparePanel, setShowComparePanel] = useState(false);
   
-  // ?†Ë?Â≠∏Ê†°?∏Ê?
+  // ??Â≠∏Ê†°??
   const { data: schoolsData, loading, error } = useSchoolsData();
   
-  // Ë®àÁ??ãÂÆ∂?óË°®
+  // Ë®à??ÂÆ∂?Ë°®
   const countries = useMemo(() => {
     if (!schoolsData) return [];
     return [...new Set(schoolsData.schools.map(s => s.country))].sort();
   }, [schoolsData]);
   
-  // ÁØ©ÈÅ∏Ê¢ù‰ª∂ - ?ØÊ??ôÂ?
+  // ÁØ©ÈÅ∏Ê¢ù‰ª∂ - ????
   const [selectedCountries, setSelectedCountries] = useState([]);
   const [cgpaMode, setCgpaMode] = useState('max'); // 'max' or 'min'
   const [cgpaValue, setCgpaValue] = useState(4.0);
@@ -80,7 +80,7 @@ function AppContent() {
         return prev.filter(cid => cid !== id);
       }
       if (prev.length >= 4) {
-        alert(lang === 'zh' ? '?ÄÂ§öÂè™?ΩÊ?Ëº??ìÂ≠∏?? : 'You can compare up to 4 schools');
+        alert(lang === 'zh' ? '?Â§öÂè™????Â≠∏?? : 'You can compare up to 4 schools');
         return prev;
       }
       return [...prev, id];
@@ -110,7 +110,7 @@ function AppContent() {
       if (showFavoritesOnly && !favorites.includes(school.id)) return false;
       if (selectedCountries.length > 0 && !selectedCountries.includes(school.country)) return false;
       
-      // CGPA ?ôÂ?ÁØ©ÈÅ∏
+      // CGPA ??ÁØ©ÈÅ∏
       if (school.cgpa > 0) {
         if (cgpaMode === 'max' && school.cgpa > cgpaValue) return false;
         if (cgpaMode === 'min' && school.cgpa < cgpaValue) return false;
@@ -118,18 +118,18 @@ function AppContent() {
       
       if (explorerGrant && !school.explorerGrant) return false;
       
-      // IELTS ?ôÂ?ÁØ©ÈÅ∏
+      // IELTS ??ÁØ©ÈÅ∏
       const schoolIelts = parseFloat(school.ielts) || 0;
       if (ieltsValue > 0) {
         if (ieltsMode === 'min' && schoolIelts < ieltsValue && schoolIelts > 0) return false;
         if (ieltsMode === 'max' && schoolIelts > ieltsValue) return false;
       }
       
-      // ?êÁ??ôÂ?ÁØ©ÈÅ∏
+      // ????ÁØ©ÈÅ∏
       if (budgetMode === 'max' && school.budget > budgetValue) return false;
       if (budgetMode === 'min' && school.budget < budgetValue) return false;
       
-      // ?úÁ¥¢ - ?¥Â??∞Êõ¥Â§öÂ?ÊÆ?      if (searchTerm) {
+      // ?Á¥¢ - ???Êõ¥Â§ö??      if (searchTerm) {
         const term = searchTerm.toLowerCase();
         const searchable = [
           school.name,
@@ -185,11 +185,11 @@ function AppContent() {
             <div className="text-white/75 text-sm mb-2">2026-27 Main Round Application</div>
             <h1 className="text-4xl md:text-5xl font-bold flex items-center gap-3 mb-3">
               <Globe className="w-10 h-10 text-[var(--accent)]" />
-              {lang === 'zh' ? 'Â∞ãÊâæ‰Ω†Á??Ä‰Ω≥‰∫§?õÈÅ∏?? : 'Find Your Best Exchange Match'}
+              {lang === 'zh' ? 'Â∞ãÊâæ‰Ω†??‰Ω≥‰∫§?ÈÅ∏?? : 'Find Your Best Exchange Match'}
             </h1>
             <p className="text-white/85 max-w-[70ch] text-lg">
               {lang === 'zh' 
-                ? `?èË¶Ω?ÑÂ?Â§ßÂ≠∏ÔºåÊ?Ëº?CGPA ?åË?Ë®ÄË¶ÅÊ?Ôºå‰Ωø?®Êõ¥Ê∏ÖÊô∞?Ñ‰??¢Êâæ?∞Ê??©Â?‰Ω†Á??ÆÁ??∞„ÄÇÂÖ± ${schoolsData.schools.length} ?ìÂ?‰ΩúÈô¢?°„ÄÇ` 
+                ? `?Ë¶Ω??Â§ßÂ≠∏Ôºå??CGPA ??Ë®ÄË¶Å?Ôºå‰Ωø?Êõ¥Ê∏ÖÊô∞???Êâæ????‰Ω†????„ÄÇÂÖ± ${schoolsData.schools.length} ??‰ΩúÈô¢?„ÄÇ` 
                 : `Browse universities by region, compare CGPA and language requirements, and find your perfect match from ${schoolsData.schools.length} partner institutions.`}
             </p>
           </div>
@@ -198,7 +198,7 @@ function AppContent() {
               onClick={() => setLang(lang === 'zh' ? 'en' : 'zh')}
               className="px-4 py-2 bg-white/10 text-white rounded-[12px] hover:bg-white/20 transition-all font-medium border border-white/20"
             >
-              {lang === 'zh' ? 'EN' : '‰∏≠Ê?'}
+              {lang === 'zh' ? 'EN' : '‰∏≠?'}
             </button>
             <button
               onClick={() => setShowFavoritesOnly(!showFavoritesOnly)}
@@ -221,13 +221,13 @@ function AppContent() {
                 }`}
               >
                 <Scale className="w-5 h-5" />
-                {lang === 'zh' ? 'ÊØîË?' : 'Compare'} ({compareList.length})
+                {lang === 'zh' ? 'ÊØî?' : 'Compare'} ({compareList.length})
               </button>
             )}
           </div>
         </div>
 
-        {/* ?úÁ¥¢Ê¨?*/}
+        {/* ?Á¥¢?*/}
         <div className="mt-6 flex gap-3 max-w-[860px]">
           <div className="flex-1 flex items-center bg-white rounded-[18px] p-2">
             <input
@@ -250,20 +250,20 @@ function AppContent() {
             className="flex items-center gap-2 px-5 py-3 bg-white/10 text-white rounded-[18px] hover:bg-white/20 transition-all border border-white/20"
           >
             <Lightbulb className="w-5 h-5" />
-            {lang === 'zh' ? '?∏Ê†°?áÂ?' : 'Guide'}
+            {lang === 'zh' ? '?Ê†°??' : 'Guide'}
           </button>
         </div>
 
-        {/* ?êË¶Ω?êÁ§∫ */}
+        {/* ?Ë¶Ω?Á§∫ */}
         <div className="mt-4 p-4 rounded-[20px] bg-[var(--soft)]/30 border border-[var(--brand)]/20 text-[var(--accent)] text-sm">
           {lang === 'zh' 
-            ? '?∏Ê?‰æÜÊ?ÔºöCityU GEO I-level Quota PDF (?¥Êñ∞??2026Âπ???6???ÇÈ?ÁÆóÊ†π?öÂÖ∑È´îÂ?Â∏Ç‰º∞ÁÆóÔ??ÖÂê´‰ΩèÂÆø?ÅÈ?È£≤„ÄÅ‰∫§?öÁ??∫Êú¨?üÊ¥ªË≤ª„Ä? 
+            ? '??‰æÜ?ÔºöCityU GEO I-level Quota PDF (?Êñ∞??2026???6????ÁÆóÊ†π?ÂÖ∑È´î?Â∏Ç‰º∞ÁÆó??Âê´‰ΩèÂÆø??È£≤„ÄÅ‰∫§???Êú¨?Ê¥ªË≤ª? 
             : 'Data source: CityU GEO I-level Quota PDF (updated Jan 16, 2026). Budget estimates are city-specific, covering accommodation, food, transport.'}
         </div>
       </header>
 
       <div className="flex flex-col lg:flex-row gap-6">
-        {/* ÁØ©ÈÅ∏?¢Êùø - ?∞Ë®≠Ë®?*/}
+        {/* ÁØ©ÈÅ∏?Êùø - ?Ë®≠?*/}
         {showFilterPanel && (
           <aside className="lg:w-[320px] filter-section p-5 h-fit sticky top-4">
             <div className="flex items-center justify-between mb-5">
@@ -280,7 +280,7 @@ function AppContent() {
               </button>
             </div>
 
-            {/* ?ãÂÆ∂ÁØ©ÈÅ∏ */}
+            {/* ?ÂÆ∂ÁØ©ÈÅ∏ */}
             <div className="mb-5">
               <h3 className="text-sm font-semibold text-[var(--text)] mb-3 flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-[var(--muted)]" />
@@ -301,7 +301,7 @@ function AppContent() {
               </div>
             </div>
 
-            {/* CGPA ?ôÂ?ÁØ©ÈÅ∏ */}
+            {/* CGPA ??ÁØ©ÈÅ∏ */}
             <div className="mb-5 p-4 bg-[var(--bg)] rounded-[16px]">
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-sm font-semibold text-[var(--text)] flex items-center gap-2">
@@ -335,12 +335,12 @@ function AppContent() {
               </div>
               <p className="text-xs text-[var(--muted)] mt-2">
                 {cgpaMode === 'max' 
-                  ? (lang === 'zh' ? 'È°ØÁ§∫ CGPA Ë¶ÅÊ? ??' : 'Show schools with CGPA ??') + cgpaValue.toFixed(1)
-                  : (lang === 'zh' ? 'È°ØÁ§∫ CGPA Ë¶ÅÊ? ??' : 'Show schools with CGPA ??') + cgpaValue.toFixed(1)}
+                  ? (lang === 'zh' ? 'È°ØÁ§∫ CGPA Ë¶Å? ??' : 'Show schools with CGPA ??') + cgpaValue.toFixed(1)
+                  : (lang === 'zh' ? 'È°ØÁ§∫ CGPA Ë¶Å? ??' : 'Show schools with CGPA ??') + cgpaValue.toFixed(1)}
               </p>
             </div>
 
-            {/* IELTS ?ôÂ?ÁØ©ÈÅ∏ */}
+            {/* IELTS ??ÁØ©ÈÅ∏ */}
             <div className="mb-5 p-4 bg-[var(--bg)] rounded-[16px]">
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-sm font-semibold text-[var(--text)] flex items-center gap-2">
@@ -374,12 +374,12 @@ function AppContent() {
               </div>
               <p className="text-xs text-[var(--muted)] mt-2">
                 {ieltsMode === 'min' 
-                  ? (lang === 'zh' ? 'È°ØÁ§∫ IELTS Ë¶ÅÊ? ??' : 'Show schools with IELTS ??') + ieltsValue.toFixed(1)
-                  : (lang === 'zh' ? 'È°ØÁ§∫ IELTS Ë¶ÅÊ? ??' : 'Show schools with IELTS ??') + ieltsValue.toFixed(1)}
+                  ? (lang === 'zh' ? 'È°ØÁ§∫ IELTS Ë¶Å? ??' : 'Show schools with IELTS ??') + ieltsValue.toFixed(1)
+                  : (lang === 'zh' ? 'È°ØÁ§∫ IELTS Ë¶Å? ??' : 'Show schools with IELTS ??') + ieltsValue.toFixed(1)}
               </p>
             </div>
 
-            {/* ?êÁ??ôÂ?ÁØ©ÈÅ∏ */}
+            {/* ????ÁØ©ÈÅ∏ */}
             <div className="mb-5 p-4 bg-[var(--bg)] rounded-[16px]">
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-sm font-semibold text-[var(--text)] flex items-center gap-2">
@@ -413,8 +413,8 @@ function AppContent() {
               </div>
               <p className="text-xs text-[var(--muted)] mt-2">
                 {budgetMode === 'max' 
-                  ? (lang === 'zh' ? 'È°ØÁ§∫?êÁ? ??HK$' : 'Show budget ??HK$') + budgetValue.toLocaleString() + (lang === 'zh' ? '/?? : '/month')
-                  : (lang === 'zh' ? 'È°ØÁ§∫?êÁ? ??HK$' : 'Show budget ??HK$') + budgetValue.toLocaleString() + (lang === 'zh' ? '/?? : '/month')}
+                  ? (lang === 'zh' ? 'È°ØÁ§∫?? ??HK$' : 'Show budget ??HK$') + budgetValue.toLocaleString() + (lang === 'zh' ? '/?? : '/month')
+                  : (lang === 'zh' ? 'È°ØÁ§∫?? ??HK$' : 'Show budget ??HK$') + budgetValue.toLocaleString() + (lang === 'zh' ? '/?? : '/month')}
               </p>
             </div>
 
@@ -437,7 +437,7 @@ function AppContent() {
               </label>
             </div>
 
-            {/* ÁµêÊ?Áµ±Ë? */}
+            {/* Áµê?Áµ±? */}
             <div className="pt-4 border-t border-[var(--line)]">
               <p className="text-sm text-[var(--muted)]">
                 {t.results}: <span className="font-bold text-[var(--brand)] text-lg">{filteredSchools.length}</span> / {schoolsData.schools.length} {t.totalSchools}
@@ -446,13 +446,13 @@ function AppContent() {
           </aside>
         )}
 
-        {/* ?∏Ê?Ê®ôÊ??áÂ? */}
+        {/* ??Ê®ô??? */}
         {showCriteriaGuide && (
           <div className="mb-6 p-6 bg-[var(--card)] border border-[var(--line)] rounded-[24px] shadow-lg">
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-xl font-bold text-[var(--text)] flex items-center gap-2">
                 <Lightbulb className="w-6 h-6 text-[var(--accent)]" />
-                {lang === 'zh' ? 'Â¶Ç‰??∏Ê??©Â??Ñ‰∫§?õÂ≠∏?°Ô?' : 'How to Choose the Right Exchange University?'}
+                {lang === 'zh' ? 'Â¶Ç??????‰∫§?Â≠∏??' : 'How to Choose the Right Exchange University?'}
               </h2>
               <button onClick={() => setShowCriteriaGuide(false)} className="p-2 hover:bg-[var(--bg)] rounded-full">
                 <X className="w-5 h-5 text-[var(--muted)]" />
@@ -460,10 +460,10 @@ function AppContent() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               {[
-                { icon: GraduationCap, title: lang === 'zh' ? 'Â≠∏Ë??πÈ?' : 'Academic Fit', desc: lang === 'zh' ? 'Á¢∫Ë?Ë™≤Á??ØÂê¶?á‰??ÑÂ?Ê•≠Â??àË∂£?∏Á¨¶ÔºåÂ≠∏?ÜËÉΩ?¶Ë??ûCityU' : 'Ensure courses align with your major and credits transfer back to CityU' },
-                { icon: Languages, title: lang === 'zh' ? 'Ë™ûË?Ë¶ÅÊ?' : 'Language', desc: lang === 'zh' ? 'Ë©ï‰º∞‰Ω†Á?IELTS/TOEFL?ÜÊï∏ÔºåËÄÉÊÖÆ?ØÂê¶?ÄË¶ÅÂ≠∏ÁøíÁï∂?∞Ë?Ë®Ä' : 'Evaluate your IELTS/TOEFL scores, consider local language needs' },
-                { icon: DollarSign, title: lang === 'zh' ? '?êÁ??ÉÈ?' : 'Budget', desc: lang === 'zh' ? '?ÉÊÖÆË©≤Â?Â∏ÇÁ??üÊ¥ªË≤ªÔ?Â∞ãÊâæ?éÂ≠∏?ëÂ?Ë≥áÂä©Ê©üÊ?' : 'Consider city living costs, look for scholarships and grants' },
-                { icon: MapPin, title: lang === 'zh' ? '?∞Á?‰ΩçÁΩÆ' : 'Location', desc: lang === 'zh' ? 'Ê∞?Äô„ÄÅÊ??ñ„ÄÅÂ??®„ÄÅÈõ¢ÂÆ∂Ë??¢Ô?‰ª•Â??®È??ÖÈ?Ê©üÊ?' : 'Climate, culture, safety, distance from home, travel opportunities' },
+                { icon: GraduationCap, title: lang === 'zh' ? 'Â≠∏???' : 'Academic Fit', desc: lang === 'zh' ? 'Á¢∫?Ë™≤??Âê¶????Ê•≠??Ë∂£?Á¨¶ÔºåÂ≠∏?ËÉΩ???CityU' : 'Ensure courses align with your major and credits transfer back to CityU' },
+                { icon: Languages, title: lang === 'zh' ? 'Ë™û?Ë¶Å?' : 'Language', desc: lang === 'zh' ? 'Ë©ï‰º∞‰Ω†?IELTS/TOEFL?Êï∏ÔºåËÄÉÊÖÆ?Âê¶?Ë¶ÅÂ≠∏ÁøíÁï∂??Ë®Ä' : 'Evaluate your IELTS/TOEFL scores, consider local language needs' },
+                { icon: DollarSign, title: lang === 'zh' ? '????' : 'Budget', desc: lang === 'zh' ? '?ÊÖÆË©≤?Â∏Ç??Ê¥ªË≤ª?Â∞ãÊâæ?Â≠∏??Ë≥áÂä©Ê©ü?' : 'Consider city living costs, look for scholarships and grants' },
+                { icon: MapPin, title: lang === 'zh' ? '??‰ΩçÁΩÆ' : 'Location', desc: lang === 'zh' ? '?„ÄÅ??„ÄÅ??„ÄÅÈõ¢ÂÆ∂???‰ª•?????Ê©ü?' : 'Climate, culture, safety, distance from home, travel opportunities' },
               ].map((item, i) => (
                 <div key={i} className="p-4 bg-[var(--bg)] rounded-[16px]">
                   <item.icon className="w-8 h-8 text-[var(--brand)] mb-2" />
@@ -475,7 +475,7 @@ function AppContent() {
           </div>
         )}
 
-        {/* Â≠∏Ê†°?óË°® */}
+        {/* Â≠∏Ê†°?Ë°® */}
         <main className="flex-1">
           {filteredSchools.length === 0 ? (
             <div className="glass-effect p-12 text-center">
@@ -494,7 +494,7 @@ function AppContent() {
                   key={school.id}
                   className={`school-card p-5 relative ${expandedSchool === school.id ? 'col-span-1 md:col-span-2 xl:col-span-2' : ''}`}
                 >
-                  {/* ?∂Ë??âÈ? */}
+                  {/* ???? */}
                   <button
                     onClick={() => toggleFavorite(school.id)}
                     className={`heart-btn absolute top-5 right-5 p-2 rounded-full ${
@@ -506,7 +506,7 @@ function AppContent() {
                     <Heart className={`w-6 h-6 ${favorites.includes(school.id) ? 'fill-current' : ''}`} />
                   </button>
 
-                  {/* ÂæΩÁ?Ë°?*/}
+                  {/* ÂæΩ??*/}
                   <div className="flex items-center gap-2 mb-3 flex-wrap pr-10">
                     <span className="px-3 py-1 bg-[var(--brand)]/10 text-[var(--brand)] rounded-full text-sm font-medium">
                       {school.country}
@@ -531,10 +531,10 @@ function AppContent() {
                     )}
                   </div>
 
-                  {/* Â≠∏Ê†°?çÁ®± */}
+                  {/* Â≠∏Ê†°?Á®± */}
                   <h3 className="text-xl font-bold text-[var(--text)] mb-2 pr-10">{school.name}</h3>
 
-                  {/* Ë™ûË?‰ø°ÊÅØ */}
+                  {/* Ë™û?‰ø°ÊÅØ */}
                   {school.languages && (
                     <div className="flex items-center gap-2 text-xs text-[var(--muted)] mb-3">
                       <Languages className="w-3.5 h-3.5" />
@@ -542,7 +542,7 @@ function AppContent() {
                     </div>
                   )}
 
-                  {/* ?∏Â?‰ø°ÊÅØ Chips */}
+                  {/* ??‰ø°ÊÅØ Chips */}
                   <div className="flex flex-wrap gap-2 mb-4">
                     <span className="chip flex items-center gap-1">
                       <DollarSign className="w-3.5 h-3.5" />
@@ -550,7 +550,7 @@ function AppContent() {
                     </span>
                     <span className="chip flex items-center gap-1">
                       <Star className="w-3.5 h-3.5" />
-                      {lang === 'zh' ? '?çÈ?: ' : 'Quota: '}{school.quota}
+                      {lang === 'zh' ? '??: ' : 'Quota: '}{school.quota}
                     </span>
                     {school.cgpa > 0 && (
                       <span className="chip flex items-center gap-1">
@@ -566,12 +566,12 @@ function AppContent() {
                     )}
                   </div>
 
-                  {/* Â≠∏Ê†°?®Áâπ?πËâ≤ */}
+                  {/* Â≠∏Ê†°?Áâπ?Ëâ≤ */}
                   {school.uniqueFeatures && (
                     <div className="mb-4">
                       <div className="flex items-center gap-2 text-xs font-semibold text-[var(--brand)] mb-2">
                         <CheckCircle2 className="w-4 h-4" />
-                        {lang === 'zh' ? 'Â≠∏Ê†°?πËâ≤' : 'University Highlights'}
+                        {lang === 'zh' ? 'Â≠∏Ê†°?Ëâ≤' : 'University Highlights'}
                       </div>
                       <ul className="space-y-1">
                         {school.uniqueFeatures.slice(0, expandedSchool === school.id ? 5 : 2).map((feature, i) => (
@@ -587,31 +587,31 @@ function AppContent() {
                           className="mt-2 text-sm text-[var(--brand)] hover:text-[var(--brand2)] flex items-center gap-1"
                         >
                           {expandedSchool === school.id ? (
-                            <><ChevronUp className="w-4 h-4" /> {lang === 'zh' ? '?∂Ëµ∑' : 'Show less'}</>
+                            <><ChevronUp className="w-4 h-4" /> {lang === 'zh' ? '?Ëµ∑' : 'Show less'}</>
                           ) : (
-                            <><ChevronDown className="w-4 h-4" /> {lang === 'zh' ? `?ÑÊ? ${school.uniqueFeatures.length - 2} ??..` : `${school.uniqueFeatures.length - 2} more...`}</>
+                            <><ChevronDown className="w-4 h-4" /> {lang === 'zh' ? `?? ${school.uniqueFeatures.length - 2} ??..` : `${school.uniqueFeatures.length - 2} more...`}</>
                           )}
                         </button>
                       )}
                     </div>
                   )}
 
-                  {/* ?∏Ê?Ê®ôÊ?Ê®ôÁ±§ */}
+                  {/* ??Ê®ô?Ê®ôÁ±§ */}
                   {school.selectionFactors && (
                     <div className="mb-4 p-3 bg-[var(--soft)]/50 rounded-[12px]">
-                      <div className="text-xs text-[var(--muted)] mb-1">{lang === 'zh' ? '?©Â?‰Ω†Ô?Â¶ÇÊ?Ôº? : 'Good fit if you:'}</div>
+                      <div className="text-xs text-[var(--muted)] mb-1">{lang === 'zh' ? '??‰Ω†?Â¶Ç?? : 'Good fit if you:'}</div>
                       <div className="text-sm text-[var(--text)]">{school.selectionFactors.academicFit}</div>
                     </div>
                   )}
 
-                  {/* ?ç‰??âÈ? */}
+                  {/* ???? */}
                   <div className="flex flex-wrap gap-2">
                     <button
                       onClick={() => openSchoolModal(school)}
                       className="btn-primary text-sm flex items-center gap-1.5"
                     >
                       <ExternalLink className="w-4 h-4" />
-                      {lang === 'zh' ? '?•Á?Ë©≥Ê?' : 'View Details'}
+                      {lang === 'zh' ? '??Ë©≥?' : 'View Details'}
                     </button>
                     <button
                       onClick={() => toggleCompare(school.id)}
@@ -622,14 +622,14 @@ function AppContent() {
                       }`}
                     >
                       {compareList.includes(school.id) ? (
-                        <><Minus className="w-4 h-4" /> {lang === 'zh' ? 'ÁßªÂá∫ÊØîË?' : 'Remove'}</>
+                        <><Minus className="w-4 h-4" /> {lang === 'zh' ? 'ÁßªÂá∫ÊØî?' : 'Remove'}</>
                       ) : (
-                        <><Plus className="w-4 h-4" /> {lang === 'zh' ? '?†ÂÖ•ÊØîË?' : 'Compare'}</>
+                        <><Plus className="w-4 h-4" /> {lang === 'zh' ? '?ÂÖ•ÊØî?' : 'Compare'}</>
                       )}
                     </button>
                   </div>
 
-                  {/* Â±ïÈ??ÑË©≥Á¥∞‰ø°??*/}
+                  {/* Â±ï??Ë©≥Á¥∞‰ø°??*/}
                   {expandedSchool === school.id && (
                     <div className="mt-4 pt-4 border-t border-[var(--line)]">
                       <div className="grid grid-cols-2 gap-4 text-sm">
@@ -665,13 +665,13 @@ function AppContent() {
         </main>
       </div>
 
-      {/* ÊØîË??ΩÂ? */}
+      {/* ÊØî??? */}
       {compareList.length > 0 && (
         <div className="fixed bottom-6 right-6 w-[380px] max-w-[calc(100vw-48px)] bg-[var(--card)] border border-[var(--line)] rounded-[24px] shadow-[0_18px_38px_rgba(0,0,0,0.18)] p-5 z-20">
           <div className="flex items-center justify-between mb-3">
             <h4 className="font-bold text-[var(--text)] flex items-center gap-2">
               <Scale className="w-5 h-5 text-[var(--brand)]" />
-              {lang === 'zh' ? 'ÊØîË?Ê∏ÖÂñÆ' : 'Compare'} ({compareList.length}/4)
+              {lang === 'zh' ? 'ÊØî?Ê∏ÖÂñÆ' : 'Compare'} ({compareList.length}/4)
             </h4>
             <div className="flex gap-2">
               <button
@@ -679,8 +679,8 @@ function AppContent() {
                 className="text-sm px-3 py-1.5 bg-[var(--brand)] text-white rounded-full hover:bg-[var(--brand2)] transition-all"
               >
                 {showComparePanel 
-                  ? (lang === 'zh' ? '?±Ë?' : 'Hide') 
-                  : (lang === 'zh' ? 'Â±ïÈ?' : 'Expand')}
+                  ? (lang === 'zh' ? '??' : 'Hide') 
+                  : (lang === 'zh' ? 'Â±ï?' : 'Expand')}
               </button>
               <button
                 onClick={clearCompare}
@@ -711,13 +711,13 @@ function AppContent() {
           {showComparePanel && compareList.length >= 2 && (
             <div className="border-t border-[var(--line)] pt-4">
               <h5 className="font-semibold text-sm mb-3 text-[var(--text)]">
-                {lang === 'zh' ? 'ÊØîË?Ë°®Ê†º' : 'Comparison Table'}
+                {lang === 'zh' ? 'ÊØî?Ë°®Ê†º' : 'Comparison Table'}
               </h5>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-[var(--line)]">
-                      <th className="text-left py-2 text-[var(--muted)] font-medium">{lang === 'zh' ? '?ÖÁõÆ' : 'Item'}</th>
+                      <th className="text-left py-2 text-[var(--muted)] font-medium">{lang === 'zh' ? '?ÁõÆ' : 'Item'}</th>
                       {compareList.map(id => {
                         const school = schoolsData.schools.find(s => s.id === id);
                         return (
@@ -730,14 +730,14 @@ function AppContent() {
                   </thead>
                   <tbody>
                     {[
-                      { label: lang === 'zh' ? '?ãÂÆ∂' : 'Country', key: 'country' },
-                      { label: lang === 'zh' ? '?éÂ?' : 'City', key: 'city' },
-                      { label: lang === 'zh' ? '?çÈ?' : 'Quota', key: 'quota' },
+                      { label: lang === 'zh' ? '?ÂÆ∂' : 'Country', key: 'country' },
+                      { label: lang === 'zh' ? '??' : 'City', key: 'city' },
+                      { label: lang === 'zh' ? '??' : 'Quota', key: 'quota' },
                       { label: lang === 'zh' ? 'CGPA' : 'CGPA', key: 'cgpa', format: (v) => v > 0 ? `??${v}` : '-' },
                       { label: lang === 'zh' ? 'IELTS' : 'IELTS', key: 'ielts' },
-                      { label: lang === 'zh' ? 'Â≠∏Ê?' : 'Semester', key: 'semester' },
-                      { label: lang === 'zh' ? '?êÁ?/?? : 'Budget/mo', key: 'budget', format: (v) => `HK$${v?.toLocaleString()}` },
-                      { label: 'QS ' + (lang === 'zh' ? '?íÂ?' : 'Rank'), key: 'ranking', format: (v) => v ? `#${v}` : '-' },
+                      { label: lang === 'zh' ? 'Â≠∏?' : 'Semester', key: 'semester' },
+                      { label: lang === 'zh' ? '??/?? : 'Budget/mo', key: 'budget', format: (v) => `HK$${v?.toLocaleString()}` },
+                      { label: 'QS ' + (lang === 'zh' ? '??' : 'Rank'), key: 'ranking', format: (v) => v ? `#${v}` : '-' },
                       { label: lang === 'zh' ? 'Ë≥áÂä©' : 'Grant', key: 'explorerGrant', format: (v) => v ? (lang === 'zh' ? '?? : 'Yes') : (lang === 'zh' ? '?? : 'No') },
                     ].map((row, idx) => (
                       <tr key={row.key} className="border-b border-[var(--line)]/50">
@@ -761,7 +761,7 @@ function AppContent() {
         </div>
       )}
 
-      {/* Ë©≥Ê?ÂΩàÁ? */}
+      {/* Ë©≥?ÂΩà? */}
       {selectedSchool && (
         <div 
           className="fixed inset-0 bg-black/45 flex items-center justify-center p-4 md:p-8 z-30"
@@ -771,7 +771,7 @@ function AppContent() {
             className="w-full max-w-[840px] max-h-[90vh] overflow-y-auto bg-[var(--card)] rounded-[28px] p-6 md:p-8 border border-[var(--line)] shadow-[0_20px_50px_rgba(0,0,0,0.2)]"
             onClick={e => e.stopPropagation()}
           >
-            {/* ÂΩàÁ??≠ÈÉ® */}
+            {/* ÂΩà??ÈÉ® */}
             <div className="flex items-start justify-between mb-6">
               <div>
                 <h2 className="text-2xl font-bold text-[var(--text)] mb-2">{selectedSchool.name}</h2>
@@ -785,13 +785,13 @@ function AppContent() {
               </button>
             </div>
 
-            {/* Âø´ÈÄü‰ø°?ØË? */}
+            {/* Âø´ÈÄü‰ø°?? */}
             <div className="flex flex-wrap gap-2 mb-6">
-              <span className="chip">{lang === 'zh' ? '?çÈ?' : 'Quota'}: {selectedSchool.quota}</span>
+              <span className="chip">{lang === 'zh' ? '??' : 'Quota'}: {selectedSchool.quota}</span>
               <span className="chip">CGPA: {selectedSchool.cgpa > 0 ? `??${selectedSchool.cgpa}` : '-'}</span>
               <span className="chip">IELTS: {selectedSchool.ielts}</span>
               <span className="chip">QS #{selectedSchool.ranking || '-'}</span>
-              <span className="chip">{lang === 'zh' ? '?êÁ?' : 'Budget'}: HK${selectedSchool.budget?.toLocaleString()}{lang === 'zh' ? '/?? : '/mo'}</span>
+              <span className="chip">{lang === 'zh' ? '??' : 'Budget'}: HK${selectedSchool.budget?.toLocaleString()}{lang === 'zh' ? '/?? : '/mo'}</span>
               {selectedSchool.explorerGrant && (
                 <span className="badge-grant text-xs">HK$10K Grant</span>
               )}
@@ -799,51 +799,51 @@ function AppContent() {
 
             {/* Ë©≥Á¥∞‰ø°ÊÅØÁ∂≤Ê†º */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-              {/* ?∫Êú¨Ë¶ÅÊ? */}
+              {/* ?Êú¨Ë¶Å? */}
               <div className="p-4 bg-[var(--bg)] rounded-[18px] border border-[var(--line)]">
                 <h5 className="font-semibold text-[var(--text)] mb-3 flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[var(--brand)]" />
-                  {lang === 'zh' ? '?∫Êú¨Ë¶ÅÊ?' : 'Core Requirements'}
+                  {lang === 'zh' ? '?Êú¨Ë¶Å?' : 'Core Requirements'}
                 </h5>
                 <ul className="space-y-2 text-sm">
                   <li className="flex justify-between">
-                    <span className="text-[var(--muted)]">{lang === 'zh' ? 'Ë™ûË?Ë¶ÅÊ?' : 'Language'}:</span>
-                    <span className="text-[var(--text)] font-medium">{selectedSchool.ielts !== '-' ? `IELTS ${selectedSchool.ielts}` : ''} {selectedSchool.toefl !== '-' ? `TOEFL ${selectedSchool.toefl}` : lang === 'zh' ? '?°ÁâπÂÆöË?Ê±? : 'No specific'}</span>
+                    <span className="text-[var(--muted)]">{lang === 'zh' ? 'Ë™û?Ë¶Å?' : 'Language'}:</span>
+                    <span className="text-[var(--text)] font-medium">{selectedSchool.ielts !== '-' ? `IELTS ${selectedSchool.ielts}` : ''} {selectedSchool.toefl !== '-' ? `TOEFL ${selectedSchool.toefl}` : lang === 'zh' ? '?ÁâπÂÆö?? : 'No specific'}</span>
                   </li>
                   <li className="flex justify-between">
-                    <span className="text-[var(--muted)]">{lang === 'zh' ? 'Â≠∏Ê??ÇÈ?' : 'Semester'}:</span>
+                    <span className="text-[var(--muted)]">{lang === 'zh' ? 'Â≠∏???' : 'Semester'}:</span>
                     <span className="text-[var(--text)] font-medium">{selectedSchool.semester}</span>
                   </li>
                   <li className="flex justify-between">
-                    <span className="text-[var(--muted)]">{lang === 'zh' ? '?°Â?Ë™ûË?' : 'Campus languages'}:</span>
+                    <span className="text-[var(--muted)]">{lang === 'zh' ? '??Ë™û?' : 'Campus languages'}:</span>
                     <span className="text-[var(--text)] font-medium">{(selectedSchool.languages || []).join(', ')}</span>
                   </li>
                 </ul>
               </div>
 
-              {/* Â≠∏Ë??çÂ? */}
+              {/* Â≠∏??? */}
               <div className="p-4 bg-[var(--bg)] rounded-[18px] border border-[var(--line)]">
                 <h5 className="font-semibold text-[var(--text)] mb-3 flex items-center gap-2">
                   <GraduationCap className="w-4 h-4 text-[var(--brand)]" />
-                  {lang === 'zh' ? 'Â≠∏Ë??çÂ?' : 'Academic Fit'}
+                  {lang === 'zh' ? 'Â≠∏???' : 'Academic Fit'}
                 </h5>
                 <ul className="space-y-2 text-sm">
                   <li>
-                    <span className="text-[var(--muted)]">{lang === 'zh' ? '?©Â?Â∞àÊ•≠: ' : 'Good for: '}</span>
+                    <span className="text-[var(--muted)]">{lang === 'zh' ? '??Â∞àÊ•≠: ' : 'Good for: '}</span>
                     <span className="text-[var(--text)]">{selectedSchool.selectionFactors?.academicFit}</span>
                   </li>
                   <li>
-                    <span className="text-[var(--muted)]">{lang === 'zh' ? '?ØÊè¥?çÂ?: ' : 'Support: '}</span>
+                    <span className="text-[var(--muted)]">{lang === 'zh' ? '?Êè¥??: ' : 'Support: '}</span>
                     <span className="text-[var(--text)]">{selectedSchool.selectionFactors?.supportServices}</span>
                   </li>
                 </ul>
               </div>
 
-              {/* Â≠∏Ê†°?πËâ≤ */}
+              {/* Â≠∏Ê†°?Ëâ≤ */}
               <div className="p-4 bg-[var(--bg)] rounded-[18px] border border-[var(--line)] md:col-span-2">
                 <h5 className="font-semibold text-[var(--text)] mb-3 flex items-center gap-2">
                   <Star className="w-4 h-4 text-[var(--accent)]" />
-                  {lang === 'zh' ? 'Â≠∏Ê†°?πËâ≤' : 'University Highlights'}
+                  {lang === 'zh' ? 'Â≠∏Ê†°?Ëâ≤' : 'University Highlights'}
                 </h5>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
                   {(selectedSchool.uniqueFeatures || []).map((feature, i) => (
@@ -855,29 +855,29 @@ function AppContent() {
                 </ul>
               </div>
 
-              {/* ?áÂ?È´îÈ? */}
+              {/* ??È´î? */}
               <div className="p-4 bg-[var(--bg)] rounded-[18px] border border-[var(--line)]">
                 <h5 className="font-semibold text-[var(--text)] mb-3 flex items-center gap-2">
                   <Globe className="w-4 h-4 text-[var(--brand)]" />
-                  {lang === 'zh' ? '?áÂ?È´îÈ?' : 'Cultural Experience'}
+                  {lang === 'zh' ? '??È´î?' : 'Cultural Experience'}
                 </h5>
                 <p className="text-sm text-[var(--text)]">{selectedSchool.selectionFactors?.culturalExperience}</p>
-                <p className="text-sm text-[var(--muted)] mt-2">{lang === 'zh' ? '?êÁ?Ê∞¥Âπ≥: ' : 'Budget level: '}{selectedSchool.selectionFactors?.budgetLevel}</p>
+                <p className="text-sm text-[var(--muted)] mt-2">{lang === 'zh' ? '??Ê∞¥Âπ≥: ' : 'Budget level: '}{selectedSchool.selectionFactors?.budgetLevel}</p>
               </div>
 
-              {/* ?çË??ôË®ª */}
+              {/* ???Ë®ª */}
               {selectedSchool.notes && (
                 <div className="p-4 bg-[var(--warning)]/10 rounded-[18px] border border-[var(--warning)]/20">
                   <h5 className="font-semibold text-[var(--warning)] mb-2 flex items-center gap-2">
                     <AlertCircle className="w-4 h-4" />
-                    {lang === 'zh' ? '?çË??ôË®ª' : 'Important Notes'}
+                    {lang === 'zh' ? '???Ë®ª' : 'Important Notes'}
                   </h5>
                   <p className="text-sm text-[var(--warning)]">{selectedSchool.notes}</p>
                 </div>
               )}
             </div>
 
-            {/* Â∫ïÈÉ®?ç‰? */}
+            {/* Â∫ïÈÉ®?? */}
             <div className="flex gap-3 pt-4 border-t border-[var(--line)]">
               {selectedSchool.website && (
                 <a
@@ -887,7 +887,7 @@ function AppContent() {
                   className="btn-primary flex items-center gap-2"
                 >
                   <ExternalLink className="w-4 h-4" />
-                  {lang === 'zh' ? 'Ë®™Â?ÂÆòÁ∂≤' : 'Visit Website'}
+                  {lang === 'zh' ? 'Ë®™?ÂÆòÁ∂≤' : 'Visit Website'}
                 </a>
               )}
               <button
@@ -901,9 +901,9 @@ function AppContent() {
                 }`}
               >
                 {compareList.includes(selectedSchool.id) ? (
-                  <><Minus className="w-4 h-4" /> {lang === 'zh' ? 'ÁßªÂá∫ÊØîË?' : 'Remove from compare'}</>
+                  <><Minus className="w-4 h-4" /> {lang === 'zh' ? 'ÁßªÂá∫ÊØî?' : 'Remove from compare'}</>
                 ) : (
-                  <><Plus className="w-4 h-4" /> {lang === 'zh' ? '?†ÂÖ•ÊØîË?' : 'Add to compare'}</>
+                  <><Plus className="w-4 h-4" /> {lang === 'zh' ? '?ÂÖ•ÊØî?' : 'Add to compare'}</>
                 )}
               </button>
             </div>
@@ -911,30 +911,30 @@ function AppContent() {
         </div>
       )}
 
-      {/* ?†Ë??Ä??*/}
+      {/* ?????*/}
       {loading && (
         <div className="fixed inset-0 bg-[var(--bg)] flex items-center justify-center z-50">
           <div className="text-center">
             <Loader2 className="w-12 h-12 text-[var(--brand)] animate-spin mx-auto mb-4" />
-            <p className="text-[var(--muted)]">{lang === 'zh' ? 'Ê≠?ú®ËºâÂÖ•?∏Ê?...' : 'Loading data...'}</p>
+            <p className="text-[var(--muted)]">{lang === 'zh' ? '?ËºâÂÖ•??...' : 'Loading data...'}</p>
           </div>
         </div>
       )}
 
-      {/* ?ØË™§?Ä??*/}
+      {/* ?Ë™§???*/}
       {error && !loading && (
         <div className="fixed inset-0 bg-[var(--bg)] flex items-center justify-center z-50">
           <div className="text-center max-w-md p-6">
             <AlertCircle className="w-12 h-12 text-[var(--danger)] mx-auto mb-4" />
             <h3 className="text-xl font-bold text-[var(--text)] mb-2">
-              {lang === 'zh' ? 'ËºâÂÖ•Â§±Ê?' : 'Failed to Load'}
+              {lang === 'zh' ? 'ËºâÂÖ•Â§±?' : 'Failed to Load'}
             </h3>
             <p className="text-[var(--muted)] mb-4">{error}</p>
             <button 
               onClick={() => window.location.reload()}
               className="btn-primary"
             >
-              {lang === 'zh' ? '?çÊñ∞ËºâÂÖ•' : 'Reload'}
+              {lang === 'zh' ? '?Êñ∞ËºâÂÖ•' : 'Reload'}
             </button>
           </div>
         </div>
@@ -944,7 +944,7 @@ function AppContent() {
       <footer className="mt-12 text-center text-[var(--muted)] text-sm pb-6">
         <p>{t.footer}</p>
         <p className="mt-1">Created for Peter ¬∑ {t.disclaimer}</p>
-        <p className="mt-2 text-xs">{lang === 'zh' ? '?êÁ?‰º∞Á??∫Êñº2026Âπ¥Êï∏?öÔ?ÂØ¶È?Ë≤ªÁî®?ØËÉΩ?âÊ?‰∏çÂ?' : 'Budget estimates based on 2026 data, actual costs may vary'}</p>
+        <p className="mt-2 text-xs">{lang === 'zh' ? '??‰º∞??Êñº2026Âπ¥Êï∏??ÂØ¶?Ë≤ªÁî®?ËÉΩ??‰∏ç?' : 'Budget estimates based on 2026 data, actual costs may vary'}</p>
       </footer>
     </div>
   );
