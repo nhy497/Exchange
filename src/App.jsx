@@ -9,7 +9,7 @@ function useSchoolsData() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('data/schools_complete.json')
+    fetch('/Exchange/data/schools_complete.json')
       .then(res => {
         if (!res.ok) throw new Error('Failed to load schools data');
         return res.json();
@@ -959,3 +959,4 @@ function App() {
 }
 
 export default App;
+
