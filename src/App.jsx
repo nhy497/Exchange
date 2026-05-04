@@ -1,9 +1,32 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { Heart, MapPin, Calendar, Award, GraduationCap, Globe, Filter, X, Star, BookOpen, DollarSign, ExternalLink, TrendingUp, Info, Languages, Building2, Lightbulb, CheckCircle2, AlertCircle, ChevronDown, ChevronUp, Plus, Minus, Scale } from 'lucide-react';
-import schoolsData from '../data/schools_complete.json';
+import { Heart, MapPin, Calendar, Award, GraduationCap, Globe, Filter, X, Star, BookOpen, DollarSign, ExternalLink, TrendingUp, Info, Languages, Building2, Lightbulb, CheckCircle2, AlertCircle, ChevronDown, ChevronUp, Plus, Minus, Scale, Loader2 } from 'lucide-react';
 import { LanguageProvider, useLanguage, regionFeatures } from './LanguageContext';
 
-const countries = [...new Set(schoolsData.schools.map(s => s.country))].sort();
+// 動態加載學校數據
+function useSchoolsData() {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    fetch('./data/schools_complete.json')
+      .then(res => {
+        if (!res.ok) throw new Error('Failed to load schools data');
+        return res.json();
+      })
+      .then(json => {
+        setData(json);
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error('Error loading schools data:', err);
+        setError(err.message);
+        setLoading(false);
+      });
+  }, []);
+
+  return { data, loading, error };
+}
 
 function AppContent() {
   const { lang, setLang, t } = useLanguage();
@@ -21,6 +44,15 @@ function AppContent() {
   const [showCriteriaGuide, setShowCriteriaGuide] = useState(false);
   const [selectedSchool, setSelectedSchool] = useState(null);
   const [showComparePanel, setShowComparePanel] = useState(false);
+  
+  // 加載學校數據
+  const { data: schoolsData, loading, error } = useSchoolsData();
+  
+  // 計算國家列表
+  const countries = useMemo(() => {
+    if (!schoolsData) return [];
+    return [...new Set(schoolsData.schools.map(s => s.country))].sort();
+  }, [schoolsData]);
   
   // 篩選條件 - 支持雙向
   const [selectedCountries, setSelectedCountries] = useState([]);
@@ -882,6 +914,35 @@ function AppContent() {
                 )}
               </button>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* 加載狀態 */}
+      {loading && (
+        <div className="fixed inset-0 bg-[var(--bg)] flex items-center justify-center z-50">
+          <div className="text-center">
+            <Loader2 className="w-12 h-12 text-[var(--brand)] animate-spin mx-auto mb-4" />
+            <p className="text-[var(--muted)]">{lang === 'zh' ? '正在載入數據...' : 'Loading data...'}</p>
+          </div>
+        </div>
+      )}
+
+      {/* 錯誤狀態 */}
+      {error && !loading && (
+        <div className="fixed inset-0 bg-[var(--bg)] flex items-center justify-center z-50">
+          <div className="text-center max-w-md p-6">
+            <AlertCircle className="w-12 h-12 text-[var(--danger)] mx-auto mb-4" />
+            <h3 className="text-xl font-bold text-[var(--text)] mb-2">
+              {lang === 'zh' ? '載入失敗' : 'Failed to Load'}
+            </h3>
+            <p className="text-[var(--muted)] mb-4">{error}</p>
+            <button 
+              onClick={() => window.location.reload()}
+              className="btn-primary"
+            >
+              {lang === 'zh' ? '重新載入' : 'Reload'}
+            </button>
           </div>
         </div>
       )}
