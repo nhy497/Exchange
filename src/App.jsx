@@ -542,10 +542,30 @@ function AppContent() {
                     )}
                   </div>
 
-                  {/* 學校?稱 */}
+                  {/* 學校名稱 */}
                   <h3 className="text-xl font-bold text-[var(--text)] mb-2 pr-10">{school.name}</h3>
 
-                  {/* 語?信息 */}
+                  {/* 地區和區域信息 */}
+                  {(school.region || school.district) && (
+                    <div className="flex items-center gap-2 text-xs text-[var(--muted)] mb-2">
+                      <MapPin className="w-3.5 h-3.5" />
+                      <span>
+                        {school.region && lang === 'zh' ? `${school.region}` : school.region}
+                        {school.region && school.district ? ' · ' : ''}
+                        {school.district && lang === 'zh' ? `${school.district}` : school.district}
+                      </span>
+                    </div>
+                  )}
+
+                  {/* 氣候信息 */}
+                  {school.climate && (
+                    <div className="flex items-center gap-2 text-xs text-[var(--muted)] mb-2">
+                      <Info className="w-3.5 h-3.5" />
+                      <span>{lang === 'zh' ? school.climate : school.climate}</span>
+                    </div>
+                  )}
+
+                  {/* 語言信息 */}
                   {school.languages && (
                     <div className="flex items-center gap-2 text-xs text-[var(--muted)] mb-3">
                       <Languages className="w-3.5 h-3.5" />
@@ -576,6 +596,38 @@ function AppContent() {
                       </span>
                     )}
                   </div>
+
+                  {/* 食物文化 */}
+                  {school.foodCulture && (
+                    <div className="mb-4">
+                      <div className="flex items-center gap-2 text-xs font-semibold text-[var(--accent)] mb-2">
+                        <Heart className="w-4 h-4" />
+                        {lang === 'zh' ? '美食文化' : 'Food & Culture'}
+                      </div>
+                      <p className="text-sm text-[var(--text)] pl-6">{lang === 'zh' ? school.foodCulture : school.foodCulture}</p>
+                    </div>
+                  )}
+
+                  {/* 特別特色 */}
+                  {school.specialFeatures && (
+                    <div className="mb-4">
+                      <div className="flex items-center gap-2 text-xs font-semibold text-[var(--success)] mb-2">
+                        <Star className="w-4 h-4" />
+                        {lang === 'zh' ? '特別之處' : 'Special Highlights'}
+                      </div>
+                      <ul className="space-y-1">
+                        {school.specialFeatures.slice(0, expandedSchool === school.id ? 4 : 2).map((feature, i) => (
+                          <li key={i} className="text-sm text-[var(--text)] flex items-start gap-2">
+                            <span className="text-[var(--success)] mt-1">★</span>
+                            <span className="flex-1">{lang === 'zh' ? feature : feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      {school.specialFeatures.length > 2 && expandedSchool !== school.id && (
+                        <p className="text-xs text-[var(--muted)] mt-1 pl-6">+{school.specialFeatures.length - 2} more...</p>
+                      )}
+                    </div>
+                  )}
 
                   {/* 學校特色 */}
                   {school.uniqueFeatures && (
@@ -803,6 +855,12 @@ function AppContent() {
               <span className="chip">IELTS: {selectedSchool.ielts}</span>
               <span className="chip">QS #{selectedSchool.ranking || '-'}</span>
               <span className="chip">{lang === 'zh' ? '預算' : 'Budget'}: HK${selectedSchool.budget?.toLocaleString()}{lang === 'zh' ? '/月' : '/mo'}</span>
+              {selectedSchool.region && (
+                <span className="chip bg-[var(--accent)]/10 text-[var(--accent)]">{selectedSchool.region}</span>
+              )}
+              {selectedSchool.climate && (
+                <span className="chip bg-[var(--success)]/10 text-[var(--success)]">{lang === 'zh' ? selectedSchool.climate : selectedSchool.climate}</span>
+              )}
               {selectedSchool.explorerGrant && (
                 <span className="badge-grant text-xs">HK$10K Grant</span>
               )}
@@ -865,6 +923,35 @@ function AppContent() {
                   ))}
                 </ul>
               </div>
+
+              {/* 美食文化 */}
+              {selectedSchool.foodCulture && (
+                <div className="p-4 bg-[var(--bg)] rounded-[18px] border border-[var(--line)]">
+                  <h5 className="font-semibold text-[var(--text)] mb-3 flex items-center gap-2">
+                    <Heart className="w-4 h-4 text-[var(--accent)]" />
+                    {lang === 'zh' ? '美食文化' : 'Food & Culture'}
+                  </h5>
+                  <p className="text-sm text-[var(--text)]">{lang === 'zh' ? selectedSchool.foodCulture : selectedSchool.foodCulture}</p>
+                </div>
+              )}
+
+              {/* 特別特色 */}
+              {selectedSchool.specialFeatures && (
+                <div className="p-4 bg-[var(--bg)] rounded-[18px] border border-[var(--line)]">
+                  <h5 className="font-semibold text-[var(--text)] mb-3 flex items-center gap-2">
+                    <Star className="w-4 h-4 text-[var(--success)]" />
+                    {lang === 'zh' ? '特別之處' : 'Special Highlights'}
+                  </h5>
+                  <ul className="space-y-2">
+                    {(selectedSchool.specialFeatures || []).map((feature, i) => (
+                      <li key={i} className="text-sm text-[var(--text)] flex items-start gap-2">
+                        <span className="text-[var(--success)] mt-1">★</span>
+                        <span>{lang === 'zh' ? feature : feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
 
               {/* 文化體驗 */}
               <div className="p-4 bg-[var(--bg)] rounded-[18px] border border-[var(--line)]">

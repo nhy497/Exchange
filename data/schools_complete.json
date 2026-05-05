@@ -167,7 +167,17 @@
         "culturalExperience": "Experience Australia culture",
         "budgetLevel": "HK$9,000/month",
         "language": "English"
-      }
+      },
+      "region": "New South Wales",
+      "district": "Macquarie Park",
+      "foodCulture": "校園內有多元文化餐廳",
+      "climate": "亞熱帶濕潤氣候",
+      "specialFeatures": [
+        "會計和金融學院世界聞名",
+        "校園內有購物中心",
+        "鄰近北悉尼商業區",
+        "火車直達市中心僅25分鐘"
+      ]
     },
     {
       "id": 6,
@@ -198,7 +208,17 @@
         "culturalExperience": "Experience Australia culture",
         "budgetLevel": "HK$9,000/month",
         "language": "English"
-      }
+      },
+      "region": "Victoria",
+      "district": "Clayton",
+      "foodCulture": "Clayton區擁有大量亞洲餐廳",
+      "climate": "溫帶海洋性氣候",
+      "specialFeatures": [
+        "藥學院全球排名第1",
+        "工程學院設施先進",
+        "校園內有火車站直達市中心",
+        "Clayton區華人超市眾多"
+      ]
     },
     {
       "id": 7,
@@ -228,7 +248,17 @@
         "culturalExperience": "Experience Australia culture",
         "budgetLevel": "HK$9,000/month",
         "language": "English"
-      }
+      },
+      "region": "Queensland",
+      "district": "Brisbane CBD",
+      "foodCulture": "布里斯本河濱餐廳眾多",
+      "climate": "亞熱帶氣候",
+      "specialFeatures": [
+        "位於布里斯本市中心",
+        "畢業生就業率昆士蘭第1",
+        "與業界聯繋緊密",
+        "南岸公園文化生活豐富"
+      ]
     },
     {
       "id": 8,
@@ -259,7 +289,17 @@
         "culturalExperience": "Experience Australia culture",
         "budgetLevel": "HK$9,000/month",
         "language": "English"
-      }
+      },
+      "region": "Victoria",
+      "district": "Parkville",
+      "foodCulture": "墨爾本以咖啡文化聞名，擁有眾多精品咖啡館和多元美食",
+      "climate": "溫帶海洋性氣候，四季分明",
+      "specialFeatures": [
+        "咖啡之都，擁有世界級咖啡文化",
+        "街頭藝術和塗鴉巷聞名",
+        "維多利亞市場提供新鮮食材",
+        "鄰近大洋路，可週末旅遊"
+      ]
     },
     {
       "id": 9,
@@ -290,7 +330,17 @@
         "culturalExperience": "Experience Australia culture",
         "budgetLevel": "HK$9,000/month",
         "language": "English"
-      }
+      },
+      "region": "New South Wales",
+      "district": "Kensington",
+      "foodCulture": "鄰近Coogee海灘，海鮮餐廳林立",
+      "climate": "亞熱帶濕潤氣候",
+      "specialFeatures": [
+        "距離Coogee海灘僅15分鐘步行",
+        "工程學院在澳洲排名第一",
+        "擁有現代化校園和設施",
+        "鄰近中央商業區，交通便利"
+      ]
     },
     {
       "id": 10,
@@ -321,7 +371,17 @@
         "culturalExperience": "Experience Australia culture",
         "budgetLevel": "HK$9,000/month",
         "language": "English"
-      }
+      },
+      "region": "New South Wales",
+      "district": "Callaghan",
+      "foodCulture": "海濱城市，新鮮海鮮豐富",
+      "climate": "亞熱帶濕潤氣候",
+      "specialFeatures": [
+        "距離美麗海灘僅10分鐘",
+        "生活成本相對較低",
+        "Nobbys燈塔可觀賞海豚",
+        "工程學院與業界聯繋緊密"
+      ]
     },
     {
       "id": 11,
@@ -352,7 +412,17 @@
         "culturalExperience": "Experience Australia culture",
         "budgetLevel": "HK$9,000/month",
         "language": "English"
-      }
+      },
+      "region": "Queensland",
+      "district": "St Lucia",
+      "foodCulture": "布里斯本河濱區有眾多餐廳和咖啡館",
+      "climate": "亞熱帶氣候，全年陽光明媚",
+      "specialFeatures": [
+        "校園內有湖泊和亞熱帶植物",
+        "距離黃金海岸僅1小時車程",
+        "大堡礁旅遊便利",
+        "全年可穿短袖，冬季溫暖"
+      ]
     },
     {
       "id": 12,
@@ -383,7 +453,17 @@
         "culturalExperience": "Experience Australia culture",
         "budgetLevel": "HK$9,000/month",
         "language": "English"
-      }
+      },
+      "region": "New South Wales",
+      "district": "Camperdown",
+      "foodCulture": "悉尼港灣區擁有豐富海鮮和國際美食",
+      "climate": "亞熱帶濕潤氣候，夏涼冬暖",
+      "specialFeatures": [
+        "標誌性的悉尼歌劇院和海港大橋",
+        "邦代海灘是世界著名海灘之一",
+        "達令港灣區夜生活和美食豐富",
+        "華人區Burwood美食眾多"
+      ]
     },
     {
       "id": 13,
@@ -413,7 +493,17 @@
         "culturalExperience": "Experience Australia culture",
         "budgetLevel": "HK$9,000/month",
         "language": "English"
-      }
+      },
+      "region": "Tasmania",
+      "district": "Hobart",
+      "foodCulture": "塔斯馬尼亞以新鮮海鮮和農產品聞名",
+      "climate": "溫帶海洋性氣候，四季分明",
+      "specialFeatures": [
+        "澳洲最南端的寧靜島嶼",
+        "原始自然風光和野生動物",
+        "南極光觀賞地點",
+        "海鮮品質世界級"
+      ]
     },
     {
       "id": 14,
@@ -444,7 +534,17 @@
         "culturalExperience": "Experience Australia culture",
         "budgetLevel": "HK$9,000/month",
         "language": "English"
-      }
+      },
+      "region": "New South Wales",
+      "district": "Ultimo",
+      "foodCulture": "市中心位置，美食選擇眾多",
+      "climate": "亞熱帶濕潤氣候",
+      "specialFeatures": [
+        "位於悉尼市中心核心位置",
+        "設計學院全球頂尖",
+        "與行業合作緊密",
+        "步行可達達令港和唐人街"
+      ]
     },
     {
       "id": 15,
@@ -474,7 +574,17 @@
         "culturalExperience": "Experience Australia culture",
         "budgetLevel": "HK$9,000/month",
         "language": "English"
-      }
+      },
+      "region": "New South Wales",
+      "district": "Wollongong",
+      "foodCulture": "海濱城市，海鮮和新鮮食材豐富",
+      "climate": "亞熱帶海洋性氣候",
+      "specialFeatures": [
+        "距離悉尼僅1小時火車",
+        "海灘和山景兼備",
+        "臥崖絜道景色壯觀",
+        "生活成本比悉尼低30%"
+      ]
     },
     {
       "id": 16,
