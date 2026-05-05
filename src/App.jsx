@@ -205,7 +205,7 @@ function AppContent() {
               onClick={() => setLang(lang === 'zh' ? 'en' : 'zh')}
               className="px-4 py-2 bg-white/10 text-white rounded-[12px] hover:bg-white/20 transition-all font-medium border border-white/20"
             >
-              {lang === 'zh' ? 'EN' : '中?'}
+              {lang === 'zh' ? 'EN' : '中文'}
             </button>
             <button
               onClick={() => setShowFavoritesOnly(!showFavoritesOnly)}
@@ -261,7 +261,7 @@ function AppContent() {
           </button>
         </div>
 
-        {/* ?覽?示 */}
+        {/* 資料來源 */}
         <div className="mt-4 p-4 rounded-[20px] bg-[var(--soft)]/30 border border-[var(--brand)]/20 text-[var(--accent)] text-sm">
           {lang === 'zh' 
             ? '資料來源：CityU GEO I-level Quota PDF（更新於2026年1月16日）。預算估算根據具體城市，包含住宿、餐飲、交通等基本生活費'
@@ -308,7 +308,7 @@ function AppContent() {
               </div>
             </div>
 
-            {/* CGPA 城市篩選 */}
+            {/* CGPA 要求篩選 */}
             <div className="mb-5 p-4 bg-[var(--bg)] rounded-[16px]">
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-sm font-semibold text-[var(--text)] flex items-center gap-2">
@@ -380,13 +380,13 @@ function AppContent() {
                 <span className="text-sm font-bold text-[var(--brand)] min-w-[3ch]">{ieltsValue.toFixed(1)}</span>
               </div>
               <p className="text-xs text-[var(--muted)] mt-2">
-                {ieltsMode === 'min' 
-                  ? (lang === 'zh' ? '顯示 IELTS 要? 城市' : 'Show schools with IELTS 城市') + ieltsValue.toFixed(1)
-                  : (lang === 'zh' ? '顯示 IELTS 要? 城市' : 'Show schools with IELTS 城市') + ieltsValue.toFixed(1)}
+                {ieltsMode === 'min'
+                  ? (lang === 'zh' ? '顯示 IELTS 要求低於 ' : 'Show schools with IELTS below ') + ieltsValue.toFixed(1)
+                  : (lang === 'zh' ? '顯示 IELTS 要求高於 ' : 'Show schools with IELTS above ') + ieltsValue.toFixed(1)}
               </p>
             </div>
 
-            {/* 城市城市篩選 */}
+            {/* 預算篩選 */}
             <div className="mb-5 p-4 bg-[var(--bg)] rounded-[16px]">
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-sm font-semibold text-[var(--text)] flex items-center gap-2">
@@ -447,7 +447,7 @@ function AppContent() {
             {/* 結果統計 */}
             <div className="pt-4 border-t border-[var(--line)]">
               <p className="text-sm text-[var(--muted)]">
-                {t.results}: <span className="font-bold text-[var(--brand)] text-lg">{filteredSchools.length}</span> / {schoolsData?.schools?.length 城市 0} {t.totalSchools}
+                {t.results}: <span className="font-bold text-[var(--brand)] text-lg">{filteredSchools.length}</span> / {schoolsData?.schools?.length ?? 0} {t.totalSchools}
               </p>
             </div>
           </aside>
@@ -459,7 +459,7 @@ function AppContent() {
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-xl font-bold text-[var(--text)] flex items-center gap-2">
                 <Lightbulb className="w-6 h-6 text-[var(--accent)]" />
-                {lang === 'zh' ? '如城市城市城市交?學城市' : 'How to Choose the Right Exchange University?'}
+                {lang === 'zh' ? '如何選擇合適的交流學校' : 'How to Choose the Right Exchange University?'}
               </h2>
               <button onClick={() => setShowCriteriaGuide(false)} className="p-2 hover:bg-[var(--bg)] rounded-full">
                 <X className="w-5 h-5 text-[var(--muted)]" />
@@ -467,10 +467,10 @@ function AppContent() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               {[
-                { icon: GraduationCap, title: lang === 'zh' ? '學城市?' : 'Academic Fit', desc: lang === 'zh' ? '確?課城市否城市城市業城市趣?符，學?能城市?CityU' : 'Ensure courses align with your major and credits transfer back to CityU' },
-                { icon: Languages, title: lang === 'zh' ? '語?要?' : 'Language', desc: lang === 'zh' ? '評估你?IELTS/TOEFL?數，考慮?否?要學習當城市言' : 'Evaluate your IELTS/TOEFL scores, consider local language needs' },
-                { icon: DollarSign, title: lang === 'zh' ? '城市城市' : 'Budget', desc: lang === 'zh' ? '?慮該?市城市活費?尋找?學城市資助機?' : 'Consider city living costs, look for scholarships and grants' },
-                { icon: MapPin, title: lang === 'zh' ? '城市位置' : 'Location', desc: lang === 'zh' ? '?、城市、城市、離家城市?以城市城市?機?' : 'Climate, culture, safety, distance from home, travel opportunities' },
+                { icon: GraduationCap, title: lang === 'zh' ? '學術配適' : 'Academic Fit', desc: lang === 'zh' ? '確保課程是否符合你的專業興趣並符，學分能轉移回CityU' : 'Ensure courses align with your major and credits transfer back to CityU' },
+                { icon: Languages, title: lang === 'zh' ? '語言要求' : 'Language', desc: lang === 'zh' ? '評估你的IELTS/TOEFL分數，考慮是否需要學習當地語言' : 'Evaluate your IELTS/TOEFL scores, consider local language needs' },
+                { icon: DollarSign, title: lang === 'zh' ? '預算範圍' : 'Budget', desc: lang === 'zh' ? '考慮該城市的生活費用並尋找獲得學校資助的機會' : 'Consider city living costs, look for scholarships and grants' },
+                { icon: MapPin, title: lang === 'zh' ? '地理位置' : 'Location', desc: lang === 'zh' ? '氣候、文化、安全、離家距離以及旅遊的機會' : 'Climate, culture, safety, distance from home, travel opportunities' },
               ].map((item, i) => (
                 <div key={i} className="p-4 bg-[var(--bg)] rounded-[16px]">
                   <item.icon className="w-8 h-8 text-[var(--brand)] mb-2" />
