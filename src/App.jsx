@@ -196,8 +196,8 @@ function AppContent() {
             </h1>
             <p className="text-white/85 max-w-[70ch] text-lg">
               {lang === 'zh' 
-                ? `瀏覽各地大學，比較 CGPA 和語言要求，更清晰地找到最適合你的選擇。共 ${schoolsData?.schools?.length 城市 0} 間合作院校。`
-                : `Browse universities by region, compare CGPA and language requirements, and find your perfect match from ${schoolsData?.schools?.length 城市 0} partner institutions.`}
+                ? `瀏覽各地大學，比較 CGPA 和語言要求，更清晰地找到最適合你的選擇。共 ${schoolsData?.schools?.length ?? 0} 間合作院校。`
+                : `Browse universities by region, compare CGPA and language requirements, and find your perfect match from ${schoolsData?.schools?.length ?? 0} partner institutions.`}
             </p>
           </div>
           <div className="flex items-center gap-3">
