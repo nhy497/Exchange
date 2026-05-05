@@ -545,115 +545,86 @@ function AppContent() {
                   {/* 學校名稱 */}
                   <h3 className="text-xl font-bold text-[var(--text)] mb-2 pr-10">{school.name}</h3>
 
-                  {/* 地區和區域信息 */}
-                  {(school.region || school.district) && (
-                    <div className="flex items-center gap-2 text-xs text-[var(--muted)] mb-2">
-                      <MapPin className="w-3.5 h-3.5" />
-                      <span>
-                        {school.region && lang === 'zh' ? `${school.region}` : school.region}
-                        {school.region && school.district ? ' · ' : ''}
-                        {school.district && lang === 'zh' ? `${school.district}` : school.district}
+                  {/* 位置和語言 - 簡化顯示 */}
+                  <div className="flex items-center gap-3 text-xs text-[var(--muted)] mb-3">
+                    {school.region && (
+                      <span className="flex items-center gap-1">
+                        <MapPin className="w-3 h-3" />
+                        {school.region}
                       </span>
-                    </div>
-                  )}
+                    )}
+                    {school.climate && (
+                      <span className="flex items-center gap-1">
+                        <Info className="w-3 h-3" />
+                        {school.climate.split('，')[0]}
+                      </span>
+                    )}
+                    {school.languages && (
+                      <span className="flex items-center gap-1">
+                        <Languages className="w-3 h-3" />
+                        {school.languages[0].split(' ')[0]}
+                      </span>
+                    )}
+                  </div>
 
-                  {/* 氣候信息 */}
-                  {school.climate && (
-                    <div className="flex items-center gap-2 text-xs text-[var(--muted)] mb-2">
-                      <Info className="w-3.5 h-3.5" />
-                      <span>{lang === 'zh' ? school.climate : school.climate}</span>
-                    </div>
-                  )}
-
-                  {/* 語言信息 */}
-                  {school.languages && (
-                    <div className="flex items-center gap-2 text-xs text-[var(--muted)] mb-3">
-                      <Languages className="w-3.5 h-3.5" />
-                      <span>{school.languages.join(' · ')}</span>
-                    </div>
-                  )}
-
-                  {/* 信息標籤 Chips */}
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="chip flex items-center gap-1">
-                      <DollarSign className="w-3.5 h-3.5" />
-                      HK${(school.budget/1000).toFixed(0)}K{lang === 'zh' ? '/月' : '/mo'}
+                  {/* 核心信息 - 簡化版 */}
+                  <div className="flex flex-wrap gap-2 mb-3 text-xs">
+                    <span className="px-2 py-1 bg-[var(--bg)] rounded-md text-[var(--text)]">
+                      HK${(school.budget/1000).toFixed(0)}K/月
                     </span>
-                    <span className="chip flex items-center gap-1">
-                      <Star className="w-3.5 h-3.5" />
-                      {lang === 'zh' ? '配額: ' : 'Quota: '}{school.quota}
+                    <span className="px-2 py-1 bg-[var(--bg)] rounded-md text-[var(--text)]">
+                      配額 {school.quota}
                     </span>
                     {school.cgpa > 0 && (
-                      <span className="chip flex items-center gap-1">
-                        <GraduationCap className="w-3.5 h-3.5" />
-                        CGPA 要求{school.cgpa}
+                      <span className="px-2 py-1 bg-[var(--bg)] rounded-md text-[var(--text)]">
+                        CGPA ≥{school.cgpa}
                       </span>
                     )}
                     {school.ielts !== '-' && (
-                      <span className="chip flex items-center gap-1">
-                        <BookOpen className="w-3.5 h-3.5" />
+                      <span className="px-2 py-1 bg-[var(--bg)] rounded-md text-[var(--text)]">
                         IELTS {school.ielts}
                       </span>
                     )}
                   </div>
 
-                  {/* 食物文化 */}
-                  {school.foodCulture && (
-                    <div className="mb-4">
-                      <div className="flex items-center gap-2 text-xs font-semibold text-[var(--accent)] mb-2">
-                        <Heart className="w-4 h-4" />
-                        {lang === 'zh' ? '美食文化' : 'Food & Culture'}
-                      </div>
-                      <p className="text-sm text-[var(--text)] pl-6">{lang === 'zh' ? school.foodCulture : school.foodCulture}</p>
-                    </div>
-                  )}
-
-                  {/* 特別特色 */}
-                  {school.specialFeatures && (
-                    <div className="mb-4">
-                      <div className="flex items-center gap-2 text-xs font-semibold text-[var(--success)] mb-2">
-                        <Star className="w-4 h-4" />
-                        {lang === 'zh' ? '特別之處' : 'Special Highlights'}
-                      </div>
+                  {/* 亮點特色 - 合併簡化 */}
+                  {(school.specialFeatures || school.foodCulture) && (
+                    <div className="mb-3 p-3 bg-[var(--soft)]/50 rounded-[12px]">
+                      <p className="text-xs text-[var(--muted)] mb-1">{lang === 'zh' ? '亮點' : 'Highlights'}</p>
                       <ul className="space-y-1">
-                        {school.specialFeatures.slice(0, expandedSchool === school.id ? 4 : 2).map((feature, i) => (
-                          <li key={i} className="text-sm text-[var(--text)] flex items-start gap-2">
-                            <span className="text-[var(--success)] mt-1">★</span>
-                            <span className="flex-1">{lang === 'zh' ? feature : feature}</span>
+                        {school.foodCulture && (
+                          <li className="text-xs text-[var(--text)] flex items-start gap-1">
+                            <span className="text-[var(--accent)]">🍴</span>
+                            <span>{school.foodCulture.substring(0, 25)}...</span>
+                          </li>
+                        )}
+                        {school.specialFeatures?.slice(0, 2).map((feature, i) => (
+                          <li key={i} className="text-xs text-[var(--text)] flex items-start gap-1">
+                            <span className="text-[var(--success)]">★</span>
+                            <span>{feature.substring(0, 30)}{feature.length > 30 ? '...' : ''}</span>
                           </li>
                         ))}
                       </ul>
-                      {school.specialFeatures.length > 2 && expandedSchool !== school.id && (
-                        <p className="text-xs text-[var(--muted)] mt-1 pl-6">+{school.specialFeatures.length - 2} more...</p>
-                      )}
                     </div>
                   )}
 
-                  {/* 學校特色 */}
+                  {/* 學校特色 - 簡化版 */}
                   {school.uniqueFeatures && (
-                    <div className="mb-4">
-                      <div className="flex items-center gap-2 text-xs font-semibold text-[var(--brand)] mb-2">
-                        <CheckCircle2 className="w-4 h-4" />
-                        {lang === 'zh' ? '學校特色' : 'University Highlights'}
-                      </div>
+                    <div className="mb-3">
                       <ul className="space-y-1">
-                        {school.uniqueFeatures.slice(0, expandedSchool === school.id ? 5 : 2).map((feature, i) => (
-                          <li key={i} className="text-sm text-[var(--text)] flex items-start gap-2">
-                            <span className="text-[var(--accent)] mt-1">✦</span>
-                            <span className="flex-1">{feature}</span>
+                        {school.uniqueFeatures.slice(0, 2).map((feature, i) => (
+                          <li key={i} className="text-xs text-[var(--text)] flex items-start gap-1">
+                            <span className="text-[var(--brand)]">✓</span>
+                            <span className="flex-1">{feature.substring(0, 35)}{feature.length > 35 ? '...' : ''}</span>
                           </li>
                         ))}
                       </ul>
                       {school.uniqueFeatures.length > 2 && (
                         <button
-                          onClick={() => toggleSchoolExpand(school.id)}
-                          className="mt-2 text-sm text-[var(--brand)] hover:text-[var(--brand2)] flex items-center gap-1"
+                          onClick={() => openSchoolModal(school)}
+                          className="mt-2 text-xs text-[var(--brand)] hover:underline"
                         >
-                          {expandedSchool === school.id ? (
-                            <><ChevronUp className="w-4 h-4" /> {lang === 'zh' ? '收起' : 'Show less'}</>
-                          ) : (
-                            <><ChevronDown className="w-4 h-4" /> {lang === 'zh' ? `展開更多 ${school.uniqueFeatures.length - 2} 項..` : `${school.uniqueFeatures.length - 2} more...`}</>
-                          )}
+                          {lang === 'zh' ? '查看更多...' : 'View more...'}
                         </button>
                       )}
                     </div>
