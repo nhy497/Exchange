@@ -341,13 +341,13 @@ function AppContent() {
                 <span className="text-sm font-bold text-[var(--brand)] min-w-[3ch]">{cgpaValue.toFixed(1)}</span>
               </div>
               <p className="text-xs text-[var(--muted)] mt-2">
-                {cgpaMode === 'max' 
-                  ? (lang === 'zh' ? '顯示 CGPA 要? 城市' : 'Show schools with CGPA 城市') + cgpaValue.toFixed(1)
-                  : (lang === 'zh' ? '顯示 CGPA 要? 城市' : 'Show schools with CGPA 城市') + cgpaValue.toFixed(1)}
+                {cgpaMode === 'max'
+                  ? (lang === 'zh' ? '顯示 CGPA 要求低於 ' : 'Show schools with CGPA below ') + cgpaValue.toFixed(1)
+                  : (lang === 'zh' ? '顯示 CGPA 要求高於 ' : 'Show schools with CGPA above ') + cgpaValue.toFixed(1)}
               </p>
             </div>
 
-            {/* IELTS 城市篩選 */}
+            {/* IELTS 要求篩選 */}
             <div className="mb-5 p-4 bg-[var(--bg)] rounded-[16px]">
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-sm font-semibold text-[var(--text)] flex items-center gap-2">
