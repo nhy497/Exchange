@@ -678,16 +678,16 @@ function AppContent() {
           <div className="flex items-center justify-between mb-3">
             <h4 className="font-bold text-[var(--text)] flex items-center gap-2">
               <Scale className="w-5 h-5 text-[var(--brand)]" />
-              {lang === 'zh' ? '比?清單' : 'Compare'} ({compareList.length}/4)
+              {lang === 'zh' ? '比較清單' : 'Compare'} ({compareList.length}/4)
             </h4>
             <div className="flex gap-2">
               <button
                 onClick={() => setShowComparePanel(!showComparePanel)}
                 className="text-sm px-3 py-1.5 bg-[var(--brand)] text-white rounded-full hover:bg-[var(--brand2)] transition-all"
               >
-                {showComparePanel 
-                  ? (lang === 'zh' ? '城市' : 'Hide') 
-                  : (lang === 'zh' ? '展?' : 'Expand')}
+                {showComparePanel
+                  ? (lang === 'zh' ? '隱藏' : 'Hide')
+                  : (lang === 'zh' ? '展開' : 'Expand')}
               </button>
               <button
                 onClick={clearCompare}
@@ -718,7 +718,7 @@ function AppContent() {
           {showComparePanel && compareList.length >= 2 && (
             <div className="border-t border-[var(--line)] pt-4">
               <h5 className="font-semibold text-sm mb-3 text-[var(--text)]">
-                {lang === 'zh' ? '比?表格' : 'Comparison Table'}
+                {lang === 'zh' ? '比較表格' : 'Comparison Table'}
               </h5>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
@@ -739,12 +739,12 @@ function AppContent() {
                     {[
                       { label: lang === 'zh' ? '國家' : 'Country', key: 'country' },
                       { label: lang === 'zh' ? '城市' : 'City', key: 'city' },
-                      { label: lang === 'zh' ? '城市' : 'Quota', key: 'quota' },
-                      { label: lang === 'zh' ? 'CGPA' : 'CGPA', key: 'cgpa', format: (v) => v > 0 ? `城市${v}` : '-' },
+                      { label: lang === 'zh' ? '配額' : 'Quota', key: 'quota' },
+                      { label: lang === 'zh' ? 'CGPA' : 'CGPA', key: 'cgpa', format: (v) => v > 0 ? `≥${v}` : '-' },
                       { label: lang === 'zh' ? 'IELTS' : 'IELTS', key: 'ielts' },
-                      { label: lang === 'zh' ? '學?' : 'Semester', key: 'semester' },
+                      { label: lang === 'zh' ? '學期' : 'Semester', key: 'semester' },
                       { label: lang === 'zh' ? '預算/月' : 'Budget/mo', key: 'budget', format: (v) => `HK$${v?.toLocaleString()}` },
-                      { label: 'QS ' + (lang === 'zh' ? '城市' : 'Rank'), key: 'ranking', format: (v) => v ? `#${v}` : '-' },
+                      { label: 'QS ' + (lang === 'zh' ? '排名' : 'Rank'), key: 'ranking', format: (v) => v ? `#${v}` : '-' },
                       { label: lang === 'zh' ? '資助' : 'Grant', key: 'explorerGrant', format: (v) => v ? (lang === 'zh' ? '有' : 'Yes') : (lang === 'zh' ? '無' : 'No') },
                     ].map((row, idx) => (
                       <tr key={row.key} className="border-b border-[var(--line)]/50">
@@ -794,8 +794,8 @@ function AppContent() {
 
             {/* 快速信息 */}
             <div className="flex flex-wrap gap-2 mb-6">
-              <span className="chip">{lang === 'zh' ? '城市' : 'Quota'}: {selectedSchool.quota}</span>
-              <span className="chip">CGPA: {selectedSchool.cgpa > 0 ? `城市${selectedSchool.cgpa}` : '-'}</span>
+              <span className="chip">{lang === 'zh' ? '配額' : 'Quota'}: {selectedSchool.quota}</span>
+              <span className="chip">CGPA: {selectedSchool.cgpa > 0 ? `≥${selectedSchool.cgpa}` : '-'}</span>
               <span className="chip">IELTS: {selectedSchool.ielts}</span>
               <span className="chip">QS #{selectedSchool.ranking || '-'}</span>
               <span className="chip">{lang === 'zh' ? '預算' : 'Budget'}: HK${selectedSchool.budget?.toLocaleString()}{lang === 'zh' ? '/月' : '/mo'}</span>
@@ -810,19 +810,19 @@ function AppContent() {
               <div className="p-4 bg-[var(--bg)] rounded-[18px] border border-[var(--line)]">
                 <h5 className="font-semibold text-[var(--text)] mb-3 flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[var(--brand)]" />
-                  {lang === 'zh' ? '?本要?' : 'Core Requirements'}
+                  {lang === 'zh' ? '基本要求' : 'Core Requirements'}
                 </h5>
                 <ul className="space-y-2 text-sm">
                   <li className="flex justify-between">
-                    <span className="text-[var(--muted)]">{lang === 'zh' ? '語?要?' : 'Language'}:</span>
+                    <span className="text-[var(--muted)]">{lang === 'zh' ? '語言要求' : 'Language'}:</span>
                     <span className="text-[var(--text)] font-medium">{selectedSchool.ielts !== '-' ? `IELTS ${selectedSchool.ielts}` : ''} {selectedSchool.toefl !== '-' ? `TOEFL ${selectedSchool.toefl}` : lang === 'zh' ? '無特定要求' : 'No specific'}</span>
                   </li>
                   <li className="flex justify-between">
-                    <span className="text-[var(--muted)]">{lang === 'zh' ? '學城市?' : 'Semester'}:</span>
+                    <span className="text-[var(--muted)]">{lang === 'zh' ? '學期' : 'Semester'}:</span>
                     <span className="text-[var(--text)] font-medium">{selectedSchool.semester}</span>
                   </li>
                   <li className="flex justify-between">
-                    <span className="text-[var(--muted)]">{lang === 'zh' ? '城市語?' : 'Campus languages'}:</span>
+                    <span className="text-[var(--muted)]">{lang === 'zh' ? '校園語言' : 'Campus languages'}:</span>
                     <span className="text-[var(--text)] font-medium">{(selectedSchool.languages || []).join(', ')}</span>
                   </li>
                 </ul>
@@ -832,15 +832,15 @@ function AppContent() {
               <div className="p-4 bg-[var(--bg)] rounded-[18px] border border-[var(--line)]">
                 <h5 className="font-semibold text-[var(--text)] mb-3 flex items-center gap-2">
                   <GraduationCap className="w-4 h-4 text-[var(--brand)]" />
-                  {lang === 'zh' ? '學城市?' : 'Academic Fit'}
+                  {lang === 'zh' ? '學術配適' : 'Academic Fit'}
                 </h5>
                 <ul className="space-y-2 text-sm">
                   <li>
-                    <span className="text-[var(--muted)]">{lang === 'zh' ? '城市專業: ' : 'Good for: '}</span>
+                    <span className="text-[var(--muted)]">{lang === 'zh' ? '適合專業: ' : 'Good for: '}</span>
                     <span className="text-[var(--text)]">{selectedSchool.selectionFactors?.academicFit}</span>
                   </li>
                   <li>
-                    <span className="text-[var(--muted)]">{lang === 'zh' ? '?援城市: ' : 'Support: '}</span>
+                    <span className="text-[var(--muted)]">{lang === 'zh' ? '支援服務: ' : 'Support: '}</span>
                     <span className="text-[var(--text)]">{selectedSchool.selectionFactors?.supportServices}</span>
                   </li>
                 </ul>
@@ -866,18 +866,18 @@ function AppContent() {
               <div className="p-4 bg-[var(--bg)] rounded-[18px] border border-[var(--line)]">
                 <h5 className="font-semibold text-[var(--text)] mb-3 flex items-center gap-2">
                   <Globe className="w-4 h-4 text-[var(--brand)]" />
-                  {lang === 'zh' ? '城市體?' : 'Cultural Experience'}
+                  {lang === 'zh' ? '文化體驗' : 'Cultural Experience'}
                 </h5>
                 <p className="text-sm text-[var(--text)]">{selectedSchool.selectionFactors?.culturalExperience}</p>
-                <p className="text-sm text-[var(--muted)] mt-2">{lang === 'zh' ? '城市水平: ' : 'Budget level: '}{selectedSchool.selectionFactors?.budgetLevel}</p>
+                <p className="text-sm text-[var(--muted)] mt-2">{lang === 'zh' ? '預算水平: ' : 'Budget level: '}{selectedSchool.selectionFactors?.budgetLevel}</p>
               </div>
 
-              {/* 重要註 */}
+              {/* 重要備註 */}
               {selectedSchool.notes && (
                 <div className="p-4 bg-[var(--warning)]/10 rounded-[18px] border border-[var(--warning)]/20">
                   <h5 className="font-semibold text-[var(--warning)] mb-2 flex items-center gap-2">
                     <AlertCircle className="w-4 h-4" />
-                    {lang === 'zh' ? '城市?註' : 'Important Notes'}
+                    {lang === 'zh' ? '重要備註' : 'Important Notes'}
                   </h5>
                   <p className="text-sm text-[var(--warning)]">{selectedSchool.notes}</p>
                 </div>
@@ -894,7 +894,7 @@ function AppContent() {
                   className="btn-primary flex items-center gap-2"
                 >
                   <ExternalLink className="w-4 h-4" />
-                  {lang === 'zh' ? '訪?官網' : 'Visit Website'}
+                  {lang === 'zh' ? '訪問官網' : 'Visit Website'}
                 </a>
               )}
               <button
@@ -923,7 +923,7 @@ function AppContent() {
         <div className="fixed inset-0 bg-[var(--bg)] flex items-center justify-center z-50">
           <div className="text-center">
             <Loader2 className="w-12 h-12 text-[var(--brand)] animate-spin mx-auto mb-4" />
-            <p className="text-[var(--muted)]">{lang === 'zh' ? '?載入城市...' : 'Loading data...'}</p>
+            <p className="text-[var(--muted)]">{lang === 'zh' ? '載入中...' : 'Loading data...'}</p>
           </div>
         </div>
       )}
@@ -934,14 +934,14 @@ function AppContent() {
           <div className="text-center max-w-md p-6">
             <AlertCircle className="w-12 h-12 text-[var(--danger)] mx-auto mb-4" />
             <h3 className="text-xl font-bold text-[var(--text)] mb-2">
-              {lang === 'zh' ? '載入失?' : 'Failed to Load'}
+              {lang === 'zh' ? '載入失敗' : 'Failed to Load'}
             </h3>
             <p className="text-[var(--muted)] mb-4">{error}</p>
             <button 
               onClick={() => window.location.reload()}
               className="btn-primary"
             >
-              {lang === 'zh' ? '?新載入' : 'Reload'}
+              {lang === 'zh' ? '重新載入' : 'Reload'}
             </button>
           </div>
         </div>
@@ -951,7 +951,7 @@ function AppContent() {
       <footer className="mt-12 text-center text-[var(--muted)] text-sm pb-6">
         <p>{t.footer}</p>
         <p className="mt-1">Created for Peter · {t.disclaimer}</p>
-        <p className="mt-2 text-xs">{lang === 'zh' ? '城市估城市於2026年數城市實?費用?能城市不?' : 'Budget estimates based on 2026 data, actual costs may vary'}</p>
+        <p className="mt-2 text-xs">{lang === 'zh' ? '預算估算於2026年數據，實際費用可能不同' : 'Budget estimates based on 2026 data, actual costs may vary'}</p>
       </footer>
     </div>
   );
