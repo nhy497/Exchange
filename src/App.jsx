@@ -444,11 +444,15 @@ function AppContent() {
               </label>
             </div>
 
-            {/* 結果統計 */}
+            {/* 結果統計 - 顯示符合篩選條件的學校數量 */}
             <div className="pt-4 border-t border-[var(--line)]">
-              <p className="text-sm text-[var(--muted)]">
-                {t.results}: <span className="font-bold text-[var(--brand)] text-lg">{filteredSchools.length}</span> / {schoolsData?.schools?.length ?? 0} {t.totalSchools}
-              </p>
+              <div className="bg-[var(--brand)]/10 rounded-[12px] p-3 text-center">
+                <p className="text-xs text-[var(--muted)] mb-1">{lang === 'zh' ? '符合篩選條件' : 'Matching Results'}</p>
+                <p className="text-2xl font-bold text-[var(--brand)]">
+                  {filteredSchools.length} <span className="text-sm font-normal text-[var(--muted)]">/ {schoolsData?.schools?.length ?? 0}</span>
+                </p>
+                <p className="text-xs text-[var(--muted)] mt-1">{lang === 'zh' ? '間學校' : 'schools'}</p>
+              </div>
             </div>
           </aside>
         )}
