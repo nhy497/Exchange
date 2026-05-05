@@ -228,7 +228,7 @@ function AppContent() {
                 }`}
               >
                 <Scale className="w-5 h-5" />
-                {lang === 'zh' ? '比?' : 'Compare'} ({compareList.length})
+                {lang === 'zh' ? '比較' : 'Compare'} ({compareList.length})
               </button>
             )}
           </div>
@@ -578,7 +578,7 @@ function AppContent() {
                     <div className="mb-4">
                       <div className="flex items-center gap-2 text-xs font-semibold text-[var(--brand)] mb-2">
                         <CheckCircle2 className="w-4 h-4" />
-                        {lang === 'zh' ? '學校?色' : 'University Highlights'}
+                        {lang === 'zh' ? '學校特色' : 'University Highlights'}
                       </div>
                       <ul className="space-y-1">
                         {school.uniqueFeatures.slice(0, expandedSchool === school.id ? 5 : 2).map((feature, i) => (
@@ -850,7 +850,7 @@ function AppContent() {
               <div className="p-4 bg-[var(--bg)] rounded-[18px] border border-[var(--line)] md:col-span-2">
                 <h5 className="font-semibold text-[var(--text)] mb-3 flex items-center gap-2">
                   <Star className="w-4 h-4 text-[var(--accent)]" />
-                  {lang === 'zh' ? '學校?色' : 'University Highlights'}
+                  {lang === 'zh' ? '學校特色' : 'University Highlights'}
                 </h5>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
                   {(selectedSchool.uniqueFeatures || []).map((feature, i) => (
