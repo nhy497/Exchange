@@ -46,7 +46,16 @@
         "culturalExperience": "Experience Argentina culture",
         "budgetLevel": "HK$4,800/month",
         "language": "Spanish (primary), English (limited)"
-      }
+      },
+      "region": "Argentina",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 2,
@@ -76,7 +85,16 @@
         "culturalExperience": "Experience Australia culture",
         "budgetLevel": "HK$9,000/month",
         "language": "English"
-      }
+      },
+      "region": "Australia",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 3,
@@ -106,7 +124,16 @@
         "culturalExperience": "Experience Australia culture",
         "budgetLevel": "HK$9,000/month",
         "language": "English"
-      }
+      },
+      "region": "Australia",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 4,
@@ -136,7 +163,16 @@
         "culturalExperience": "Experience Australia culture",
         "budgetLevel": "HK$9,000/month",
         "language": "English"
-      }
+      },
+      "region": "Australia",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 5,
@@ -615,7 +651,16 @@
         "culturalExperience": "Experience Austria culture",
         "budgetLevel": "HK$8,500/month",
         "language": "German (primary), English (university)"
-      }
+      },
+      "region": "Austria",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 17,
@@ -646,7 +691,16 @@
         "culturalExperience": "Experience Austria culture",
         "budgetLevel": "HK$9,200/month",
         "language": "German (primary), English (university)"
-      }
+      },
+      "region": "Austria",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 18,
@@ -677,7 +731,16 @@
         "culturalExperience": "Experience Belgium culture",
         "budgetLevel": "HK$9,500/month",
         "language": "Dutch/French/German, English (high)"
-      }
+      },
+      "region": "Belgium",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 19,
@@ -708,7 +771,16 @@
         "culturalExperience": "Experience Canada culture",
         "budgetLevel": "HK$10,000/month",
         "language": "English (primary), French (Quebec only)"
-      }
+      },
+      "region": "Canada",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 20,
@@ -740,7 +812,16 @@
         "culturalExperience": "Experience Canada culture",
         "budgetLevel": "HK$14,000/month",
         "language": "English (primary), French (Quebec only)"
-      }
+      },
+      "region": "Canada",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 21,
@@ -772,7 +853,16 @@
         "culturalExperience": "Experience Canada culture",
         "budgetLevel": "HK$11,000/month",
         "language": "English (primary), French (Quebec only)"
-      }
+      },
+      "region": "Canada",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 22,
@@ -803,7 +893,16 @@
         "culturalExperience": "Experience Chile culture",
         "budgetLevel": "HK$5,500/month",
         "language": "Spanish (primary), English (limited)"
-      }
+      },
+      "region": "Chile",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 23,
@@ -835,7 +934,16 @@
         "culturalExperience": "Experience Chinese Mainland culture",
         "budgetLevel": "HK$4,500/month",
         "language": "Mandarin Chinese (primary), English (academic)"
-      }
+      },
+      "region": "Chinese Mainland",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 24,
@@ -867,7 +975,16 @@
         "culturalExperience": "Experience Chinese Mainland culture",
         "budgetLevel": "HK$4,500/month",
         "language": "Mandarin Chinese (primary), English (academic)"
-      }
+      },
+      "region": "Chinese Mainland",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 25,
@@ -899,7 +1016,16 @@
         "culturalExperience": "Experience Chinese Mainland culture",
         "budgetLevel": "HK$3,500/month",
         "language": "Mandarin Chinese (primary), English (academic)"
-      }
+      },
+      "region": "Chinese Mainland",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 26,
@@ -930,7 +1056,16 @@
         "culturalExperience": "Experience Chinese Mainland culture",
         "budgetLevel": "HK$3,800/month",
         "language": "Mandarin Chinese (primary), English (academic)"
-      }
+      },
+      "region": "Chinese Mainland",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 27,
@@ -961,7 +1096,16 @@
         "culturalExperience": "Experience Denmark culture",
         "budgetLevel": "HK$11,500/month",
         "language": "Danish (primary), English (very high)"
-      }
+      },
+      "region": "Denmark",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 28,
@@ -992,7 +1136,16 @@
         "culturalExperience": "Experience Finland culture",
         "budgetLevel": "HK$9,000/month",
         "language": "Finnish/Swedish (primary), English (very high)"
-      }
+      },
+      "region": "Finland",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 29,
@@ -1023,7 +1176,16 @@
         "culturalExperience": "Experience Finland culture",
         "budgetLevel": "HK$8,500/month",
         "language": "Finnish/Swedish (primary), English (very high)"
-      }
+      },
+      "region": "Finland",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 30,
@@ -1054,7 +1216,16 @@
         "culturalExperience": "Experience France culture",
         "budgetLevel": "HK$10,500/month",
         "language": "French (primary), English (variable)"
-      }
+      },
+      "region": "France",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 31,
@@ -1085,7 +1256,16 @@
         "culturalExperience": "Experience France culture",
         "budgetLevel": "HK$11,000/month",
         "language": "French (primary), English (variable)"
-      }
+      },
+      "region": "France",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 32,
@@ -1116,7 +1296,16 @@
         "culturalExperience": "Experience Germany culture",
         "budgetLevel": "HK$9,500/month",
         "language": "German (primary), English (good at universities)"
-      }
+      },
+      "region": "Germany",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 33,
@@ -1147,7 +1336,16 @@
         "culturalExperience": "Experience Germany culture",
         "budgetLevel": "HK$9,000/month",
         "language": "German (primary), English (good at universities)"
-      }
+      },
+      "region": "Germany",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 34,
@@ -1179,7 +1377,16 @@
         "culturalExperience": "Experience Germany culture",
         "budgetLevel": "HK$10,500/month",
         "language": "German (primary), English (good at universities)"
-      }
+      },
+      "region": "Germany",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 35,
@@ -1210,7 +1417,16 @@
         "culturalExperience": "Experience Germany culture",
         "budgetLevel": "HK$8,800/month",
         "language": "German (primary), English (good at universities)"
-      }
+      },
+      "region": "Germany",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 36,
@@ -1241,7 +1457,16 @@
         "culturalExperience": "Experience Ireland culture",
         "budgetLevel": "HK$12,000/month",
         "language": "English, Irish Gaelic (limited)"
-      }
+      },
+      "region": "Ireland",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 37,
@@ -1272,7 +1497,16 @@
         "culturalExperience": "Experience Ireland culture",
         "budgetLevel": "HK$12,000/month",
         "language": "English, Irish Gaelic (limited)"
-      }
+      },
+      "region": "Ireland",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 38,
@@ -1303,7 +1537,16 @@
         "culturalExperience": "Experience Italy culture",
         "budgetLevel": "HK$9,000/month",
         "language": "Italian (primary), English (limited)"
-      }
+      },
+      "region": "Italy",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 39,
@@ -1334,7 +1577,16 @@
         "culturalExperience": "Experience Japan culture",
         "budgetLevel": "HK$12,500/month",
         "language": "Japanese (primary), English (limited outside campus)"
-      }
+      },
+      "region": "Japan",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 40,
@@ -1366,7 +1618,16 @@
         "culturalExperience": "Experience Japan culture",
         "budgetLevel": "HK$11,000/month",
         "language": "Japanese (primary), English (limited outside campus)"
-      }
+      },
+      "region": "Japan",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 41,
@@ -1397,7 +1658,16 @@
         "culturalExperience": "Experience Japan culture",
         "budgetLevel": "HK$10,500/month",
         "language": "Japanese (primary), English (limited outside campus)"
-      }
+      },
+      "region": "Japan",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 42,
@@ -1428,7 +1698,16 @@
         "culturalExperience": "Experience Japan culture",
         "budgetLevel": "HK$12,500/month",
         "language": "Japanese (primary), English (limited outside campus)"
-      }
+      },
+      "region": "Japan",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 43,
@@ -1459,7 +1738,16 @@
         "culturalExperience": "Experience Japan culture",
         "budgetLevel": "HK$9,500/month",
         "language": "Japanese (primary), English (limited outside campus)"
-      }
+      },
+      "region": "Japan",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 44,
@@ -1490,7 +1778,16 @@
         "culturalExperience": "Experience Japan culture",
         "budgetLevel": "HK$12,000/month",
         "language": "Japanese (primary), English (limited outside campus)"
-      }
+      },
+      "region": "Japan",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 45,
@@ -1522,7 +1819,16 @@
         "culturalExperience": "Experience Japan culture",
         "budgetLevel": "HK$12,500/month",
         "language": "Japanese (primary), English (limited outside campus)"
-      }
+      },
+      "region": "Japan",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 46,
@@ -1553,7 +1859,16 @@
         "culturalExperience": "Experience Japan culture",
         "budgetLevel": "HK$12,500/month",
         "language": "Japanese (primary), English (limited outside campus)"
-      }
+      },
+      "region": "Japan",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 47,
@@ -1585,7 +1900,16 @@
         "culturalExperience": "Experience Korea, Republic of culture",
         "budgetLevel": "HK$8,500/month",
         "language": "Korean (primary), English (growing)"
-      }
+      },
+      "region": "Korea, Republic of",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 48,
@@ -1617,7 +1941,16 @@
         "culturalExperience": "Experience Korea, Republic of culture",
         "budgetLevel": "HK$10,000/month",
         "language": "Korean (primary), English (growing)"
-      }
+      },
+      "region": "Korea, Republic of",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 49,
@@ -1648,7 +1981,16 @@
         "culturalExperience": "Experience Korea, Republic of culture",
         "budgetLevel": "HK$10,000/month",
         "language": "Korean (primary), English (growing)"
-      }
+      },
+      "region": "Korea, Republic of",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 50,
@@ -1680,7 +2022,16 @@
         "culturalExperience": "Experience Netherlands culture",
         "budgetLevel": "HK$10,500/month",
         "language": "Dutch (primary), English (excellent)"
-      }
+      },
+      "region": "Netherlands",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 51,
@@ -1711,7 +2062,16 @@
         "culturalExperience": "Experience Netherlands culture",
         "budgetLevel": "HK$11,500/month",
         "language": "Dutch (primary), English (excellent)"
-      }
+      },
+      "region": "Netherlands",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 52,
@@ -1742,7 +2102,16 @@
         "culturalExperience": "Experience New Zealand culture",
         "budgetLevel": "HK$13,000/month",
         "language": "English, Maori (limited)"
-      }
+      },
+      "region": "New Zealand",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 53,
@@ -1773,7 +2142,16 @@
         "culturalExperience": "Experience New Zealand culture",
         "budgetLevel": "HK$11,000/month",
         "language": "English, Maori (limited)"
-      }
+      },
+      "region": "New Zealand",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 54,
@@ -1804,7 +2182,16 @@
         "culturalExperience": "Experience Norway culture",
         "budgetLevel": "HK$12,500/month",
         "language": "Norwegian (primary), English (very high)"
-      }
+      },
+      "region": "Norway",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 55,
@@ -1835,7 +2222,16 @@
         "culturalExperience": "Experience Norway culture",
         "budgetLevel": "HK$13,000/month",
         "language": "Norwegian (primary), English (very high)"
-      }
+      },
+      "region": "Norway",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 56,
@@ -1867,7 +2263,16 @@
         "culturalExperience": "Experience Singapore culture",
         "budgetLevel": "HK$14,000/month",
         "language": "English (primary), Mandarin/Malay/Tamil"
-      }
+      },
+      "region": "Singapore",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 57,
@@ -1898,7 +2303,16 @@
         "culturalExperience": "Experience Singapore culture",
         "budgetLevel": "HK$14,000/month",
         "language": "English (primary), Mandarin/Malay/Tamil"
-      }
+      },
+      "region": "Singapore",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 58,
@@ -1929,7 +2343,16 @@
         "culturalExperience": "Experience Spain culture",
         "budgetLevel": "HK$8,500/month",
         "language": "Spanish/Catalan (primary), English (limited)"
-      }
+      },
+      "region": "Spain",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 59,
@@ -1960,7 +2383,16 @@
         "culturalExperience": "Experience Sweden culture",
         "budgetLevel": "HK$11,000/month",
         "language": "Swedish (primary), English (excellent)"
-      }
+      },
+      "region": "Sweden",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 60,
@@ -1991,7 +2423,16 @@
         "culturalExperience": "Experience Sweden culture",
         "budgetLevel": "HK$10,000/month",
         "language": "Swedish (primary), English (excellent)"
-      }
+      },
+      "region": "Sweden",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 61,
@@ -2022,7 +2463,16 @@
         "culturalExperience": "Experience Sweden culture",
         "budgetLevel": "HK$11,000/month",
         "language": "Swedish (primary), English (excellent)"
-      }
+      },
+      "region": "Sweden",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 62,
@@ -2053,7 +2503,16 @@
         "culturalExperience": "Experience Switzerland culture",
         "budgetLevel": "HK$12,500/month",
         "language": "German/French/Italian (region-dependent), English (good)"
-      }
+      },
+      "region": "Switzerland",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 63,
@@ -2084,7 +2543,16 @@
         "culturalExperience": "Experience Switzerland culture",
         "budgetLevel": "HK$14,000/month",
         "language": "German/French/Italian (region-dependent), English (good)"
-      }
+      },
+      "region": "Switzerland",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 64,
@@ -2115,7 +2583,16 @@
         "culturalExperience": "Experience Taiwan culture",
         "budgetLevel": "HK$6,000/month",
         "language": "Mandarin Chinese (primary), English (academic)"
-      }
+      },
+      "region": "Taiwan",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 65,
@@ -2146,7 +2623,16 @@
         "culturalExperience": "Experience Taiwan culture",
         "budgetLevel": "HK$7,000/month",
         "language": "Mandarin Chinese (primary), English (academic)"
-      }
+      },
+      "region": "Taiwan",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 66,
@@ -2177,7 +2663,16 @@
         "culturalExperience": "Experience Taiwan culture",
         "budgetLevel": "HK$6,500/month",
         "language": "Mandarin Chinese (primary), English (academic)"
-      }
+      },
+      "region": "Taiwan",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 67,
@@ -2208,7 +2703,16 @@
         "culturalExperience": "Experience Thailand culture",
         "budgetLevel": "HK$5,000/month",
         "language": "Thai (primary), English (limited outside tourist areas)"
-      }
+      },
+      "region": "Thailand",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 68,
@@ -2239,7 +2743,16 @@
         "culturalExperience": "Experience UK culture",
         "budgetLevel": "HK$15,000/month",
         "language": "English"
-      }
+      },
+      "region": "UK",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 69,
@@ -2270,7 +2783,16 @@
         "culturalExperience": "Experience UK culture",
         "budgetLevel": "HK$15,000/month",
         "language": "English"
-      }
+      },
+      "region": "UK",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 70,
@@ -2300,7 +2822,16 @@
         "culturalExperience": "Experience UK culture",
         "budgetLevel": "HK$10,000/month",
         "language": "English"
-      }
+      },
+      "region": "UK",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 71,
@@ -2331,7 +2862,16 @@
         "culturalExperience": "Experience UK culture",
         "budgetLevel": "HK$12,000/month",
         "language": "English"
-      }
+      },
+      "region": "UK",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 72,
@@ -2361,7 +2901,16 @@
         "culturalExperience": "Experience UK culture",
         "budgetLevel": "HK$10,500/month",
         "language": "English"
-      }
+      },
+      "region": "UK",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 73,
@@ -2391,7 +2940,16 @@
         "culturalExperience": "Experience UK culture",
         "budgetLevel": "HK$9,500/month",
         "language": "English"
-      }
+      },
+      "region": "UK",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 74,
@@ -2421,7 +2979,16 @@
         "culturalExperience": "Experience UK culture",
         "budgetLevel": "HK$11,500/month",
         "language": "English"
-      }
+      },
+      "region": "UK",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 75,
@@ -2451,7 +3018,16 @@
         "culturalExperience": "Experience UK culture",
         "budgetLevel": "HK$9,500/month",
         "language": "English"
-      }
+      },
+      "region": "UK",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 76,
@@ -2481,7 +3057,16 @@
         "culturalExperience": "Experience UK culture",
         "budgetLevel": "HK$9,000/month",
         "language": "English"
-      }
+      },
+      "region": "UK",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 77,
@@ -2511,7 +3096,16 @@
         "culturalExperience": "Experience UK culture",
         "budgetLevel": "HK$11,000/month",
         "language": "English"
-      }
+      },
+      "region": "UK",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 78,
@@ -2541,7 +3135,16 @@
         "culturalExperience": "Experience USA culture",
         "budgetLevel": "HK$13,500/month",
         "language": "English"
-      }
+      },
+      "region": "USA",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 79,
@@ -2571,7 +3174,16 @@
         "culturalExperience": "Experience USA culture",
         "budgetLevel": "HK$12,000/month",
         "language": "English"
-      }
+      },
+      "region": "USA",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 80,
@@ -2602,7 +3214,16 @@
         "culturalExperience": "Experience USA culture",
         "budgetLevel": "HK$16,000/month",
         "language": "English"
-      }
+      },
+      "region": "USA",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 81,
@@ -2632,7 +3253,16 @@
         "culturalExperience": "Experience USA culture",
         "budgetLevel": "HK$10,000/month",
         "language": "English"
-      }
+      },
+      "region": "USA",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 82,
@@ -2662,7 +3292,16 @@
         "culturalExperience": "Experience USA culture",
         "budgetLevel": "HK$9,000/month",
         "language": "English"
-      }
+      },
+      "region": "USA",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 83,
@@ -2693,7 +3332,16 @@
         "culturalExperience": "Experience USA culture",
         "budgetLevel": "HK$15,500/month",
         "language": "English"
-      }
+      },
+      "region": "USA",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 84,
@@ -2723,7 +3371,16 @@
         "culturalExperience": "Experience USA culture",
         "budgetLevel": "HK$14,000/month",
         "language": "English"
-      }
+      },
+      "region": "USA",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 85,
@@ -2754,7 +3411,16 @@
         "culturalExperience": "Experience USA culture",
         "budgetLevel": "HK$15,000/month",
         "language": "English"
-      }
+      },
+      "region": "USA",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 86,
@@ -2784,7 +3450,16 @@
         "culturalExperience": "Experience USA culture",
         "budgetLevel": "HK$9,500/month",
         "language": "English"
-      }
+      },
+      "region": "USA",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 87,
@@ -2814,7 +3489,16 @@
         "culturalExperience": "Experience USA culture",
         "budgetLevel": "HK$12,000/month",
         "language": "English"
-      }
+      },
+      "region": "USA",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 88,
@@ -2844,7 +3528,16 @@
         "culturalExperience": "Experience USA culture",
         "budgetLevel": "HK$10,500/month",
         "language": "English"
-      }
+      },
+      "region": "USA",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 89,
@@ -2874,7 +3567,16 @@
         "culturalExperience": "Experience USA culture",
         "budgetLevel": "HK$11,000/month",
         "language": "English"
-      }
+      },
+      "region": "USA",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 90,
@@ -2904,7 +3606,16 @@
         "culturalExperience": "Experience USA culture",
         "budgetLevel": "HK$10,000/month",
         "language": "English"
-      }
+      },
+      "region": "USA",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 91,
@@ -2934,7 +3645,16 @@
         "culturalExperience": "Experience USA culture",
         "budgetLevel": "HK$14,000/month",
         "language": "English"
-      }
+      },
+      "region": "USA",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     },
     {
       "id": 92,
@@ -2964,7 +3684,16 @@
         "culturalExperience": "Experience USA culture",
         "budgetLevel": "HK$10,500/month",
         "language": "English"
-      }
+      },
+      "region": "USA",
+      "district": "Main Campus",
+      "foodCulture": "Local cuisine available",
+      "climate": "Temperate climate",
+      "specialFeatures": [
+        "Top university in region",
+        "Exchange program available",
+        "Quality education and research"
+      ]
     }
   ]
 }
