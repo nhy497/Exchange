@@ -89,12 +89,14 @@
       },
       "region": "Australia",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Adelaide offers diverse culinary scene with fresh local produce, famous wine regions nearby, and multicultural dining options from Central Market",
+      "climate": "Mediterranean climate with hot dry summers (25-35\u00b0C) and mild wet winters (8-18\u00b0C), perfect for outdoor activities",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Top-ranked research university in Australia (QS top 100)",
+        "Located in wine capital of Australia",
+        "Strong programs in health sciences and engineering",
+        "Beautiful campus with modern research facilities",
+        "Close to Adelaide Hills and beaches"
       ]
     },
     {
@@ -128,12 +130,14 @@
       },
       "region": "Australia",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Perth features fresh seafood from Indian Ocean, modern Australian cuisine, and diverse international food reflecting multicultural population",
+      "climate": "Mediterranean climate with hot dry summers and mild winters, ideal for outdoor lifestyle and beach activities",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Leading university in Western Australia",
+        "Strong industry connections and practical learning approach",
+        "Excellent engineering and mining programs",
+        "Modern campus with state-of-the-art facilities",
+        "Located in vibrant Perth city"
       ]
     },
     {
@@ -167,12 +171,14 @@
       },
       "region": "Australia",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Gold Coast and Brisbane offer fresh seafood, modern Australian cuisine, and diverse Asian-Pacific dining options",
+      "climate": "Subtropical climate with warm humid summers and mild winters, perfect for year-round outdoor activities",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Leading university in Queensland",
+        "Strong environmental and health sciences programs",
+        "Multiple campuses including Gold Coast and Brisbane",
+        "Excellent research in sustainable development",
+        "Close to Great Barrier Reef research sites"
       ]
     },
     {
@@ -207,13 +213,14 @@
       },
       "region": "New South Wales",
       "district": "Macquarie Park",
-      "foodCulture": "\u6821\u5712\u5167\u6709\u591a\u5143\u6587\u5316\u9910\u5ef3",
-      "climate": "\u4e9e\u71b1\u5e36\u6fd5\u6f64\u6c23\u5019",
+      "foodCulture": "Sydney offers diverse international cuisine, fresh seafood, and vibrant caf\u00e9 culture with multicultural dining options",
+      "climate": "Temperate climate with warm summers and mild winters, four distinct seasons",
       "specialFeatures": [
-        "\u6703\u8a08\u548c\u91d1\u878d\u5b78\u9662\u4e16\u754c\u805e\u540d",
-        "\u6821\u5712\u5167\u6709\u8cfc\u7269\u4e2d\u5fc3",
-        "\u9130\u8fd1\u5317\u6089\u5c3c\u5546\u696d\u5340",
-        "\u706b\u8eca\u76f4\u9054\u5e02\u4e2d\u5fc3\u50c525\u5206\u9418"
+        "Top-ranked university in Sydney",
+        "Strong business and finance programs",
+        "Excellent research facilities and innovation hub",
+        "Modern campus with advanced technology",
+        "Close to Sydney business district"
       ]
     },
     {
@@ -248,13 +255,14 @@
       },
       "region": "Victoria",
       "district": "Clayton",
-      "foodCulture": "Clayton\u5340\u64c1\u6709\u5927\u91cf\u4e9e\u6d32\u9910\u5ef3",
-      "climate": "\u6eab\u5e36\u6d77\u6d0b\u6027\u6c23\u5019",
+      "foodCulture": "Melbourne offers diverse international cuisine, famous coffee culture, and vibrant food scene with multicultural influences",
+      "climate": "Temperate oceanic climate with four distinct seasons, mild summers and cool winters",
       "specialFeatures": [
-        "\u85e5\u5b78\u9662\u5168\u7403\u6392\u540d\u7b2c1",
-        "\u5de5\u7a0b\u5b78\u9662\u8a2d\u65bd\u5148\u9032",
-        "\u6821\u5712\u5167\u6709\u706b\u8eca\u7ad9\u76f4\u9054\u5e02\u4e2d\u5fc3",
-        "Clayton\u5340\u83ef\u4eba\u8d85\u5e02\u773e\u591a"
+        "Top-ranked university in Australia (QS top 100)",
+        "Strong research and academic programs",
+        "Excellent medicine and engineering programs",
+        "Modern campus with advanced facilities",
+        "Leading in medical research and innovation"
       ]
     },
     {
@@ -288,13 +296,14 @@
       },
       "region": "Queensland",
       "district": "Brisbane CBD",
-      "foodCulture": "\u5e03\u91cc\u65af\u672c\u6cb3\u6ff1\u9910\u5ef3\u773e\u591a",
-      "climate": "\u4e9e\u71b1\u5e36\u6c23\u5019",
+      "foodCulture": "Brisbane features diverse international cuisine, fresh seafood, and innovative dining scene reflecting tropical lifestyle",
+      "climate": "Subtropical climate with warm humid summers and mild winters, ideal for outdoor activities",
       "specialFeatures": [
-        "\u4f4d\u65bc\u5e03\u91cc\u65af\u672c\u5e02\u4e2d\u5fc3",
-        "\u7562\u696d\u751f\u5c31\u696d\u7387\u6606\u58eb\u862d\u7b2c1",
-        "\u8207\u696d\u754c\u806f\u7e4b\u7dca\u5bc6",
-        "\u5357\u5cb8\u516c\u5712\u6587\u5316\u751f\u6d3b\u8c50\u5bcc"
+        "Leading technology university in Queensland",
+        "Strong industry connections and practical learning",
+        "Excellent design and engineering programs",
+        "Modern campus in Brisbane CBD",
+        "Top graduate employability rates"
       ]
     },
     {
@@ -329,13 +338,14 @@
       },
       "region": "Victoria",
       "district": "Parkville",
-      "foodCulture": "\u58a8\u723e\u672c\u4ee5\u5496\u5561\u6587\u5316\u805e\u540d\uff0c\u64c1\u6709\u773e\u591a\u7cbe\u54c1\u5496\u5561\u9928\u548c\u591a\u5143\u7f8e\u98df",
-      "climate": "\u6eab\u5e36\u6d77\u6d0b\u6027\u6c23\u5019\uff0c\u56db\u5b63\u5206\u660e",
+      "foodCulture": "Melbourne offers diverse international cuisine, famous coffee culture, and vibrant food scene with multicultural influences",
+      "climate": "Temperate oceanic climate with four distinct seasons, mild summers and cool winters",
       "specialFeatures": [
-        "\u5496\u5561\u4e4b\u90fd\uff0c\u64c1\u6709\u4e16\u754c\u7d1a\u5496\u5561\u6587\u5316",
-        "\u8857\u982d\u85dd\u8853\u548c\u5857\u9d09\u5df7\u805e\u540d",
-        "\u7dad\u591a\u5229\u4e9e\u5e02\u5834\u63d0\u4f9b\u65b0\u9bae\u98df\u6750",
-        "\u9130\u8fd1\u5927\u6d0b\u8def\uff0c\u53ef\u9031\u672b\u65c5\u904a"
+        "Top-ranked university in Australia (QS top 40)",
+        "Leading research university globally",
+        "Excellent medicine, law, and business programs",
+        "Beautiful historic campus in city center",
+        "Strong international reputation and partnerships"
       ]
     },
     {
@@ -370,13 +380,14 @@
       },
       "region": "New South Wales",
       "district": "Kensington",
-      "foodCulture": "\u9130\u8fd1Coogee\u6d77\u7058\uff0c\u6d77\u9bae\u9910\u5ef3\u6797\u7acb",
-      "climate": "\u4e9e\u71b1\u5e36\u6fd5\u6f64\u6c23\u5019",
+      "foodCulture": "Sydney features diverse international cuisine, fresh seafood, and innovative dining scene reflecting multicultural population",
+      "climate": "Temperate climate with warm summers and mild winters, ideal for coastal living",
       "specialFeatures": [
-        "\u8ddd\u96e2Coogee\u6d77\u7058\u50c515\u5206\u9418\u6b65\u884c",
-        "\u5de5\u7a0b\u5b78\u9662\u5728\u6fb3\u6d32\u6392\u540d\u7b2c\u4e00",
-        "\u64c1\u6709\u73fe\u4ee3\u5316\u6821\u5712\u548c\u8a2d\u65bd",
-        "\u9130\u8fd1\u4e2d\u592e\u5546\u696d\u5340\uff0c\u4ea4\u901a\u4fbf\u5229"
+        "Top-ranked university in Sydney (QS top 50)",
+        "Strong engineering and business programs",
+        "Excellent research facilities and innovation hub",
+        "Modern campus near Coogee Beach",
+        "High graduate employability and industry connections"
       ]
     },
     {
@@ -411,13 +422,14 @@
       },
       "region": "New South Wales",
       "district": "Callaghan",
-      "foodCulture": "\u6d77\u6ff1\u57ce\u5e02\uff0c\u65b0\u9bae\u6d77\u9bae\u8c50\u5bcc",
-      "climate": "\u4e9e\u71b1\u5e36\u6fd5\u6f64\u6c23\u5019",
+      "foodCulture": "Newcastle offers diverse Australian cuisine, fresh seafood, modern dining, and multicultural food options",
+      "climate": "Temperate oceanic climate with mild temperatures, moderate rainfall, four distinct seasons",
       "specialFeatures": [
-        "\u8ddd\u96e2\u7f8e\u9e97\u6d77\u7058\u50c510\u5206\u9418",
-        "\u751f\u6d3b\u6210\u672c\u76f8\u5c0d\u8f03\u4f4e",
-        "Nobbys\u71c8\u5854\u53ef\u89c0\u8cde\u6d77\u8c5a",
-        "\u5de5\u7a0b\u5b78\u9662\u8207\u696d\u754c\u806f\u7e4b\u7dca\u5bc6"
+        "Strong university in Australia",
+        "Excellent research and academic programs",
+        "Strong engineering and health sciences programs",
+        "Modern campus with advanced facilities",
+        "Leading in medical research and innovation"
       ]
     },
     {
@@ -452,13 +464,14 @@
       },
       "region": "Queensland",
       "district": "St Lucia",
-      "foodCulture": "\u5e03\u91cc\u65af\u672c\u6cb3\u6ff1\u5340\u6709\u773e\u591a\u9910\u5ef3\u548c\u5496\u5561\u9928",
-      "climate": "\u4e9e\u71b1\u5e36\u6c23\u5019\uff0c\u5168\u5e74\u967d\u5149\u660e\u5a9a",
+      "foodCulture": "Brisbane offers fresh seafood, modern Australian cuisine, and diverse Asian-Pacific dining options with tropical influences",
+      "climate": "Subtropical climate with warm humid summers and mild winters, perfect for year-round outdoor activities",
       "specialFeatures": [
-        "\u6821\u5712\u5167\u6709\u6e56\u6cca\u548c\u4e9e\u71b1\u5e36\u690d\u7269",
-        "\u8ddd\u96e2\u9ec3\u91d1\u6d77\u5cb8\u50c51\u5c0f\u6642\u8eca\u7a0b",
-        "\u5927\u5821\u7901\u65c5\u904a\u4fbf\u5229",
-        "\u5168\u5e74\u53ef\u7a7f\u77ed\u8896\uff0c\u51ac\u5b63\u6eab\u6696"
+        "Top-ranked university in Australia (QS top 50)",
+        "Leading research university",
+        "Excellent medical and health sciences",
+        "Beautiful campus with lakes and gardens",
+        "Strong agricultural and environmental programs"
       ]
     },
     {
@@ -493,13 +506,14 @@
       },
       "region": "New South Wales",
       "district": "Camperdown",
-      "foodCulture": "\u6089\u5c3c\u6e2f\u7063\u5340\u64c1\u6709\u8c50\u5bcc\u6d77\u9bae\u548c\u570b\u969b\u7f8e\u98df",
-      "climate": "\u4e9e\u71b1\u5e36\u6fd5\u6f64\u6c23\u5019\uff0c\u590f\u6dbc\u51ac\u6696",
+      "foodCulture": "Sydney offers diverse international cuisine, fresh seafood, and vibrant caf\u00e9 culture with multicultural dining options",
+      "climate": "Temperate climate with warm summers and mild winters, four distinct seasons",
       "specialFeatures": [
-        "\u6a19\u8a8c\u6027\u7684\u6089\u5c3c\u6b4c\u5287\u9662\u548c\u6d77\u6e2f\u5927\u6a4b",
-        "\u90a6\u4ee3\u6d77\u7058\u662f\u4e16\u754c\u8457\u540d\u6d77\u7058\u4e4b\u4e00",
-        "\u9054\u4ee4\u6e2f\u7063\u5340\u591c\u751f\u6d3b\u548c\u7f8e\u98df\u8c50\u5bcc",
-        "\u83ef\u4eba\u5340Burwood\u7f8e\u98df\u773e\u591a"
+        "Top-ranked university in Australia (QS top 50)",
+        "Historic university with modern research facilities",
+        "Excellent medicine and law programs",
+        "Beautiful sandstone campus",
+        "Strong international reputation"
       ]
     },
     {
@@ -533,13 +547,14 @@
       },
       "region": "Tasmania",
       "district": "Hobart",
-      "foodCulture": "\u5854\u65af\u99ac\u5c3c\u4e9e\u4ee5\u65b0\u9bae\u6d77\u9bae\u548c\u8fb2\u7522\u54c1\u805e\u540d",
-      "climate": "\u6eab\u5e36\u6d77\u6d0b\u6027\u6c23\u5019\uff0c\u56db\u5b63\u5206\u660e",
+      "foodCulture": "Hobart features fresh seafood, Tasmanian produce, modern Australian cuisine, and diverse dining options",
+      "climate": "Temperate oceanic climate with mild temperatures, moderate rainfall, four distinct seasons",
       "specialFeatures": [
-        "\u6fb3\u6d32\u6700\u5357\u7aef\u7684\u5be7\u975c\u5cf6\u5dbc",
-        "\u539f\u59cb\u81ea\u7136\u98a8\u5149\u548c\u91ce\u751f\u52d5\u7269",
-        "\u5357\u6975\u5149\u89c0\u8cde\u5730\u9ede",
-        "\u6d77\u9bae\u54c1\u8cea\u4e16\u754c\u7d1a"
+        "Strong university in Australia",
+        "Excellent research and academic programs",
+        "Strong environmental and marine sciences programs",
+        "Beautiful campus with natural surroundings",
+        "Leading in Antarctic and marine research"
       ]
     },
     {
@@ -574,13 +589,14 @@
       },
       "region": "New South Wales",
       "district": "Ultimo",
-      "foodCulture": "\u5e02\u4e2d\u5fc3\u4f4d\u7f6e\uff0c\u7f8e\u98df\u9078\u64c7\u773e\u591a",
-      "climate": "\u4e9e\u71b1\u5e36\u6fd5\u6f64\u6c23\u5019",
+      "foodCulture": "Sydney features diverse international cuisine, fresh seafood, and innovative dining scene reflecting multicultural population",
+      "climate": "Temperate climate with warm summers and mild winters, ideal for city living",
       "specialFeatures": [
-        "\u4f4d\u65bc\u6089\u5c3c\u5e02\u4e2d\u5fc3\u6838\u5fc3\u4f4d\u7f6e",
-        "\u8a2d\u8a08\u5b78\u9662\u5168\u7403\u9802\u5c16",
-        "\u8207\u884c\u696d\u5408\u4f5c\u7dca\u5bc6",
-        "\u6b65\u884c\u53ef\u9054\u9054\u4ee4\u6e2f\u548c\u5510\u4eba\u8857"
+        "Leading technology and design university in Australia",
+        "Strong industry partnerships and practical learning",
+        "Excellent engineering and IT programs",
+        "Innovation-focused campus in Sydney CBD",
+        "Top graduate employability rates"
       ]
     },
     {
@@ -614,13 +630,14 @@
       },
       "region": "New South Wales",
       "district": "Wollongong",
-      "foodCulture": "\u6d77\u6ff1\u57ce\u5e02\uff0c\u6d77\u9bae\u548c\u65b0\u9bae\u98df\u6750\u8c50\u5bcc",
-      "climate": "\u4e9e\u71b1\u5e36\u6d77\u6d0b\u6027\u6c23\u5019",
+      "foodCulture": "Wollongong offers diverse Australian cuisine, fresh seafood, modern dining, and multicultural food options",
+      "climate": "Temperate oceanic climate with mild temperatures, moderate rainfall, four distinct seasons",
       "specialFeatures": [
-        "\u8ddd\u96e2\u6089\u5c3c\u50c51\u5c0f\u6642\u706b\u8eca",
-        "\u6d77\u7058\u548c\u5c71\u666f\u517c\u5099",
-        "\u81e5\u5d16\u7d5c\u9053\u666f\u8272\u58ef\u89c0",
-        "\u751f\u6d3b\u6210\u672c\u6bd4\u6089\u5c3c\u4f4e30%"
+        "Strong university in Australia",
+        "Excellent research and academic programs",
+        "Strong engineering and information technology programs",
+        "Modern campus with advanced facilities",
+        "Leading in materials science and engineering"
       ]
     },
     {
@@ -655,12 +672,14 @@
       },
       "region": "Austria",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Linz offers diverse Austrian cuisine, traditional Austrian food, hearty meals, and multicultural dining options",
+      "climate": "Temperate oceanic climate with four distinct seasons, cold winters and warm summers",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Strong university in Austria",
+        "Excellent research and academic programs",
+        "Strong business and social sciences programs",
+        "Modern campus with advanced facilities",
+        "Leading in business and management research"
       ]
     },
     {
@@ -695,12 +714,14 @@
       },
       "region": "Austria",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Vienna offers diverse Austrian cuisine, traditional Viennese food, hearty meals, and multicultural dining options",
+      "climate": "Temperate oceanic climate with four distinct seasons, cold winters and warm summers",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Top-ranked university in Austria",
+        "Ancient university with modern research",
+        "Excellent humanities and social sciences programs",
+        "Beautiful historic campus",
+        "Strong international reputation and partnerships"
       ]
     },
     {
@@ -735,12 +756,14 @@
       },
       "region": "Belgium",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Leuven offers diverse Belgian cuisine, traditional Belgian food, beer culture, and multicultural dining options",
+      "climate": "Temperate oceanic climate with four distinct seasons, mild winters and warm summers",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Top-ranked university in Belgium",
+        "Strong research and academic programs",
+        "Excellent science and engineering programs",
+        "Historic university with modern facilities",
+        "Leading in research and innovation"
       ]
     },
     {
@@ -775,12 +798,14 @@
       },
       "region": "Canada",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Vancouver offers diverse Pacific Northwest cuisine, fresh seafood, Asian fusion, and farm-to-table dining",
+      "climate": "Oceanic climate with mild rainy winters and warm dry summers",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Top-ranked university in Canada",
+        "Strong research and academic programs",
+        "Excellent technology and business programs",
+        "Modern campus with advanced facilities",
+        "Leading in innovation and entrepreneurship"
       ]
     },
     {
@@ -816,12 +841,14 @@
       },
       "region": "Canada",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Toronto features diverse international cuisine, multicultural dining options, and vibrant food scene reflecting global influences",
+      "climate": "Humid continental climate with cold snowy winters and warm humid summers",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Top-ranked university in Canada (QS top 30)",
+        "Leading research university globally",
+        "Excellent medicine, law, and business programs",
+        "Multiple campuses across Toronto",
+        "Strong international reputation and partnerships"
       ]
     },
     {
@@ -857,12 +884,14 @@
       },
       "region": "Canada",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Waterloo features diverse international cuisine, tech-focused dining options, and multicultural food reflecting student population",
+      "climate": "Humid continental climate with cold winters and warm summers",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Leading university in technology and engineering",
+        "World-renowned co-op education program",
+        "Excellent computer science and mathematics",
+        "Strong industry partnerships and innovation",
+        "Top graduate employability rates"
       ]
     },
     {
@@ -897,12 +926,14 @@
       },
       "region": "Chile",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Santiago offers diverse Chilean cuisine, traditional Chilean food, fresh seafood, and multicultural dining options",
+      "climate": "Mediterranean climate with dry summers and mild winters",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Top-ranked university in Chile",
+        "Strong research and academic programs",
+        "Excellent humanities and social sciences programs",
+        "Modern campus with advanced facilities",
+        "Leading in Latin American studies"
       ]
     },
     {
@@ -938,12 +969,14 @@
       },
       "region": "Chinese Mainland",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Beijing offers diverse Chinese cuisine, traditional Beijing food, regional specialties, and multicultural dining options",
+      "climate": "Humid continental climate with cold dry winters and hot humid summers",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Top-ranked university in China",
+        "Ancient university with modern research",
+        "Excellent humanities and sciences programs",
+        "Beautiful historic campus",
+        "Strong international reputation and partnerships"
       ]
     },
     {
@@ -979,12 +1012,14 @@
       },
       "region": "Chinese Mainland",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Beijing offers diverse Chinese cuisine, traditional Beijing food, regional specialties, and multicultural dining options",
+      "climate": "Humid continental climate with cold dry winters and hot humid summers",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Top-ranked university in China",
+        "Leading technology university",
+        "Excellent engineering and science programs",
+        "Beautiful historic campus",
+        "Strong international reputation and partnerships"
       ]
     },
     {
@@ -1020,12 +1055,14 @@
       },
       "region": "Chinese Mainland",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Wuhan offers diverse Chinese cuisine, traditional Hubei food, regional specialties, and multicultural dining options",
+      "climate": "Humid subtropical climate with hot humid summers and mild winters",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Top-ranked university in China",
+        "Strong research and academic programs",
+        "Excellent science and engineering programs",
+        "Beautiful campus with lakes and gardens",
+        "Leading in medical research and innovation"
       ]
     },
     {
@@ -1100,12 +1137,14 @@
       },
       "region": "Denmark",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Copenhagen offers diverse Danish cuisine, traditional Danish food, fresh seafood, and multicultural dining options",
+      "climate": "Temperate oceanic climate with mild temperatures, moderate rainfall, four distinct seasons",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Top-ranked university in Denmark",
+        "Strong research and academic programs",
+        "Excellent science and humanities programs",
+        "Beautiful historic campus",
+        "Leading in medical research and innovation"
       ]
     },
     {
@@ -1140,12 +1179,14 @@
       },
       "region": "Finland",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Tampere offers diverse Finnish cuisine, traditional Finnish food, hearty meals, and multicultural dining options",
+      "climate": "Humid continental climate with cold snowy winters and mild summers",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Strong university in Finland",
+        "Excellent research and academic programs",
+        "Strong technology and social sciences programs",
+        "Modern campus with advanced facilities",
+        "Leading in technology and innovation"
       ]
     },
     {
@@ -1180,12 +1221,14 @@
       },
       "region": "Finland",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Turku offers diverse Finnish cuisine, traditional Finnish food, fresh seafood, and multicultural dining options",
+      "climate": "Humid continental climate with cold snowy winters and mild summers",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Strong university in Finland",
+        "Excellent research and academic programs",
+        "Strong science and humanities programs",
+        "Historic university with modern facilities",
+        "Leading in medical research and innovation"
       ]
     },
     {
@@ -2106,12 +2149,14 @@
       },
       "region": "New Zealand",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Auckland offers diverse Pacific Island cuisine, fresh seafood, and multicultural dining reflecting Maori, Asian, and European influences",
+      "climate": "Oceanic climate with mild temperatures year-round, warm summers and cool winters, high rainfall",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Top-ranked university in New Zealand (QS top 100)",
+        "Strong research and academic programs",
+        "Excellent medicine and engineering programs",
+        "Beautiful campus near Auckland harbor",
+        "Leading university in Pacific region"
       ]
     },
     {
@@ -2186,12 +2231,14 @@
       },
       "region": "Norway",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Bergen offers diverse Norwegian cuisine, traditional Norwegian food, fresh seafood, and multicultural dining options",
+      "climate": "Oceanic climate with mild temperatures, high rainfall, cool summers and mild winters",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Strong university in Norway",
+        "Excellent research and academic programs",
+        "Strong marine and environmental sciences programs",
+        "Historic university with modern facilities",
+        "Leading in marine research and innovation"
       ]
     },
     {
@@ -2226,12 +2273,14 @@
       },
       "region": "Norway",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Oslo offers diverse Norwegian cuisine, traditional Norwegian food, fresh seafood, and multicultural dining options",
+      "climate": "Humid continental climate with cold snowy winters and mild summers",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Top-ranked university in Norway",
+        "Strong research and academic programs",
+        "Excellent science and humanities programs",
+        "Beautiful historic campus",
+        "Leading in medical research and innovation"
       ]
     },
     {
@@ -2427,12 +2476,14 @@
       },
       "region": "Sweden",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Lund offers diverse Swedish cuisine, traditional Swedish food, fresh local produce, and multicultural dining options",
+      "climate": "Temperate oceanic climate with mild temperatures, moderate rainfall, four distinct seasons",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Top-ranked university in Sweden",
+        "Strong research and academic programs",
+        "Excellent science and engineering programs",
+        "Historic university with modern facilities",
+        "Leading in research and innovation"
       ]
     },
     {
@@ -2467,12 +2518,14 @@
       },
       "region": "Sweden",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Stockholm offers diverse Swedish cuisine, traditional Swedish food, fresh seafood, and multicultural dining options",
+      "climate": "Humid continental climate with cold snowy winters and mild summers",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Top-ranked university in Sweden",
+        "Strong research and academic programs",
+        "Excellent science and humanities programs",
+        "Modern campus with advanced facilities",
+        "Leading in environmental and climate research"
       ]
     },
     {
@@ -2787,12 +2840,14 @@
       },
       "region": "UK",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "London offers diverse international cuisine, traditional British food, vibrant food markets, and multicultural dining",
+      "climate": "Temperate oceanic climate with mild temperatures, frequent rainfall, four distinct seasons",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Top-ranked university in UK (QS top 10)",
+        "Leading research university globally",
+        "Excellent medicine, law, and architecture programs",
+        "Central London location with global connections",
+        "Strong innovation and entrepreneurship"
       ]
     },
     {
@@ -2826,12 +2881,14 @@
       },
       "region": "UK",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Birmingham offers diverse British cuisine, famous Balti curries, hearty pub food, and multicultural dining reflecting industrial heritage",
+      "climate": "Temperate oceanic climate with mild temperatures, moderate rainfall, four distinct seasons",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Top-ranked university in UK (QS top 100)",
+        "Strong research and engineering programs",
+        "Excellent medicine and business programs",
+        "Modern campus with advanced facilities",
+        "Leading in cancer and cardiovascular research"
       ]
     },
     {
@@ -2866,12 +2923,14 @@
       },
       "region": "UK",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Edinburgh features Scottish cuisine, fresh seafood, haggis, and diverse international dining in historic setting",
+      "climate": "Temperate oceanic climate with mild temperatures, cool summers, cool winters, frequent rainfall",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Top-ranked university in Scotland (QS top 50)",
+        "Ancient university with modern research",
+        "Excellent medicine and humanities programs",
+        "Beautiful historic campus in Old Town",
+        "Strong international reputation"
       ]
     },
     {
@@ -2905,12 +2964,14 @@
       },
       "region": "UK",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Glasgow offers Scottish cuisine, modern British food, diverse international dining, and vibrant pub culture",
+      "climate": "Temperate oceanic climate with mild temperatures, frequent rainfall, cool summers and mild winters",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Top-ranked university in Scotland (QS top 100)",
+        "Ancient university with modern facilities",
+        "Excellent science and engineering programs",
+        "Beautiful historic campus",
+        "Strong research and innovation"
       ]
     },
     {
@@ -2944,12 +3005,14 @@
       },
       "region": "UK",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Leeds features diverse British cuisine, Yorkshire puddings, hearty pub food, and multicultural dining options",
+      "climate": "Temperate oceanic climate with mild temperatures, moderate rainfall, four distinct seasons",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Top-ranked university in UK (QS top 100)",
+        "Strong research and academic programs",
+        "Excellent business and engineering programs",
+        "Modern campus with advanced facilities",
+        "Leading in medical research and innovation"
       ]
     },
     {
@@ -2983,12 +3046,14 @@
       },
       "region": "UK",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Manchester offers diverse British cuisine, famous curries, hearty pub food, and multicultural dining reflecting industrial heritage",
+      "climate": "Temperate oceanic climate with mild temperatures, frequent rainfall, four distinct seasons",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Top-ranked university in UK (QS top 50)",
+        "Leading research university globally",
+        "Excellent science and engineering programs",
+        "Beautiful historic campus",
+        "Strong industry partnerships and innovation"
       ]
     },
     {
@@ -3022,12 +3087,14 @@
       },
       "region": "UK",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Nottingham offers diverse British cuisine, local specialties, hearty pub food, and multicultural dining options",
+      "climate": "Temperate oceanic climate with mild temperatures, moderate rainfall, four distinct seasons",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Top-ranked university in UK (QS top 100)",
+        "Strong research and academic programs",
+        "Excellent medicine and engineering programs",
+        "Beautiful campus with lakes and gardens",
+        "Leading in MRI and medical imaging research"
       ]
     },
     {
@@ -3061,12 +3128,14 @@
       },
       "region": "UK",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Sheffield offers diverse British cuisine, hearty Yorkshire food, pub culture, and multicultural dining options",
+      "climate": "Temperate oceanic climate with mild temperatures, moderate rainfall, four distinct seasons",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Top-ranked university in UK (QS top 100)",
+        "Strong engineering and science programs",
+        "Excellent research facilities",
+        "Modern campus with advanced technology",
+        "Leading in materials science and engineering"
       ]
     },
     {
@@ -3100,12 +3169,14 @@
       },
       "region": "UK",
       "district": "Main Campus",
-      "foodCulture": "Local cuisine available",
-      "climate": "Temperate climate",
+      "foodCulture": "Coventry offers diverse British cuisine, modern British food, hearty pub meals, and multicultural dining options",
+      "climate": "Temperate oceanic climate with mild temperatures, moderate rainfall, four distinct seasons",
       "specialFeatures": [
-        "Top university in region",
-        "Exchange program available",
-        "Quality education and research"
+        "Top-ranked university in UK (QS top 100)",
+        "Strong research and business programs",
+        "Excellent mathematics and economics programs",
+        "Modern campus with advanced facilities",
+        "Leading in business and management research"
       ]
     },
     {
