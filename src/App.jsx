@@ -320,12 +320,12 @@ function AppContent() {
                     onClick={() => setCgpaMode('max')}
                     className={`px-2 py-1 text-xs rounded-md transition-all ${cgpaMode === 'max' ? 'bg-[var(--brand)] text-white' : 'text-[var(--muted)]'}`}
                   >
-                    城市                  </button>
+                    最高                  </button>
                   <button
                     onClick={() => setCgpaMode('min')}
                     className={`px-2 py-1 text-xs rounded-md transition-all ${cgpaMode === 'min' ? 'bg-[var(--brand)] text-white' : 'text-[var(--muted)]'}`}
                   >
-                    城市                  </button>
+                    最低                  </button>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -359,12 +359,12 @@ function AppContent() {
                     onClick={() => setIeltsMode('min')}
                     className={`px-2 py-1 text-xs rounded-md transition-all ${ieltsMode === 'min' ? 'bg-[var(--brand)] text-white' : 'text-[var(--muted)]'}`}
                   >
-                    城市                  </button>
+                    最低                  </button>
                   <button
                     onClick={() => setIeltsMode('max')}
                     className={`px-2 py-1 text-xs rounded-md transition-all ${ieltsMode === 'max' ? 'bg-[var(--brand)] text-white' : 'text-[var(--muted)]'}`}
                   >
-                    城市                  </button>
+                    最高                  </button>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -398,12 +398,12 @@ function AppContent() {
                     onClick={() => setBudgetMode('max')}
                     className={`px-2 py-1 text-xs rounded-md transition-all ${budgetMode === 'max' ? 'bg-[var(--brand)] text-white' : 'text-[var(--muted)]'}`}
                   >
-                    城市                  </button>
+                    最高                  </button>
                   <button
                     onClick={() => setBudgetMode('min')}
                     className={`px-2 py-1 text-xs rounded-md transition-all ${budgetMode === 'min' ? 'bg-[var(--brand)] text-white' : 'text-[var(--muted)]'}`}
                   >
-                    城市                  </button>
+                    最低                  </button>
                 </div>
               </div>
               <div className="flex items-center gap-3">
