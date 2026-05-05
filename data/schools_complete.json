@@ -49,13 +49,13 @@
       },
       "region": "Buenos Aires",
       "district": "Pilar",
-      "foodCulture": "阿根廷以牛排和紅酒聞名，布宜諾斯艾利斯咖啡文化豐富",
-      "climate": "溫帶氣候，夏季炎熱冬季涼爽",
+      "foodCulture": "Argentina is famous for steak and red wine, Buenos Aires has rich coffee culture",
+      "climate": "Temperate climate, hot summers and cool winters",
       "specialFeatures": [
-        "阿根廷頂尖私立大學",
-        "商學院在拉丁美洲排名前5",
-        "校園安全且設施現代化",
-        "可學習西班牙語和探戈文化"
+        "Top private university in Argentina",
+        "Business school ranked top 5 in Latin America",
+        "Safe campus with modern facilities",
+        "Learn Spanish and tango culture"
       ]
     },
     {
@@ -194,10 +194,10 @@
         "English"
       ],
       "uniqueFeatures": [
-        "QS排名第133位",
-        "商科和會計學知名",
-        "悉尼北部，校園現代化",
-        "畢業生就業率高"
+        "QS\u6392\u540d\u7b2c133\u4f4d",
+        "\u5546\u79d1\u548c\u6703\u8a08\u5b78\u77e5\u540d",
+        "\u6089\u5c3c\u5317\u90e8\uff0c\u6821\u5712\u73fe\u4ee3\u5316",
+        "\u7562\u696d\u751f\u5c31\u696d\u7387\u9ad8"
       ],
       "selectionFactors": {
         "academicFit": "Quota for Sem A: 4, Sem B: 4",
@@ -207,13 +207,13 @@
       },
       "region": "New South Wales",
       "district": "Macquarie Park",
-      "foodCulture": "校園內有多元文化餐廳",
-      "climate": "亞熱帶濕潤氣候",
+      "foodCulture": "\u6821\u5712\u5167\u6709\u591a\u5143\u6587\u5316\u9910\u5ef3",
+      "climate": "\u4e9e\u71b1\u5e36\u6fd5\u6f64\u6c23\u5019",
       "specialFeatures": [
-        "會計和金融學院世界聞名",
-        "校園內有購物中心",
-        "鄰近北悉尼商業區",
-        "火車直達市中心僅25分鐘"
+        "\u6703\u8a08\u548c\u91d1\u878d\u5b78\u9662\u4e16\u754c\u805e\u540d",
+        "\u6821\u5712\u5167\u6709\u8cfc\u7269\u4e2d\u5fc3",
+        "\u9130\u8fd1\u5317\u6089\u5c3c\u5546\u696d\u5340",
+        "\u706b\u8eca\u76f4\u9054\u5e02\u4e2d\u5fc3\u50c525\u5206\u9418"
       ]
     },
     {
@@ -235,10 +235,10 @@
         "English"
       ],
       "uniqueFeatures": [
-        "QS排名第37位，澳洲八大之一",
-        "藥學和工程學特別出色",
-        "墨爾本第二大學，校區分布廣泛",
-        "科研經費充足"
+        "QS\u6392\u540d\u7b2c37\u4f4d\uff0c\u6fb3\u6d32\u516b\u5927\u4e4b\u4e00",
+        "\u85e5\u5b78\u548c\u5de5\u7a0b\u5b78\u7279\u5225\u51fa\u8272",
+        "\u58a8\u723e\u672c\u7b2c\u4e8c\u5927\u5b78\uff0c\u6821\u5340\u5206\u5e03\u5ee3\u6cdb",
+        "\u79d1\u7814\u7d93\u8cbb\u5145\u8db3"
       ],
       "selectionFactors": {
         "academicFit": "",
@@ -248,13 +248,13 @@
       },
       "region": "Victoria",
       "district": "Clayton",
-      "foodCulture": "Clayton區擁有大量亞洲餐廳",
-      "climate": "溫帶海洋性氣候",
+      "foodCulture": "Clayton\u5340\u64c1\u6709\u5927\u91cf\u4e9e\u6d32\u9910\u5ef3",
+      "climate": "\u6eab\u5e36\u6d77\u6d0b\u6027\u6c23\u5019",
       "specialFeatures": [
-        "藥學院全球排名第1",
-        "工程學院設施先進",
-        "校園內有火車站直達市中心",
-        "Clayton區華人超市眾多"
+        "\u85e5\u5b78\u9662\u5168\u7403\u6392\u540d\u7b2c1",
+        "\u5de5\u7a0b\u5b78\u9662\u8a2d\u65bd\u5148\u9032",
+        "\u6821\u5712\u5167\u6709\u706b\u8eca\u7ad9\u76f4\u9054\u5e02\u4e2d\u5fc3",
+        "Clayton\u5340\u83ef\u4eba\u8d85\u5e02\u773e\u591a"
       ]
     },
     {
@@ -288,13 +288,13 @@
       },
       "region": "Queensland",
       "district": "Brisbane CBD",
-      "foodCulture": "布里斯本河濱餐廳眾多",
-      "climate": "亞熱帶氣候",
+      "foodCulture": "\u5e03\u91cc\u65af\u672c\u6cb3\u6ff1\u9910\u5ef3\u773e\u591a",
+      "climate": "\u4e9e\u71b1\u5e36\u6c23\u5019",
       "specialFeatures": [
-        "位於布里斯本市中心",
-        "畢業生就業率昆士蘭第1",
-        "與業界聯繋緊密",
-        "南岸公園文化生活豐富"
+        "\u4f4d\u65bc\u5e03\u91cc\u65af\u672c\u5e02\u4e2d\u5fc3",
+        "\u7562\u696d\u751f\u5c31\u696d\u7387\u6606\u58eb\u862d\u7b2c1",
+        "\u8207\u696d\u754c\u806f\u7e4b\u7dca\u5bc6",
+        "\u5357\u5cb8\u516c\u5712\u6587\u5316\u751f\u6d3b\u8c50\u5bcc"
       ]
     },
     {
@@ -316,10 +316,10 @@
         "English"
       ],
       "uniqueFeatures": [
-        "澳洲最古老的大學之一（1853年創立）",
-        "QS排名第13位，澳洲第1",
-        "法律、醫學、牙科不接受交換生",
-        "位於墨爾本市中心，文化氛圍濃厚"
+        "\u6fb3\u6d32\u6700\u53e4\u8001\u7684\u5927\u5b78\u4e4b\u4e00\uff081853\u5e74\u5275\u7acb\uff09",
+        "QS\u6392\u540d\u7b2c13\u4f4d\uff0c\u6fb3\u6d32\u7b2c1",
+        "\u6cd5\u5f8b\u3001\u91ab\u5b78\u3001\u7259\u79d1\u4e0d\u63a5\u53d7\u4ea4\u63db\u751f",
+        "\u4f4d\u65bc\u58a8\u723e\u672c\u5e02\u4e2d\u5fc3\uff0c\u6587\u5316\u6c1b\u570d\u6fc3\u539a"
       ],
       "selectionFactors": {
         "academicFit": "No Law, Medicine, Dentistry",
@@ -329,13 +329,13 @@
       },
       "region": "Victoria",
       "district": "Parkville",
-      "foodCulture": "墨爾本以咖啡文化聞名，擁有眾多精品咖啡館和多元美食",
-      "climate": "溫帶海洋性氣候，四季分明",
+      "foodCulture": "\u58a8\u723e\u672c\u4ee5\u5496\u5561\u6587\u5316\u805e\u540d\uff0c\u64c1\u6709\u773e\u591a\u7cbe\u54c1\u5496\u5561\u9928\u548c\u591a\u5143\u7f8e\u98df",
+      "climate": "\u6eab\u5e36\u6d77\u6d0b\u6027\u6c23\u5019\uff0c\u56db\u5b63\u5206\u660e",
       "specialFeatures": [
-        "咖啡之都，擁有世界級咖啡文化",
-        "街頭藝術和塗鴉巷聞名",
-        "維多利亞市場提供新鮮食材",
-        "鄰近大洋路，可週末旅遊"
+        "\u5496\u5561\u4e4b\u90fd\uff0c\u64c1\u6709\u4e16\u754c\u7d1a\u5496\u5561\u6587\u5316",
+        "\u8857\u982d\u85dd\u8853\u548c\u5857\u9d09\u5df7\u805e\u540d",
+        "\u7dad\u591a\u5229\u4e9e\u5e02\u5834\u63d0\u4f9b\u65b0\u9bae\u98df\u6750",
+        "\u9130\u8fd1\u5927\u6d0b\u8def\uff0c\u53ef\u9031\u672b\u65c5\u904a"
       ]
     },
     {
@@ -357,10 +357,10 @@
         "English"
       ],
       "uniqueFeatures": [
-        "澳洲八大名校之一",
-        "QS排名第19位",
-        "商學院和法律學院需 IELTS 7.0",
-        "位於悉尼，就業機會豐富"
+        "\u6fb3\u6d32\u516b\u5927\u540d\u6821\u4e4b\u4e00",
+        "QS\u6392\u540d\u7b2c19\u4f4d",
+        "\u5546\u5b78\u9662\u548c\u6cd5\u5f8b\u5b78\u9662\u9700 IELTS 7.0",
+        "\u4f4d\u65bc\u6089\u5c3c\uff0c\u5c31\u696d\u6a5f\u6703\u8c50\u5bcc"
       ],
       "selectionFactors": {
         "academicFit": "Business/Law need IELTS 7.0",
@@ -370,13 +370,13 @@
       },
       "region": "New South Wales",
       "district": "Kensington",
-      "foodCulture": "鄰近Coogee海灘，海鮮餐廳林立",
-      "climate": "亞熱帶濕潤氣候",
+      "foodCulture": "\u9130\u8fd1Coogee\u6d77\u7058\uff0c\u6d77\u9bae\u9910\u5ef3\u6797\u7acb",
+      "climate": "\u4e9e\u71b1\u5e36\u6fd5\u6f64\u6c23\u5019",
       "specialFeatures": [
-        "距離Coogee海灘僅15分鐘步行",
-        "工程學院在澳洲排名第一",
-        "擁有現代化校園和設施",
-        "鄰近中央商業區，交通便利"
+        "\u8ddd\u96e2Coogee\u6d77\u7058\u50c515\u5206\u9418\u6b65\u884c",
+        "\u5de5\u7a0b\u5b78\u9662\u5728\u6fb3\u6d32\u6392\u540d\u7b2c\u4e00",
+        "\u64c1\u6709\u73fe\u4ee3\u5316\u6821\u5712\u548c\u8a2d\u65bd",
+        "\u9130\u8fd1\u4e2d\u592e\u5546\u696d\u5340\uff0c\u4ea4\u901a\u4fbf\u5229"
       ]
     },
     {
@@ -398,10 +398,10 @@
         "English"
       ],
       "uniqueFeatures": [
-        "QS排名第179位",
-        "部分課程有限制，需提前查詢",
-        "生活成本相對較低",
-        "海景校園，環境優美"
+        "QS\u6392\u540d\u7b2c179\u4f4d",
+        "\u90e8\u5206\u8ab2\u7a0b\u6709\u9650\u5236\uff0c\u9700\u63d0\u524d\u67e5\u8a62",
+        "\u751f\u6d3b\u6210\u672c\u76f8\u5c0d\u8f03\u4f4e",
+        "\u6d77\u666f\u6821\u5712\uff0c\u74b0\u5883\u512a\u7f8e"
       ],
       "selectionFactors": {
         "academicFit": "Check course restrictions",
@@ -411,13 +411,13 @@
       },
       "region": "New South Wales",
       "district": "Callaghan",
-      "foodCulture": "海濱城市，新鮮海鮮豐富",
-      "climate": "亞熱帶濕潤氣候",
+      "foodCulture": "\u6d77\u6ff1\u57ce\u5e02\uff0c\u65b0\u9bae\u6d77\u9bae\u8c50\u5bcc",
+      "climate": "\u4e9e\u71b1\u5e36\u6fd5\u6f64\u6c23\u5019",
       "specialFeatures": [
-        "距離美麗海灘僅10分鐘",
-        "生活成本相對較低",
-        "Nobbys燈塔可觀賞海豚",
-        "工程學院與業界聯繋緊密"
+        "\u8ddd\u96e2\u7f8e\u9e97\u6d77\u7058\u50c510\u5206\u9418",
+        "\u751f\u6d3b\u6210\u672c\u76f8\u5c0d\u8f03\u4f4e",
+        "Nobbys\u71c8\u5854\u53ef\u89c0\u8cde\u6d77\u8c5a",
+        "\u5de5\u7a0b\u5b78\u9662\u8207\u696d\u754c\u806f\u7e4b\u7dca\u5bc6"
       ]
     },
     {
@@ -439,10 +439,10 @@
         "English"
       ],
       "uniqueFeatures": [
-        "QS排名第40位，研究實力強",
-        "獸醫和法律專業需 IELTS 7.0",
-        "擁有世界一流的體育設施",
-        "布里斯本氣候宜人，生活成本較低"
+        "QS\u6392\u540d\u7b2c40\u4f4d\uff0c\u7814\u7a76\u5be6\u529b\u5f37",
+        "\u7378\u91ab\u548c\u6cd5\u5f8b\u5c08\u696d\u9700 IELTS 7.0",
+        "\u64c1\u6709\u4e16\u754c\u4e00\u6d41\u7684\u9ad4\u80b2\u8a2d\u65bd",
+        "\u5e03\u91cc\u65af\u672c\u6c23\u5019\u5b9c\u4eba\uff0c\u751f\u6d3b\u6210\u672c\u8f03\u4f4e"
       ],
       "selectionFactors": {
         "academicFit": "Vet Science & Law need IELTS 7.0",
@@ -452,13 +452,13 @@
       },
       "region": "Queensland",
       "district": "St Lucia",
-      "foodCulture": "布里斯本河濱區有眾多餐廳和咖啡館",
-      "climate": "亞熱帶氣候，全年陽光明媚",
+      "foodCulture": "\u5e03\u91cc\u65af\u672c\u6cb3\u6ff1\u5340\u6709\u773e\u591a\u9910\u5ef3\u548c\u5496\u5561\u9928",
+      "climate": "\u4e9e\u71b1\u5e36\u6c23\u5019\uff0c\u5168\u5e74\u967d\u5149\u660e\u5a9a",
       "specialFeatures": [
-        "校園內有湖泊和亞熱帶植物",
-        "距離黃金海岸僅1小時車程",
-        "大堡礁旅遊便利",
-        "全年可穿短袖，冬季溫暖"
+        "\u6821\u5712\u5167\u6709\u6e56\u6cca\u548c\u4e9e\u71b1\u5e36\u690d\u7269",
+        "\u8ddd\u96e2\u9ec3\u91d1\u6d77\u5cb8\u50c51\u5c0f\u6642\u8eca\u7a0b",
+        "\u5927\u5821\u7901\u65c5\u904a\u4fbf\u5229",
+        "\u5168\u5e74\u53ef\u7a7f\u77ed\u8896\uff0c\u51ac\u5b63\u6eab\u6696"
       ]
     },
     {
@@ -480,10 +480,10 @@
         "English"
       ],
       "uniqueFeatures": [
-        "澳洲第一所大學（1850年創立）",
-        "QS排名第18位",
-        "砂岩建築校園，歷史悠久",
-        "位於悉尼市中心，交通便利"
+        "\u6fb3\u6d32\u7b2c\u4e00\u6240\u5927\u5b78\uff081850\u5e74\u5275\u7acb\uff09",
+        "QS\u6392\u540d\u7b2c18\u4f4d",
+        "\u7802\u5ca9\u5efa\u7bc9\u6821\u5712\uff0c\u6b77\u53f2\u60a0\u4e45",
+        "\u4f4d\u65bc\u6089\u5c3c\u5e02\u4e2d\u5fc3\uff0c\u4ea4\u901a\u4fbf\u5229"
       ],
       "selectionFactors": {
         "academicFit": "",
@@ -493,13 +493,13 @@
       },
       "region": "New South Wales",
       "district": "Camperdown",
-      "foodCulture": "悉尼港灣區擁有豐富海鮮和國際美食",
-      "climate": "亞熱帶濕潤氣候，夏涼冬暖",
+      "foodCulture": "\u6089\u5c3c\u6e2f\u7063\u5340\u64c1\u6709\u8c50\u5bcc\u6d77\u9bae\u548c\u570b\u969b\u7f8e\u98df",
+      "climate": "\u4e9e\u71b1\u5e36\u6fd5\u6f64\u6c23\u5019\uff0c\u590f\u6dbc\u51ac\u6696",
       "specialFeatures": [
-        "標誌性的悉尼歌劇院和海港大橋",
-        "邦代海灘是世界著名海灘之一",
-        "達令港灣區夜生活和美食豐富",
-        "華人區Burwood美食眾多"
+        "\u6a19\u8a8c\u6027\u7684\u6089\u5c3c\u6b4c\u5287\u9662\u548c\u6d77\u6e2f\u5927\u6a4b",
+        "\u90a6\u4ee3\u6d77\u7058\u662f\u4e16\u754c\u8457\u540d\u6d77\u7058\u4e4b\u4e00",
+        "\u9054\u4ee4\u6e2f\u7063\u5340\u591c\u751f\u6d3b\u548c\u7f8e\u98df\u8c50\u5bcc",
+        "\u83ef\u4eba\u5340Burwood\u7f8e\u98df\u773e\u591a"
       ]
     },
     {
@@ -533,13 +533,13 @@
       },
       "region": "Tasmania",
       "district": "Hobart",
-      "foodCulture": "塔斯馬尼亞以新鮮海鮮和農產品聞名",
-      "climate": "溫帶海洋性氣候，四季分明",
+      "foodCulture": "\u5854\u65af\u99ac\u5c3c\u4e9e\u4ee5\u65b0\u9bae\u6d77\u9bae\u548c\u8fb2\u7522\u54c1\u805e\u540d",
+      "climate": "\u6eab\u5e36\u6d77\u6d0b\u6027\u6c23\u5019\uff0c\u56db\u5b63\u5206\u660e",
       "specialFeatures": [
-        "澳洲最南端的寧靜島嶼",
-        "原始自然風光和野生動物",
-        "南極光觀賞地點",
-        "海鮮品質世界級"
+        "\u6fb3\u6d32\u6700\u5357\u7aef\u7684\u5be7\u975c\u5cf6\u5dbc",
+        "\u539f\u59cb\u81ea\u7136\u98a8\u5149\u548c\u91ce\u751f\u52d5\u7269",
+        "\u5357\u6975\u5149\u89c0\u8cde\u5730\u9ede",
+        "\u6d77\u9bae\u54c1\u8cea\u4e16\u754c\u7d1a"
       ]
     },
     {
@@ -561,10 +561,10 @@
         "English"
       ],
       "uniqueFeatures": [
-        "QS排名第88位",
-        "實踐導向，與業界聯繋緊密",
-        "設計和建築學出色",
-        "位於悉尼CBD"
+        "QS\u6392\u540d\u7b2c88\u4f4d",
+        "\u5be6\u8e10\u5c0e\u5411\uff0c\u8207\u696d\u754c\u806f\u7e4b\u7dca\u5bc6",
+        "\u8a2d\u8a08\u548c\u5efa\u7bc9\u5b78\u51fa\u8272",
+        "\u4f4d\u65bc\u6089\u5c3cCBD"
       ],
       "selectionFactors": {
         "academicFit": "",
@@ -574,13 +574,13 @@
       },
       "region": "New South Wales",
       "district": "Ultimo",
-      "foodCulture": "市中心位置，美食選擇眾多",
-      "climate": "亞熱帶濕潤氣候",
+      "foodCulture": "\u5e02\u4e2d\u5fc3\u4f4d\u7f6e\uff0c\u7f8e\u98df\u9078\u64c7\u773e\u591a",
+      "climate": "\u4e9e\u71b1\u5e36\u6fd5\u6f64\u6c23\u5019",
       "specialFeatures": [
-        "位於悉尼市中心核心位置",
-        "設計學院全球頂尖",
-        "與行業合作緊密",
-        "步行可達達令港和唐人街"
+        "\u4f4d\u65bc\u6089\u5c3c\u5e02\u4e2d\u5fc3\u6838\u5fc3\u4f4d\u7f6e",
+        "\u8a2d\u8a08\u5b78\u9662\u5168\u7403\u9802\u5c16",
+        "\u8207\u884c\u696d\u5408\u4f5c\u7dca\u5bc6",
+        "\u6b65\u884c\u53ef\u9054\u9054\u4ee4\u6e2f\u548c\u5510\u4eba\u8857"
       ]
     },
     {
@@ -614,13 +614,13 @@
       },
       "region": "New South Wales",
       "district": "Wollongong",
-      "foodCulture": "海濱城市，海鮮和新鮮食材豐富",
-      "climate": "亞熱帶海洋性氣候",
+      "foodCulture": "\u6d77\u6ff1\u57ce\u5e02\uff0c\u6d77\u9bae\u548c\u65b0\u9bae\u98df\u6750\u8c50\u5bcc",
+      "climate": "\u4e9e\u71b1\u5e36\u6d77\u6d0b\u6027\u6c23\u5019",
       "specialFeatures": [
-        "距離悉尼僅1小時火車",
-        "海灘和山景兼備",
-        "臥崖絜道景色壯觀",
-        "生活成本比悉尼低30%"
+        "\u8ddd\u96e2\u6089\u5c3c\u50c51\u5c0f\u6642\u706b\u8eca",
+        "\u6d77\u7058\u548c\u5c71\u666f\u517c\u5099",
+        "\u81e5\u5d16\u7d5c\u9053\u666f\u8272\u58ef\u89c0",
+        "\u751f\u6d3b\u6210\u672c\u6bd4\u6089\u5c3c\u4f4e30%"
       ]
     },
     {
@@ -1191,7 +1191,7 @@
     {
       "id": 30,
       "country": "France",
-      "name": "CentraleSupélec",
+      "name": "CentraleSup\u00e9lec",
       "quota": "3",
       "cgpa": 2.7,
       "ielts": "6.5",
