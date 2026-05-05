@@ -30,6 +30,11 @@ function useSchoolsData() {
 
 function AppContent() {
   const { lang, setLang, t } = useLanguage();
+
+  // 顯示網站版本號到控制台
+  useEffect(() => {
+    console.log('%c Exchange Finder %c v1.0.0 ', 'background: #0056b3; color: white; padding: 4px 8px; border-radius: 4px 0 0 4px;', 'background: #00a651; color: white; padding: 4px 8px; border-radius: 0 4px 4px 0;');
+  }, []);
   
   const [favorites, setFavorites] = useState(() => {
     const saved = localStorage.getItem('exchangeFavorites');
