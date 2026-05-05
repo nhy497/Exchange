@@ -557,12 +557,12 @@ function AppContent() {
                     </span>
                     <span className="chip flex items-center gap-1">
                       <Star className="w-3.5 h-3.5" />
-                      {lang === 'zh' ? '城市: ' : 'Quota: '}{school.quota}
+                      {lang === 'zh' ? '配額: ' : 'Quota: '}{school.quota}
                     </span>
                     {school.cgpa > 0 && (
                       <span className="chip flex items-center gap-1">
                         <GraduationCap className="w-3.5 h-3.5" />
-                        CGPA 城市{school.cgpa}
+                        CGPA 要求{school.cgpa}
                       </span>
                     )}
                     {school.ielts !== '-' && (
@@ -594,9 +594,9 @@ function AppContent() {
                           className="mt-2 text-sm text-[var(--brand)] hover:text-[var(--brand2)] flex items-center gap-1"
                         >
                           {expandedSchool === school.id ? (
-                            <><ChevronUp className="w-4 h-4" /> {lang === 'zh' ? '?起' : 'Show less'}</>
+                            <><ChevronUp className="w-4 h-4" /> {lang === 'zh' ? '收起' : 'Show less'}</>
                           ) : (
-                            <><ChevronDown className="w-4 h-4" /> {lang === 'zh' ? `城市 ${school.uniqueFeatures.length - 2} 城市..` : `${school.uniqueFeatures.length - 2} more...`}</>
+                            <><ChevronDown className="w-4 h-4" /> {lang === 'zh' ? `展開更多 ${school.uniqueFeatures.length - 2} 項..` : `${school.uniqueFeatures.length - 2} more...`}</>
                           )}
                         </button>
                       )}
@@ -618,7 +618,7 @@ function AppContent() {
                       className="btn-primary text-sm flex items-center gap-1.5"
                     >
                       <ExternalLink className="w-4 h-4" />
-                      {lang === 'zh' ? '城市詳?' : 'View Details'}
+                      {lang === 'zh' ? '查看詳情' : 'View Details'}
                     </button>
                     <button
                       onClick={() => toggleCompare(school.id)}
@@ -629,9 +629,9 @@ function AppContent() {
                       }`}
                     >
                       {compareList.includes(school.id) ? (
-                        <><Minus className="w-4 h-4" /> {lang === 'zh' ? '移出比?' : 'Remove'}</>
+                        <><Minus className="w-4 h-4" /> {lang === 'zh' ? '移出比較' : 'Remove'}</>
                       ) : (
-                        <><Plus className="w-4 h-4" /> {lang === 'zh' ? '?入比?' : 'Compare'}</>
+                        <><Plus className="w-4 h-4" /> {lang === 'zh' ? '加入比較' : 'Compare'}</>
                       )}
                     </button>
                   </div>
@@ -908,9 +908,9 @@ function AppContent() {
                 }`}
               >
                 {compareList.includes(selectedSchool.id) ? (
-                  <><Minus className="w-4 h-4" /> {lang === 'zh' ? '移出比?' : 'Remove from compare'}</>
+                  <><Minus className="w-4 h-4" /> {lang === 'zh' ? '移出比較' : 'Remove from compare'}</>
                 ) : (
-                  <><Plus className="w-4 h-4" /> {lang === 'zh' ? '?入比?' : 'Add to compare'}</>
+                  <><Plus className="w-4 h-4" /> {lang === 'zh' ? '加入比較' : 'Add to compare'}</>
                 )}
               </button>
             </div>
