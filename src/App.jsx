@@ -54,14 +54,21 @@ function AppContent() {
   const { data: schoolsData, loading, error } = useSchoolsData();
 
   // 輔助函數：根據語言獲取學校字段
+  // zh 模式：優先 xxxZh，fallback xxx；en 模式：優先 xxx，fallback xxxZh
   const getSchoolField = (school, field) => {
     if (lang === 'zh') {
-      const zhField = school[`${field}Zh`];
-      if (zhField !== undefined && zhField !== null && zhField !== '') {
-        return zhField;
+      const zhVal = school[`${field}Zh`];
+      if (zhVal !== undefined && zhVal !== null && zhVal !== '') {
+        return zhVal;
       }
+      return school[field];
     }
-    return school[field];
+    // en mode: prefer English field, fallback to Zh if English is absent
+    const enVal = school[field];
+    if (enVal !== undefined && enVal !== null && enVal !== '') {
+      return enVal;
+    }
+    return school[`${field}Zh`];
   };
 
   // 輔助函數：獲取 selectionFactors 字段
@@ -158,22 +165,25 @@ function AppContent() {
         const term = searchTerm.toLowerCase();
         const searchable = [
           school.name,
-          school.country,
-          school.city,
-          school.notes,
+          getSchoolField(school, 'country'),
+          getSchoolField(school, 'city'),
+          getSchoolField(school, 'notes'),
           school.ielts,
           school.toefl,
           school.semester,
-          ...(school.languages || []),
-          ...(school.uniqueFeatures || []),
-          school.selectionFactors?.academicFit || ''
+          ...(getSchoolField(school, 'languages') || []),
+          ...(getSchoolField(school, 'uniqueFeatures') || []),
+          ...(getSchoolField(school, 'specialFeatures') || []),
+          getSchoolField(school, 'foodCulture') || '',
+          getSchoolField(school, 'climate') || '',
+          getSelectionFactor(school, 'academicFit'),
         ].join(' ').toLowerCase();
         if (!searchable.includes(term)) return false;
       }
       
       return true;
     });
-  }, [selectedCountries, cgpaMode, cgpaValue, explorerGrant, ieltsMode, ieltsValue, budgetMode, budgetValue, showFavoritesOnly, favorites, searchTerm]);
+  }, [selectedCountries, cgpaMode, cgpaValue, explorerGrant, ieltsMode, ieltsValue, budgetMode, budgetValue, showFavoritesOnly, favorites, searchTerm, lang]);
 
   const toggleCountry = (country) => {
     setSelectedCountries(prev => 
@@ -700,11 +710,11 @@ function AppContent() {
                           </div>
                         )}
                       </div>
-                      {school.notes && (
+                      {getSchoolField(school, 'notes') && (
                         <div className="mt-3 p-3 bg-[var(--warning)]/10 rounded-[12px] border border-[var(--warning)]/20">
                           <div className="flex items-start gap-2">
                             <AlertCircle className="w-4 h-4 text-[var(--warning)] mt-0.5" />
-                            <p className="text-sm text-[var(--warning)]">{school.notes}</p>
+                            <p className="text-sm text-[var(--warning)]">{getSchoolField(school, 'notes')}</p>
                           </div>
                         </div>
                       )}
@@ -784,7 +794,7 @@ function AppContent() {
                     {[
                       { label: lang === 'zh' ? '國家' : 'Country', key: 'country', useZhField: true },
                       { label: lang === 'zh' ? '城市' : 'City', key: 'city', useZhField: true },
-                      { label: lang === 'zh' ? '配額' : 'Quota', key: 'quota' },
+                      { label: lang === 'zh' ? '配額' : 'Quota', key: 'quota', useZhField: true },
                       { label: lang === 'zh' ? 'CGPA' : 'CGPA', key: 'cgpa', format: (v) => v > 0 ? `≥${v}` : '-' },
                       { label: lang === 'zh' ? 'IELTS' : 'IELTS', key: 'ielts' },
                       { label: lang === 'zh' ? '學期' : 'Semester', key: 'semester' },

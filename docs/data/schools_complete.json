@@ -56,6 +56,35 @@
         "Business school ranked top 5 in Latin America",
         "Safe campus with modern facilities",
         "Learn Spanish and tango culture"
+      ],
+      "countryZh": "阿根廷",
+      "cityZh": "布宜諾斯艾利斯",
+      "uniqueFeaturesZh": [
+        "阿根廷頂尖私立大學",
+        "拉丁美洲商學院排名前五",
+        "安全校園，現代設施",
+        "學習西班牙語和探戈文化"
+      ],
+      "foodCultureZh": "阿根廷以牛排和紅酒聞名，布宜諾斯艾利斯擁有豐富的咖啡文化",
+      "climateZh": "溫帶氣候，夏季炎熱，冬季涼爽",
+      "specialFeaturesZh": [
+        "阿根廷頂尖私立大學",
+        "拉丁美洲商學院排名前五",
+        "安全校園，現代設施",
+        "學習西班牙語和探戈文化"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 阿根廷 文化",
+        "budgetLevel": "每月港幣 4,800",
+        "language": "西班牙語 (主要)、英語 (有限)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "待定",
+      "languagesZh": [
+        "西班牙語 (主要)",
+        "英語 (有限)"
       ]
     },
     {
@@ -90,13 +119,41 @@
       "region": "Australia",
       "district": "Main Campus",
       "foodCulture": "Adelaide offers diverse culinary scene with fresh local produce, famous wine regions nearby, and multicultural dining options from Central Market",
-      "climate": "Mediterranean climate with hot dry summers (25-35\u00b0C) and mild wet winters (8-18\u00b0C), perfect for outdoor activities",
+      "climate": "Mediterranean climate with hot dry summers (25-35°C) and mild wet winters (8-18°C), perfect for outdoor activities",
       "specialFeatures": [
         "Top-ranked research university in Australia (QS top 100)",
         "Located in wine capital of Australia",
         "Strong programs in health sciences and engineering",
         "Beautiful campus with modern research facilities",
         "Close to Adelaide Hills and beaches"
+      ],
+      "countryZh": "澳洲",
+      "cityZh": "N/A",
+      "uniqueFeaturesZh": [
+        "澳洲頂尖研究大學",
+        "QS 排名前 200",
+        "現代化校園設施",
+        "豐富的學生支援服務"
+      ],
+      "foodCultureZh": "澳洲提供多元化的美食，新鮮海鮮、現代澳洲菜及亞太地區多元餐飲",
+      "climateZh": "地中海或亞熱帶氣候，適合戶外活動",
+      "specialFeaturesZh": [
+        "澳洲頂尖研究大學",
+        "QS 排名前 200",
+        "現代化校園設施",
+        "豐富的學生支援服務"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "提名截止日期較早",
+        "culturalExperience": "體驗 澳洲 文化",
+        "budgetLevel": "每月港幣 9,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "提名截止日期較早",
+      "quotaZh": "4 (1 CB + 1 SEE + 2 any)",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -138,6 +195,34 @@
         "Excellent engineering and mining programs",
         "Modern campus with state-of-the-art facilities",
         "Located in vibrant Perth city"
+      ],
+      "countryZh": "澳洲",
+      "cityZh": "N/A",
+      "uniqueFeaturesZh": [
+        "澳洲頂尖研究大學",
+        "QS 排名前 200",
+        "現代化校園設施",
+        "豐富的學生支援服務"
+      ],
+      "foodCultureZh": "澳洲提供多元化的美食，新鮮海鮮、現代澳洲菜及亞太地區多元餐飲",
+      "climateZh": "地中海或亞熱帶氣候，適合戶外活動",
+      "specialFeaturesZh": [
+        "澳洲頂尖研究大學",
+        "QS 排名前 200",
+        "現代化校園設施",
+        "豐富的學生支援服務"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "醫學、職業治療、物理治療、言語治療、護理、藥學不開放",
+        "culturalExperience": "體驗 澳洲 文化",
+        "budgetLevel": "每月港幣 9,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "醫學、職業治療、物理治療、言語治療、護理、藥學不開放",
+      "quotaZh": "4 (2 SS + 2 CRSO)",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -179,6 +264,34 @@
         "Multiple campuses including Gold Coast and Brisbane",
         "Excellent research in sustainable development",
         "Close to Great Barrier Reef research sites"
+      ],
+      "countryZh": "澳洲",
+      "cityZh": "N/A",
+      "uniqueFeaturesZh": [
+        "澳洲頂尖研究大學",
+        "QS 排名前 200",
+        "現代化校園設施",
+        "豐富的學生支援服務"
+      ],
+      "foodCultureZh": "澳洲提供多元化的美食，新鮮海鮮、現代澳洲菜及亞太地區多元餐飲",
+      "climateZh": "地中海或亞熱帶氣候，適合戶外活動",
+      "specialFeaturesZh": [
+        "澳洲頂尖研究大學",
+        "QS 排名前 200",
+        "現代化校園設施",
+        "豐富的學生支援服務"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "請查閱課程限制",
+        "culturalExperience": "體驗 澳洲 文化",
+        "budgetLevel": "每月港幣 9,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "請查閱課程限制",
+      "quotaZh": "3",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -200,10 +313,10 @@
         "English"
       ],
       "uniqueFeatures": [
-        "QS\u6392\u540d\u7b2c133\u4f4d",
-        "\u5546\u79d1\u548c\u6703\u8a08\u5b78\u77e5\u540d",
-        "\u6089\u5c3c\u5317\u90e8\uff0c\u6821\u5712\u73fe\u4ee3\u5316",
-        "\u7562\u696d\u751f\u5c31\u696d\u7387\u9ad8"
+        "QS排名第133位",
+        "商科和會計學知名",
+        "悉尼北部，校園現代化",
+        "畢業生就業率高"
       ],
       "selectionFactors": {
         "academicFit": "Quota for Sem A: 4, Sem B: 4",
@@ -213,7 +326,7 @@
       },
       "region": "New South Wales",
       "district": "Macquarie Park",
-      "foodCulture": "Sydney offers diverse international cuisine, fresh seafood, and vibrant caf\u00e9 culture with multicultural dining options",
+      "foodCulture": "Sydney offers diverse international cuisine, fresh seafood, and vibrant café culture with multicultural dining options",
       "climate": "Temperate climate with warm summers and mild winters, four distinct seasons",
       "specialFeatures": [
         "Top-ranked university in Sydney",
@@ -221,6 +334,34 @@
         "Excellent research facilities and innovation hub",
         "Modern campus with advanced technology",
         "Close to Sydney business district"
+      ],
+      "countryZh": "澳洲",
+      "cityZh": "N/A",
+      "uniqueFeaturesZh": [
+        "澳洲頂尖研究大學",
+        "QS 排名前 200",
+        "現代化校園設施",
+        "豐富的學生支援服務"
+      ],
+      "foodCultureZh": "澳洲提供多元化的美食，新鮮海鮮、現代澳洲菜及亞太地區多元餐飲",
+      "climateZh": "地中海或亞熱帶氣候，適合戶外活動",
+      "specialFeaturesZh": [
+        "澳洲頂尖研究大學",
+        "QS 排名前 200",
+        "現代化校園設施",
+        "豐富的學生支援服務"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "Quota for Sem A: 4, Sem B: 4",
+        "culturalExperience": "體驗 澳洲 文化",
+        "budgetLevel": "每月港幣 9,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "雅思 6.5 (單項不低於 6.0); 托福 83 (13R, 21W, 12L, 18S)",
+      "quotaZh": "2",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -242,10 +383,10 @@
         "English"
       ],
       "uniqueFeatures": [
-        "QS\u6392\u540d\u7b2c37\u4f4d\uff0c\u6fb3\u6d32\u516b\u5927\u4e4b\u4e00",
-        "\u85e5\u5b78\u548c\u5de5\u7a0b\u5b78\u7279\u5225\u51fa\u8272",
-        "\u58a8\u723e\u672c\u7b2c\u4e8c\u5927\u5b78\uff0c\u6821\u5340\u5206\u5e03\u5ee3\u6cdb",
-        "\u79d1\u7814\u7d93\u8cbb\u5145\u8db3"
+        "QS排名第37位，澳洲八大之一",
+        "藥學和工程學特別出色",
+        "墨爾本第二大學，校區分布廣泛",
+        "科研經費充足"
       ],
       "selectionFactors": {
         "academicFit": "",
@@ -263,6 +404,34 @@
         "Excellent medicine and engineering programs",
         "Modern campus with advanced facilities",
         "Leading in medical research and innovation"
+      ],
+      "countryZh": "澳洲",
+      "cityZh": "N/A",
+      "uniqueFeaturesZh": [
+        "澳洲頂尖研究大學",
+        "QS 排名前 200",
+        "現代化校園設施",
+        "豐富的學生支援服務"
+      ],
+      "foodCultureZh": "澳洲提供多元化的美食，新鮮海鮮、現代澳洲菜及亞太地區多元餐飲",
+      "climateZh": "地中海或亞熱帶氣候，適合戶外活動",
+      "specialFeaturesZh": [
+        "澳洲頂尖研究大學",
+        "QS 排名前 200",
+        "現代化校園設施",
+        "豐富的學生支援服務"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 澳洲 文化",
+        "budgetLevel": "每月港幣 9,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "課程 限制 申請. Check factsheet.",
+      "quotaZh": "8 (2 CB + 2 ACE, 4 others)",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -304,6 +473,34 @@
         "Excellent design and engineering programs",
         "Modern campus in Brisbane CBD",
         "Top graduate employability rates"
+      ],
+      "countryZh": "澳洲",
+      "cityZh": "N/A",
+      "uniqueFeaturesZh": [
+        "澳洲頂尖研究大學",
+        "QS 排名前 200",
+        "現代化校園設施",
+        "豐富的學生支援服務"
+      ],
+      "foodCultureZh": "澳洲提供多元化的美食，新鮮海鮮、現代澳洲菜及亞太地區多元餐飲",
+      "climateZh": "地中海或亞熱帶氣候，適合戶外活動",
+      "specialFeaturesZh": [
+        "澳洲頂尖研究大學",
+        "QS 排名前 200",
+        "現代化校園設施",
+        "豐富的學生支援服務"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "Design, Nursing, Education, Clinical Psych 不開放",
+        "culturalExperience": "體驗 澳洲 文化",
+        "budgetLevel": "每月港幣 9,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "Design, Nursing, Education, Clinical Psych 不開放",
+      "quotaZh": "1",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -325,10 +522,10 @@
         "English"
       ],
       "uniqueFeatures": [
-        "\u6fb3\u6d32\u6700\u53e4\u8001\u7684\u5927\u5b78\u4e4b\u4e00\uff081853\u5e74\u5275\u7acb\uff09",
-        "QS\u6392\u540d\u7b2c13\u4f4d\uff0c\u6fb3\u6d32\u7b2c1",
-        "\u6cd5\u5f8b\u3001\u91ab\u5b78\u3001\u7259\u79d1\u4e0d\u63a5\u53d7\u4ea4\u63db\u751f",
-        "\u4f4d\u65bc\u58a8\u723e\u672c\u5e02\u4e2d\u5fc3\uff0c\u6587\u5316\u6c1b\u570d\u6fc3\u539a"
+        "澳洲最古老的大學之一（1853年創立）",
+        "QS排名第13位，澳洲第1",
+        "法律、醫學、牙科不接受交換生",
+        "位於墨爾本市中心，文化氛圍濃厚"
       ],
       "selectionFactors": {
         "academicFit": "No Law, Medicine, Dentistry",
@@ -346,6 +543,34 @@
         "Excellent medicine, law, and business programs",
         "Beautiful historic campus in city center",
         "Strong international reputation and partnerships"
+      ],
+      "countryZh": "澳洲",
+      "cityZh": "N/A",
+      "uniqueFeaturesZh": [
+        "澳洲頂尖研究大學",
+        "QS 排名前 200",
+        "現代化校園設施",
+        "豐富的學生支援服務"
+      ],
+      "foodCultureZh": "澳洲提供多元化的美食，新鮮海鮮、現代澳洲菜及亞太地區多元餐飲",
+      "climateZh": "地中海或亞熱帶氣候，適合戶外活動",
+      "specialFeaturesZh": [
+        "澳洲頂尖研究大學",
+        "QS 排名前 200",
+        "現代化校園設施",
+        "豐富的學生支援服務"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "No Law, Medicine, Dentistry",
+        "culturalExperience": "體驗 澳洲 文化",
+        "budgetLevel": "每月港幣 9,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "No Law, Medicine, Dentistry",
+      "quotaZh": "2",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -367,10 +592,10 @@
         "English"
       ],
       "uniqueFeatures": [
-        "\u6fb3\u6d32\u516b\u5927\u540d\u6821\u4e4b\u4e00",
-        "QS\u6392\u540d\u7b2c19\u4f4d",
-        "\u5546\u5b78\u9662\u548c\u6cd5\u5f8b\u5b78\u9662\u9700 IELTS 7.0",
-        "\u4f4d\u65bc\u6089\u5c3c\uff0c\u5c31\u696d\u6a5f\u6703\u8c50\u5bcc"
+        "澳洲八大名校之一",
+        "QS排名第19位",
+        "商學院和法律學院需 IELTS 7.0",
+        "位於悉尼，就業機會豐富"
       ],
       "selectionFactors": {
         "academicFit": "Business/Law need IELTS 7.0",
@@ -388,6 +613,34 @@
         "Excellent research facilities and innovation hub",
         "Modern campus near Coogee Beach",
         "High graduate employability and industry connections"
+      ],
+      "countryZh": "澳洲",
+      "cityZh": "N/A",
+      "uniqueFeaturesZh": [
+        "澳洲頂尖研究大學",
+        "QS 排名前 200",
+        "現代化校園設施",
+        "豐富的學生支援服務"
+      ],
+      "foodCultureZh": "澳洲提供多元化的美食，新鮮海鮮、現代澳洲菜及亞太地區多元餐飲",
+      "climateZh": "地中海或亞熱帶氣候，適合戶外活動",
+      "specialFeaturesZh": [
+        "澳洲頂尖研究大學",
+        "QS 排名前 200",
+        "現代化校園設施",
+        "豐富的學生支援服務"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "Business/Law need 雅思 7.0",
+        "culturalExperience": "體驗 澳洲 文化",
+        "budgetLevel": "每月港幣 9,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "Business/Law need 雅思 7.0",
+      "quotaZh": "2 (1 per sem)",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -409,10 +662,10 @@
         "English"
       ],
       "uniqueFeatures": [
-        "QS\u6392\u540d\u7b2c179\u4f4d",
-        "\u90e8\u5206\u8ab2\u7a0b\u6709\u9650\u5236\uff0c\u9700\u63d0\u524d\u67e5\u8a62",
-        "\u751f\u6d3b\u6210\u672c\u76f8\u5c0d\u8f03\u4f4e",
-        "\u6d77\u666f\u6821\u5712\uff0c\u74b0\u5883\u512a\u7f8e"
+        "QS排名第179位",
+        "部分課程有限制，需提前查詢",
+        "生活成本相對較低",
+        "海景校園，環境優美"
       ],
       "selectionFactors": {
         "academicFit": "Check course restrictions",
@@ -430,6 +683,34 @@
         "Strong engineering and health sciences programs",
         "Modern campus with advanced facilities",
         "Leading in medical research and innovation"
+      ],
+      "countryZh": "澳洲",
+      "cityZh": "N/A",
+      "uniqueFeaturesZh": [
+        "澳洲頂尖研究大學",
+        "QS 排名前 200",
+        "現代化校園設施",
+        "豐富的學生支援服務"
+      ],
+      "foodCultureZh": "澳洲提供多元化的美食，新鮮海鮮、現代澳洲菜及亞太地區多元餐飲",
+      "climateZh": "地中海或亞熱帶氣候，適合戶外活動",
+      "specialFeaturesZh": [
+        "澳洲頂尖研究大學",
+        "QS 排名前 200",
+        "現代化校園設施",
+        "豐富的學生支援服務"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "請查閱課程限制",
+        "culturalExperience": "體驗 澳洲 文化",
+        "budgetLevel": "每月港幣 9,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "請查閱課程限制 - refer to page 2",
+      "quotaZh": "3",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -451,10 +732,10 @@
         "English"
       ],
       "uniqueFeatures": [
-        "QS\u6392\u540d\u7b2c40\u4f4d\uff0c\u7814\u7a76\u5be6\u529b\u5f37",
-        "\u7378\u91ab\u548c\u6cd5\u5f8b\u5c08\u696d\u9700 IELTS 7.0",
-        "\u64c1\u6709\u4e16\u754c\u4e00\u6d41\u7684\u9ad4\u80b2\u8a2d\u65bd",
-        "\u5e03\u91cc\u65af\u672c\u6c23\u5019\u5b9c\u4eba\uff0c\u751f\u6d3b\u6210\u672c\u8f03\u4f4e"
+        "QS排名第40位，研究實力強",
+        "獸醫和法律專業需 IELTS 7.0",
+        "擁有世界一流的體育設施",
+        "布里斯本氣候宜人，生活成本較低"
       ],
       "selectionFactors": {
         "academicFit": "Vet Science & Law need IELTS 7.0",
@@ -472,6 +753,34 @@
         "Excellent medical and health sciences",
         "Beautiful campus with lakes and gardens",
         "Strong agricultural and environmental programs"
+      ],
+      "countryZh": "澳洲",
+      "cityZh": "N/A",
+      "uniqueFeaturesZh": [
+        "澳洲頂尖研究大學",
+        "QS 排名前 200",
+        "現代化校園設施",
+        "豐富的學生支援服務"
+      ],
+      "foodCultureZh": "澳洲提供多元化的美食，新鮮海鮮、現代澳洲菜及亞太地區多元餐飲",
+      "climateZh": "地中海或亞熱帶氣候，適合戶外活動",
+      "specialFeaturesZh": [
+        "澳洲頂尖研究大學",
+        "QS 排名前 200",
+        "現代化校園設施",
+        "豐富的學生支援服務"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "Vet Science & Law need 雅思 7.0",
+        "culturalExperience": "體驗 澳洲 文化",
+        "budgetLevel": "每月港幣 9,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "Vet Science & Law need 雅思 7.0",
+      "quotaZh": "待定",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -493,10 +802,10 @@
         "English"
       ],
       "uniqueFeatures": [
-        "\u6fb3\u6d32\u7b2c\u4e00\u6240\u5927\u5b78\uff081850\u5e74\u5275\u7acb\uff09",
-        "QS\u6392\u540d\u7b2c18\u4f4d",
-        "\u7802\u5ca9\u5efa\u7bc9\u6821\u5712\uff0c\u6b77\u53f2\u60a0\u4e45",
-        "\u4f4d\u65bc\u6089\u5c3c\u5e02\u4e2d\u5fc3\uff0c\u4ea4\u901a\u4fbf\u5229"
+        "澳洲第一所大學（1850年創立）",
+        "QS排名第18位",
+        "砂岩建築校園，歷史悠久",
+        "位於悉尼市中心，交通便利"
       ],
       "selectionFactors": {
         "academicFit": "",
@@ -506,7 +815,7 @@
       },
       "region": "New South Wales",
       "district": "Camperdown",
-      "foodCulture": "Sydney offers diverse international cuisine, fresh seafood, and vibrant caf\u00e9 culture with multicultural dining options",
+      "foodCulture": "Sydney offers diverse international cuisine, fresh seafood, and vibrant café culture with multicultural dining options",
       "climate": "Temperate climate with warm summers and mild winters, four distinct seasons",
       "specialFeatures": [
         "Top-ranked university in Australia (QS top 50)",
@@ -514,6 +823,34 @@
         "Excellent medicine and law programs",
         "Beautiful sandstone campus",
         "Strong international reputation"
+      ],
+      "countryZh": "澳洲",
+      "cityZh": "N/A",
+      "uniqueFeaturesZh": [
+        "澳洲頂尖研究大學",
+        "QS 排名前 200",
+        "現代化校園設施",
+        "豐富的學生支援服務"
+      ],
+      "foodCultureZh": "澳洲提供多元化的美食，新鮮海鮮、現代澳洲菜及亞太地區多元餐飲",
+      "climateZh": "地中海或亞熱帶氣候，適合戶外活動",
+      "specialFeaturesZh": [
+        "澳洲頂尖研究大學",
+        "QS 排名前 200",
+        "現代化校園設施",
+        "豐富的學生支援服務"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 澳洲 文化",
+        "budgetLevel": "每月港幣 9,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -555,6 +892,34 @@
         "Strong environmental and marine sciences programs",
         "Beautiful campus with natural surroundings",
         "Leading in Antarctic and marine research"
+      ],
+      "countryZh": "澳洲",
+      "cityZh": "N/A",
+      "uniqueFeaturesZh": [
+        "澳洲頂尖研究大學",
+        "QS 排名前 200",
+        "現代化校園設施",
+        "豐富的學生支援服務"
+      ],
+      "foodCultureZh": "澳洲提供多元化的美食，新鮮海鮮、現代澳洲菜及亞太地區多元餐飲",
+      "climateZh": "地中海或亞熱帶氣候，適合戶外活動",
+      "specialFeaturesZh": [
+        "澳洲頂尖研究大學",
+        "QS 排名前 200",
+        "現代化校園設施",
+        "豐富的學生支援服務"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "Law needs 雅思 6.5",
+        "culturalExperience": "體驗 澳洲 文化",
+        "budgetLevel": "每月港幣 9,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "雅思 6.0 (單項不低於 5.5); Law program requires higher score",
+      "quotaZh": "2",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -576,10 +941,10 @@
         "English"
       ],
       "uniqueFeatures": [
-        "QS\u6392\u540d\u7b2c88\u4f4d",
-        "\u5be6\u8e10\u5c0e\u5411\uff0c\u8207\u696d\u754c\u806f\u7e4b\u7dca\u5bc6",
-        "\u8a2d\u8a08\u548c\u5efa\u7bc9\u5b78\u51fa\u8272",
-        "\u4f4d\u65bc\u6089\u5c3cCBD"
+        "QS排名第88位",
+        "實踐導向，與業界聯繋緊密",
+        "設計和建築學出色",
+        "位於悉尼CBD"
       ],
       "selectionFactors": {
         "academicFit": "",
@@ -597,6 +962,34 @@
         "Excellent engineering and IT programs",
         "Innovation-focused campus in Sydney CBD",
         "Top graduate employability rates"
+      ],
+      "countryZh": "澳洲",
+      "cityZh": "N/A",
+      "uniqueFeaturesZh": [
+        "澳洲頂尖研究大學",
+        "QS 排名前 200",
+        "現代化校園設施",
+        "豐富的學生支援服務"
+      ],
+      "foodCultureZh": "澳洲提供多元化的美食，新鮮海鮮、現代澳洲菜及亞太地區多元餐飲",
+      "climateZh": "地中海或亞熱帶氣候，適合戶外活動",
+      "specialFeaturesZh": [
+        "澳洲頂尖研究大學",
+        "QS 排名前 200",
+        "現代化校園設施",
+        "豐富的學生支援服務"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 澳洲 文化",
+        "budgetLevel": "每月港幣 9,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "4",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -638,6 +1031,34 @@
         "Strong engineering and information technology programs",
         "Modern campus with advanced facilities",
         "Leading in materials science and engineering"
+      ],
+      "countryZh": "澳洲",
+      "cityZh": "N/A",
+      "uniqueFeaturesZh": [
+        "澳洲頂尖研究大學",
+        "QS 排名前 200",
+        "現代化校園設施",
+        "豐富的學生支援服務"
+      ],
+      "foodCultureZh": "澳洲提供多元化的美食，新鮮海鮮、現代澳洲菜及亞太地區多元餐飲",
+      "climateZh": "地中海或亞熱帶氣候，適合戶外活動",
+      "specialFeaturesZh": [
+        "澳洲頂尖研究大學",
+        "QS 排名前 200",
+        "現代化校園設施",
+        "豐富的學生支援服務"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "Business配額: Sem A 1, Sem B 1",
+        "culturalExperience": "體驗 澳洲 文化",
+        "budgetLevel": "每月港幣 9,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "雅思 6.0 in reading/writing, 5.0 in listening/speaking",
+      "quotaZh": "2",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -680,6 +1101,33 @@
         "Strong business and social sciences programs",
         "Modern campus with advanced facilities",
         "Leading in business and management research"
+      ],
+      "countryZh": "奧地利",
+      "cityZh": "林茨",
+      "uniqueFeaturesZh": [
+        "奧地利頂尖大學",
+        "歐洲中心位置",
+        "音樂和文化氛圍濃厚"
+      ],
+      "foodCultureZh": "奧地利以維也納炸豬排、薩赫蛋糕聞名，咖啡文化深厚",
+      "climateZh": "溫帶大陸性氣候，四季分明",
+      "specialFeaturesZh": [
+        "奧地利頂尖大學",
+        "歐洲中心位置",
+        "音樂和文化氛圍濃厚"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "CENG/CSCI only",
+        "culturalExperience": "體驗 奧地利 文化",
+        "budgetLevel": "每月港幣 8,500",
+        "language": "德語 (主要)、英語 (university)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "CENG/CSCI only",
+      "quotaZh": "4",
+      "languagesZh": [
+        "德語 (主要)",
+        "英語 (university)"
       ]
     },
     {
@@ -722,6 +1170,33 @@
         "Excellent humanities and social sciences programs",
         "Beautiful historic campus",
         "Strong international reputation and partnerships"
+      ],
+      "countryZh": "奧地利",
+      "cityZh": "維也納",
+      "uniqueFeaturesZh": [
+        "奧地利頂尖大學",
+        "歐洲中心位置",
+        "音樂和文化氛圍濃厚"
+      ],
+      "foodCultureZh": "奧地利以維也納炸豬排、薩赫蛋糕聞名，咖啡文化深厚",
+      "climateZh": "溫帶大陸性氣候，四季分明",
+      "specialFeaturesZh": [
+        "奧地利頂尖大學",
+        "歐洲中心位置",
+        "音樂和文化氛圍濃厚"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "CB/CLASS only",
+        "culturalExperience": "體驗 奧地利 文化",
+        "budgetLevel": "每月港幣 9,200",
+        "language": "德語 (主要)、英語 (university)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "CB/CLASS only",
+      "quotaZh": "3",
+      "languagesZh": [
+        "德語 (主要)",
+        "英語 (university)"
       ]
     },
     {
@@ -764,6 +1239,33 @@
         "Excellent science and engineering programs",
         "Historic university with modern facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "比利時",
+      "cityZh": "魯汶",
+      "uniqueFeaturesZh": [
+        "歐洲頂尖大學",
+        "國際化程度高",
+        "英語課程豐富"
+      ],
+      "foodCultureZh": "比利時以華夫餅、巧克力和啤酒聞名，魯汶學生餐廳選擇豐富",
+      "climateZh": "溫帶海洋性氣候，溫和濕潤",
+      "specialFeaturesZh": [
+        "歐洲頂尖大學",
+        "國際化程度高",
+        "英語課程豐富"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 比利時 文化",
+        "budgetLevel": "每月港幣 9,500",
+        "language": "荷蘭語/法語/德語、英語 (高)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "4",
+      "languagesZh": [
+        "荷蘭語/法語/德語",
+        "英語 (高)"
       ]
     },
     {
@@ -806,6 +1308,33 @@
         "Excellent technology and business programs",
         "Modern campus with advanced facilities",
         "Leading in innovation and entrepreneurship"
+      ],
+      "countryZh": "加拿大",
+      "cityZh": "本拿比",
+      "uniqueFeaturesZh": [
+        "本拿比山頂校園",
+        "計算機與工程實力強勁",
+        "創新學期制度"
+      ],
+      "foodCultureZh": "加拿大提供多元化美食，多倫多有豐富的亞洲餐飲，溫哥華以海鮮聞名",
+      "climateZh": "四季分明，冬季寒冷，夏季溫暖",
+      "specialFeaturesZh": [
+        "本拿比山頂校園",
+        "計算機與工程實力強勁",
+        "創新學期制度"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "Business/Computing配額: Sem A 1, Sem B 1",
+        "culturalExperience": "體驗 加拿大 文化",
+        "budgetLevel": "每月港幣 10,000",
+        "language": "英語 (主要)、法語 (Quebec only)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "Business/Computing配額: Sem A 1, Sem B 1",
+      "quotaZh": "2",
+      "languagesZh": [
+        "英語 (主要)",
+        "法語 (Quebec only)"
       ]
     },
     {
@@ -849,6 +1378,35 @@
         "Excellent medicine, law, and business programs",
         "Multiple campuses across Toronto",
         "Strong international reputation and partnerships"
+      ],
+      "countryZh": "加拿大",
+      "cityZh": "多倫多",
+      "uniqueFeaturesZh": [
+        "加拿大排名第一的大學",
+        "三個校區（聖佐治、密西沙加、士嘉堡）",
+        "所有學科研究實力強勁",
+        "位於多倫多市中心"
+      ],
+      "foodCultureZh": "加拿大提供多元化美食，多倫多有豐富的亞洲餐飲，溫哥華以海鮮聞名",
+      "climateZh": "四季分明，冬季寒冷，夏季溫暖",
+      "specialFeaturesZh": [
+        "加拿大排名第一的大學",
+        "三個校區（聖佐治、密西沙加、士嘉堡）",
+        "所有學科研究實力強勁",
+        "位於多倫多市中心"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 加拿大 文化",
+        "budgetLevel": "每月港幣 14,000",
+        "language": "英語 (主要)、法語 (Quebec only)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "10 (4 UTSG + 6 UTM/UTSC)",
+      "languagesZh": [
+        "英語 (主要)",
+        "法語 (Quebec only)"
       ]
     },
     {
@@ -892,6 +1450,35 @@
         "Excellent computer science and mathematics",
         "Strong industry partnerships and innovation",
         "Top graduate employability rates"
+      ],
+      "countryZh": "加拿大",
+      "cityZh": "滑鐵盧",
+      "uniqueFeaturesZh": [
+        "世界聞名的實習課程",
+        "加拿大工程界的MIT",
+        "強大的業界聯繫",
+        "高畢業生就業率"
+      ],
+      "foodCultureZh": "加拿大提供多元化美食，多倫多有豐富的亞洲餐飲，溫哥華以海鮮聞名",
+      "climateZh": "四季分明，冬季寒冷，夏季溫暖",
+      "specialFeaturesZh": [
+        "世界聞名的實習課程",
+        "加拿大工程界的MIT",
+        "強大的業界聯繫",
+        "高畢業生就業率"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 加拿大 文化",
+        "budgetLevel": "每月港幣 11,000",
+        "language": "英語 (主要)、法語 (Quebec only)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "英語 (主要)",
+        "法語 (Quebec only)"
       ]
     },
     {
@@ -934,6 +1521,33 @@
         "Excellent humanities and social sciences programs",
         "Modern campus with advanced facilities",
         "Leading in Latin American studies"
+      ],
+      "countryZh": "智利",
+      "cityZh": "聖地亞哥",
+      "uniqueFeaturesZh": [
+        "智利頂尖大學",
+        "南美洲門戶",
+        "安第斯山脈和太平洋近在咫尺"
+      ],
+      "foodCultureZh": "智利以海鮮、紅酒聞名，聖地亞哥有新興的美食場景",
+      "climateZh": "地中海氣候，夏季乾燥溫暖，冬季溫和濕潤",
+      "specialFeaturesZh": [
+        "智利頂尖大學",
+        "南美洲門戶",
+        "安第斯山脈和太平洋近在咫尺"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 智利 文化",
+        "budgetLevel": "每月港幣 5,500",
+        "language": "西班牙語 (主要)、英語 (有限)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "西班牙語 (主要)",
+        "英語 (有限)"
       ]
     },
     {
@@ -977,6 +1591,35 @@
         "Excellent humanities and sciences programs",
         "Beautiful historic campus",
         "Strong international reputation and partnerships"
+      ],
+      "countryZh": "中國內地",
+      "cityZh": "北京",
+      "uniqueFeaturesZh": [
+        "中國的哈佛",
+        "未名湖畔的歷史校園",
+        "中國頂尖人文社會科學",
+        "需回鄉證"
+      ],
+      "foodCultureZh": "中國內地美食文化豐富，北京有宮廷菜，西安有肉夾饃，武漢有熱乾麵",
+      "climateZh": "大陸性氣候，四季分明，冬季寒冷",
+      "specialFeaturesZh": [
+        "中國的哈佛",
+        "未名湖畔的歷史校園",
+        "中國頂尖人文社會科學",
+        "需回鄉證"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "Need Mainland Travel Permit for HK/Macau Residents",
+        "culturalExperience": "體驗 中國內地 文化",
+        "budgetLevel": "每月港幣 4,500",
+        "language": "普通話 (主要)、英語 (學術用語)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "Need Mainland Travel Permit for HK/Macau Residents",
+      "quotaZh": "10",
+      "languagesZh": [
+        "普通話 (主要)",
+        "英語 (學術用語)"
       ]
     },
     {
@@ -1020,6 +1663,35 @@
         "Excellent engineering and science programs",
         "Beautiful historic campus",
         "Strong international reputation and partnerships"
+      ],
+      "countryZh": "中國內地",
+      "cityZh": "北京",
+      "uniqueFeaturesZh": [
+        "中國的MIT",
+        "頂尖工程與科技",
+        "校園靠近頤和園",
+        "需回鄉證"
+      ],
+      "foodCultureZh": "中國內地美食文化豐富，北京有宮廷菜，西安有肉夾饃，武漢有熱乾麵",
+      "climateZh": "大陸性氣候，四季分明，冬季寒冷",
+      "specialFeaturesZh": [
+        "中國的MIT",
+        "頂尖工程與科技",
+        "校園靠近頤和園",
+        "需回鄉證"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "Need Mainland Travel Permit for HK/Macau Residents",
+        "culturalExperience": "體驗 中國內地 文化",
+        "budgetLevel": "每月港幣 4,500",
+        "language": "普通話 (主要)、英語 (學術用語)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "Need Mainland Travel Permit for HK/Macau Residents",
+      "quotaZh": "5",
+      "languagesZh": [
+        "普通話 (主要)",
+        "英語 (學術用語)"
       ]
     },
     {
@@ -1063,6 +1735,35 @@
         "Excellent science and engineering programs",
         "Beautiful campus with lakes and gardens",
         "Leading in medical research and innovation"
+      ],
+      "countryZh": "中國內地",
+      "cityZh": "武漢",
+      "uniqueFeaturesZh": [
+        "美麗的櫻花校園",
+        "中國前十名",
+        "遙感測繪實力強",
+        "需回鄉證"
+      ],
+      "foodCultureZh": "中國內地美食文化豐富，北京有宮廷菜，西安有肉夾饃，武漢有熱乾麵",
+      "climateZh": "大陸性氣候，四季分明，冬季寒冷",
+      "specialFeaturesZh": [
+        "美麗的櫻花校園",
+        "中國前十名",
+        "遙感測繪實力強",
+        "需回鄉證"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "Need Mainland Travel Permit for HK/Macau Residents",
+        "culturalExperience": "體驗 中國內地 文化",
+        "budgetLevel": "每月港幣 3,500",
+        "language": "普通話 (主要)、英語 (學術用語)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "Need Mainland Travel Permit for HK/Macau Residents",
+      "quotaZh": "2",
+      "languagesZh": [
+        "普通話 (主要)",
+        "英語 (學術用語)"
       ]
     },
     {
@@ -1105,6 +1806,33 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "中國內地",
+      "cityZh": "西安",
+      "uniqueFeaturesZh": [
+        "中國頂尖大學",
+        "深厚的文化底蘊",
+        "學費和生活費較低"
+      ],
+      "foodCultureZh": "中國內地美食文化豐富，北京有宮廷菜，西安有肉夾饃，武漢有熱乾麵",
+      "climateZh": "大陸性氣候，四季分明，冬季寒冷",
+      "specialFeaturesZh": [
+        "中國頂尖大學",
+        "深厚的文化底蘊",
+        "學費和生活費較低"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "Need Mainland Travel Permit for HK/Macau Residents",
+        "culturalExperience": "體驗 中國內地 文化",
+        "budgetLevel": "每月港幣 3,800",
+        "language": "普通話 (主要)、英語 (學術用語)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "Need Mainland Travel Permit for HK/Macau Residents",
+      "quotaZh": "2",
+      "languagesZh": [
+        "普通話 (主要)",
+        "英語 (學術用語)"
       ]
     },
     {
@@ -1147,6 +1875,33 @@
         "Excellent science and humanities programs",
         "Beautiful historic campus",
         "Leading in medical research and innovation"
+      ],
+      "countryZh": "丹麥",
+      "cityZh": "哥本哈根",
+      "uniqueFeaturesZh": [
+        "丹麥頂尖大學",
+        "幸福指數最高的國家",
+        "環保先鋒"
+      ],
+      "foodCultureZh": "丹麥以新北歐料理聞名，哥本哈根有米其林餐廳，開放三明治是特色",
+      "climateZh": "溫帶海洋性氣候，冬季溫和，夏季涼爽",
+      "specialFeaturesZh": [
+        "丹麥頂尖大學",
+        "幸福指數最高的國家",
+        "環保先鋒"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "English proof required for specific subjects only",
+        "culturalExperience": "體驗 丹麥 文化",
+        "budgetLevel": "每月港幣 11,500",
+        "language": "Danish (主要)、英語 (very 高)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "English proof required for specific subjects only",
+      "quotaZh": "4",
+      "languagesZh": [
+        "Danish (主要)",
+        "英語 (very 高)"
       ]
     },
     {
@@ -1189,6 +1944,33 @@
         "Strong technology and social sciences programs",
         "Modern campus with advanced facilities",
         "Leading in technology and innovation"
+      ],
+      "countryZh": "芬蘭",
+      "cityZh": "坦佩雷",
+      "uniqueFeaturesZh": [
+        "芬蘭頂尖大學",
+        "教育質量世界聞名",
+        "可觀賞極光"
+      ],
+      "foodCultureZh": "芬蘭以漿果、蘑菇和魚類聞名，咖啡文化濃厚",
+      "climateZh": "大陸性氣候，冬季寒冷，夏季溫暖",
+      "specialFeaturesZh": [
+        "芬蘭頂尖大學",
+        "教育質量世界聞名",
+        "可觀賞極光"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 芬蘭 文化",
+        "budgetLevel": "每月港幣 9,000",
+        "language": "Finnish/Swedish (主要)、英語 (very 高)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "10 (3 CENG + 1 CSCI + 6 any)",
+      "languagesZh": [
+        "Finnish/Swedish (主要)",
+        "英語 (very 高)"
       ]
     },
     {
@@ -1231,12 +2013,39 @@
         "Strong science and humanities programs",
         "Historic university with modern facilities",
         "Leading in medical research and innovation"
+      ],
+      "countryZh": "芬蘭",
+      "cityZh": "圖爾庫",
+      "uniqueFeaturesZh": [
+        "芬蘭頂尖大學",
+        "教育質量世界聞名",
+        "可觀賞極光"
+      ],
+      "foodCultureZh": "芬蘭以漿果、蘑菇和魚類聞名，咖啡文化濃厚",
+      "climateZh": "大陸性氣候，冬季寒冷，夏季溫暖",
+      "specialFeaturesZh": [
+        "芬蘭頂尖大學",
+        "教育質量世界聞名",
+        "可觀賞極光"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 芬蘭 文化",
+        "budgetLevel": "每月港幣 8,500",
+        "language": "Finnish/Swedish (主要)、英語 (very 高)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "4 (non-CLASS)",
+      "languagesZh": [
+        "Finnish/Swedish (主要)",
+        "英語 (very 高)"
       ]
     },
     {
       "id": 30,
       "country": "France",
-      "name": "CentraleSup\u00e9lec",
+      "name": "CentraleSupélec",
       "quota": "3",
       "cgpa": 2.7,
       "ielts": "6.5",
@@ -1273,6 +2082,33 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "法國",
+      "cityZh": "吉夫敘伊韋特",
+      "uniqueFeaturesZh": [
+        "法國頂尖大學",
+        "工程和管理實力強",
+        "歐洲文化中心"
+      ],
+      "foodCultureZh": "法國是美食之都，巴黎有世界級餐廳，麵包和芝士是日常生活",
+      "climateZh": "溫帶氣候，巴黎溫和濕潤",
+      "specialFeaturesZh": [
+        "法國頂尖大學",
+        "工程和管理實力強",
+        "歐洲文化中心"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "Engineering only. 1-year exchange.",
+        "culturalExperience": "體驗 法國 文化",
+        "budgetLevel": "每月港幣 10,500",
+        "language": "法語 (主要)、英語 (各異)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "Engineering only. 1-year exchange.",
+      "quotaZh": "3",
+      "languagesZh": [
+        "法語 (主要)",
+        "英語 (各異)"
       ]
     },
     {
@@ -1315,6 +2151,33 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "法國",
+      "cityZh": "巴黎",
+      "uniqueFeaturesZh": [
+        "法國頂尖大學",
+        "工程和管理實力強",
+        "歐洲文化中心"
+      ],
+      "foodCultureZh": "法國是美食之都，巴黎有世界級餐廳，麵包和芝士是日常生活",
+      "climateZh": "溫帶氣候，巴黎溫和濕潤",
+      "specialFeaturesZh": [
+        "法國頂尖大學",
+        "工程和管理實力強",
+        "歐洲文化中心"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "Sem B of final year not accepted",
+        "culturalExperience": "體驗 法國 文化",
+        "budgetLevel": "每月港幣 11,000",
+        "language": "法語 (主要)、英語 (各異)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "Sem B of final year not accepted",
+      "quotaZh": "2",
+      "languagesZh": [
+        "法語 (主要)",
+        "英語 (各異)"
       ]
     },
     {
@@ -1357,6 +2220,33 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "德國",
+      "cityZh": "漢堡",
+      "uniqueFeaturesZh": [
+        "德國精英大學",
+        "工程和科技領先",
+        "免學費"
+      ],
+      "foodCultureZh": "德國以香腸、啤酒聞名，各地有不同特色菜餚",
+      "climateZh": "溫帶氣候，四季分明",
+      "specialFeaturesZh": [
+        "德國精英大學",
+        "工程和科技領先",
+        "免學費"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "Engineering only",
+        "culturalExperience": "體驗 德國 文化",
+        "budgetLevel": "每月港幣 9,500",
+        "language": "德語 (主要)、英語 (大學授課良好)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "Engineering only",
+      "quotaZh": "5",
+      "languagesZh": [
+        "德語 (主要)",
+        "英語 (大學授課良好)"
       ]
     },
     {
@@ -1399,6 +2289,33 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "德國",
+      "cityZh": "亞琛",
+      "uniqueFeaturesZh": [
+        "德國精英大學",
+        "工程和科技領先",
+        "免學費"
+      ],
+      "foodCultureZh": "德國以香腸、啤酒聞名，各地有不同特色菜餚",
+      "climateZh": "溫帶氣候，四季分明",
+      "specialFeaturesZh": [
+        "德國精英大學",
+        "工程和科技領先",
+        "免學費"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "Engineering only",
+        "culturalExperience": "體驗 德國 文化",
+        "budgetLevel": "每月港幣 9,000",
+        "language": "德語 (主要)、英語 (大學授課良好)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "Engineering only",
+      "quotaZh": "4 (CENG)",
+      "languagesZh": [
+        "德語 (主要)",
+        "英語 (大學授課良好)"
       ]
     },
     {
@@ -1442,6 +2359,35 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "德國",
+      "cityZh": "慕尼黑",
+      "uniqueFeaturesZh": [
+        "德國精英大學",
+        "強大的業界聯繫",
+        "慕尼黑科技中心",
+        "TUM就是TUM"
+      ],
+      "foodCultureZh": "德國以香腸、啤酒聞名，各地有不同特色菜餚",
+      "climateZh": "溫帶氣候，四季分明",
+      "specialFeaturesZh": [
+        "德國精英大學",
+        "強大的業界聯繫",
+        "慕尼黑科技中心",
+        "TUM就是TUM"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 德國 文化",
+        "budgetLevel": "每月港幣 10,500",
+        "language": "德語 (主要)、英語 (大學授課良好)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "5",
+      "languagesZh": [
+        "德語 (主要)",
+        "英語 (大學授課良好)"
       ]
     },
     {
@@ -1484,6 +2430,33 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "德國",
+      "cityZh": "曼海姆",
+      "uniqueFeaturesZh": [
+        "德國精英大學",
+        "工程和科技領先",
+        "免學費"
+      ],
+      "foodCultureZh": "德國以香腸、啤酒聞名，各地有不同特色菜餚",
+      "climateZh": "溫帶氣候，四季分明",
+      "specialFeaturesZh": [
+        "德國精英大學",
+        "工程和科技領先",
+        "免學費"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "CB/CLASS only. Business taught in English.",
+        "culturalExperience": "體驗 德國 文化",
+        "budgetLevel": "每月港幣 8,800",
+        "language": "德語 (主要)、英語 (大學授課良好)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "CB/CLASS only. Business taught in English.",
+      "quotaZh": "2",
+      "languagesZh": [
+        "德語 (主要)",
+        "英語 (大學授課良好)"
       ]
     },
     {
@@ -1526,6 +2499,33 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "愛爾蘭",
+      "cityZh": "都柏林",
+      "uniqueFeaturesZh": [
+        "愛爾蘭頂尖大學",
+        "英語環境",
+        "歐盟成員國"
+      ],
+      "foodCultureZh": "愛爾蘭以燉肉、海鮮聞名，都柏林有豐富的酒吧文化",
+      "climateZh": "溫帶海洋性氣候，溫和濕潤",
+      "specialFeaturesZh": [
+        "愛爾蘭頂尖大學",
+        "英語環境",
+        "歐盟成員國"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 愛爾蘭 文化",
+        "budgetLevel": "每月港幣 12,000",
+        "language": "英語、Irish Gaelic (有限)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "英語",
+        "Irish Gaelic (有限)"
       ]
     },
     {
@@ -1568,6 +2568,33 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "愛爾蘭",
+      "cityZh": "都柏林",
+      "uniqueFeaturesZh": [
+        "愛爾蘭頂尖大學",
+        "英語環境",
+        "歐盟成員國"
+      ],
+      "foodCultureZh": "愛爾蘭以燉肉、海鮮聞名，都柏林有豐富的酒吧文化",
+      "climateZh": "溫帶海洋性氣候，溫和濕潤",
+      "specialFeaturesZh": [
+        "愛爾蘭頂尖大學",
+        "英語環境",
+        "歐盟成員國"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 愛爾蘭 文化",
+        "budgetLevel": "每月港幣 12,000",
+        "language": "英語、Irish Gaelic (有限)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "4",
+      "languagesZh": [
+        "英語",
+        "Irish Gaelic (有限)"
       ]
     },
     {
@@ -1610,6 +2637,33 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "意大利",
+      "cityZh": "米蘭",
+      "uniqueFeaturesZh": [
+        "意大利頂尖商學院",
+        "時尚和金融中心",
+        "歷史文化豐富"
+      ],
+      "foodCultureZh": "意大利是美食天堂，米蘭有高端餐飲，各地有不同特色",
+      "climateZh": "地中海氣候，冬季溫和，夏季炎熱",
+      "specialFeaturesZh": [
+        "意大利頂尖商學院",
+        "時尚和金融中心",
+        "歷史文化豐富"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "Limited spots remaining",
+        "culturalExperience": "體驗 意大利 文化",
+        "budgetLevel": "每月港幣 9,000",
+        "language": "意大利語 (主要)、英語 (有限)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "Limited spots remaining",
+      "quotaZh": "4",
+      "languagesZh": [
+        "意大利語 (主要)",
+        "英語 (有限)"
       ]
     },
     {
@@ -1652,6 +2706,33 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "日本",
+      "cityZh": "東京",
+      "uniqueFeaturesZh": [
+        "日本頂尖大學",
+        "傳統與現代融合",
+        "安全整潔"
+      ],
+      "foodCultureZh": "日本美食豐富，東京有壽司、拉麵、天婦羅，京都懷石料理",
+      "climateZh": "四季分明，夏季炎熱潮濕，冬季寒冷",
+      "specialFeaturesZh": [
+        "日本頂尖大學",
+        "傳統與現代融合",
+        "安全整潔"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "課程s in English limited",
+        "culturalExperience": "體驗 日本 文化",
+        "budgetLevel": "每月港幣 12,500",
+        "language": "日語 (主要)、英語 (有限 outside campus)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "課程s in English limited",
+      "quotaZh": "2",
+      "languagesZh": [
+        "日語 (主要)",
+        "英語 (有限 outside campus)"
       ]
     },
     {
@@ -1695,6 +2776,35 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "日本",
+      "cityZh": "京都",
+      "uniqueFeaturesZh": [
+        "日本第二古老的大學",
+        "諾貝爾獎得主母校",
+        "歷史悠久的京都環境",
+        "研究密集型"
+      ],
+      "foodCultureZh": "日本美食豐富，東京有壽司、拉麵、天婦羅，京都懷石料理",
+      "climateZh": "四季分明，夏季炎熱潮濕，冬季寒冷",
+      "specialFeaturesZh": [
+        "日本第二古老的大學",
+        "諾貝爾獎得主母校",
+        "歷史悠久的京都環境",
+        "研究密集型"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 日本 文化",
+        "budgetLevel": "每月港幣 11,000",
+        "language": "日語 (主要)、英語 (有限 outside campus)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "日語 (主要)",
+        "英語 (有限 outside campus)"
       ]
     },
     {
@@ -1737,6 +2847,33 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "日本",
+      "cityZh": "名古屋",
+      "uniqueFeaturesZh": [
+        "日本頂尖大學",
+        "傳統與現代融合",
+        "安全整潔"
+      ],
+      "foodCultureZh": "日本美食豐富，東京有壽司、拉麵、天婦羅，京都懷石料理",
+      "climateZh": "四季分明，夏季炎熱潮濕，冬季寒冷",
+      "specialFeaturesZh": [
+        "日本頂尖大學",
+        "傳統與現代融合",
+        "安全整潔"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "Limited spots remaining",
+        "culturalExperience": "體驗 日本 文化",
+        "budgetLevel": "每月港幣 10,500",
+        "language": "日語 (主要)、英語 (有限 outside campus)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "Limited spots remaining",
+      "quotaZh": "2",
+      "languagesZh": [
+        "日語 (主要)",
+        "英語 (有限 outside campus)"
       ]
     },
     {
@@ -1779,6 +2916,33 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "日本",
+      "cityZh": "東京",
+      "uniqueFeaturesZh": [
+        "日本頂尖大學",
+        "傳統與現代融合",
+        "安全整潔"
+      ],
+      "foodCultureZh": "日本美食豐富，東京有壽司、拉麵、天婦羅，京都懷石料理",
+      "climateZh": "四季分明，夏季炎熱潮濕，冬季寒冷",
+      "specialFeaturesZh": [
+        "日本頂尖大學",
+        "傳統與現代融合",
+        "安全整潔"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 日本 文化",
+        "budgetLevel": "每月港幣 12,500",
+        "language": "日語 (主要)、英語 (有限 outside campus)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "日語 (主要)",
+        "英語 (有限 outside campus)"
       ]
     },
     {
@@ -1821,6 +2985,33 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "日本",
+      "cityZh": "仙台",
+      "uniqueFeaturesZh": [
+        "日本頂尖大學",
+        "傳統與現代融合",
+        "安全整潔"
+      ],
+      "foodCultureZh": "日本美食豐富，東京有壽司、拉麵、天婦羅，京都懷石料理",
+      "climateZh": "四季分明，夏季炎熱潮濕，冬季寒冷",
+      "specialFeaturesZh": [
+        "日本頂尖大學",
+        "傳統與現代融合",
+        "安全整潔"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "English track 可選",
+        "culturalExperience": "體驗 日本 文化",
+        "budgetLevel": "每月港幣 9,500",
+        "language": "日語 (主要)、英語 (有限 outside campus)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "English track 可選",
+      "quotaZh": "2",
+      "languagesZh": [
+        "日語 (主要)",
+        "英語 (有限 outside campus)"
       ]
     },
     {
@@ -1863,6 +3054,33 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "日本",
+      "cityZh": "橫濱",
+      "uniqueFeaturesZh": [
+        "日本頂尖大學",
+        "傳統與現代融合",
+        "安全整潔"
+      ],
+      "foodCultureZh": "日本美食豐富，東京有壽司、拉麵、天婦羅，京都懷石料理",
+      "climateZh": "四季分明，夏季炎熱潮濕，冬季寒冷",
+      "specialFeaturesZh": [
+        "日本頂尖大學",
+        "傳統與現代融合",
+        "安全整潔"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 日本 文化",
+        "budgetLevel": "每月港幣 12,000",
+        "language": "日語 (主要)、英語 (有限 outside campus)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "日語 (主要)",
+        "英語 (有限 outside campus)"
       ]
     },
     {
@@ -1906,6 +3124,35 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "日本",
+      "cityZh": "東京",
+      "uniqueFeaturesZh": [
+        "日本頂尖大學",
+        "亞洲最具聲望",
+        "東京市中心校園",
+        "本鄉校園有歷史大門"
+      ],
+      "foodCultureZh": "日本美食豐富，東京有壽司、拉麵、天婦羅，京都懷石料理",
+      "climateZh": "四季分明，夏季炎熱潮濕，冬季寒冷",
+      "specialFeaturesZh": [
+        "日本頂尖大學",
+        "亞洲最具聲望",
+        "東京市中心校園",
+        "本鄉校園有歷史大門"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 日本 文化",
+        "budgetLevel": "每月港幣 12,500",
+        "language": "日語 (主要)、英語 (有限 outside campus)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "日語 (主要)",
+        "英語 (有限 outside campus)"
       ]
     },
     {
@@ -1948,6 +3195,33 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "日本",
+      "cityZh": "東京",
+      "uniqueFeaturesZh": [
+        "日本頂尖大學",
+        "傳統與現代融合",
+        "安全整潔"
+      ],
+      "foodCultureZh": "日本美食豐富，東京有壽司、拉麵、天婦羅，京都懷石料理",
+      "climateZh": "四季分明，夏季炎熱潮濕，冬季寒冷",
+      "specialFeaturesZh": [
+        "日本頂尖大學",
+        "傳統與現代融合",
+        "安全整潔"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 日本 文化",
+        "budgetLevel": "每月港幣 12,500",
+        "language": "日語 (主要)、英語 (有限 outside campus)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "日語 (主要)",
+        "英語 (有限 outside campus)"
       ]
     },
     {
@@ -1991,6 +3265,35 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "韓國",
+      "cityZh": "大田",
+      "uniqueFeaturesZh": [
+        "韓國的MIT",
+        "專注科學與科技",
+        "英語授課",
+        "大田研究重鎮"
+      ],
+      "foodCultureZh": "韓國以韓燒、泡菜聞名，首爾街頭美食豐富，大田有傳統市場",
+      "climateZh": "四季分明，夏季炎熱潮濕，冬季寒冷",
+      "specialFeaturesZh": [
+        "韓國的MIT",
+        "專注科學與科技",
+        "英語授課",
+        "大田研究重鎮"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "Korean language recommended",
+        "culturalExperience": "體驗 韓國 文化",
+        "budgetLevel": "每月港幣 8,500",
+        "language": "韓語 (主要)、英語 (日益普及)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "Korean language recommended",
+      "quotaZh": "2",
+      "languagesZh": [
+        "韓語 (主要)",
+        "英語 (日益普及)"
       ]
     },
     {
@@ -2034,6 +3337,35 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "韓國",
+      "cityZh": "首爾",
+      "uniqueFeaturesZh": [
+        "韓國第一名校",
+        "位於冠岳山",
+        "韓國最難進的大學",
+        "綜合研究型大學"
+      ],
+      "foodCultureZh": "韓國以韓燒、泡菜聞名，首爾街頭美食豐富，大田有傳統市場",
+      "climateZh": "四季分明，夏季炎熱潮濕，冬季寒冷",
+      "specialFeaturesZh": [
+        "韓國第一名校",
+        "位於冠岳山",
+        "韓國最難進的大學",
+        "綜合研究型大學"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 韓國 文化",
+        "budgetLevel": "每月港幣 10,000",
+        "language": "韓語 (主要)、英語 (日益普及)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "韓語 (主要)",
+        "英語 (日益普及)"
       ]
     },
     {
@@ -2076,6 +3408,33 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "韓國",
+      "cityZh": "首爾",
+      "uniqueFeaturesZh": [
+        "韓國頂尖大學",
+        "科技產業發達",
+        "K-pop 文化"
+      ],
+      "foodCultureZh": "韓國以韓燒、泡菜聞名，首爾街頭美食豐富，大田有傳統市場",
+      "climateZh": "四季分明，夏季炎熱潮濕，冬季寒冷",
+      "specialFeaturesZh": [
+        "韓國頂尖大學",
+        "科技產業發達",
+        "K-pop 文化"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "Limited spots remaining",
+        "culturalExperience": "體驗 韓國 文化",
+        "budgetLevel": "每月港幣 10,000",
+        "language": "韓語 (主要)、英語 (日益普及)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "Limited spots remaining",
+      "quotaZh": "8",
+      "languagesZh": [
+        "韓語 (主要)",
+        "英語 (日益普及)"
       ]
     },
     {
@@ -2119,6 +3478,35 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "荷蘭",
+      "cityZh": "代爾夫特",
+      "uniqueFeaturesZh": [
+        "荷蘭頂尖工程",
+        "運河旁歷史校園",
+        "建築設計重鎮",
+        "單車友好城市"
+      ],
+      "foodCultureZh": "荷蘭以芝士、生鯡魚聞名，阿姆斯特丹和代爾夫特有國際美食",
+      "climateZh": "溫帶海洋性氣候，溫和濕潤",
+      "specialFeaturesZh": [
+        "荷蘭頂尖工程",
+        "運河旁歷史校園",
+        "建築設計重鎮",
+        "單車友好城市"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "CSCI/CENG only. GPA 3.0+ recommended.",
+        "culturalExperience": "體驗 荷蘭 文化",
+        "budgetLevel": "每月港幣 10,500",
+        "language": "荷蘭語 (主要)、英語 (優秀)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "CSCI/CENG only. GPA 3.0+ recommended.",
+      "quotaZh": "4",
+      "languagesZh": [
+        "荷蘭語 (主要)",
+        "英語 (優秀)"
       ]
     },
     {
@@ -2161,6 +3549,33 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "荷蘭",
+      "cityZh": "阿姆斯特丹",
+      "uniqueFeaturesZh": [
+        "荷蘭頂尖大學",
+        "英語授課程度高",
+        "國際化環境"
+      ],
+      "foodCultureZh": "荷蘭以芝士、生鯡魚聞名，阿姆斯特丹和代爾夫特有國際美食",
+      "climateZh": "溫帶海洋性氣候，溫和濕潤",
+      "specialFeaturesZh": [
+        "荷蘭頂尖大學",
+        "英語授課程度高",
+        "國際化環境"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "Psychology配額: 1 per sem",
+        "culturalExperience": "體驗 荷蘭 文化",
+        "budgetLevel": "每月港幣 11,500",
+        "language": "荷蘭語 (主要)、英語 (優秀)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "Psychology配額: 1 per sem",
+      "quotaZh": "4 (2 CB + 2 CLASS)",
+      "languagesZh": [
+        "荷蘭語 (主要)",
+        "英語 (優秀)"
       ]
     },
     {
@@ -2203,6 +3618,33 @@
         "Excellent medicine and engineering programs",
         "Beautiful campus near Auckland harbor",
         "Leading university in Pacific region"
+      ],
+      "countryZh": "新西蘭",
+      "cityZh": "奧克蘭",
+      "uniqueFeaturesZh": [
+        "新西蘭頂尖大學",
+        "自然環境優美",
+        "戶外活動豐富"
+      ],
+      "foodCultureZh": "新西蘭以羊肉、海鮮聞名，奧克蘭和惠靈頓有多元文化餐飲",
+      "climateZh": "溫帶海洋性氣候，全年溫和",
+      "specialFeaturesZh": [
+        "新西蘭頂尖大學",
+        "自然環境優美",
+        "戶外活動豐富"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "Limited spots remaining",
+        "culturalExperience": "體驗 新西蘭 文化",
+        "budgetLevel": "每月港幣 13,000",
+        "language": "英語、Maori (有限)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "Limited spots remaining",
+      "quotaZh": "4",
+      "languagesZh": [
+        "英語",
+        "Maori (有限)"
       ]
     },
     {
@@ -2245,6 +3687,33 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "新西蘭",
+      "cityZh": "惠靈頓",
+      "uniqueFeaturesZh": [
+        "新西蘭頂尖大學",
+        "自然環境優美",
+        "戶外活動豐富"
+      ],
+      "foodCultureZh": "新西蘭以羊肉、海鮮聞名，奧克蘭和惠靈頓有多元文化餐飲",
+      "climateZh": "溫帶海洋性氣候，全年溫和",
+      "specialFeaturesZh": [
+        "新西蘭頂尖大學",
+        "自然環境優美",
+        "戶外活動豐富"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 新西蘭 文化",
+        "budgetLevel": "每月港幣 11,000",
+        "language": "英語、Maori (有限)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "英語",
+        "Maori (有限)"
       ]
     },
     {
@@ -2287,6 +3756,33 @@
         "Strong marine and environmental sciences programs",
         "Historic university with modern facilities",
         "Leading in marine research and innovation"
+      ],
+      "countryZh": "挪威",
+      "cityZh": "卑爾根",
+      "uniqueFeaturesZh": [
+        "挪威頂尖大學",
+        "高福利社會",
+        "峽灣美景"
+      ],
+      "foodCultureZh": "挪威以海鮮聞名，特別是三文魚，奧斯陸和卑爾根有美食場景",
+      "climateZh": "海洋性氣候，冬季溫和，夏季涼爽",
+      "specialFeaturesZh": [
+        "挪威頂尖大學",
+        "高福利社會",
+        "峽灣美景"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 挪威 文化",
+        "budgetLevel": "每月港幣 12,500",
+        "language": "Norwegian (主要)、英語 (very 高)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "Norwegian (主要)",
+        "英語 (very 高)"
       ]
     },
     {
@@ -2329,6 +3825,33 @@
         "Excellent science and humanities programs",
         "Beautiful historic campus",
         "Leading in medical research and innovation"
+      ],
+      "countryZh": "挪威",
+      "cityZh": "奧斯陸",
+      "uniqueFeaturesZh": [
+        "挪威頂尖大學",
+        "高福利社會",
+        "峽灣美景"
+      ],
+      "foodCultureZh": "挪威以海鮮聞名，特別是三文魚，奧斯陸和卑爾根有美食場景",
+      "climateZh": "海洋性氣候，冬季溫和，夏季涼爽",
+      "specialFeaturesZh": [
+        "挪威頂尖大學",
+        "高福利社會",
+        "峽灣美景"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 挪威 文化",
+        "budgetLevel": "每月港幣 13,000",
+        "language": "Norwegian (主要)、英語 (very 高)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "Norwegian (主要)",
+        "英語 (very 高)"
       ]
     },
     {
@@ -2372,6 +3895,35 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "新加坡",
+      "cityZh": "新加坡",
+      "uniqueFeaturesZh": [
+        "亞洲頂尖大學（QS 2025）",
+        "全球教育樞紐",
+        "熱帶校園",
+        "強大的業界合作"
+      ],
+      "foodCultureZh": "新加坡是美食天堂，有海南雞飯、肉骨茶、辣椒蟹等",
+      "climateZh": "熱帶雨林氣候，全年炎熱潮濕",
+      "specialFeaturesZh": [
+        "亞洲頂尖大學（QS 2025）",
+        "全球教育樞紐",
+        "熱帶校園",
+        "強大的業界合作"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 新加坡 文化",
+        "budgetLevel": "每月港幣 14,000",
+        "language": "英語 (主要)、Mandarin/Malay/Tamil",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "3",
+      "languagesZh": [
+        "英語 (主要)",
+        "Mandarin/Malay/Tamil"
       ]
     },
     {
@@ -2414,6 +3966,33 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "新加坡",
+      "cityZh": "新加坡",
+      "uniqueFeaturesZh": [
+        "亞洲頂尖大學",
+        "全球教育樞紐",
+        "多元文化"
+      ],
+      "foodCultureZh": "新加坡是美食天堂，有海南雞飯、肉骨茶、辣椒蟹等",
+      "climateZh": "熱帶雨林氣候，全年炎熱潮濕",
+      "specialFeaturesZh": [
+        "亞洲頂尖大學",
+        "全球教育樞紐",
+        "多元文化"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 新加坡 文化",
+        "budgetLevel": "每月港幣 14,000",
+        "language": "英語 (主要)、Mandarin/Malay/Tamil",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2 (CENG/CSCI/CB)",
+      "languagesZh": [
+        "英語 (主要)",
+        "Mandarin/Malay/Tamil"
       ]
     },
     {
@@ -2456,6 +4035,33 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "西班牙",
+      "cityZh": "巴塞隆拿",
+      "uniqueFeaturesZh": [
+        "西班牙頂尖大學",
+        "地中海生活方式",
+        "建築藝術"
+      ],
+      "foodCultureZh": "西班牙以 tapas 聞名，巴塞隆拿有豐富的加泰羅尼亞美食",
+      "climateZh": "地中海氣候，夏季炎熱乾燥，冬季溫和",
+      "specialFeaturesZh": [
+        "西班牙頂尖大學",
+        "地中海生活方式",
+        "建築藝術"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "CB only",
+        "culturalExperience": "體驗 西班牙 文化",
+        "budgetLevel": "每月港幣 8,500",
+        "language": "西班牙語/Catalan (主要)、英語 (有限)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "CB only",
+      "quotaZh": "2",
+      "languagesZh": [
+        "西班牙語/Catalan (主要)",
+        "英語 (有限)"
       ]
     },
     {
@@ -2498,6 +4104,33 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "瑞典",
+      "cityZh": "斯德哥爾摩",
+      "uniqueFeaturesZh": [
+        "瑞典頂尖大學",
+        "創新設計聞名",
+        "社會福利完善"
+      ],
+      "foodCultureZh": "瑞典以肉丸、醃魚聞名，斯德哥爾摩有新潮餐廳",
+      "climateZh": "溫帶氣候，冬季寒冷，夏季溫暖",
+      "specialFeaturesZh": [
+        "瑞典頂尖大學",
+        "創新設計聞名",
+        "社會福利完善"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "Engineering only",
+        "culturalExperience": "體驗 瑞典 文化",
+        "budgetLevel": "每月港幣 11,000",
+        "language": "Swedish (主要)、英語 (優秀)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "Engineering only",
+      "quotaZh": "4 (CENG/CSCI)",
+      "languagesZh": [
+        "Swedish (主要)",
+        "英語 (優秀)"
       ]
     },
     {
@@ -2540,6 +4173,33 @@
         "Excellent science and engineering programs",
         "Historic university with modern facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "瑞典",
+      "cityZh": "隆德",
+      "uniqueFeaturesZh": [
+        "瑞典頂尖大學",
+        "創新設計聞名",
+        "社會福利完善"
+      ],
+      "foodCultureZh": "瑞典以肉丸、醃魚聞名，斯德哥爾摩有新潮餐廳",
+      "climateZh": "溫帶氣候，冬季寒冷，夏季溫暖",
+      "specialFeaturesZh": [
+        "瑞典頂尖大學",
+        "創新設計聞名",
+        "社會福利完善"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 瑞典 文化",
+        "budgetLevel": "每月港幣 10,000",
+        "language": "Swedish (主要)、英語 (優秀)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "5",
+      "languagesZh": [
+        "Swedish (主要)",
+        "英語 (優秀)"
       ]
     },
     {
@@ -2582,6 +4242,33 @@
         "Excellent science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in environmental and climate research"
+      ],
+      "countryZh": "瑞典",
+      "cityZh": "斯德哥爾摩",
+      "uniqueFeaturesZh": [
+        "瑞典頂尖大學",
+        "創新設計聞名",
+        "社會福利完善"
+      ],
+      "foodCultureZh": "瑞典以肉丸、醃魚聞名，斯德哥爾摩有新潮餐廳",
+      "climateZh": "溫帶氣候，冬季寒冷，夏季溫暖",
+      "specialFeaturesZh": [
+        "瑞典頂尖大學",
+        "創新設計聞名",
+        "社會福利完善"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 瑞典 文化",
+        "budgetLevel": "每月港幣 11,000",
+        "language": "Swedish (主要)、英語 (優秀)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "5",
+      "languagesZh": [
+        "Swedish (主要)",
+        "英語 (優秀)"
       ]
     },
     {
@@ -2624,6 +4311,33 @@
         "Strong science and humanities programs",
         "Modern campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "瑞士",
+      "cityZh": "聖加倫",
+      "uniqueFeaturesZh": [
+        "瑞士頂尖大學",
+        "金融和商業中心",
+        "多語言環境"
+      ],
+      "foodCultureZh": "瑞士以芝士火鍋、朱古力聞名，聖加倫和蘇黎世有高端餐飲",
+      "climateZh": "山區氣候，冬季寒冷，夏季溫和",
+      "specialFeaturesZh": [
+        "瑞士頂尖大學",
+        "金融和商業中心",
+        "多語言環境"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "CB only",
+        "culturalExperience": "體驗 瑞士 文化",
+        "budgetLevel": "每月港幣 12,500",
+        "language": "德語/法語/意大利語 (依地區而異)、英語 (good)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "CB only",
+      "quotaZh": "2",
+      "languagesZh": [
+        "德語/法語/意大利語 (依地區而異)",
+        "英語 (good)"
       ]
     },
     {
@@ -2666,6 +4380,33 @@
         "Excellent science and humanities programs",
         "Beautiful historic campus",
         "Leading in research and innovation"
+      ],
+      "countryZh": "瑞士",
+      "cityZh": "蘇黎世",
+      "uniqueFeaturesZh": [
+        "瑞士頂尖大學",
+        "金融和商業中心",
+        "多語言環境"
+      ],
+      "foodCultureZh": "瑞士以芝士火鍋、朱古力聞名，聖加倫和蘇黎世有高端餐飲",
+      "climateZh": "山區氣候，冬季寒冷，夏季溫和",
+      "specialFeaturesZh": [
+        "瑞士頂尖大學",
+        "金融和商業中心",
+        "多語言環境"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 瑞士 文化",
+        "budgetLevel": "每月港幣 14,000",
+        "language": "德語/法語/意大利語 (依地區而異)、英語 (good)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "德語/法語/意大利語 (依地區而異)",
+        "英語 (good)"
       ]
     },
     {
@@ -2708,6 +4449,33 @@
         "Excellent research and innovation",
         "Beautiful historic campus",
         "Leading in technology and engineering research"
+      ],
+      "countryZh": "台灣",
+      "cityZh": "台南",
+      "uniqueFeaturesZh": [
+        "台灣頂尖大學",
+        "華人文化濃厚",
+        "科技產業發達"
+      ],
+      "foodCultureZh": "台灣是美食天堂，台北有夜市、小籠包，各地有特色小吃",
+      "climateZh": "亞熱帶氣候，夏季炎熱潮濕，冬季溫和",
+      "specialFeaturesZh": [
+        "台灣頂尖大學",
+        "華人文化濃厚",
+        "科技產業發達"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 台灣 文化",
+        "budgetLevel": "每月港幣 6,000",
+        "language": "普通話 (主要)、英語 (學術用語)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "普通話 (主要)",
+        "英語 (學術用語)"
       ]
     },
     {
@@ -2750,6 +4518,33 @@
         "Excellent science and humanities programs",
         "Beautiful historic campus",
         "Leading in research and innovation"
+      ],
+      "countryZh": "台灣",
+      "cityZh": "台北",
+      "uniqueFeaturesZh": [
+        "台灣頂尖大學",
+        "華人文化濃厚",
+        "科技產業發達"
+      ],
+      "foodCultureZh": "台灣是美食天堂，台北有夜市、小籠包，各地有特色小吃",
+      "climateZh": "亞熱帶氣候，夏季炎熱潮濕，冬季溫和",
+      "specialFeaturesZh": [
+        "台灣頂尖大學",
+        "華人文化濃厚",
+        "科技產業發達"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 台灣 文化",
+        "budgetLevel": "每月港幣 7,000",
+        "language": "普通話 (主要)、英語 (學術用語)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "普通話 (主要)",
+        "英語 (學術用語)"
       ]
     },
     {
@@ -2792,6 +4587,33 @@
         "Excellent research and innovation",
         "Modern campus with advanced facilities",
         "Leading in technology and engineering research"
+      ],
+      "countryZh": "台灣",
+      "cityZh": "新竹",
+      "uniqueFeaturesZh": [
+        "台灣頂尖大學",
+        "華人文化濃厚",
+        "科技產業發達"
+      ],
+      "foodCultureZh": "台灣是美食天堂，台北有夜市、小籠包，各地有特色小吃",
+      "climateZh": "亞熱帶氣候，夏季炎熱潮濕，冬季溫和",
+      "specialFeaturesZh": [
+        "台灣頂尖大學",
+        "華人文化濃厚",
+        "科技產業發達"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 台灣 文化",
+        "budgetLevel": "每月港幣 6,500",
+        "language": "普通話 (主要)、英語 (學術用語)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "普通話 (主要)",
+        "英語 (學術用語)"
       ]
     },
     {
@@ -2834,6 +4656,33 @@
         "Excellent business and humanities programs",
         "Beautiful historic campus",
         "Leading in research and innovation"
+      ],
+      "countryZh": "泰國",
+      "cityZh": "曼谷",
+      "uniqueFeaturesZh": [
+        "泰國頂尖大學",
+        "佛教文化",
+        "熱帶風情"
+      ],
+      "foodCultureZh": "泰國以街頭美食聞名，曼谷有豐富的泰式料理",
+      "climateZh": "熱帶季風氣候，全年炎熱，雨季分明",
+      "specialFeaturesZh": [
+        "泰國頂尖大學",
+        "佛教文化",
+        "熱帶風情"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "Quota: Sem A 1, Sem B 1",
+        "culturalExperience": "體驗 泰國 文化",
+        "budgetLevel": "每月港幣 5,000",
+        "language": "Thai (主要)、英語 (有限 outside tourist areas)",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "Quota: Sem A 1, Sem B 1",
+      "quotaZh": "2",
+      "languagesZh": [
+        "Thai (主要)",
+        "英語 (有限 outside tourist areas)"
       ]
     },
     {
@@ -2876,6 +4725,34 @@
         "Excellent engineering and medicine programs",
         "Modern campus with advanced facilities",
         "Leading in innovation and entrepreneurship"
+      ],
+      "countryZh": "英國",
+      "cityZh": "倫敦",
+      "uniqueFeaturesZh": [
+        "世界第二（QS 2025）",
+        "僅專注STEM領域",
+        "南肯辛頓位置",
+        "精英研究密集型"
+      ],
+      "foodCultureZh": "英國飲食多元化，倫敦有世界級餐廳，各地有不同特色",
+      "climateZh": "溫帶海洋性氣候，溫和濕潤",
+      "specialFeaturesZh": [
+        "世界第二（QS 2025）",
+        "僅專注STEM領域",
+        "南肯辛頓位置",
+        "精英研究密集型"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "Medicine 不開放 to exchange",
+        "culturalExperience": "體驗 英國 文化",
+        "budgetLevel": "每月港幣 15,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "Medicine 不開放 to exchange",
+      "quotaZh": "2 (CENG/CSCI/CB)",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -2918,6 +4795,34 @@
         "Excellent medicine, law, and architecture programs",
         "Central London location with global connections",
         "Strong innovation and entrepreneurship"
+      ],
+      "countryZh": "英國",
+      "cityZh": "倫敦",
+      "uniqueFeaturesZh": [
+        "倫敦第一所大學",
+        "綜合研究型",
+        "布盧姆斯伯里位置",
+        "高度國際化"
+      ],
+      "foodCultureZh": "英國飲食多元化，倫敦有世界級餐廳，各地有不同特色",
+      "climateZh": "溫帶海洋性氣候，溫和濕潤",
+      "specialFeaturesZh": [
+        "倫敦第一所大學",
+        "綜合研究型",
+        "布盧姆斯伯里位置",
+        "高度國際化"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 英國 文化",
+        "budgetLevel": "每月港幣 15,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -2959,6 +4864,32 @@
         "Excellent medicine and business programs",
         "Modern campus with advanced facilities",
         "Leading in cancer and cardiovascular research"
+      ],
+      "countryZh": "英國",
+      "cityZh": "伯明翰",
+      "uniqueFeaturesZh": [
+        "英國頂尖大學",
+        "歷史悠久",
+        "學術傳統深厚"
+      ],
+      "foodCultureZh": "英國飲食多元化，倫敦有世界級餐廳，各地有不同特色",
+      "climateZh": "溫帶海洋性氣候，溫和濕潤",
+      "specialFeaturesZh": [
+        "英國頂尖大學",
+        "歷史悠久",
+        "學術傳統深厚"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 英國 文化",
+        "budgetLevel": "每月港幣 10,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "3",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -3001,6 +4932,34 @@
         "Excellent medicine and humanities programs",
         "Beautiful historic campus in Old Town",
         "Strong international reputation"
+      ],
+      "countryZh": "英國",
+      "cityZh": "愛丁堡",
+      "uniqueFeaturesZh": [
+        "蘇格蘭頂尖大學",
+        "歷史悠久的老城校園",
+        "AI與信息學實力強",
+        "著名的節日之城"
+      ],
+      "foodCultureZh": "英國飲食多元化，倫敦有世界級餐廳，各地有不同特色",
+      "climateZh": "溫帶海洋性氣候，溫和濕潤",
+      "specialFeaturesZh": [
+        "蘇格蘭頂尖大學",
+        "歷史悠久的老城校園",
+        "AI與信息學實力強",
+        "著名的節日之城"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 英國 文化",
+        "budgetLevel": "每月港幣 12,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "4",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -3042,6 +5001,32 @@
         "Excellent science and engineering programs",
         "Beautiful historic campus",
         "Strong research and innovation"
+      ],
+      "countryZh": "英國",
+      "cityZh": "格拉斯哥",
+      "uniqueFeaturesZh": [
+        "英國頂尖大學",
+        "歷史悠久",
+        "學術傳統深厚"
+      ],
+      "foodCultureZh": "英國飲食多元化，倫敦有世界級餐廳，各地有不同特色",
+      "climateZh": "溫帶海洋性氣候，溫和濕潤",
+      "specialFeaturesZh": [
+        "英國頂尖大學",
+        "歷史悠久",
+        "學術傳統深厚"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 英國 文化",
+        "budgetLevel": "每月港幣 10,500",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "4",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -3083,6 +5068,32 @@
         "Excellent business and engineering programs",
         "Modern campus with advanced facilities",
         "Leading in medical research and innovation"
+      ],
+      "countryZh": "英國",
+      "cityZh": "列斯",
+      "uniqueFeaturesZh": [
+        "英國頂尖大學",
+        "歷史悠久",
+        "學術傳統深厚"
+      ],
+      "foodCultureZh": "英國飲食多元化，倫敦有世界級餐廳，各地有不同特色",
+      "climateZh": "溫帶海洋性氣候，溫和濕潤",
+      "specialFeaturesZh": [
+        "英國頂尖大學",
+        "歷史悠久",
+        "學術傳統深厚"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 英國 文化",
+        "budgetLevel": "每月港幣 9,500",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "4",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -3124,6 +5135,32 @@
         "Excellent science and engineering programs",
         "Beautiful historic campus",
         "Strong industry partnerships and innovation"
+      ],
+      "countryZh": "英國",
+      "cityZh": "曼徹斯特",
+      "uniqueFeaturesZh": [
+        "英國頂尖大學",
+        "歷史悠久",
+        "學術傳統深厚"
+      ],
+      "foodCultureZh": "英國飲食多元化，倫敦有世界級餐廳，各地有不同特色",
+      "climateZh": "溫帶海洋性氣候，溫和濕潤",
+      "specialFeaturesZh": [
+        "英國頂尖大學",
+        "歷史悠久",
+        "學術傳統深厚"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 英國 文化",
+        "budgetLevel": "每月港幣 11,500",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "4",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -3165,6 +5202,32 @@
         "Excellent medicine and engineering programs",
         "Beautiful campus with lakes and gardens",
         "Leading in MRI and medical imaging research"
+      ],
+      "countryZh": "英國",
+      "cityZh": "諾丁漢",
+      "uniqueFeaturesZh": [
+        "英國頂尖大學",
+        "歷史悠久",
+        "學術傳統深厚"
+      ],
+      "foodCultureZh": "英國飲食多元化，倫敦有世界級餐廳，各地有不同特色",
+      "climateZh": "溫帶海洋性氣候，溫和濕潤",
+      "specialFeaturesZh": [
+        "英國頂尖大學",
+        "歷史悠久",
+        "學術傳統深厚"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 英國 文化",
+        "budgetLevel": "每月港幣 9,500",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "4",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -3206,6 +5269,32 @@
         "Excellent research facilities",
         "Modern campus with advanced technology",
         "Leading in materials science and engineering"
+      ],
+      "countryZh": "英國",
+      "cityZh": "謝菲爾德",
+      "uniqueFeaturesZh": [
+        "英國頂尖大學",
+        "歷史悠久",
+        "學術傳統深厚"
+      ],
+      "foodCultureZh": "英國飲食多元化，倫敦有世界級餐廳，各地有不同特色",
+      "climateZh": "溫帶海洋性氣候，溫和濕潤",
+      "specialFeaturesZh": [
+        "英國頂尖大學",
+        "歷史悠久",
+        "學術傳統深厚"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 英國 文化",
+        "budgetLevel": "每月港幣 9,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "3",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -3247,6 +5336,32 @@
         "Excellent mathematics and economics programs",
         "Modern campus with advanced facilities",
         "Leading in business and management research"
+      ],
+      "countryZh": "英國",
+      "cityZh": "華威",
+      "uniqueFeaturesZh": [
+        "英國頂尖大學",
+        "歷史悠久",
+        "學術傳統深厚"
+      ],
+      "foodCultureZh": "英國飲食多元化，倫敦有世界級餐廳，各地有不同特色",
+      "climateZh": "溫帶海洋性氣候，溫和濕潤",
+      "specialFeaturesZh": [
+        "英國頂尖大學",
+        "歷史悠久",
+        "學術傳統深厚"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "Waiver possible for 2+ years at CityU",
+        "culturalExperience": "體驗 英國 文化",
+        "budgetLevel": "每月港幣 11,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "Waiver possible for 2+ years at CityU",
+      "quotaZh": "3 (CB/CLASS/VM)",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -3288,6 +5403,32 @@
         "Excellent business and communication programs",
         "Modern campus in historic city",
         "Leading in medical research and innovation"
+      ],
+      "countryZh": "美國",
+      "cityZh": "波士頓",
+      "uniqueFeaturesZh": [
+        "美國頂尖公立/私立大學",
+        "研究資源豐富",
+        "多元文化"
+      ],
+      "foodCultureZh": "美國飲食多元化，各地有不同特色菜系",
+      "climateZh": "氣候多樣，依地區而異",
+      "specialFeaturesZh": [
+        "美國頂尖公立/私立大學",
+        "研究資源豐富",
+        "多元文化"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 美國 文化",
+        "budgetLevel": "每月港幣 13,500",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -3329,6 +5470,32 @@
         "Excellent research and innovation",
         "Modern campus with advanced facilities",
         "Leading in technology and engineering research"
+      ],
+      "countryZh": "美國",
+      "cityZh": "亞特蘭大",
+      "uniqueFeaturesZh": [
+        "美國頂尖公立/私立大學",
+        "研究資源豐富",
+        "多元文化"
+      ],
+      "foodCultureZh": "美國飲食多元化，各地有不同特色菜系",
+      "climateZh": "氣候多樣，依地區而異",
+      "specialFeaturesZh": [
+        "美國頂尖公立/私立大學",
+        "研究資源豐富",
+        "多元文化"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 美國 文化",
+        "budgetLevel": "每月港幣 12,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -3371,6 +5538,34 @@
         "Excellent arts and humanities programs",
         "Urban campus in Manhattan",
         "Leading in arts and social sciences research"
+      ],
+      "countryZh": "美國",
+      "cityZh": "紐約",
+      "uniqueFeaturesZh": [
+        "曼哈頓校園",
+        "全球網絡大學",
+        "藝術與商業實力強",
+        "格林威治村位置"
+      ],
+      "foodCultureZh": "美國飲食多元化，各地有不同特色菜系",
+      "climateZh": "氣候多樣，依地區而異",
+      "specialFeaturesZh": [
+        "曼哈頓校園",
+        "全球網絡大學",
+        "藝術與商業實力強",
+        "格林威治村位置"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 美國 文化",
+        "budgetLevel": "每月港幣 16,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -3412,6 +5607,32 @@
         "Excellent engineering and business programs",
         "Large campus with advanced facilities",
         "Leading in research and innovation"
+      ],
+      "countryZh": "美國",
+      "cityZh": "州立學院",
+      "uniqueFeaturesZh": [
+        "美國頂尖公立/私立大學",
+        "研究資源豐富",
+        "多元文化"
+      ],
+      "foodCultureZh": "美國飲食多元化，各地有不同特色菜系",
+      "climateZh": "氣候多樣，依地區而異",
+      "specialFeaturesZh": [
+        "美國頂尖公立/私立大學",
+        "研究資源豐富",
+        "多元文化"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 美國 文化",
+        "budgetLevel": "每月港幣 10,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -3453,6 +5674,32 @@
         "Excellent research and innovation",
         "Modern campus with advanced facilities",
         "Leading in engineering and technology research"
+      ],
+      "countryZh": "美國",
+      "cityZh": "西拉法葉",
+      "uniqueFeaturesZh": [
+        "美國頂尖公立/私立大學",
+        "研究資源豐富",
+        "多元文化"
+      ],
+      "foodCultureZh": "美國飲食多元化，各地有不同特色菜系",
+      "climateZh": "氣候多樣，依地區而異",
+      "specialFeaturesZh": [
+        "美國頂尖公立/私立大學",
+        "研究資源豐富",
+        "多元文化"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 美國 文化",
+        "budgetLevel": "每月港幣 9,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -3495,6 +5742,34 @@
         "Excellent science and engineering programs",
         "Beautiful campus with historic buildings",
         "Leading in innovation and entrepreneurship"
+      ],
+      "countryZh": "美國",
+      "cityZh": "柏克萊",
+      "uniqueFeaturesZh": [
+        "公立常春藤",
+        "學運歷史",
+        "頂尖計算機科學",
+        "鄰近矽谷"
+      ],
+      "foodCultureZh": "美國飲食多元化，各地有不同特色菜系",
+      "climateZh": "氣候多樣，依地區而異",
+      "specialFeaturesZh": [
+        "公立常春藤",
+        "學運歷史",
+        "頂尖計算機科學",
+        "鄰近矽谷"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 美國 文化",
+        "budgetLevel": "每月港幣 15,500",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -3536,6 +5811,32 @@
         "Excellent research in sustainability",
         "Modern campus with advanced facilities",
         "Leading in agricultural and veterinary research"
+      ],
+      "countryZh": "美國",
+      "cityZh": "戴維斯",
+      "uniqueFeaturesZh": [
+        "美國頂尖公立/私立大學",
+        "研究資源豐富",
+        "多元文化"
+      ],
+      "foodCultureZh": "美國飲食多元化，各地有不同特色菜系",
+      "climateZh": "氣候多樣，依地區而異",
+      "specialFeaturesZh": [
+        "美國頂尖公立/私立大學",
+        "研究資源豐富",
+        "多元文化"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 美國 文化",
+        "budgetLevel": "每月港幣 14,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -3578,6 +5879,34 @@
         "Excellent arts and humanities programs",
         "Beautiful campus in Westwood",
         "Leading in entertainment and media research"
+      ],
+      "countryZh": "美國",
+      "cityZh": "洛杉磯",
+      "uniqueFeaturesZh": [
+        "頂尖公立大學",
+        "美麗的西木區校園",
+        "電影與傳媒實力強",
+        "洛杉磯位置"
+      ],
+      "foodCultureZh": "美國飲食多元化，各地有不同特色菜系",
+      "climateZh": "氣候多樣，依地區而異",
+      "specialFeaturesZh": [
+        "頂尖公立大學",
+        "美麗的西木區校園",
+        "電影與傳媒實力強",
+        "洛杉磯位置"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 美國 文化",
+        "budgetLevel": "每月港幣 15,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -3619,6 +5948,32 @@
         "Excellent research and innovation",
         "Modern campus with advanced facilities",
         "Leading in technology and engineering research"
+      ],
+      "countryZh": "美國",
+      "cityZh": "厄巴納-香檳",
+      "uniqueFeaturesZh": [
+        "美國頂尖公立/私立大學",
+        "研究資源豐富",
+        "多元文化"
+      ],
+      "foodCultureZh": "美國飲食多元化，各地有不同特色菜系",
+      "climateZh": "氣候多樣，依地區而異",
+      "specialFeaturesZh": [
+        "美國頂尖公立/私立大學",
+        "研究資源豐富",
+        "多元文化"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 美國 文化",
+        "budgetLevel": "每月港幣 9,500",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -3660,6 +6015,32 @@
         "Excellent business and engineering programs",
         "Beautiful historic campus",
         "Leading in research and innovation"
+      ],
+      "countryZh": "美國",
+      "cityZh": "安娜堡",
+      "uniqueFeaturesZh": [
+        "美國頂尖公立/私立大學",
+        "研究資源豐富",
+        "多元文化"
+      ],
+      "foodCultureZh": "美國飲食多元化，各地有不同特色菜系",
+      "climateZh": "氣候多樣，依地區而異",
+      "specialFeaturesZh": [
+        "美國頂尖公立/私立大學",
+        "研究資源豐富",
+        "多元文化"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 美國 文化",
+        "budgetLevel": "每月港幣 12,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -3701,6 +6082,32 @@
         "Excellent medicine and public health programs",
         "Beautiful historic campus",
         "Leading in medical research and innovation"
+      ],
+      "countryZh": "美國",
+      "cityZh": "教堂山",
+      "uniqueFeaturesZh": [
+        "美國頂尖公立/私立大學",
+        "研究資源豐富",
+        "多元文化"
+      ],
+      "foodCultureZh": "美國飲食多元化，各地有不同特色菜系",
+      "climateZh": "氣候多樣，依地區而異",
+      "specialFeaturesZh": [
+        "美國頂尖公立/私立大學",
+        "研究資源豐富",
+        "多元文化"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 美國 文化",
+        "budgetLevel": "每月港幣 10,500",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -3742,6 +6149,32 @@
         "Excellent engineering and business programs",
         "Modern campus with advanced facilities",
         "Leading in technology and innovation research"
+      ],
+      "countryZh": "美國",
+      "cityZh": "奧斯汀",
+      "uniqueFeaturesZh": [
+        "美國頂尖公立/私立大學",
+        "研究資源豐富",
+        "多元文化"
+      ],
+      "foodCultureZh": "美國飲食多元化，各地有不同特色菜系",
+      "climateZh": "氣候多樣，依地區而異",
+      "specialFeaturesZh": [
+        "美國頂尖公立/私立大學",
+        "研究資源豐富",
+        "多元文化"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 美國 文化",
+        "budgetLevel": "每月港幣 11,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -3783,6 +6216,32 @@
         "Excellent business and law programs",
         "Beautiful historic campus",
         "Leading in research and innovation"
+      ],
+      "countryZh": "美國",
+      "cityZh": "夏洛茨維爾",
+      "uniqueFeaturesZh": [
+        "美國頂尖公立/私立大學",
+        "研究資源豐富",
+        "多元文化"
+      ],
+      "foodCultureZh": "美國飲食多元化，各地有不同特色菜系",
+      "climateZh": "氣候多樣，依地區而異",
+      "specialFeaturesZh": [
+        "美國頂尖公立/私立大學",
+        "研究資源豐富",
+        "多元文化"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "Semester B not recommended for final year",
+        "culturalExperience": "體驗 美國 文化",
+        "budgetLevel": "每月港幣 10,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "Semester B not recommended for final year",
+      "quotaZh": "2",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -3824,6 +6283,32 @@
         "Excellent science and engineering programs",
         "Beautiful campus near mountains",
         "Leading in medical research and innovation"
+      ],
+      "countryZh": "美國",
+      "cityZh": "西雅圖",
+      "uniqueFeaturesZh": [
+        "美國頂尖公立/私立大學",
+        "研究資源豐富",
+        "多元文化"
+      ],
+      "foodCultureZh": "美國飲食多元化，各地有不同特色菜系",
+      "climateZh": "氣候多樣，依地區而異",
+      "specialFeaturesZh": [
+        "美國頂尖公立/私立大學",
+        "研究資源豐富",
+        "多元文化"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 美國 文化",
+        "budgetLevel": "每月港幣 14,000",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "英語"
       ]
     },
     {
@@ -3865,6 +6350,32 @@
         "Excellent science and engineering programs",
         "Beautiful campus with lakes",
         "Leading in research and innovation"
+      ],
+      "countryZh": "美國",
+      "cityZh": "麥迪遜",
+      "uniqueFeaturesZh": [
+        "美國頂尖公立/私立大學",
+        "研究資源豐富",
+        "多元文化"
+      ],
+      "foodCultureZh": "美國飲食多元化，各地有不同特色菜系",
+      "climateZh": "氣候多樣，依地區而異",
+      "specialFeaturesZh": [
+        "美國頂尖公立/私立大學",
+        "研究資源豐富",
+        "多元文化"
+      ],
+      "selectionFactorsZh": {
+        "academicFit": "",
+        "culturalExperience": "體驗 美國 文化",
+        "budgetLevel": "每月港幣 10,500",
+        "language": "英語",
+        "supportServices": "國際學生服務、學術支援、住宿協助"
+      },
+      "notesZh": "",
+      "quotaZh": "2",
+      "languagesZh": [
+        "英語"
       ]
     }
   ]
