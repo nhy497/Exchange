@@ -52,6 +52,24 @@ function AppContent() {
   
   // 讀取學校資料
   const { data: schoolsData, loading, error } = useSchoolsData();
+
+  // 輔助函數：根據語言獲取學校字段
+  const getSchoolField = (school, field) => {
+    if (lang === 'zh') {
+      const zhField = school[`${field}Zh`];
+      if (zhField !== undefined && zhField !== null && zhField !== '') {
+        return zhField;
+      }
+    }
+    return school[field];
+  };
+
+  // 輔助函數：獲取 selectionFactors 字段
+  const getSelectionFactor = (school, factor) => {
+    const sf = lang === 'zh' ? school.selectionFactorsZh : school.selectionFactors;
+    if (!sf) return '';
+    return sf[factor] || '';
+  };
   
   // 計?國家?表
   const countries = useMemo(() => {
@@ -520,12 +538,12 @@ function AppContent() {
                   {/* 徽標 */}
                   <div className="flex items-center gap-2 mb-3 flex-wrap pr-10">
                     <span className="px-3 py-1 bg-[var(--brand)]/10 text-[var(--brand)] rounded-full text-sm font-medium">
-                      {school.country}
+                      {getSchoolField(school, 'country')}
                     </span>
                     {school.city && school.city !== 'N/A' && (
                       <span className="px-2 py-1 bg-[var(--bg)] text-[var(--muted)] rounded-full text-xs flex items-center gap-1">
                         <Building2 className="w-3 h-3" />
-                        {school.city}
+                        {getSchoolField(school, 'city')}
                       </span>
                     )}
                     {school.ranking && (
@@ -553,16 +571,16 @@ function AppContent() {
                         {school.region}
                       </span>
                     )}
-                    {school.climate && (
+                    {getSchoolField(school, 'climate') && (
                       <span className="flex items-center gap-1">
                         <Info className="w-3 h-3" />
-                        {school.climate.split('，')[0]}
+                        {getSchoolField(school, 'climate').split('，')[0]}
                       </span>
                     )}
-                    {school.languages && (
+                    {getSchoolField(school, 'languages') && (
                       <span className="flex items-center gap-1">
                         <Languages className="w-3 h-3" />
-                        {school.languages[0].split(' ')[0]}
+                        {getSchoolField(school, 'languages')[0]?.split(' ')[0]}
                       </span>
                     )}
                   </div>
@@ -570,10 +588,10 @@ function AppContent() {
                   {/* 核心信息 - 簡化版 */}
                   <div className="flex flex-wrap gap-2 mb-3 text-xs">
                     <span className="px-2 py-1 bg-[var(--bg)] rounded-md text-[var(--text)]">
-                      HK${(school.budget/1000).toFixed(0)}K/月
+                      HK${(school.budget/1000).toFixed(0)}K{lang === 'zh' ? '/月' : '/mo'}
                     </span>
                     <span className="px-2 py-1 bg-[var(--bg)] rounded-md text-[var(--text)]">
-                      配額 {school.quota}
+                      {lang === 'zh' ? '配額' : 'Quota'} {getSchoolField(school, 'quota')}
                     </span>
                     {school.cgpa > 0 && (
                       <span className="px-2 py-1 bg-[var(--bg)] rounded-md text-[var(--text)]">
@@ -588,17 +606,17 @@ function AppContent() {
                   </div>
 
                   {/* 亮點特色 - 合併簡化 */}
-                  {(school.specialFeatures || school.foodCulture) && (
+                  {(getSchoolField(school, 'specialFeatures') || getSchoolField(school, 'foodCulture')) && (
                     <div className="mb-3 p-3 bg-[var(--soft)]/50 rounded-[12px]">
                       <p className="text-xs text-[var(--muted)] mb-1">{lang === 'zh' ? '亮點' : 'Highlights'}</p>
                       <ul className="space-y-1">
-                        {school.foodCulture && (
+                        {getSchoolField(school, 'foodCulture') && (
                           <li className="text-xs text-[var(--text)] flex items-start gap-1">
                             <span className="text-[var(--accent)]">🍴</span>
-                            <span>{school.foodCulture.substring(0, 25)}...</span>
+                            <span>{getSchoolField(school, 'foodCulture').substring(0, 25)}...</span>
                           </li>
                         )}
-                        {school.specialFeatures?.slice(0, 2).map((feature, i) => (
+                        {getSchoolField(school, 'specialFeatures')?.slice(0, 2).map((feature, i) => (
                           <li key={i} className="text-xs text-[var(--text)] flex items-start gap-1">
                             <span className="text-[var(--success)]">★</span>
                             <span>{feature.substring(0, 30)}{feature.length > 30 ? '...' : ''}</span>
@@ -609,17 +627,17 @@ function AppContent() {
                   )}
 
                   {/* 學校特色 - 簡化版 */}
-                  {school.uniqueFeatures && (
+                  {getSchoolField(school, 'uniqueFeatures') && (
                     <div className="mb-3">
                       <ul className="space-y-1">
-                        {school.uniqueFeatures.slice(0, 2).map((feature, i) => (
+                        {getSchoolField(school, 'uniqueFeatures').slice(0, 2).map((feature, i) => (
                           <li key={i} className="text-xs text-[var(--text)] flex items-start gap-1">
                             <span className="text-[var(--brand)]">✓</span>
                             <span className="flex-1">{feature.substring(0, 35)}{feature.length > 35 ? '...' : ''}</span>
                           </li>
                         ))}
                       </ul>
-                      {school.uniqueFeatures.length > 2 && (
+                      {getSchoolField(school, 'uniqueFeatures').length > 2 && (
                         <button
                           onClick={() => openSchoolModal(school)}
                           className="mt-2 text-xs text-[var(--brand)] hover:underline"
@@ -631,10 +649,10 @@ function AppContent() {
                   )}
 
                   {/* 選校標籤 */}
-                  {school.selectionFactors && (
+                  {(school.selectionFactors || school.selectionFactorsZh) && (
                     <div className="mb-4 p-3 bg-[var(--soft)]/50 rounded-[12px]">
                       <div className="text-xs text-[var(--muted)] mb-1">{lang === 'zh' ? '適合你如果：' : 'Good fit if you:'}</div>
-                      <div className="text-sm text-[var(--text)]">{school.selectionFactors.academicFit}</div>
+                      <div className="text-sm text-[var(--text)]">{getSelectionFactor(school, 'academicFit')}</div>
                     </div>
                   )}
 
@@ -764,8 +782,8 @@ function AppContent() {
                   </thead>
                   <tbody>
                     {[
-                      { label: lang === 'zh' ? '國家' : 'Country', key: 'country' },
-                      { label: lang === 'zh' ? '城市' : 'City', key: 'city' },
+                      { label: lang === 'zh' ? '國家' : 'Country', key: 'country', useZhField: true },
+                      { label: lang === 'zh' ? '城市' : 'City', key: 'city', useZhField: true },
                       { label: lang === 'zh' ? '配額' : 'Quota', key: 'quota' },
                       { label: lang === 'zh' ? 'CGPA' : 'CGPA', key: 'cgpa', format: (v) => v > 0 ? `≥${v}` : '-' },
                       { label: lang === 'zh' ? 'IELTS' : 'IELTS', key: 'ielts' },
@@ -778,7 +796,7 @@ function AppContent() {
                         <td className="py-2 text-[var(--muted)]">{row.label}</td>
                         {compareList.map(id => {
                           const school = schoolsData?.schools?.find(s => s.id === id);
-                          const value = school?.[row.key];
+                          const value = row.useZhField ? getSchoolField(school, row.key) : school?.[row.key];
                           return (
                             <td key={id} className="py-2 px-3 text-[var(--text)]">
                               {row.format ? row.format(value) : value || '-'}
@@ -809,7 +827,7 @@ function AppContent() {
             <div className="flex items-start justify-between mb-6">
               <div>
                 <h2 className="text-2xl font-bold text-[var(--text)] mb-2">{selectedSchool.name}</h2>
-                <p className="text-[var(--muted)]">{selectedSchool.city} · {selectedSchool.country} · {selectedSchool.region}</p>
+                <p className="text-[var(--muted)]">{getSchoolField(selectedSchool, 'city')} · {getSchoolField(selectedSchool, 'country')} · {selectedSchool.region}</p>
               </div>
               <button
                 onClick={closeSchoolModal}
@@ -821,7 +839,7 @@ function AppContent() {
 
             {/* 快速信息 */}
             <div className="flex flex-wrap gap-2 mb-6">
-              <span className="chip">{lang === 'zh' ? '配額' : 'Quota'}: {selectedSchool.quota}</span>
+              <span className="chip">{lang === 'zh' ? '配額' : 'Quota'}: {getSchoolField(selectedSchool, 'quota')}</span>
               <span className="chip">CGPA: {selectedSchool.cgpa > 0 ? `≥${selectedSchool.cgpa}` : '-'}</span>
               <span className="chip">IELTS: {selectedSchool.ielts}</span>
               <span className="chip">QS #{selectedSchool.ranking || '-'}</span>
@@ -829,11 +847,11 @@ function AppContent() {
               {selectedSchool.region && (
                 <span className="chip bg-[var(--accent)]/10 text-[var(--accent)]">{selectedSchool.region}</span>
               )}
-              {selectedSchool.climate && (
-                <span className="chip bg-[var(--success)]/10 text-[var(--success)]">{lang === 'zh' ? selectedSchool.climate : selectedSchool.climate}</span>
+              {getSchoolField(selectedSchool, 'climate') && (
+                <span className="chip bg-[var(--success)]/10 text-[var(--success)]">{getSchoolField(selectedSchool, 'climate')}</span>
               )}
               {selectedSchool.explorerGrant && (
-                <span className="badge-grant text-xs">HK$10K Grant</span>
+                <span className="badge-grant text-xs">{lang === 'zh' ? 'HK$10K 資助' : 'HK$10K Grant'}</span>
               )}
             </div>
 
@@ -856,7 +874,7 @@ function AppContent() {
                   </li>
                   <li className="flex justify-between">
                     <span className="text-[var(--muted)]">{lang === 'zh' ? '校園語言' : 'Campus languages'}:</span>
-                    <span className="text-[var(--text)] font-medium">{(selectedSchool.languages || []).join(', ')}</span>
+                    <span className="text-[var(--text)] font-medium">{(getSchoolField(selectedSchool, 'languages') || []).join(lang === 'zh' ? '、' : ', ')}</span>
                   </li>
                 </ul>
               </div>
@@ -870,11 +888,11 @@ function AppContent() {
                 <ul className="space-y-2 text-sm">
                   <li>
                     <span className="text-[var(--muted)]">{lang === 'zh' ? '適合專業: ' : 'Good for: '}</span>
-                    <span className="text-[var(--text)]">{selectedSchool.selectionFactors?.academicFit}</span>
+                    <span className="text-[var(--text)]">{getSelectionFactor(selectedSchool, 'academicFit')}</span>
                   </li>
                   <li>
                     <span className="text-[var(--muted)]">{lang === 'zh' ? '支援服務: ' : 'Support: '}</span>
-                    <span className="text-[var(--text)]">{selectedSchool.selectionFactors?.supportServices}</span>
+                    <span className="text-[var(--text)]">{getSelectionFactor(selectedSchool, 'supportServices')}</span>
                   </li>
                 </ul>
               </div>
@@ -886,7 +904,7 @@ function AppContent() {
                   {lang === 'zh' ? '學校特色' : 'University Highlights'}
                 </h5>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                  {(selectedSchool.uniqueFeatures || []).map((feature, i) => (
+                  {(getSchoolField(selectedSchool, 'uniqueFeatures') || []).map((feature, i) => (
                     <li key={i} className="text-sm text-[var(--text)] flex items-start gap-2">
                       <span className="text-[var(--accent)] mt-1">✦</span>
                       <span>{feature}</span>
@@ -896,28 +914,28 @@ function AppContent() {
               </div>
 
               {/* 美食文化 */}
-              {selectedSchool.foodCulture && (
+              {getSchoolField(selectedSchool, 'foodCulture') && (
                 <div className="p-4 bg-[var(--bg)] rounded-[18px] border border-[var(--line)]">
                   <h5 className="font-semibold text-[var(--text)] mb-3 flex items-center gap-2">
                     <Heart className="w-4 h-4 text-[var(--accent)]" />
                     {lang === 'zh' ? '美食文化' : 'Food & Culture'}
                   </h5>
-                  <p className="text-sm text-[var(--text)]">{lang === 'zh' ? selectedSchool.foodCulture : selectedSchool.foodCulture}</p>
+                  <p className="text-sm text-[var(--text)]">{getSchoolField(selectedSchool, 'foodCulture')}</p>
                 </div>
               )}
 
               {/* 特別特色 */}
-              {selectedSchool.specialFeatures && (
+              {getSchoolField(selectedSchool, 'specialFeatures') && (
                 <div className="p-4 bg-[var(--bg)] rounded-[18px] border border-[var(--line)]">
                   <h5 className="font-semibold text-[var(--text)] mb-3 flex items-center gap-2">
                     <Star className="w-4 h-4 text-[var(--success)]" />
                     {lang === 'zh' ? '特別之處' : 'Special Highlights'}
                   </h5>
                   <ul className="space-y-2">
-                    {(selectedSchool.specialFeatures || []).map((feature, i) => (
+                    {(getSchoolField(selectedSchool, 'specialFeatures') || []).map((feature, i) => (
                       <li key={i} className="text-sm text-[var(--text)] flex items-start gap-2">
                         <span className="text-[var(--success)] mt-1">★</span>
-                        <span>{lang === 'zh' ? feature : feature}</span>
+                        <span>{feature}</span>
                       </li>
                     ))}
                   </ul>
@@ -930,18 +948,18 @@ function AppContent() {
                   <Globe className="w-4 h-4 text-[var(--brand)]" />
                   {lang === 'zh' ? '文化體驗' : 'Cultural Experience'}
                 </h5>
-                <p className="text-sm text-[var(--text)]">{selectedSchool.selectionFactors?.culturalExperience}</p>
-                <p className="text-sm text-[var(--muted)] mt-2">{lang === 'zh' ? '預算水平: ' : 'Budget level: '}{selectedSchool.selectionFactors?.budgetLevel}</p>
+                <p className="text-sm text-[var(--text)]">{getSelectionFactor(selectedSchool, 'culturalExperience')}</p>
+                <p className="text-sm text-[var(--muted)] mt-2">{lang === 'zh' ? '預算水平: ' : 'Budget level: '}{getSelectionFactor(selectedSchool, 'budgetLevel')}</p>
               </div>
 
               {/* 重要備註 */}
-              {selectedSchool.notes && (
+              {(selectedSchool.notes || selectedSchool.notesZh) && (
                 <div className="p-4 bg-[var(--warning)]/10 rounded-[18px] border border-[var(--warning)]/20">
                   <h5 className="font-semibold text-[var(--warning)] mb-2 flex items-center gap-2">
                     <AlertCircle className="w-4 h-4" />
                     {lang === 'zh' ? '重要備註' : 'Important Notes'}
                   </h5>
-                  <p className="text-sm text-[var(--warning)]">{selectedSchool.notes}</p>
+                  <p className="text-sm text-[var(--warning)]">{getSchoolField(selectedSchool, 'notes') || (lang === 'zh' ? '無備註' : 'No notes')}</p>
                 </div>
               )}
             </div>
